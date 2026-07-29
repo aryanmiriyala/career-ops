@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala} $|$
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala}
+\end{center}\vspace{-10pt}
+
+\resumesection{Professional Summary}
+Software engineer aligned with Security Operations Engineer responsibilities across cybersecurity labs, SQL, AWS, SSO, JWT, RBAC, audit logging, access control, and Python/TypeScript/C++ systems.
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Present}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a Next.js onboarding tracker with TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
+  \item Built a Docker devcontainer for WSL2 and Colima, standardizing setup while isolating AI-assisted development workflows around proprietary source code.
+  \item Scoped a QMS dependency register by modeling document relationships and translating ambiguous operational needs into a reviewable implementation plan.
+\end{tightitemize}
+
+\resumeSubheading
+{Graduate Research Assistant I}{Aug. 2024 -- May 2026}
+{Bowling Green State University}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Developed cybersecurity lab and presentation material across cryptography, secure key management, phishing, password security, email authentication, email forensics, ethical hacking, and web application security.
+  \item Built hands-on training content for OSINT, vulnerability scanning, packet analysis, credential attacks, Burp Suite, OWASP ZAP, Wireshark, Nmap, Metasploit, and controlled exploit-development concepts.
+  \item Led 10 undergraduate students in organizing a CyberCamp using CyberGuardian modules, phishing demos, password-security exercises, cryptography activities, and cyber escape-room material.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data to calculate charges for 700+ member companies.
+  \item Profiled 160+ MySQL, Oracle, and Impala tables with Python, Pandas, SQL, and JDBC, mapping source-system relationships into a 25-domain taxonomy for migration planning.
+  \item Built reverse-ETL and data-validation workflows with custom AWS IAM roles, supporting controlled self-service data access and 24-hour data latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad internal access with role-specific controls for about 110 users.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, strengthening secure downstream data processing.
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured an AWS-hosted Lucee/CFML healthcare workflow platform with anti-CSRF protection, IP-aware audit logging, and protected access-denied/404 routing across internal forms.
+  \item Improved clinical workflow reliability by fixing Matchgrid import ordering, MFI upload paths, duplicate-antigen page crashes, logistics defaults, and reusable modal/tab screens.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Fix-It-Flow - Voice-First Repair PWA}{Next.js, TypeScript, DynamoDB}
+\begin{tightitemize}
+  \item Built typed Next.js API routes and AWS-backed session persistence for inspection turns, repair sessions, findings, frames, safety warnings, and voice-controlled repair steps.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Security Operations:} SSO, JWT, RBAC, auth middleware, anti-CSRF, audit logging, access-denied workflows, PII tokenization, phishing, email forensics, password security\\
+\textbf{Cloud, Data \& Systems:} AWS Glue, S3, Lambda, IAM, DynamoDB, PostgreSQL, MySQL, Oracle, SQL, PySpark, Docker, Linux, Git\\
+\textbf{Languages \& Tools:} Python, TypeScript/JavaScript, C++, Node.js, React, Next.js, Pandas, hashlib, boto3, Nmap, Wireshark, Burp Suite, OWASP ZAP
+
+\end{document}
