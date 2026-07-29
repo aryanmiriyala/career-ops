@@ -172,7 +172,7 @@ Weak bullets rewritten:
 ## Changes Made
 
 - Resume: Created a tailored one-page `resume.tex` using the canonical source pattern and emphasizing the posted Software Engineer I title, TypeScript/JavaScript, React, React Native, backend APIs, AWS/data pipelines, secure workflows, C++, and telemetry-backed systems.
-- Cover letter: Revised `cover-letter.md` and `cover-letter.tex` to add Aryan's personal PlayStation history, including playing since third grade, first game God of War II, and current excitement for GTA 6 on PS5, while keeping the Software Engineer I Unified Telemetry role, SmartSolve product work, AAIS data-platform work, and telemetry-adjacent projects as the technical proof points.
+- Cover letter: Revised `cover-letter.md` and `cover-letter.tex` into two body paragraphs with a more natural PlayStation hook, including playing since third grade, first game God of War II, and current excitement for GTA 6 on PS5, while keeping SmartSolve product work, AAIS data-platform work, and telemetry-adjacent projects as the technical proof points.
 
 ## Scoring Methodology
 
