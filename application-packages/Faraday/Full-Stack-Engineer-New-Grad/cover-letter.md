@@ -1,0 +1,14 @@
+# Cover Letter
+
+Dear Faraday Hiring Team,
+
+I am applying for the Full Stack Engineer, New Grad role because Faraday is working on the kind of software problem I like most: taking a messy, real-world workflow and turning it into a tool people can actually rely on. The details in the posting feel concrete. Permits, warranty claims, rebates, customer handoffs, and internal tools are not abstract AI demos. They are the annoying operational pieces that decide whether contractors get time back and whether work moves forward.
+
+My recent work lines up with that shape of engineering. At SmartSolve, I built a full-stack Next.js and TypeScript onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware for internal workflows around sensitive employee data. I also scoped an AI-enabled QMS dependency register by modeling relationships among quality-management documents. That work taught me to start from an unclear operational need, turn it into a usable product surface, and keep the access and data model decisions understandable.
+
+I have also built AI-heavy products across the stack. Fix-It-Flow used typed Next.js API routes, camera input, voice commands, Gemini Vision, Llama-style reasoning, ElevenLabs audio, and DynamoDB session state to guide repair decisions. RocketGrader used TypeScript, Express, MongoDB, Auth0, AWS S3, LangChain, and Mistral AI to support assignment upload, parsing, and structured feedback workflows. Those projects are closest to Faraday's model orchestration layer because the hard part was not only calling a model. It was keeping the user flow, backend state, inputs, outputs, and reviewability connected.
+
+I would bring Faraday an early-career engineer's energy without outsourcing the thinking to AI tools. I use Codex and Claude Code often, but I still read the code, check the assumptions, and make sure I can explain what is shipping. I would be excited to learn in person from senior engineers, talk to customers, and own small surfaces quickly while building toward larger parts of the product.
+
+Best regards,  
+Aryan Miriyala
