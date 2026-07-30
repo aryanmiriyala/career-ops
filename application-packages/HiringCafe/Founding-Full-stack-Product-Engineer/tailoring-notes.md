@@ -94,15 +94,16 @@ Unsupported terms to avoid:
 
 ## Projects Emphasized
 
-- Career Ops: direct job-discovery/product-domain match through structured ATS ingestion, filtering, CSV/Markdown outputs, application-package generation, PDF/parser validation, and source-of-truth workflow design.
+- Career Ops: direct job-discovery/product-domain match through structured ATS ingestion, filtering, CSV/Markdown outputs, agent-assisted application-package generation, PDF/parser validation, source-of-truth workflow design, and human approval boundaries.
 - Fix-It-Flow: full-stack AI product with Next.js/TypeScript, typed API routes, camera/voice UX, Gemini Vision, LLM reasoning, safety warnings, and DynamoDB session persistence.
-- Diff-Grounded PR Description Generation: LLM pipeline over GitHub repository artifacts with evidence-grounded generation and automated evaluation.
+- Diff-Grounded PR Description Generation: removed from the final one-page resume to preserve the expanded technical skills section; LLM/API/GitHub evidence remains represented through Career Ops, Fix-It-Flow, and the AI/agentic skills category.
 
 ## Skills Emphasized
 
-- Product/web: TypeScript/JavaScript, React, Next.js, Node.js, Express, REST APIs, responsive UI, PWA.
-- Data/AI/cloud: Python, SQL, PySpark, PostgreSQL, MySQL, Oracle, MongoDB, AWS Glue/S3/Lambda/IAM/DynamoDB, OpenAI API, Gemini API, RAG, LLM evaluation.
-- Systems/tools: Docker, Git, Linux, JSON, CSV, Markdown, LaTeX validation, SSO, JWT, RBAC.
+- Product/web: TypeScript/JavaScript, React, Next.js, Angular, React Native, Node.js, Express, REST APIs, HTML5, CSS, Tailwind CSS, PWA.
+- Data/cloud: Python, SQL, PySpark, Pandas, PostgreSQL, MySQL, Oracle, MongoDB, Mongoose, Drizzle ORM, AWS Glue/S3/Lambda/IAM/DynamoDB.
+- AI/agentic/tools: Codex, Claude Code, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, embeddings, LLM evaluation, GitHub API.
+- Systems/security: Docker, Docker Compose, Git, Linux, JSON, CSV, Markdown, LaTeX validation, SSO, JWT, RBAC, anti-CSRF.
 
 ## Bullet Audit
 
@@ -127,9 +128,8 @@ Experience bullets checked:
 Project bullets checked:
 
 - Career Ops ingestion bullet: Pass - states Python system, ATS providers, role filtering, and CSV/Markdown review outputs for job-discovery workflows.
-- Career Ops validator bullet: Pass - states application-package validation, one-page PDFs, text extraction, alignment evidence, cover-letter artifacts, and build cleanup.
+- Career Ops agent-assisted pipeline bullet: Pass - states verified source inputs, keyword maps, LaTeX resume/letter generation, PDF text extraction, validator gates, and human approval boundaries.
 - Fix-It-Flow bullet: Pass - states typed Next.js API routes, AWS-backed session persistence, camera inspection, repair sessions, safety warnings, and voice-controlled repair steps.
-- Diff-Grounded PR bullet: Pass - states ICSME-published LLM pipeline, GitHub artifacts, generated pull request descriptions, and evaluation against code-change evidence.
 
 Weak bullets rewritten:
 
@@ -139,39 +139,39 @@ Weak bullets rewritten:
 
 ## Changes Made
 
-- Resume: Created a canonical one-page full-stack/product resume emphasizing job-discovery automation, React/Next.js, backend API routes, Python/SQL data flows, applied AI workflows, AWS data engineering, secure auth, and product/system correctness.
-- Cover letter: Created a concise, personal, role-aligned letter centered on Aryan's direct experience building Career Ops because job discovery is noisy, then connected that experience to HiringCafe's mission and full-stack/AI product needs.
+- Resume: Updated a canonical one-page full-stack/product resume emphasizing job-discovery automation, agent-assisted application workflows, React/Next.js, backend API routes, Python/SQL data flows, applied AI workflows, AWS data engineering, secure auth, broader verified technical skills, and product/system correctness.
+- Cover letter: Updated the concise, personal, role-aligned letter to mention Career Ops as an agent-assisted application-package workflow while keeping the HiringCafe-scale disclaimer.
 
 ## Scoring Methodology
 
 Scoring source: Internal manual alignment rubric from `AGENTS.md`; internal estimate only, not a predicted ATS score.
 
-Job Alignment & Evidence Score: 92/100
+Job Alignment & Evidence Score: 91/100
 
 Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 36/40 - Strong truthful coverage of Founding Full-stack / Product Engineer, React, Next.js, TypeScript, Python, backend API routes, data flows, LLM pipeline, job discovery, job search, structured postings, scalable/fragmented data themes, quality, correctness, validation, and ownership. Firebase, Elasticsearch, Redis, and Stripe are intentionally omitted because unsupported.
-- Experience relevance: 23/25 - Strong match through SmartSolve full-stack product work, AAIS backend/data workflows, Career Ops job-discovery automation, Fix-It-Flow AI product work, and Diff-Grounded LLM research. Direct founding startup employment and HiringCafe-scale production search infrastructure are not verified.
-- Impact and evidence: 14/15 - Resume includes verified scope: 20+ TB, 700+ companies, 160+ tables, 25 domains, 24-hour latency, 1,000+ production SQL tables, 110 users, ATS provider ingestion, and published LLM research.
+- Keyword coverage: 37/40 - Strong truthful coverage of Founding Full-stack / Product Engineer, React, Next.js, TypeScript, Python, backend API routes, data flows, agent-assisted workflows, LLM pipeline, job discovery, job search, structured postings, scalable/fragmented data themes, quality, correctness, validation, and ownership. Firebase, Elasticsearch, Redis, and Stripe are intentionally omitted because unsupported.
+- Experience relevance: 23/25 - Strong match through SmartSolve full-stack product work, AAIS backend/data workflows, Career Ops job-discovery automation, and Fix-It-Flow AI product work. Direct founding startup employment and HiringCafe-scale production search infrastructure are not verified.
+- Impact and evidence: 13/15 - Resume includes verified scope: 20+ TB, 700+ companies, 160+ tables, 25 domains, 24-hour latency, 1,000+ production SQL tables, 110 users, ATS provider ingestion, and application validator evidence.
 - Formatting and ATS parsing: 10/10 - Canonical one-page LaTeX layout, standard headings, single column, extractable text, and no tables/images/icons/text boxes.
-- Risk and gap handling: 9/10 - Unsupported tools and scale claims are omitted and documented. Main remaining risks are Cupertino on-site feasibility, sponsorship path, and lack of Firebase/Elasticsearch/Redis/Stripe.
+- Risk and gap handling: 8/10 - Unsupported tools and scale claims are omitted and documented. Main remaining risks are Cupertino on-site feasibility, sponsorship path, lack of Firebase/Elasticsearch/Redis/Stripe, and ensuring "agent-assisted" is understood as the repo workflow rather than a deployed autonomous AI product.
 
 Exact posted title matched in visible summary/title clause: `Founding Full-stack / Product Engineer` appears once in the Professional Summary and is supported by full-stack, product, data-flow, AI, and job-discovery evidence.
 
 ## Alignment Pass
 
-Job Alignment & Evidence Score: 92/100
+Job Alignment & Evidence Score: 91/100
 
 Internal estimate only; not a predicted ATS score.
 
 Strong matches:
 
-- Career Ops directly maps to the company's job-discovery problem through structured ATS ingestion, filtering, source tracking, and application workflow validation.
+- Career Ops directly maps to the company's job-discovery problem through structured ATS ingestion, filtering, source tracking, agent-assisted application workflow generation, validation gates, and human approval boundaries.
 - SmartSolve and Fix-It-Flow show React/Next.js, TypeScript, backend routes, data models, auth, and product feature ownership.
 - AAIS shows production-scale Python/SQL/AWS data workflows, fragmented source-system analysis, validation, and controlled data access.
-- Diff-Grounded PR Description Generation shows LLM pipeline work grounded in real GitHub repository artifacts and automated evaluation.
+- Expanded skills now surface broader verified tooling across React, Next.js, Angular, React Native, Node.js, Express, PySpark, Pandas, MongoDB/Mongoose, Drizzle ORM, AWS, Codex, Claude Code, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, embeddings, GitHub API, Docker, and auth/security workflows.
 - Cover letter gives a real personal reason for HiringCafe without claiming direct product familiarity beyond the posting and public company context.
 
 Gaps / intentionally omitted unsupported keywords:

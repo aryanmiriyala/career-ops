@@ -616,11 +616,11 @@ Source: https://github.com/aryanmiriyala/career-ops
 
 #### Platform-Ready Description
 
-Built a repository-centered career operations system that separates job discovery from application-package generation. A dependency-light Python CLI generates targeted ATS search queries, fetches structured postings from configured Greenhouse, Lever, Ashby, and SmartRecruiters endpoints, supplements them with public job-board APIs, discovers and validates ATS board identifiers, scores and filters early-career roles, maintains a minimal CSV inbox, and writes dated Markdown reports. A second workflow stores verified career source material, creates role-specific LaTeX resumes and cover letters, tracks applications, and validates required artifacts, one-page PDF output, text extraction, alignment notes, and build-artifact cleanup.
+Built a repository-centered career operations system that separates job discovery from application-package generation. A dependency-light Python CLI generates targeted ATS search queries, fetches structured postings from configured Greenhouse, Lever, Ashby, and SmartRecruiters endpoints, supplements them with public job-board APIs, discovers and validates ATS board identifiers, scores and filters early-career roles, maintains a minimal CSV inbox, and writes dated Markdown reports. A second agent-assisted workflow stores verified career source material, creates role-specific LaTeX resumes and cover letters, tracks applications, and validates required artifacts, one-page PDF output, text extraction, alignment notes, and build-artifact cleanup while keeping human approval boundaries explicit.
 
 #### Handshake Description
 
-Built a Python career-operations system with structured Greenhouse/Lever/Ashby/SmartRecruiters ingestion, role filtering, CSV/Markdown reporting, targeted LaTeX application packages, PDF text/page validation, and repository-based application tracking.
+Built a Python career-operations system with structured Greenhouse/Lever/Ashby/SmartRecruiters ingestion, role filtering, CSV/Markdown reporting, agent-assisted LaTeX application packages, PDF text/page validation, and repository-based application tracking.
 
 #### Features
 
@@ -633,7 +633,7 @@ Built a Python career-operations system with structured Greenhouse/Lever/Ashby/S
 - Freshness tracking based on first discovery when providers omit reliable posting timestamps.
 - Role-fit scoring, strict shortlist and broader review-candidate outputs, and manual application approval.
 - Source-of-truth profile documents for experience, projects, skills, bullet banks, and writing guidance.
-- Targeted LaTeX resume/cover-letter generation with job keyword maps, truthful alignment notes, and application tracking.
+- Agent-assisted targeted LaTeX resume/cover-letter generation with job keyword maps, truthful alignment notes, and application tracking.
 - Package validator checking required files, cover-letter artifacts, recorded alignment results, one-page resume PDFs, extractable text, and leftover LaTeX build artifacts.
 
 #### Tech Stack
@@ -647,13 +647,14 @@ Workflow automation / Tech stack: Python 3, standard-library HTTP/JSON/CSV proce
 - Config-driven data ingestion and filtering
 - Developer productivity tooling
 - Document-generation pipelines
+- Agent-assisted application workflows
 - Validation and human-in-the-loop decision systems
 - Product judgment around data quality and source-of-truth design
 
 #### Reusable Bullet Options
 
 - Built a Python career-operations system that ingested structured postings from Greenhouse, Lever, Ashby, and SmartRecruiters, filtered early-career roles, and generated CSV and dated Markdown review outputs.
-- Designed separate job-discovery and application-generation pipelines with explicit handoff rules, structured profile data, targeted LaTeX documents, tracker updates, and human approval boundaries.
+- Designed separate job-discovery and agent-assisted application-generation pipelines with explicit handoff rules, structured profile data, targeted LaTeX documents, tracker updates, validation gates, and human approval boundaries.
 - Implemented application-package validation for required artifacts, one-page PDF output, text extraction, alignment evidence, and generated-build cleanup, improving consistency across role-specific submissions.
 
 ### Automated GitHub Profile README
