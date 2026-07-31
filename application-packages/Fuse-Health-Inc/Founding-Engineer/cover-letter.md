@@ -1,0 +1,19 @@
+# Cover Letter
+
+July 31, 2026
+
+Fuse Health Team
+
+Dear Fuse Health Team,
+
+I am applying for the Founding Engineer role because the job is honest about what the company needs. Fuse Health needs someone who can own a live product, find the weak parts, and keep building across the stack without waiting for every task to be handed over. That kind of work fits the way I have been trying to grow as an engineer. I like building useful tools for real workflows, especially when security, reliability, and clear product judgment matter.
+
+My closest experience is in internal software and regulated-domain systems. At SmartSolve, I architected a Next.js and TypeScript onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware for sensitive employee workflows, then built Docker devcontainers so development setup was reproducible while AI-assisted tools stayed isolated around proprietary code. At AAIS, I automated a manual SQL billing workflow with Python, PySpark, and AWS Glue over 20+ TB of insurance data for 700+ member companies, and I built backend/data-standardization work with SQL generation, RBAC/JWT access patterns, AWS Lambda, S3, and PII tokenization.
+
+I also have direct healthcare workflow context from the Alliance for Paired Kidney Donation, where I worked on an AWS-hosted Lucee/CFML platform used for internal transplant operations. The work was not glamorous, but it mattered through anti-CSRF protection, audit logging, safer access routing, data-entry fixes, import-ordering reliability, and clinical workflow usability. That experience is why the telehealth infrastructure angle at Fuse Health stands out to me. The product has to be usable for providers and patients, but the backend, security, data model, and edge cases have to hold up too.
+
+I have not been a formal founding engineer before, and I would not pretend otherwise. What I can bring is a practical full-stack base, a habit of shipping working projects, comfort moving between frontend, APIs, databases, cloud workflows, and debugging, and enough judgment to ask when speed is worth it and when a system needs a stronger foundation.
+
+Sincerely,
+
+Aryan Miriyala
