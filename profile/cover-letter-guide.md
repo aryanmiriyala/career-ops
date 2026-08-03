@@ -23,6 +23,8 @@ Do not use the cover letter as a paragraph version of the resume. Use it to conn
 - Include a personal connection only when it is real and specific.
 - Prefer one deep technical example over a broad list of tools.
 - Do not invent metrics, company interest, product familiarity, or domain motivation.
+- Do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, Form I-983, or work-authorization risk in the cover letter unless Aryan explicitly asks. Track those issues internally in tailoring notes and the application tracker.
+- Do not volunteer gap language such as `I have not worked directly with...` in the submitted cover letter unless the gap is an obvious central requirement and reframing it is stronger than silence. Prefer positive adjacent evidence and keep unsupported-keyword analysis in `tailoring-notes.md`.
 - Proofread carefully before generating final artifacts.
 - For submitted applications, follow the employer's file instructions and generate an accepted PDF or DOCX artifact. Markdown is acceptable as the editable source, but not as the only final submission file.
 - Keep the final cover-letter artifact under 5 MB unless the employer explicitly permits a larger file.
@@ -57,6 +59,8 @@ Choose one primary angle per letter:
 - Security-aware software: anti-CSRF protection, audit logging, access-denied flows, authentication/authorization, least-privilege access, and cybersecurity education.
 - Healthcare/insurance domain: healthcare-adjacent workflow tooling, transplant/logistics support, insurance data standardization, and operational systems used by internal teams.
 - Research/education: LLM evaluation, repository mining, cybersecurity labs, ethical hacking tooling, NICE Framework/CAE-CD mapping, and technical teaching.
+- Data/business analysis: SQL/Python analysis, data profiling, operational reporting, dashboard-ready datasets, stakeholder questions, documentation, source-system investigation, and business-process improvement.
+- Product/operations analysis: internal tools, workflow mapping, requirements clarification, metrics, user pain points, process automation, and handoff-ready recommendations.
 
 ## Writing Rules
 
@@ -68,6 +72,7 @@ Choose one primary angle per letter:
 - If the job description repeats specific keywords, incorporate them naturally only when truthful.
 - Avoid claims like "perfect fit," "expert," or "passionate about technology" unless the sentence proves it.
 - Avoid confidential details, internal names, or unsupported business impact.
+- When a role has missing tools or domain requirements, write toward the strongest verified match instead of apologizing for the missing item. The application notes should document omitted unsupported terms; the cover letter should sell the best truthful case.
 - Keep the tone personal plus technical: enough human motivation to feel specific, enough technical evidence to prove fit.
 
 ## Source Notes

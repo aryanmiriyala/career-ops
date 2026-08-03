@@ -57,6 +57,8 @@ If context is resumed, compacted, or interrupted mid-application, re-open the ap
 
 ## Application Package Pipeline
 
+Application packages should support broad but targeted early-career search lanes. Do not narrow the pipeline only to software engineering, data engineering, and AI roles. Valid primary lanes include software engineering/full stack, data engineering, applied AI/agentic systems, data analyst/business analyst, product analyst/operations analyst, cloud/platform/enterprise systems, security/IT/support-adjacent technical roles, healthcare/insurance/education workflow technology, and other adjacent early-career technical roles. Broaden the search, but still tailor each package to one primary lane so the resume and cover letter do not read as generic.
+
 For every new job application:
 
 1. Create `application-packages/<Company>/<Role>/`.
@@ -65,12 +67,12 @@ For every new job application:
 4. Review `profile/` for relevant experience, projects, skills, and reusable bullets.
 5. Apply `profile/ats-recruiter-resume-guide.md` and `profile/resume-targeting-guide.md` before proposing resume edits.
 6. Build a job keyword map before writing the resume: exact posted role title, required skills, repeated terms, responsibilities, domain language, must-have tools, nice-to-have tools, and unsupported terms to avoid. Use this map to decide the Target Professional Title Clause, resume angle, bullet selection, projects, technical skills, and cover-letter proof points.
-7. Run the **F-1 Work Authorization Gate** before drafting final artifacts. Identify whether the role is compatible with F-1 CPT/OPT/STEM OPT timing, E-Verify/STEM OPT needs, location constraints, and future employer sponsorship. If the posting states no visa/work-visa sponsorship, requires independent permanent work authorization, restricts eligibility to U.S. citizens/permanent residents, or otherwise conflicts with Aryan's F-1/OPT/STEM OPT path, flag it immediately and do not finalize the application package unless Aryan explicitly asks to proceed for archival, practice, or non-U.S. reasons.
+7. Run the **F-1 Work Authorization Gate** before drafting final artifacts. Identify whether the role is compatible with F-1 CPT/OPT/STEM OPT timing, E-Verify/STEM OPT needs, location constraints, and future employer sponsorship. Treat sponsorship as an internal package risk, not submitted-application content: do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, or Form I-983 in the resume or cover letter unless Aryan explicitly asks. If the posting is silent or ambiguous about sponsorship, proceed with the package and record follow-up questions internally. If the posting explicitly states no visa/work-visa sponsorship, requires independent permanent work authorization or authorization to work for any employer, restricts eligibility to U.S. citizens/permanent residents, requires clearance Aryan does not have, or otherwise directly conflicts with Aryan's F-1/OPT/STEM OPT path, flag it immediately and do not finalize the application package unless Aryan explicitly asks to proceed for archival, practice, or non-U.S. reasons.
 8. Apply `profile/cover-letter-guide.md` before drafting any cover letter. Use known personal context from `profile/` and prior application notes. Ask Aryan cover-letter personalization questions only when the letter would be materially weaker or risky without the answer:
    - What genuinely interests you about this company?
    - Do you have any personal connection to the company, product, industry, mission, or team?
    - Is there anything specific you want the hiring manager to feel after reading the letter?
-9. Document the resume direction, Target Professional Title Clause, F-1 Work Authorization Gate result, cover-letter angle, strongest matching experience/projects, important keyword targets, unsupported keywords to avoid, and any blocking eligibility questions in `tailoring-notes.md`.
+9. Document the resume direction, Target Professional Title Clause, F-1 Work Authorization Gate result, referral plan, cover-letter angle, strongest matching experience/projects, important keyword targets, unsupported keywords to avoid, and any blocking eligibility questions in `tailoring-notes.md`.
 10. Create a tailored `resume.tex` from `master-documents/master-resume/resume.tex` or the latest successful one-page application resume pattern.
 11. Audit every experience and project bullet against the bullet rules before compiling. Rewrite any bullet that lacks a strong action verb, a specific contribution, truthful method or technology when relevant, scope/domain context, and impact/result.
 12. Generate `resume.pdf` locally from the tailored LaTeX source only when needed for submission.
@@ -78,9 +80,9 @@ For every new job application:
 14. Run a resume-vs-job-description alignment pass after generating the resume. Include a Job Alignment & Evidence Score, matched keywords, missing-but-truthful keyword opportunities, unsupported keywords intentionally omitted, and concrete next-step recommendations.
 15. Add `tailoring-notes.md` explaining which experience, projects, and keywords were emphasized, plus the F-1 Work Authorization Gate, bullet audit, ATS source gate, visual consistency gate, page utilization gate, alignment pass, and Job Alignment & Evidence Score.
 16. Run `python3 automation/validate_application_package.py application-packages/<Company>/<Role>` before marking the package ready. Fix failures instead of ignoring them. If a failure is intentional for a specific application, document the reason in `tailoring-notes.md` and the final response.
-17. Update `operations/application-tracker.md` when the application is ready, applied, rejected, interviewing, or archived.
+17. Update `operations/application-tracker.md` when the application is ready, applied, rejected, interviewing, or archived. Record referral status and next outreach/follow-up state for each application, even when no referral target has been found yet.
 
-If the job description includes an eligibility, location, sponsorship, clearance, degree, or schedule constraint, flag it during the intake response before spending effort on final artifacts. For Aryan's F-1 situation, no-sponsorship or independent-work-authorization wording is a serious blocker, not a routine gap; archive or pause unless Aryan explicitly asks to continue.
+If the job description includes an eligibility, location, sponsorship, clearance, degree, or schedule constraint, flag it during the intake response before spending effort on final artifacts. For Aryan's F-1 situation, explicit no-sponsorship, independent-work-authorization, authorization-for-any-employer, citizen-only, permanent-resident-only, or incompatible-clearance wording is a serious blocker, not a routine gap; archive or pause unless Aryan explicitly asks to continue. If the posting is silent or unclear on sponsorship, proceed and track the risk internally rather than self-disqualifying.
 
 ## Job Discovery Pipeline
 
@@ -223,6 +225,8 @@ Do not inflate the score by adding unsupported keywords. A lower truthful score 
 - Use verified personal context already in `profile/` and prior application notes. Ask Aryan about personal connection, motivation, or desired impression only when the letter would be materially weaker or risky without the answer.
 - Reuse verified facts from `profile/`.
 - Avoid generic filler, flattery, and unsupported claims (e.g., "perfect fit," "passionate about coding").
+- Do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, Form I-983, or work-authorization risk in the submitted cover letter unless Aryan explicitly asks.
+- Do not volunteer gap/confession language such as `I have not worked directly with...` unless the gap is an obvious central requirement and a concise adjacent-evidence reframing is stronger than silence. Keep unsupported-keyword and missing-requirement analysis in `tailoring-notes.md`.
 - Emphasize the strongest match between the job description and Aryan's experience.
 - Map the cover letter to the job description using **one or two deep technical proof points** showing how Aryan solved a similar problem, rather than rehashing the resume in paragraph format.
 - Prefer confident, direct, warm language over exaggerated language.

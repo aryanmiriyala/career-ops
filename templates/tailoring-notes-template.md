@@ -8,9 +8,39 @@ Date:
 
 ## Target Angle
 
+Primary role lane:
+
 Primary angle:
 
 Secondary angle:
+
+Adjacent role fit:
+
+## F-1 Work Authorization Gate
+
+Result:
+
+Internal notes only:
+
+- Posting sponsorship language:
+- E-Verify / STEM OPT / Form I-983 follow-up:
+- Future sponsorship follow-up:
+- Location / schedule / clearance / degree constraints:
+- Submitted artifact rule: Do not mention F-1, OPT, STEM OPT, visa status, sponsorship, E-Verify, or Form I-983 in the resume or cover letter unless Aryan explicitly asks.
+
+## Referral Plan
+
+Referral status:
+
+Referral target / source:
+
+Connection path:
+
+Outreach status:
+
+Next follow-up date:
+
+Notes:
 
 ## Job Keyword Map
 
@@ -40,6 +70,15 @@ Unsupported terms to avoid:
 
 - 
 
+Project proof emphasized:
+
+- Deployment / runnable setup:
+- Tests / validation:
+- Logging / observability:
+- Evaluation / source-grounding:
+- Dashboard / reporting / business output:
+- User, stakeholder, or workflow impact:
+
 ## Skills Emphasized
 
 - 
@@ -66,6 +105,7 @@ Weak bullets rewritten:
 
 - Resume:
 - Cover letter:
+- Internal notes:
 
 ## Scoring Methodology
 

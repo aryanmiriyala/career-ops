@@ -21,6 +21,10 @@ REQUIRED_FILES = [
 ]
 
 TAILORING_NOTE_MARKERS = [
+    "Primary role lane:",
+    "## F-1 Work Authorization Gate",
+    "## Referral Plan",
+    "Referral status:",
     "## Job Keyword Map",
     "## Bullet Audit",
     "## Scoring Methodology",
@@ -96,6 +100,17 @@ PLACEHOLDER_PATTERNS = [
     r"\[insert\b",
     r"\[company\b",
     r"\[role\b",
+]
+
+FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS = [
+    (r"\bF-1\b", "submitted artifacts must not mention F-1 status"),
+    (r"\bCPT\b", "submitted artifacts must not mention CPT"),
+    (r"\bOPT\b", "submitted artifacts must not mention OPT"),
+    (r"\bSTEM\s+OPT\b", "submitted artifacts must not mention STEM OPT"),
+    (r"\b(?:work[- ]?visa|employment visa|visa status|visa sponsorship|visa needs?)\b", "submitted artifacts must not mention visa status or visa needs"),
+    (r"\bsponsorship\b", "submitted artifacts must not mention sponsorship needs"),
+    (r"\bE-Verify\b", "submitted artifacts must not mention E-Verify"),
+    (r"\bForm\s+I-983\b", "submitted artifacts must not mention Form I-983"),
 ]
 
 
@@ -177,6 +192,9 @@ def check_cover_letter_source(app_dir: Path, errors: list[str]) -> None:
     text = cover_letter.read_text(encoding="utf-8", errors="replace")
     if contains_placeholder(text):
         errors.append("cover-letter.md contains placeholder text")
+    for pattern, message in FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS:
+        if re.search(pattern, text, re.IGNORECASE):
+            errors.append(f"cover-letter.md submitted-artifact gate failed: {message}")
     if len(text.strip()) < 900:
         errors.append("cover-letter.md appears too thin to provide role-specific motivation and evidence")
 
@@ -194,6 +212,9 @@ def check_resume_source(app_dir: Path, errors: list[str]) -> None:
 
     if contains_placeholder(text):
         errors.append("resume.tex contains placeholder text")
+    for pattern, message in FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS:
+        if re.search(pattern, text, re.IGNORECASE):
+            errors.append(f"resume.tex submitted-artifact gate failed: {message}")
     for pattern, message in FORBIDDEN_RESUME_SOURCE_PATTERNS:
         if re.search(pattern, text):
             errors.append(f"resume.tex ATS source gate failed: {message}")

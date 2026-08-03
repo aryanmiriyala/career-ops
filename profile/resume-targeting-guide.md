@@ -25,15 +25,36 @@ Save the posting in `application-packages/<Company>/<Role>/job-description.md`.
 
 Choose one primary angle:
 
-- Full-stack software engineer
-- Data engineer
-- AI engineer / AI product engineer
-- Cloud engineer
-- Security-conscious software engineer
-- Healthcare software engineer
-- Enterprise data/platform engineer
+- Software engineering / full-stack engineering
+- Data engineering
+- Applied AI / agentic systems engineering
+- Data analyst / business analyst
+- Product analyst / operations analyst
+- Cloud, platform, or enterprise systems engineering
+- Security, IT, technical support, or support-adjacent engineering
+- Healthcare, insurance, education, or enterprise workflow technology
+- Other adjacent early-career technical roles
 
 Choose one secondary angle if useful.
+
+Broaden the role search without sending a generic resume. Each package should still choose one primary lane and tune the summary, experience order, project selection, skills categories, and cover-letter proof points to that lane. For analyst and adjacent roles, emphasize SQL, Python, data profiling, reporting-ready datasets, stakeholder workflows, documentation, operational context, and business impact before lower-level implementation detail.
+
+## Step 2A: Work Authorization And Referral Intake
+
+Before drafting submitted artifacts, classify the posting:
+
+- `Proceed - posting silent/ambiguous`: the posting does not explicitly block F-1/OPT/STEM OPT or future sponsorship. Proceed and track follow-up internally.
+- `Proceed - confirmed compatible`: the posting or company research supports CPT/OPT/STEM OPT, E-Verify, sponsorship, or international-student hiring.
+- `Blocker - explicit incompatibility`: the posting explicitly says no visa/work-visa sponsorship, no current/future sponsorship, independent permanent work authorization, authorization to work for any employer, U.S. citizen/permanent resident only, incompatible clearance, or another direct conflict.
+
+Do not mention F-1, OPT, STEM OPT, E-Verify, Form I-983, visa status, or sponsorship needs in the resume or cover letter unless Aryan explicitly asks. Keep those details in `tailoring-notes.md` and `operations/application-tracker.md`.
+
+Record referral status for every package:
+
+- Referral target or source, if known.
+- Connection path, such as alumni, employee, recruiter, professor, prior intern, founder, hiring manager, or mutual contact.
+- Outreach status and next follow-up date.
+- Whether a referral was requested, submitted, declined, or unavailable.
 
 ## Step 3: Decide Whether to Use a Professional Summary
 
@@ -91,6 +112,7 @@ Rules:
 - For security/platform roles, emphasize Auth0, RBAC, JWT, SSO, PII tokenization, and AWS.
 - Avoid duplicate project entries. If two names refer to the same repository or product, consolidate them under one canonical project.
 - Ground project claims in repository files and implementation details, not only README language.
+- For software, data, AI, and analyst roles, prefer projects with proof of real execution quality: deployment or runnable setup, tests or validation checks, logging/observability when available, error handling, evaluation methodology, source-grounding, reproducible data flows, dashboards/reports, or clear business/user impact.
 
 ## Step 6: Tune Technical Skills
 

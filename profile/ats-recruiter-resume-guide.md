@@ -124,10 +124,28 @@ For data/cloud roles:
 - Prioritize ETL, PySpark, AWS Glue, S3, Lambda, IAM, validation, data profiling, SQL, large-scale processing, and cross-source pipelines.
 - Put scale and data-source context in bullets when verified.
 
+For data analyst or business analyst roles:
+
+- Prioritize SQL, Python, data profiling, source-system investigation, repeatable analysis, data-quality checks, reporting-ready outputs, documentation, stakeholder questions, business-process context, and measurable operational impact.
+- Translate engineering-heavy work into business-readable outcomes: what question was answered, what workflow improved, what data became more trustworthy, and who could act on it.
+- Do not over-index on low-level infrastructure details unless the posting asks for them.
+
+For product analyst, operations analyst, or adjacent technical roles:
+
+- Prioritize internal tooling, workflow mapping, requirements clarification, metrics, dashboards or dashboard-ready datasets, process automation, user pain points, cross-functional handoff, and recommendations grounded in data.
+- Use project evidence only when it shows a real user/problem, decision process, or operational result.
+
 For healthcare or compliance-adjacent roles:
 
 - Prioritize secure workflows, audit logging, access control, data-entry reliability, operational reliability, and healthcare-adjacent project work.
 - Avoid formal compliance claims unless explicitly verified.
+
+## Work Authorization And Referral Rules
+
+- Do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, Form I-983, or work-authorization risk in submitted resume text unless Aryan explicitly asks.
+- If a posting is silent or ambiguous about sponsorship, proceed with truthful materials and record follow-up questions internally.
+- If a posting explicitly blocks sponsorship, requires independent permanent work authorization or authorization to work for any employer, limits eligibility to U.S. citizens/permanent residents, or requires incompatible clearance, treat it as an internal blocker before final submission.
+- Track referral status for every application package so cold applications are not the default final state.
 
 ## Tailoring Workflow
 

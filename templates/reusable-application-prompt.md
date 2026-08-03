@@ -13,23 +13,27 @@ I will provide one specific job description below. Treat that as approval to run
 2. Save the posting as job-description.md.
 3. Review profile/, master-documents/, templates/, and AGENTS.md before writing.
 4. Build a keyword/alignment map from the job description.
-5. Create tailoring-notes.md with the resume strategy, cover-letter angle, keyword targets, risks/gaps, bullet audit, ATS source gate, visual consistency gate, page utilization gate, and internal alignment notes.
-6. Generate a tailored one-page resume.tex and resume.pdf.
-7. Generate a concise, personal, role-aligned cover-letter.md and a submission-ready cover-letter.pdf or cover-letter.docx.
-8. Keep every resume and cover-letter claim grounded in the repo source materials. Do not invent metrics, tools, employers, or experience.
-9. Audit every experience and project bullet before compiling. Each bullet must show Aryan's individual contribution, the specific system/problem/project, the method or technology when relevant, scope/context, and impact/result.
-10. Do not use projects as tech-stack dumps. Project bullets must explain the project's purpose, user/problem or technical challenge, implementation method, and working result.
-11. Show broad skills through evidence instead of labels. Do not merely claim teamwork, communication, problem-solving, adaptability, ownership, leadership, or learning ability.
-12. Use only interview-defensible bullets. Aryan should be able to explain the technical decisions, tradeoffs, tools used, personal contribution, result, and what he would improve.
-13. Manually edit AI-assisted bullets until they are specific, grounded, and defensible. Reject polished but vague, inflated, buzzword-heavy, or unsupported bullets.
-14. Make the resume exactly one full readable page, with no obvious blank band at the bottom and no cramped unreadable sections.
-15. Preserve all internship roles by default; experience takes precedence over projects if space is tight.
-16. Run the resume-vs-job-description alignment pass and record `Job Alignment & Evidence Score: X/100` in tailoring-notes.md with the internal-estimate disclaimer.
-17. Record explicit `Pass` values for the ATS source gate, visual consistency gate, page utilization gate, and cover-letter artifact gate in tailoring-notes.md; use `Waived - <reason>` only for page utilization when no additional verified role-aligned evidence should be added.
-18. Run python3 automation/validate_application_package.py application-packages/<Company>/<Role> and fix failures.
-19. Clean generated LaTeX artifacts.
-20. Make a small coherent commit and push to main.
-21. In the final response, include artifact paths, one-page PDF verification, validator result, Job Alignment & Evidence Score, and commit hash.
+5. Choose one primary role lane, including software engineering/full stack, data engineering, applied AI/agentic systems, data analyst/business analyst, product/operations analyst, security/IT/support-adjacent technical roles, or another adjacent early-career technical lane.
+6. Run the internal F-1 Work Authorization Gate. If the posting is silent or ambiguous about sponsorship, proceed and track follow-up internally. If it explicitly says no visa/work-visa sponsorship, no current/future sponsorship, independent permanent work authorization, authorization to work for any employer, U.S. citizen/permanent resident only, incompatible clearance, or another direct conflict, pause/archive unless I explicitly ask to continue.
+7. Do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, or Form I-983 in the resume or cover letter unless I explicitly ask.
+8. Create tailoring-notes.md with the resume strategy, role lane, cover-letter angle, referral plan, keyword targets, risks/gaps, bullet audit, ATS source gate, visual consistency gate, page utilization gate, and internal alignment notes.
+9. Generate a tailored one-page resume.tex and resume.pdf.
+10. Generate a concise, personal, role-aligned cover-letter.md and a submission-ready cover-letter.pdf or cover-letter.docx.
+11. Keep every resume and cover-letter claim grounded in the repo source materials. Do not invent metrics, tools, employers, or experience.
+12. Audit every experience and project bullet before compiling. Each bullet must show Aryan's individual contribution, the specific system/problem/project, the method or technology when relevant, scope/context, and impact/result.
+13. Do not use projects as tech-stack dumps. Project bullets must explain the project's purpose, user/problem or technical challenge, implementation method, working result, and when useful, deployment/runnable setup, tests/validation, logging/observability, evaluation/source-grounding, dashboard/reporting output, or user/business impact.
+14. Show broad skills through evidence instead of labels. Do not merely claim teamwork, communication, problem-solving, adaptability, ownership, leadership, or learning ability.
+15. Use only interview-defensible bullets. Aryan should be able to explain the technical decisions, tradeoffs, tools used, personal contribution, result, and what he would improve.
+16. Manually edit AI-assisted bullets until they are specific, grounded, and defensible. Reject polished but vague, inflated, buzzword-heavy, or unsupported bullets.
+17. Keep gap/confession language out of the submitted cover letter unless it is strategically necessary; document unsupported keywords and missing requirements in tailoring-notes.md instead.
+18. Make the resume exactly one full readable page, with no obvious blank band at the bottom and no cramped unreadable sections.
+19. Preserve all internship roles by default; experience takes precedence over projects if space is tight.
+20. Run the resume-vs-job-description alignment pass and record `Job Alignment & Evidence Score: X/100` in tailoring-notes.md with the internal-estimate disclaimer.
+21. Record explicit `Pass` values for the ATS source gate, visual consistency gate, page utilization gate, and cover-letter artifact gate in tailoring-notes.md; use `Waived - <reason>` only for page utilization when no additional verified role-aligned evidence should be added.
+22. Run python3 automation/validate_application_package.py application-packages/<Company>/<Role> and fix failures.
+23. Clean generated LaTeX artifacts.
+24. Make a small coherent commit and push to main.
+25. In the final response, include artifact paths, one-page PDF verification, validator result, Job Alignment & Evidence Score, referral status, and commit hash.
 
 Job description:
 
@@ -40,13 +44,14 @@ Optional context if useful:
 - Application questions:
 - Company/product interest:
 - Personal connection to company, industry, mission, or team:
+- Referral target/source or connection path:
 - Cover letter tone or emphasis:
 ```
 
 ## Short Version
 
 ```text
-I am applying to the role below. Read AGENTS.md first and run only the Application Package Generation pipeline. Create the application package, tailor the one-page resume and cover letter, generate PDFs, run validation and the internal resume-vs-job-description alignment pass, update the tracker, commit, and push. Keep all claims grounded in profile/ and master-documents/. Audit every experience and project bullet for individual contribution, specific system/problem, method/technology when relevant, scope/context, impact/result, and interview defensibility.
+I am applying to the role below. Read AGENTS.md first and run only the Application Package Generation pipeline. Create the application package, choose the right role lane, tailor the one-page resume and cover letter, generate PDFs, run validation and the internal resume-vs-job-description alignment pass, add referral tracking, update the tracker, commit, and push. If sponsorship is silent or ambiguous, proceed and keep work-authorization follow-up internal; do not mention F-1/OPT/STEM OPT/visa status/sponsorship in submitted artifacts unless I explicitly ask. Keep all claims grounded in profile/ and master-documents/. Audit every experience and project bullet for individual contribution, specific system/problem, method/technology when relevant, scope/context, impact/result, and interview defensibility.
 
 Job description:
 [paste JD]

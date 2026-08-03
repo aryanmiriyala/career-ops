@@ -3,7 +3,7 @@
 This repository has two active workflows:
 
 1. **Job Discovery**: find recently posted roles and keep a clean CSV inbox for manual review.
-2. **Application Packages**: create tailored resumes, cover letters, tailoring notes, PDFs, and ATS-style alignment checks for selected roles.
+2. **Application Packages**: create tailored resumes, cover letters, tailoring notes, PDFs, ATS-style alignment checks, and referral tracking for selected roles.
 
 The detailed operating rules live in `AGENTS.md`.
 
@@ -22,7 +22,7 @@ The detailed operating rules live in `AGENTS.md`.
 | `master-documents/` | Canonical master resume and reusable cover-letter template. |
 | `application-packages/` | One folder per company/role with job description, tailored resume, cover letter, tailoring notes, and submission artifacts. |
 | `job-search/` | Job-discovery tooling, ATS source configs, research notes, dated search results, and the clean `jobs-inbox.csv`. |
-| `operations/` | Application tracker only. |
+| `operations/` | Application and referral tracker. |
 | `automation/` | Application package validation scripts. |
 | `templates/` | Reusable job-description, tailoring-notes, and application-pipeline prompt templates. |
 
