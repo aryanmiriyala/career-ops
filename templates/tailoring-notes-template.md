@@ -16,6 +16,20 @@ Secondary angle:
 
 Adjacent role fit:
 
+Why this lane:
+
+## Package Plan
+
+Resume strategy:
+
+Cover-letter strategy:
+
+Project strategy:
+
+Skills strategy:
+
+Known stretch/risk strategy:
+
 ## F-1 Work Authorization Gate
 
 Result:
@@ -106,6 +120,16 @@ Weak bullets rewritten:
 - Resume:
 - Cover letter:
 - Internal notes:
+
+## Submission Readiness
+
+Recommended status:
+
+Submit now or hold:
+
+Pre-submit actions:
+
+Referral before submit:
 
 ## Scoring Methodology
 
