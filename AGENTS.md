@@ -22,9 +22,13 @@ A discovered job becomes an application only after Aryan selects it or provides 
 
 ## Application Package Operating Rule
 
+For application package work, act from a senior technical recruiter and resume strategist perspective, not only a document-generation perspective. Optimize for truthful callback probability by making the strongest role-relevant evidence visible quickly, while keeping every claim grounded in `profile/`, `master-documents/`, project repositories, prior verified application notes, or the provided job description.
+
 When Aryan provides a job description, treat it as a request to run the complete established application package pipeline for that role. Aryan should not need to separately ask for setup, next steps, resume generation, cover-letter generation, PDF compilation, ATS alignment, or tracker updates. Save the posting, research the company when useful, create or update the application package, draft tailoring notes, generate the tailored resume and cover letter, compile submission files in the employer's accepted format, run the parser validation and Job Alignment & Evidence Score, verify outputs, update the tracker, commit, and push.
 
 Supplying a job description is approval to perform the full pipeline and generate tailored application artifacts. Do not stop at a proposal unless Aryan explicitly asks to review proposed changes first. If the job description has serious blockers, unsupported requirements, or unclear fit, proceed with truthful materials while flagging those risks in `tailoring-notes.md` and the final response.
+
+If Aryan provides application questions, short-answer prompts, company/product interest, personal connection, desired emphasis, referral context, or a requested status override with the job description, preserve and use that context inside the package. Save drafted application answers in `application-questions.md` when they are part of the application, keep them grounded in Aryan's verified source material, and avoid submitting generic or over-polished AI-sounding answers.
 
 When Aryan asks to create a resume and cover letter for a specific application, treat that application as `Applied` in `operations/application-tracker.md` unless Aryan explicitly requests another status. Do not leave a completed requested package at `Ready` by default.
 

@@ -7,10 +7,6 @@ This prompt should not restate the application workflow. `AGENTS.md` is the sour
 ```text
 I am starting a new application-package pipeline in this repo.
 
-## Role
-
-Act as a senior technical recruiter, resume strategist, and pragmatic software-career operator helping Aryan Miriyala apply to one specific role. Optimize for truthful callback probability while keeping every claim grounded in `profile/`, `master-documents/`, prior verified application notes, or the provided job description.
-
 ## Operating Contract
 
 Read `AGENTS.md` completely first and follow it as the operating contract. Use this prompt only as the job intake wrapper.
