@@ -1,0 +1,21 @@
+# Cover Letter - Texas Sports Academy Junior Software Engineer (AI-Forward)
+
+Aryan Miriyala  
++1 419-315-0444 | aryanmiriyala@gmail.com | linkedin.com/in/aryan-miriyala | github.com/aryanmiriyala
+
+August 3, 2026
+
+Texas Sports Academy Hiring Team
+
+Dear Texas Sports Academy Hiring Team,
+
+I am applying for the Junior Software Engineer (AI-Forward) role because Texas Sports Academy is using software and AI in a setting where the product has to serve real students, parents, guides, coaches, and founders every day. The role stood out to me because it is not framed as a narrow junior ticket queue. It is full-stack product work, AI-in-the-loop development, tutoring and parent-facing copilots, retrieval over student data, evals, and fast ownership inside a school model built around personalized mastery.
+
+My closest match is the mix of full-stack internal tooling and AI-assisted engineering I am doing now. At SmartSolve, I built a Next.js and TypeScript onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware for sensitive internal workflows, and I scoped an AI-enabled QMS dependency register by modeling ambiguous quality-document relationships into a reviewable implementation plan. I also use Codex and Claude Code daily for implementation planning, debugging, review, and iteration while still validating generated changes myself. That maps directly to a role where AI coding tools are expected, but shipped code still has to be understandable and reliable.
+
+I have also built AI products that connect user workflows, backend state, model calls, and reviewable outputs. RocketGrader is a full-stack education platform with Angular, Express, MongoDB, Auth0, AWS S3, LangChain, and Mistral AI that supports assignment upload, parsing, and structured feedback. FalconGraph Search uses document ingestion, embeddings, FAISS retrieval, FastAPI RAG, and a Next.js interface to return source-grounded answers with citations. My Diff-Grounded PR generation research built an LLM pipeline and automated evaluation workflow around code-change evidence, which is the same kind of mindset I would bring to evals for AI features that affect students and staff.
+
+I would bring Texas Sports Academy an early-career engineer's bias toward shipping, but not toward hand-waving. I like building the ordinary software around AI systems: auth, data models, state, prompts, validation, retrieval, UI surfaces, and clear human checks. I would be excited to work directly with founders and senior engineers, own smaller features quickly, and grow into the LLM-powered tools that make the school experience more personalized and useful.
+
+Best regards,  
+Aryan Miriyala
