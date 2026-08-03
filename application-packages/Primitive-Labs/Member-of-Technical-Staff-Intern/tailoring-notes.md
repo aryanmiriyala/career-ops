@@ -229,7 +229,7 @@ Experience bullets checked:
 
 Project bullets checked:
 
-- Diff-Grounded PR Description Generation explains the generated artifact, source evidence, LLM method, and evaluation basis.
+- Diff-Grounded PR Description Generation explains the generated artifact, source evidence, LLM method, structured PR-context construction, weak-commit-message improvement, file-level summarization, grounding constraints, and evaluation basis.
 - Fix-It-Flow explains stateful AI workflow components, typed API routes, persistence, user inputs, safety warnings, and repair-step generation.
 - Self-Adaptive Parallelism explains the systems problem, runtime instrumentation, UCB method, tuned parameters, and benchmark scope.
 
@@ -264,8 +264,8 @@ Weak bullets rewritten:
 - Cover-letter PDF page count: Pass. `pdfinfo cover-letter.pdf` reports exactly 1 US Letter page.
 - PDF text checked: Pass. `pdftotext` preserved contact details, Professional Summary, Education, Experience, Projects, Technical Skills, role/company names, dates, bullet order, and cover-letter reading order.
 - Professional Summary line count checked: Pass. The summary extracts as 2 PDF text lines.
-- Page utilization checked with `pdftotext -bbox`: Pass. Meaningful resume text reaches approximately 0.45 inches from the bottom of the page.
-- Visual PDF reviewed: Pass. Rendered PNGs showed no clipping, overlap, broken glyphs, inconsistent bullets, unreadable density, or excessive bottom blank area.
+- Page utilization checked with `pdftotext -bbox`: Pass. After adding verified LLM research/evaluation evidence, meaningful resume text reaches approximately 0.10 inches from the bottom of the page.
+- Visual PDF reviewed: Pass. Rendered PNGs showed no clipping, overlap, broken glyphs, inconsistent bullets, unreadable density, or remaining fillable bottom whitespace.
 - Side-by-side resume review: Pass against the recent Notion Software Engineer New Grad resume and Faraday Full Stack Engineer New Grad resume. Outer borders, contact block, section rules, bullet appearance, role/date alignment, density, and bottom-page usage match the accepted document family.
 - Cover-letter consistency review: Pass against the recent Notion cover letter. Header, date/addressee order, paragraph spacing, salutation, signature treatment, typography, and margins match the accepted letter family.
 - Bullet audit: Pass
