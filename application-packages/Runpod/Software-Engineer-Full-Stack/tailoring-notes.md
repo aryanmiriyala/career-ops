@@ -250,5 +250,6 @@ The score remains below 90 because the posting explicitly states Runpod is curre
 - Visual consistency gate checked: Pass - rendered against recent Zarego and WelbeHealth application resumes and matched the established document family without clipping or overlap.
 - Page utilization gate checked: Pass - `pdftotext -bbox` showed final meaningful resume text ending around y=785.82 on a 792-point letter page, leaving only a small finishing margin.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` is one page and below 5 MB.
+- Application-answer human voice gate checked: Pass - `application-questions.md` uses concrete Runpod product context, Aryan's FalconGraph/Fix-It-Flow experience, plain sentence structure, no semicolons, no em dashes, no unsupported company claims, and no generic AI-sounding phrasing.
 - Gap recovery gate checked: Pass - important requirements classified as supported, likely built but undocumented, or unsupported before final bullet selection.
 - Application validator run: Pass - `python3 automation/validate_application_package.py application-packages/Runpod/Software-Engineer-Full-Stack`.

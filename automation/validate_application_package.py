@@ -56,6 +56,8 @@ MAX_PROFESSIONAL_SUMMARY_LINES = 2
 MAX_UNUSED_BOTTOM_POINTS = 90.0
 WARN_UNUSED_BOTTOM_POINTS = 72.0
 MAX_SUBMISSION_ARTIFACT_BYTES = 5 * 1024 * 1024
+APPLICATION_ANSWER_FILES = ("application-questions.md", "application-answers.md")
+APPLICATION_ANSWER_GATE_NAME = "Application-answer human voice gate checked"
 
 TAILORING_GATE_RULES = [
     ("Gap recovery gate checked", ("Pass", "Waived")),
@@ -114,6 +116,19 @@ FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS = [
     (r"\bsponsorship\b", "submitted artifacts must not mention sponsorship needs"),
     (r"\bE-Verify\b", "submitted artifacts must not mention E-Verify"),
     (r"\bForm\s+I-983\b", "submitted artifacts must not mention Form I-983"),
+]
+
+APPLICATION_ANSWER_FORBIDDEN_PHRASES = [
+    r"\bat the intersection of\b",
+    r"\bI am deeply passionate\b",
+    r"\bever[- ]evolving landscape\b",
+    r"\bseamlessly\b",
+    r"\bleverage\b",
+    r"\brobust\b",
+    r"\btransformative\b",
+    r"\bperfect fit\b",
+    r"\bcutting-edge\b",
+    r"\binnovative solutions\b",
 ]
 
 
@@ -200,6 +215,58 @@ def check_cover_letter_source(app_dir: Path, errors: list[str]) -> None:
             errors.append(f"cover-letter.md submitted-artifact gate failed: {message}")
     if len(text.strip()) < 900:
         errors.append("cover-letter.md appears too thin to provide role-specific motivation and evidence")
+
+
+def check_application_answer_source(app_dir: Path, errors: list[str]) -> None:
+    answer_paths = [app_dir / name for name in APPLICATION_ANSWER_FILES if (app_dir / name).is_file()]
+    if not answer_paths:
+        return
+
+    notes_path = app_dir / "tailoring-notes.md"
+    notes_text = ""
+    if notes_path.is_file():
+        notes_text = notes_path.read_text(encoding="utf-8", errors="replace")
+
+    gate_match = re.search(
+        rf"^\s*-\s*{re.escape(APPLICATION_ANSWER_GATE_NAME)}:\s*(.+)$",
+        notes_text,
+        re.MULTILINE,
+    )
+    if not gate_match:
+        errors.append(f"tailoring-notes.md missing verification gate: {APPLICATION_ANSWER_GATE_NAME}:")
+    else:
+        gate_value = gate_match.group(1).strip()
+        if not gate_value.startswith("Pass"):
+            errors.append(f"tailoring-notes.md verification gate `{APPLICATION_ANSWER_GATE_NAME}` must start with Pass")
+
+    for answer_path in answer_paths:
+        text = answer_path.read_text(encoding="utf-8", errors="replace")
+        if contains_placeholder(text):
+            errors.append(f"{answer_path.name} contains placeholder text")
+        for pattern, message in FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS:
+            if re.search(pattern, text, re.IGNORECASE):
+                errors.append(f"{answer_path.name} submitted-artifact gate failed: {message}")
+        if ";" in text:
+            errors.append(f"{answer_path.name} human-voice gate failed: semicolons are not allowed in drafted answers")
+        if "\u2014" in text:
+            errors.append(f"{answer_path.name} human-voice gate failed: em dashes are not allowed in drafted answers")
+        for phrase in APPLICATION_ANSWER_FORBIDDEN_PHRASES:
+            if re.search(phrase, text, re.IGNORECASE):
+                errors.append(f"{answer_path.name} human-voice gate failed: avoid AI-sounding phrase `{phrase}`")
+
+        for line_number, line in enumerate(text.splitlines(), start=1):
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("#") or stripped.startswith("- ") or re.match(r"^\d+\.", stripped):
+                continue
+            if "http://" in stripped or "https://" in stripped:
+                continue
+            if ":" in stripped:
+                errors.append(
+                    f"{answer_path.name} human-voice gate failed: colon in answer body on line {line_number}; "
+                    "use plainer sentence structure unless the form field requires it"
+                )
 
 
 def check_resume_source(app_dir: Path, errors: list[str]) -> None:
@@ -378,6 +445,7 @@ def validate(app_dir: Path) -> int:
     check_cover_letter_artifact(app_dir, errors)
     check_tailoring_notes(app_dir, errors)
     check_cover_letter_source(app_dir, errors)
+    check_application_answer_source(app_dir, errors)
     check_resume_source(app_dir, errors)
     check_resume_pdf(app_dir, errors, warnings)
     check_resume_page_utilization(app_dir, errors, warnings)

@@ -201,4 +201,5 @@ Recommended improvements:
 - Visual consistency gate checked: Pass -
 - Page utilization gate checked: Pass -
 - Cover-letter artifact checked: Pass -
+- Application-answer human voice gate checked: Pass - Required only when `application-questions.md` or `application-answers.md` exists; answers were checked for concrete personal context, grounded claims, plain language, no semicolons, no em dashes, no unsupported company/personal claims, and no generic AI-sounding phrasing.
 - Application validator run:
