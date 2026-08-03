@@ -1,0 +1,21 @@
+# Cover Letter - Smartsheet Software Engineer II - Full Stack (Remote Eligible)
+
+Aryan Miriyala  
+aryanmiriyala@gmail.com | +1 419-315-0444 | LinkedIn | GitHub
+
+August 3, 2026
+
+Smartsheet Engineering Team
+
+Dear Smartsheet Engineering Team,
+
+I am applying for the Software Engineer II - Full Stack (Remote Eligible) role because the role combines the areas where I have been building the most depth: cloud-backed software, distributed data workflows, REST API-driven applications, and practical AI use for engineering productivity. Smartsheet's direction around human teams working with AI agents is especially interesting to me because I have seen how valuable AI tools become when they are paired with careful code review, domain understanding, and clear ownership.
+
+At SmartSolve, I am working on AI-enabled internal software and using Codex and Claude Code for implementation planning, debugging, review, and self-review while validating generated changes around proprietary code. I also architected a Next.js and TypeScript onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware to centralize new-hire workflows while protecting sensitive employee data. That work maps to the kind of judgment this role describes: understanding an existing workflow, making architecture decisions, using AI tools responsibly, and keeping security and maintainability visible while features move forward.
+
+My strongest cloud and backend evidence comes from AAIS. I automated a manual SQL billing workflow with Python, PySpark, and AWS Glue over 20+ TB of production insurance data for 700+ member companies, then helped replace legacy ETL jobs with AWS Glue and S3 pipelines. In an earlier internship, I built Python/JSON automation for 1,000+ production SQL tables and worked on React/Node.js access-control modernization with JWT and RBAC. I have also led 10 undergraduate students in CyberCamp preparation at BGSU, which gave me practice explaining technical ideas clearly and raising the quality of other people's work without taking over the work for them.
+
+I would bring Smartsheet a software engineer who is strongest in TypeScript, REST API-backed workflows, AWS data and service infrastructure, secure access patterns, AI-assisted development, and translating messy operational problems into maintainable systems. I would also be direct about the areas I would need to ramp into quickly, especially Smartsheet's Java/Kotlin service stack and Kubernetes-based infrastructure, while contributing immediately where my full-stack, cloud, and AI-assisted engineering experience is already strong.
+
+Sincerely,  
+Aryan Miriyala
