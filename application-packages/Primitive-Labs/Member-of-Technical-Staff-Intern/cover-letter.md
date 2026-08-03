@@ -1,0 +1,19 @@
+Aryan Miriyala  
+aryanmiriyala@gmail.com | +1 419-315-0444 | LinkedIn | GitHub
+
+August 3, 2026
+
+Primitive Labs Research and Engineering Team
+
+Dear Primitive Labs Research and Engineering Team,
+
+I am applying for the Member of Technical Staff, Intern role because Primitive Labs is working on the part of AI systems that I find most important: making software reason from human context instead of treating users as an average case. Your launch blog's argument that knowing what to build and how people will respond becomes the bottleneck as software gets faster is close to the way I think about useful AI systems. The most interesting AI work to me is not only generation; it is the engineering around evidence, evaluation, state, and feedback that makes the system trustworthy enough to build on.
+
+My strongest match is the combination of LLM research and shipping-oriented engineering. In my pull request description generation project published at ICSME, I built a Python pipeline that constructed structured context from commits, diffs, linked issues, and repository metadata, generated evidence-grounded descriptions with the OpenAI API, and evaluated outputs against raw code-change evidence for correctness, coverage, and clarity. That project taught me to treat evaluation as part of the product, not an afterthought, especially when polished AI output can still be wrong.
+
+I have also built AI and infrastructure-heavy systems outside of research papers. At SmartSolve, I am using Codex and Claude Code for planning, implementation, debugging, and review while validating generated changes around proprietary internal software. I also built a secure Next.js/PostgreSQL onboarding tracker, scoped an AI-enabled QMS dependency register from ambiguous operational requirements, and created Docker devcontainers to keep development reproducible and isolated. In Fix-It-Flow, I built typed Next.js API routes, persisted AI workflow state in DynamoDB, and connected camera input, voice commands, structured findings, safety warnings, contextual Q&A, and repair guidance into one stateful product flow.
+
+Primitive Labs' mix of research and engineering is the environment I am trying to grow into: small-team ownership, honest technical disagreement, and work where agentic systems, evaluation, infrastructure, and applied research meet. I would bring strong execution habits, a researcher's concern for evidence, and enough practical full-stack and cloud experience to ship while still learning quickly from the founding team.
+
+Sincerely,  
+Aryan Miriyala
