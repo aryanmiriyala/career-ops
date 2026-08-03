@@ -72,6 +72,28 @@ Nice-to-have tools:
 
 Unsupported terms to avoid:
 
+## Gap Recovery Gate
+
+Gap recovery status:
+
+Supported gaps added to package:
+
+- 
+
+Likely built but undocumented - source update needed:
+
+- 
+
+Unsupported gaps intentionally omitted:
+
+- 
+
+Profile/source updates needed:
+
+- 
+
+Notes:
+
 ## Job Keywords Used
 
 - 
@@ -174,6 +196,7 @@ Recommended improvements:
 - Professional Summary line count:
 - Experience bullet count gate:
 - PDF text checked:
+- Gap recovery gate checked: Pass -
 - ATS source gate checked: Pass -
 - Visual consistency gate checked: Pass -
 - Page utilization gate checked: Pass -

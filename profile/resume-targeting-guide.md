@@ -56,6 +56,18 @@ Record referral status for every package:
 - Outreach status and next follow-up date.
 - Whether a referral was requested, submitted, declined, or unavailable.
 
+## Step 2B: Gap Recovery Gate
+
+Before treating a job requirement as unsupported, check whether Aryan has already built something relevant that is missing from the current resume, skills list, project summaries, or reusable bullets.
+
+For each important missing requirement, preferred skill, tool, domain term, or responsibility:
+
+- Mark `Supported - add/use now` when verified source material already proves it. Add it to the resume, cover letter, skills section, or tailoring notes when it improves role fit.
+- Mark `Likely built but undocumented - ask/update source` when Aryan may have built it but current repo source material does not prove it. Do not use it in submitted artifacts until Aryan confirms it and the relevant `profile/` or project source material is updated.
+- Mark `Unsupported - omit` when there is no verified evidence or the claim would be misleading.
+
+Use this gate to recover older projects, hackathons, coursework, private repos, local repositories, and prior builds that might not be visible in the current one-page resume. Record the decision in `tailoring-notes.md` so future packages know whether the gap was filled, needs source-material work, or should stay omitted.
+
 ## Step 3: Decide Whether to Use a Professional Summary
 
 Use a summary when the job benefits from connecting multiple parts of Aryan's background in the first recruiter scan, especially for software roles that also value applied AI, healthcare, cloud/data engineering, full-stack systems, or cybersecurity.

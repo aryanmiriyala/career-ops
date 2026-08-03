@@ -124,6 +124,40 @@ Unsupported terms to avoid:
 - Sports-domain employment.
 - Austin-based or commuting-distance status unless Aryan confirms it.
 
+## Gap Recovery Gate
+
+Gap recovery status: Pass - checked JD gaps against current profile, project source material, prior application notes, and reusable project evidence before final resume selection.
+
+Supported gaps added to package:
+
+- Education / edtech product evidence: Recovered RocketGrader from `profile/projects-master.md` and used it in the resume because it directly supports assignment workflows, structured feedback, teacher/student dashboards, LangChain, Mistral AI, Auth0, AWS S3, and education-platform context.
+- Retrieval over institutional/student-like data: Recovered FalconGraph Search from `profile/projects-master.md` and used it in the resume because it directly supports document ingestion, embeddings, FAISS retrieval, FastAPI RAG, source-grounded answers, and a Next.js interface.
+- Evals / source-grounding: Recovered Diff-Grounded PR Generation from `profile/projects-master.md` and used it in the resume because it supports LLM evaluation against raw code-change evidence.
+- AI coding workflow: Used SmartSolve source material to show daily Codex and Claude Code usage in the top experience bullet.
+
+Likely built but undocumented - source update needed:
+
+- MCP servers, prompt caching, LangGraph, CrewAI, Mastra, Braintrust, LangSmith, and custom agent frameworks may be relevant if Aryan has built or used them, but current source material does not prove enough to include them in submitted artifacts.
+- Austin-based availability or commuting feasibility may be true depending on Aryan's willingness to relocate, but it is not stated in profile material and was not claimed in submitted artifacts.
+- Additional private AI tools, local projects, coursework, or agent workflows may exist outside the current profile/project source material and should be added before future use.
+
+Unsupported gaps intentionally omitted:
+
+- Production tutoring-agent ownership.
+- Production parent-facing copilot ownership.
+- Production coach-dashboard ownership.
+- Production student-record system ownership.
+- Production student-data retrieval ownership.
+- GCP production ownership.
+- Sports-domain employment.
+
+Profile/source updates needed:
+
+- Add any confirmed MCP, prompt caching, LangGraph/CrewAI/Mastra, Braintrust/LangSmith, custom agent framework, or private AI-tooling work to `profile/projects-master.md` and `profile/skills-master.md` before using those claims.
+- Add any Austin relocation/commuting preference to a package-specific note only when Aryan wants that stated or used in outreach.
+
+Notes: The final resume recovered the strongest already-supported gaps instead of treating the JD's AI/edtech requirements as unsupported. Undocumented or uncertain claims stayed out of the submitted resume and cover letter.
+
 ## Job Keywords Used
 
 - Junior Software Engineer (AI-Forward)
@@ -309,4 +343,5 @@ Sources:
 - Resume text extraction: Pass - `pdftotext -layout resume.pdf -` preserves standard section order and readable bullets.
 - Professional Summary line count: Pass - extracted summary renders as 2 lines.
 - Visual PDF render check: Pass - rendered resume and cover letter to PNG and reviewed for clipping, overlap, density, and bottom-page usage.
+- Gap recovery gate checked: Pass - recovered supported edtech, RAG, eval, and AI-coding-workflow evidence; documented likely built-but-undocumented items and unsupported omissions.
 - Application validator run: Pass - `python3 automation/validate_application_package.py application-packages/Texas-Sports-Academy/Junior-Software-Engineer-AI-Forward`.

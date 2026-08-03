@@ -26,6 +26,8 @@ TAILORING_NOTE_MARKERS = [
     "## Referral Plan",
     "Referral status:",
     "## Job Keyword Map",
+    "## Gap Recovery Gate",
+    "Gap recovery status:",
     "## Bullet Audit",
     "## Scoring Methodology",
     "Job Alignment & Evidence Score:",
@@ -56,6 +58,7 @@ WARN_UNUSED_BOTTOM_POINTS = 72.0
 MAX_SUBMISSION_ARTIFACT_BYTES = 5 * 1024 * 1024
 
 TAILORING_GATE_RULES = [
+    ("Gap recovery gate checked", ("Pass", "Waived")),
     ("ATS source gate checked", ("Pass",)),
     ("Visual consistency gate checked", ("Pass",)),
     ("Page utilization gate checked", ("Pass", "Waived")),
