@@ -139,6 +139,7 @@ Gap recovery status: Pass - checked profile, master resume material, projects, s
 - Visual consistency gate checked: Pass - resume preamble and layout macros match the latest accepted Nue, Lightfield, and Viktor application-resume pattern; rendered PDF reviewed beside recent accepted resumes for margins, header placement, section rules, bullet treatment, density, and bottom-page usage.
 - Page utilization gate checked: Pass - final resume reaches the lower portion with role-aligned evidence, without filler, hidden text, unsupported keywords, or one-off spacing changes.
 - Cover-letter artifact checked: Pass - cover-letter.pdf generated from canonical 11pt Computer Modern letter layout and verified as a one-page submission artifact.
+- Application-answer human voice gate checked: Pass - answers use concrete Fix-It-Flow, RocketGrader, SmartSolve, PostgreSQL/Drizzle/auth, DynamoDB session-state, and AI reliability details without semicolons, em dashes, forbidden AI phrases, or unsupported Supabase/Firebase/Claude API claims.
 
 ## Scoring Methodology
 
