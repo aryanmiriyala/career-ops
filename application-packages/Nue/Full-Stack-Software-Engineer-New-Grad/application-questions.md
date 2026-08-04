@@ -7,3 +7,7 @@ The build I am most proud of is the billing automation work I did at AAIS. I rep
 ## How have you used AI tools in your development workflow?
 
 I use Codex and Claude Code as development partners for planning, debugging, code review, and self-review. I do not treat their output as automatically correct. At SmartSolve, I used them while building internal software and kept the workflow isolated with Docker/devcontainers around proprietary code. My usual pattern is to ask AI for a plan or review, compare it against the actual codebase, run or inspect the change myself, and keep the parts I can explain. That has made me faster without letting the tool make the engineering decisions for me.
+
+## Which Nue value resonates with you the most?
+
+Customer Empathy resonates with me most because it is easy to overlook when the work gets technical. In my AAIS billing automation project, the hard part was not only writing the PySpark and AWS Glue workflow. It was understanding why people needed the billing data to be correct, repeatable, and easier to trust. I felt the same thing at SmartSolve while building internal workflow software. A good feature starts with understanding the pain in the current process, then making the system clearer for the people who rely on it.
