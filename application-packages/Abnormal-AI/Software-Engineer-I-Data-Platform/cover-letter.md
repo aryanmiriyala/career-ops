@@ -1,0 +1,21 @@
+# Cover Letter - Abnormal AI Software Engineer I, Data Platform
+
+Aryan Miriyala  
+aryanmiriyala@gmail.com | +1 419-315-0444 | LinkedIn | GitHub
+
+August 4, 2026
+
+Abnormal AI Data Platform Team
+
+Dear Abnormal AI Data Platform Team,
+
+I am applying for the Software Engineer I, Data Platform role because the team is working on the infrastructure layer that makes AI-native security products dependable: fast and secure access to large datasets, reliable storage and processing systems, and internal tools that make complex platforms easier for engineers and data scientists to use. That maps closely to the work I have enjoyed most in internships, where the best engineering outcome was not only getting data from one place to another, but making the workflow reliable, explainable, and safer for the people depending on it.
+
+My strongest match is production data-platform work at the American Association of Insurance Services. As a Data Engineering Intern, I automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data to calculate recurring charges for 700+ member companies. I also profiled 160+ MySQL, Oracle, and Impala source tables, helped define a 25-domain MDM taxonomy, replaced legacy Pentaho jobs with Glue and partitioned S3 pipelines, and built reverse-ETL and validation workflows with IAM access controls. That experience gives me direct context for Abnormal's need to scale data-heavy workloads while improving reliability, maintainability, and controlled access.
+
+I also bring backend, security, and developer-tooling evidence that fits the role's broader platform expectations. At SmartSolve, I architected a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware for sensitive internal workflows, built Docker devcontainers for reproducible setup, and used Codex and Claude Code for implementation planning, debugging, and code review while validating generated output. In project work, I built HealthTrend with Kafka, Spark/PySpark, HDFS, and Docker for batch and streaming health-event processing, and Fix-It-Flow with typed Next.js API routes, DynamoDB session persistence, camera and voice workflows, and GenAI reasoning. Those projects are smaller than Abnormal's production scale, but they show the same engineering interests: data flow design, reliable state, automation, and useful operator experiences.
+
+I would bring Abnormal a practical early-career profile across Python, AWS data workflows, PostgreSQL-backed tools, Spark/Kafka exposure, DynamoDB-backed state, secure workflow design, and AI-assisted engineering habits. I would be excited to contribute to the Data Platform team as it scales the infrastructure behind security products trusted by thousands of enterprises.
+
+Sincerely,  
+Aryan Miriyala
