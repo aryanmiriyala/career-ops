@@ -2,32 +2,32 @@
 
 ## Why ElevenLabs, and why now?
 
-ElevenLabs feels like the right company to apply to now because the product is moving past impressive audio demos into systems people actually build around. The posting talks about voice and chat agents, developer APIs, integrations, testing, monitoring, reliability, and customer workflows. That is the part that interests me most. The model matters, but the product around the model decides whether people can use it every day.
+Honestly, the part that pulled me in is not only the voice model. It is all the product work that has to happen around it before someone can depend on it. The posting talks about agents, APIs, integrations, testing, monitoring, reliability, and internal workflows. That sounds like building the layer between research and everyday use, which is where I have been spending more of my time.
 
-My recent work has been pulling me in that direction. At SmartSolve, I have been building full-stack internal tools with Next.js, TypeScript, PostgreSQL, SSO, and auth middleware. In side projects, I have been building AI products where the hard part is keeping the user flow, backend state, model output, and reviewability connected. ElevenLabs is a place where that kind of product engineering is central, especially as voice becomes part of agents, creative tools, and developer platforms.
+In my own projects, the interesting part has usually been that layer. Fix-It-Flow was not hard just because it called model APIs. It was hard because the camera flow, voice commands, stored session, generated repair steps, and spoken output all had to line up for the user. At SmartSolve, I have been doing a more practical version of the same thing with internal tools, access control, and messy workflow requirements.
 
-The timing also feels real because I have already used ElevenLabs in projects, not just read about it. I have seen how much better an AI workflow feels when audio is part of the experience. I want to work on that closer to the source, with a team where voice is not an add-on but the core product surface.
+The timing feels right because I have used ElevenLabs enough to know I am interested in the product surface, not just the company name. I have seen how different an AI workflow feels when the output can be heard and acted on while someone is doing something else. I want to work closer to that problem.
 
 ## What's the most impactful thing you've built? What was your specific contribution?
 
-The most impactful thing I have built so far was a production data workflow at AAIS that automated a manual SQL billing process. The workflow processed 20+ TB of production insurance data and supported charge calculations for 700+ member companies. It was not the flashiest project, but it mattered because it took a recurring manual process and turned it into something repeatable, traceable, and easier to maintain.
+Probably the AAIS billing workflow. It was not the flashiest thing I have built, but it was real production work with real consequences. The old process involved manual SQL work around production insurance data. The workflow I worked on processed 20+ TB of data and supported billing calculations for 700+ member companies.
 
-My specific contribution was building the Python and PySpark processing logic, working with AWS Glue and S3, and understanding how the source data needed to move through the workflow. I also had to think through validation and access patterns instead of only writing a script that worked once. The work sat close to the business process, so small mistakes could have created bad downstream data or extra manual cleanup.
+My contribution was building the Python and PySpark processing logic, wiring it into AWS Glue and S3, and spending time understanding how the source tables actually behaved. A lot of the work was less glamorous than the final bullet sounds. I had to trace where the data came from, check assumptions, and make sure the workflow could be maintained instead of being a one-off script that only I understood.
 
-What I took from that project is that impact often looks like removing fragile handoffs. A good system should make the next run less stressful than the last one.
+That project changed how I think about useful software. Sometimes the best thing you can build is the thing that makes the next run less stressful for everyone else.
 
 ## How did you know it worked? What did success actually look like?
 
-I knew it worked when the workflow could produce the expected billing outputs from production-scale data without relying on the old manual SQL process. Success was not just that the code ran. It had to process the right data, keep the workflow repeatable, and fit into the AWS Glue and S3 path the team could maintain after the initial build.
+I knew it worked when it stopped feeling like a demo and could run against production-scale data in the way the team needed. The code running once was not enough. It had to produce the expected billing outputs, avoid the old manual SQL path, and fit into the AWS Glue and S3 workflow the team could keep using.
 
-There were a few practical signs of success. The workflow handled 20+ TB of golden-table insurance data, supported calculations for 700+ member companies, and became part of a broader move toward validated cloud data workflows. On related AAIS work, success also meant keeping controlled self-service data access and 24-hour data latency in the new MDM workflows.
+The signs of success were pretty practical. It handled 20+ TB of golden-table insurance data. It supported calculations for 700+ member companies. On related AAIS work, success also meant keeping controlled self-service access and 24-hour data latency in the new MDM workflows.
 
-The simplest test was whether the process made the operational work less manual without making the data harder to trust. That was the standard I cared about.
+The standard I cared about was simple. Did this remove manual work without making the data harder to trust. If the answer was yes, then the work was doing its job.
 
 ## Have you used ElevenLabs, even in a personal or side project? What did you build or explore?
 
-Yes. I used ElevenLabs in Fix-It-Flow, a voice-first AI repair assistant built for RocketHacks 2026. The app lets a user describe an appliance problem by voice while showing the item through the camera. Gemini Vision analyzes the visual context, Llama-style reasoning turns the conversation and image evidence into structured repair guidance, and ElevenLabs text-to-speech reads repair steps aloud so the user can stay hands-free.
+Yes. I used ElevenLabs in Fix-It-Flow, a voice-first AI repair assistant I built for RocketHacks 2026. The idea was simple. If someone is trying to fix an appliance, they should not have to keep looking back at a screen every few seconds. The app let the user describe the problem by voice while showing the item through the camera, then used ElevenLabs text-to-speech to read repair steps out loud.
 
-I worked on the full-stack product flow around that experience. That included typed Next.js API routes, DynamoDB session state, inspection turns, repair sessions, chat, uploads, findings, frames, text-to-speech, and repair steps. ElevenLabs made the repair flow feel more practical because the user did not need to keep looking at the screen while following instructions.
+I worked on the full-stack flow around that experience. That included typed Next.js API routes, DynamoDB session state, inspection turns, repair sessions, chat, uploads, findings, frames, text-to-speech, and generated repair steps. The audio piece was not decoration. It made the workflow make more sense because the user could keep their hands free.
 
-I also explored ElevenLabs in DreamScape, a React Native and Expo learning app that generated study cues and used text-to-speech audio for simulated sleep learning sessions. Those projects made me more interested in voice as a product interface, especially when the goal is to make AI output easier to act on rather than just easier to read.
+I also used ElevenLabs in DreamScape, a React Native and Expo learning app that generated study cues and played them back as text-to-speech audio. Both projects made me more interested in voice as an interface, especially for AI products where reading a paragraph is not always the most useful output.
