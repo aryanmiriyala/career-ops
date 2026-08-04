@@ -1,0 +1,23 @@
+# Cover Letter - Nue Full-Stack Software Engineer (New Grad)
+
+Aryan Miriyala  
+aryanmiriyala@gmail.com | +1 419-315-0444 | LinkedIn | GitHub
+
+August 4, 2026
+
+Nue Engineering Team
+
+Dear Nue Engineering Team,
+
+I am applying for the Full-Stack Software Engineer (New Grad) role because Nue is building software for workflows where correctness matters every day. CPQ, billing, collections, integrations, and revenue lifecycle work are not abstract product surfaces. They decide whether sales, finance, and operations teams can trust the data behind pricing, orders, invoices, and customer changes.
+
+The build I am most proud of is my AAIS billing automation work. I replaced a manual SQL billing process with a Python, PySpark, and AWS Glue workflow over 20+ TB of insurance data for 700+ member companies. I also profiled 160+ source tables into a 25-domain MDM taxonomy, replaced legacy Pentaho jobs with Glue and S3 pipelines, and built validation workflows with IAM access controls. That project forced me to think like a product engineer and a data engineer at the same time. The system had to be correct, repeatable, understandable to downstream users, and careful with production data.
+
+My full-stack experience maps well to Nue's product engineering approach. At SmartSolve, I architected a Next.js and TypeScript onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware for sensitive internal workflows, then built Docker devcontainers to make setup reproducible. In projects, I built RocketGrader with TypeScript/Express APIs, MongoDB models, Auth0 dashboards, S3 uploads, and AI-assisted feedback workflows, and I built Fix-It-Flow with typed Next.js API routes, DynamoDB session persistence, camera input, voice commands, and LLM reasoning.
+
+I use AI tools regularly, but I treat them as collaborators rather than authority. At SmartSolve, I used Codex and Claude Code for planning, debugging, implementation review, and self-review while keeping proprietary code isolated in Docker/devcontainer workflows. I usually trust AI output only after checking it against the actual codebase, running the change locally when possible, and making sure I understand the tradeoff. That matches the way Nue describes AI-forward engineering: faster development, but with engineering judgment still in charge.
+
+I would bring Nue a practical new-grad profile across TypeScript/JavaScript, Python, React/Next.js, Node.js, REST APIs, SQL data modeling, AWS, Docker, Git, Linux, and AI-assisted development. I am especially interested in building production features where UI decisions, backend APIs, data models, and business rules all have to line up.
+
+Sincerely,  
+Aryan Miriyala
