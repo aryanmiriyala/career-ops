@@ -14,7 +14,7 @@ Use this file for reusable, truthful cover-letter paragraphs. Tailor every parag
 
 ## Full-Stack Engineering
 
-I have built full-stack applications across modern JavaScript stacks, including Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and Auth0. My work has included secure onboarding tools, internal modernization efforts, and AI-enabled product features, giving me experience across frontend implementation, backend services, authentication, and data persistence.
+I have built full-stack applications across modern JavaScript stacks, including Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, Firebase, and Auth0. My work has included secure onboarding tools, internal modernization efforts, AI-enabled product features, and current customer-portal engineering at Actual Reality, giving me experience across frontend implementation, backend services, authentication, dashboard logic, integrations, and data persistence.
 
 ## Cloud and Data Engineering
 
@@ -23,6 +23,10 @@ My data engineering experience includes building AWS Glue workflows, PySpark job
 ## AI-First Engineering
 
 I actively use AI-assisted engineering workflows with tools such as Codex and Claude Code, while also building AI-powered applications with Mistral AI, LangChain, RAG, HuggingFace models, and MongoDB-backed retrieval. This gives me both practical product experience with AI features and day-to-day experience using AI to improve software development speed and quality.
+
+## Actual Reality / Augmented Intelligence
+
+At Actual Reality Technologies, I am improving a private Next.js/TypeScript customer portal with Firebase-backed application behavior, Plane-backed project data, customer/admin workflows, authentication/session handling, dashboard status logic, and Vitest-tested changes. Recent work has included consolidating workshop tools into a tabbed route, hardening login/session flows, and making project status reporting more reliable by deriving states from work-item counts instead of rounded progress.
 
 ## Security and Compliance
 

@@ -33,7 +33,7 @@ Tone:
 
 I am a Computer Science master's student at Bowling Green State University, graduating in August 2026, focused on applied AI, software engineering, cloud/data systems, and secure full-stack development.
 
-Across internships, research, and project work, I have built systems that sit between real operational problems and practical technology: AI-assisted applications, LLM/RAG workflows, full-stack web platforms, AWS data pipelines, secure internal tools, healthcare-adjacent software, and cybersecurity education resources. My work has used Python, JavaScript/TypeScript, React, Next.js, Angular, Node.js, PostgreSQL, MongoDB, AWS Glue, S3, Lambda, PySpark, Docker, LangChain, Mistral AI, OpenAI API, Gemini, and modern authentication/access-control patterns.
+Across internships, research, and project work, I have built systems that sit between real operational problems and practical technology: AI-assisted applications, LLM/RAG workflows, full-stack web platforms, AWS data pipelines, secure internal tools, manufacturing/process-improvement technology, healthcare-adjacent software, and cybersecurity education resources. My work has used Python, JavaScript/TypeScript, React, Next.js, Angular, Node.js, PostgreSQL, MongoDB, AWS Glue, S3, Lambda, PySpark, Docker, LangChain, Mistral AI, OpenAI API, Gemini, and modern authentication/access-control patterns.
 
 The common thread in my experience is applied AI with engineering discipline. I am interested in using AI where it actually improves a workflow: helping users reason through information, generating useful feedback, supporting search and retrieval, analyzing software artifacts, assisting engineering work, or making data-heavy systems easier to operate. I care about building products that are useful, reliable, secure, and understandable to the people using them.
 
@@ -67,22 +67,44 @@ Copy each role into LinkedIn in this order:
 2. `Tech stack`: paste the one-line stack directly after the paragraph if useful.
 3. `Highlights`: use only the strongest 2-4 bullets when the role needs more detail.
 
+### Actual Reality Technologies
+
+Title: Software Engineering Intern
+Company: Actual Reality Technologies
+Dates: Jul. 2026 - Present
+Location: Toledo, Ohio, United States
+
+Description:
+
+Working as a Software Engineering Intern at Actual Reality Technologies, improving the private customer portal hosted at `my.actualreality.ai`. My work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage.
+
+Software engineering / Customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+
+Highlights:
+
+- Improving a private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and automated tests.
+- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
+- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions.
+- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through cache layers, preventing stale reads, and deriving project states from work-item counts instead of rounded progress.
+
+Source verification note: authenticated GitHub access inspected `Actual-Reality/customer-portal` on August 7, 2026. Keep customer/client details public-safe when drafting LinkedIn or submitted artifacts.
+
 ### SmartSolve
 
 Title: AI and Computer Science Intern  
 Company: SmartSolve  
-Dates: May 2026 - Present  
+Dates: May 2026 - Jul. 2026
 Location: Bowling Green, Ohio, United States
 
 Description:
 
-Working on AI-enabled internal software at SmartSolve, combining full-stack engineering, secure workflow design, and AI-assisted development for quality-management and operations tooling. Current work includes planning a QMS dependency register to model relationships between quality documents, building a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware for HR/new-hire workflows, and creating Docker devcontainers for WSL2 and Colima to make development environments reproducible while keeping AI-assisted tooling isolated around proprietary code.
+Worked on AI-enabled internal software at SmartSolve, combining full-stack engineering, secure workflow design, and AI-assisted development for quality-management and operations tooling. Work included planning a QMS dependency register to model relationships between quality documents, building a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware for HR/new-hire workflows, and creating Docker devcontainers for WSL2 and Colima to make development environments reproducible while keeping AI-assisted tooling isolated around proprietary code.
 
 AI / Full-stack / Tech stack: Next.js, TypeScript / JavaScript, PostgreSQL, Drizzle ORM, SSO, authentication middleware, Docker, WSL2, Colima, Codex, Claude Code.
 
 Highlights:
 
-- Supporting early architecture and planning for AI-oriented internal projects, including a QMS dependency register designed to link related quality-management documents and model connected QMS documentation.
+- Supported early architecture and planning for AI-oriented internal projects, including a QMS dependency register designed to link related quality-management documents and model connected QMS documentation.
 - Built a full-stack onboarding tracker using Next.js, PostgreSQL, Drizzle ORM, SSO, and authentication middleware to centralize onboarding workflows and protect sensitive employee data.
 - Created a cross-platform Docker devcontainer setup for WSL2 and Colima to make development environments easier to reproduce and reduce setup friction.
 - Using AI-assisted engineering workflows with tools such as Codex and Claude Code for planning, implementation, debugging, and code review support.
