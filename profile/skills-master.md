@@ -20,6 +20,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - React
 - Next.js
 - Next.js App Router
+- Next.js 15
 - Angular
 - Vite
 - PWA
@@ -56,6 +57,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 - Node.js
 - Express.js
+- Next.js App Router API routes
 - Axios
 - CORS
 - dotenv
@@ -90,6 +92,9 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Git
 - Vercel
 - AWS Amplify
+- Firebase
+- Firebase Admin
+- Firestore rules testing
 - Make
 - Linux
 
@@ -134,6 +139,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - MongoDB Atlas
 - MySQL
 - ChromaDB
+- Firebase / Firestore
 
 ## AI and Machine Learning
 
@@ -168,6 +174,34 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Automated LLM evaluation
 - AI-assisted code review
 - AI-assisted implementation planning
+
+## Testing and Quality
+
+- Vitest
+- Testing Library
+- React Testing Library
+- ESLint
+- Next.js route tests
+- Component tests
+- Architecture guardrail tests
+- Firebase rules unit testing
+- Auth/session test coverage
+- Cache and stale-read test coverage
+- Dashboard/project-status test coverage
+
+## Product Integrations and Workflow Systems
+
+- Plane API
+- Plane project/work-item integration
+- Plane-backed project dashboards
+- Customer portals
+- Admin portals
+- Feature flags
+- Session-cookie domain handling
+- Magic-link login flows
+- Password login flows
+- Workshop route consolidation
+- Tabbed product workflows
 
 ## Security and Compliance
 
