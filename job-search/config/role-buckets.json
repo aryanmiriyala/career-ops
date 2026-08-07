@@ -10,7 +10,9 @@
       "Platform Engineer",
       "Cloud Engineer",
       "DevOps Engineer",
-      "Application Developer"
+      "Application Developer",
+      "Application Engineer",
+      "Industrial Software Engineer"
     ]
   },
   "data": {
@@ -31,6 +33,8 @@
       "ML Engineer",
       "AI Engineer",
       "Applied AI Engineer",
+      "AI Software Engineer",
+      "Augmented Intelligence Engineer",
       "MLOps Engineer",
       "Data Scientist",
       "NLP Engineer",

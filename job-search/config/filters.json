@@ -181,7 +181,15 @@
     "LLM",
     "RAG",
     "Data Pipeline",
-    "Analytics"
+    "Analytics",
+    "Data Modeling",
+    "Predictive Analytics",
+    "Manufacturing",
+    "Industry 4.0",
+    "Industry 5.0",
+    "Process Improvement",
+    "Application Development",
+    "Augmented Intelligence"
   ],
   "negative_terms": [
     "talent pool",
