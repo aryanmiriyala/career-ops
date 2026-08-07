@@ -23,37 +23,114 @@ Aryan's experience sits at the intersection of full-stack software engineering, 
 Core themes:
 
 - Full-stack product engineering with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, Auth0, SSO, and role-based access control.
+- Current software engineering internship experience at Actual Reality Technologies, positioned around augmented-intelligence, data-modeling, app-development, and manufacturing/process-improvement contexts. Exact repo-level claims require confirmation from Aryan or authenticated GitHub access before use in submitted artifacts.
 - Cloud and data engineering with AWS Glue, S3, Lambda, PySpark, MySQL, Impala, Oracle, PostgreSQL, JDBC, and Semarchy MDM.
 - AI-first engineering with Codex, Claude Code, LangChain, RAG, Mistral AI, HuggingFace, PyTorch, and TensorFlow.
 - Security and compliance work involving SSO, JWT, RBAC, anti-CSRF tokens, PII tokenization, audit logging, and protected workflows.
 - Legacy modernization involving ColdFusion/Lucee/CFML, HTML5 form updates, JavaScript fallbacks, CSS modernization, Bootstrap UI, and reusable modal/tab components.
 - Cybersecurity education and research support through BGSU graduate research work, including CyberGuardian modules, ethical-hacking lab materials, NICE Framework/CAE-CD curriculum analysis, email security/forensics, cryptography, phishing demos, and workforce/curriculum gap analysis.
 
+## Actual Reality Technologies
+
+Role: Software Engineering Intern
+Location: Toledo, OH
+Dates: Jul. 2026 - Present
+
+### Platform-Ready Description
+
+Working as a Software Engineering Intern at Actual Reality Technologies, improving the private customer portal hosted at `my.actualreality.ai`. Current work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage. Contributions include merging separate Capture, Define, and Whiteboard tools into a tabbed Workshop route; hardening production login/session behavior; improving forced refreshes, pagination, caching, and stale-read protection for Plane-backed project data; and deriving customer-facing project states from work-item counts rather than rounded progress.
+
+### Handshake Description
+
+Software Engineering Intern improving a private Next.js/TypeScript customer portal with Firebase, Plane integration, authentication/session fixes, dashboard status logic, and Vitest-tested customer/admin workflows.
+
+### Tech Stack
+
+Software engineering / Customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+
+### Business / Problem Context
+
+Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development for manufacturing and operational contexts. Aryan's current work is focused on the company customer portal, a private TypeScript/Next.js application that exposes customer/admin workflows and Plane-backed project information.
+
+### Problem / Company Impact Context
+
+- Improved a private customer portal used for customer/admin workflows at `my.actualreality.ai`.
+- Worked across Next.js/TypeScript UI routes, authentication/session behavior, Plane-backed project data, dashboard status logic, health checks, documentation, and automated tests.
+- Consolidated separate Capture, Define, and Whiteboard tools into one tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
+- Improved production auth behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login navigation so users do not see a login-page flash or stranded spinner.
+- Improved Plane-backed project-data reliability by paginating work-item state counts, forcing refreshes through route and gateway cache layers, preventing older overlapping reads from overwriting newer data, and classifying project states from counts.
+- Added or updated Vitest/Testing Library coverage, architecture tests, route tests, and documentation around project phases, Plane integration, auth/session behavior, and team-capacity planning.
+
+### Work Performed
+
+- Improving the private `Actual-Reality/customer-portal` repository, described internally as the customer portal hosted at `my.actualreality.ai`.
+- Authored 68 commits under Aryan's GitHub identities from July 29 to August 6, 2026, across merged and open customer-portal pull requests.
+- Authored merged PRs for Workshop route consolidation, production session-cookie behavior, deferred team-capacity planning, post-login UX, forced Plane refresh behavior, and four-state project status reporting.
+- Open PR work includes dashboard project-status derivation from work-item counts, Plane-membership remediation links, and admin health-feed coverage for revoked write membership.
+- Current ticket brief includes urgent security/auth work around removing magic-link sign-in, making role changes explicit instead of side-effect driven, fixing client invite domains, surfacing client-side Firestore read errors, repairing Firestore query constraint dependency keys, reconciling Firebase Auth users against Firestore `users` docs, restoring Firestore index/tooling reproducibility, and completing end-to-end customer visibility validation.
+- Worked mainly in `src/gateways/plane.gateway.ts`, `src/services/plane-access.service.ts`, `src/components/auth/login-form.tsx`, `src/lib/plane-progress.ts`, project/dashboard surfaces, Workshop routes/components, auth/session routes, tests, and feature documentation.
+
+### Positioning Angles
+
+- Current software engineering internship
+- Customer portal engineering
+- Full-stack TypeScript/Next.js application development
+- Authentication/session reliability
+- Security/auth hardening and account lifecycle correctness
+- Plane API/integration reliability
+- Dashboard and project-state semantics
+- Firestore/Firebase data consistency and read-failure visibility
+- End-to-end customer workflow validation
+- Automated testing and architecture guardrails
+- Augmented intelligence and applied AI-adjacent product work
+- Industry 4.0/5.0 and manufacturing technology
+- Data modeling and predictive analytics context
+- Cloud consulting and app-development context
+- Early-career engineering in a small product/consulting organization
+
+### Reusable Bullet Options
+
+- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Consolidated separate Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
+- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions to avoid redirect flashes and stuck spinners.
+- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
+- Investigating customer-portal security and reliability issues across magic-link account creation, role-change side effects, client invite domains, Firestore read-error handling, query resubscription correctness, and Firebase Auth/user-document reconciliation.
+- Added tests and documentation across Vitest route/component suites, architecture guardrails, Plane integration, dashboard status decisions, auth/session behavior, and deferred team-capacity planning.
+
+### Source And Verification Notes
+
+- Confirmed by Aryan: role title `Software Engineering Intern`, company `Actual Reality Technologies`, start date `July 2026`.
+- Public company context found through LinkedIn/web search: Toledo, OH company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
+- GitHub source status: authenticated `gh` access inspected `Actual-Reality/customer-portal` on August 7, 2026. Evidence includes private repo metadata, package.json, authored commit history, PR list, file-level stats, and branch diffs. Keep customer/client details public-safe when drafting submitted artifacts.
+- Ticket brief source: user-provided Customer Portal ticket brief snapshot dated August 7, 2026, repo at `87f79a9`, covering Aryan-created or Aryan-assigned Plane tickets across Todo, In review, In progress, Cancelled, and conflict states.
+
 ## SmartSolve Industries
 
 Role: Artificial Intelligence & Computer Science Intern  
 Location: Bowling Green, OH  
-Dates: May 2026 - Present
+Dates: May 2026 - Jul. 2026
 
 ### Platform-Ready Description
 
-Working on AI-enabled internal software at SmartSolve, combining full-stack engineering, secure workflow design, and AI-assisted development for quality-management and operations tooling. Current work includes planning a QMS dependency register to model relationships between quality documents, building a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware for HR/new-hire workflows, and creating Docker devcontainers for WSL2 and Colima to make development environments reproducible while keeping AI-assisted tooling isolated around proprietary code.
+Worked on AI-enabled internal software at SmartSolve, combining full-stack engineering, secure workflow design, AI adoption planning, and AI-assisted development for quality-management and operations tooling. Work followed a phased AI integration roadmap covering environment onboarding, AI tool audits, department workflow improvements, role-specific AI coaching, internal knowledge-base documentation, LLM/API and cloud-service evaluation, prototype planning, stakeholder-facing technical updates, and handoff planning. Specific engineering work included planning a QMS dependency register to model relationships between quality documents, building a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware for HR/new-hire workflows, and creating Docker devcontainers for WSL2 and Colima to make development environments reproducible while keeping AI-assisted tooling isolated around proprietary code.
 
 ### Handshake Description
 
-Working on AI-enabled internal tools for quality-management and operations workflows, including QMS document relationship planning, a secure Next.js/PostgreSQL onboarding tracker with SSO/auth middleware, and Docker devcontainers for reproducible, isolated AI-assisted development.
+Built AI-enabled internal tools for quality-management and operations workflows, including QMS document relationship planning, a secure Next.js/PostgreSQL onboarding tracker with SSO/auth middleware, and Docker devcontainers for reproducible, isolated AI-assisted development.
 
 ### Tech Stack
 
-AI / Full-stack / Tech stack: Next.js, TypeScript / JavaScript, PostgreSQL, Drizzle ORM, SSO, authentication middleware, Docker, WSL2, Colima, Codex, Claude Code.
+AI / Full-stack / Tech stack: Next.js, TypeScript / JavaScript, PostgreSQL, Drizzle ORM, SSO, authentication middleware, Docker, WSL2, Colima, Codex, Claude Code, LLM APIs, OpenAI, Anthropic Claude, cloud-service evaluation, API integration planning, webhook automation planning, internal knowledge-base documentation.
 
 ### Business / Problem Context
 
-SmartSolve work centers on internal software, AI-assisted workflows, and operational tooling. The current resume emphasizes an onboarding tracker, secure access patterns, and AI-first development practices.
+SmartSolve work centered on internal software, AI adoption, AI-assisted workflows, and operational tooling. Resume bullets should emphasize the onboarding tracker, secure access patterns, AI integration roadmap work, and AI-first development practices when they match the target role.
 
 ### Problem / Company Impact Context
 
 - Supported early-stage AI and internal software planning where architecture, security, and developer workflow decisions were still being shaped.
+- Worked under a phased AI integration roadmap for department-level AI usage, employee AI capstone planning, internal tool prototyping, technical documentation, stakeholder updates, and handoff planning.
+- Supported AI tool usage audits by identifying gaps, redundancies, integration opportunities, and department-level workflow improvement candidates.
 - Worked on QMS dependency-register planning to help connect related quality-management documents and make document relationships easier to understand.
 - Built onboarding workflow software to centralize HR/new-hire process tracking and protect sensitive employee data.
 - Improved reproducibility and onboarding for developers by creating Docker-based development environments across WSL2 and Colima.
@@ -61,19 +138,24 @@ SmartSolve work centers on internal software, AI-assisted workflows, and operati
 
 ### Work Performed
 
-- Working in an early planning/build phase across AI-oriented internal projects.
-- Working on a QMS dependency register intended to link multiple QMS documents and model what properly connected QMS documentation should look like.
+- Worked in an early planning/build phase across AI-oriented internal projects.
+- Worked from a phased AI integration roadmap covering foundation/quick wins, role-specific AI training, prototype iteration, technical presentation, documentation, and handoff planning.
+- Supported structured review of AI tool usage and department workflow opportunities, with emphasis on identifying problems, proposed AI solutions, expected outcomes, and measurable success criteria.
+- Worked on a QMS dependency register intended to link multiple QMS documents and model what properly connected QMS documentation should look like.
 - Architected a full-stack onboarding tracker for HR/new-hire workflows.
 - Used Next.js for the application layer.
 - Used PostgreSQL with Drizzle ORM for structured persistence.
 - Implemented SSO and authentication middleware to protect sensitive employee and onboarding data.
 - Built a cross-platform Docker devcontainer for WSL2 and Colima.
 - Isolated AI-assisted development tooling to help protect proprietary data.
+- Evaluated possible LLM/API, cloud-service, API-integration, webhook-automation, internal knowledge-base, and lightweight proprietary-tool directions for internal workflow automation.
 - Used agentic CLI tools, including Codex and Claude Code, as daily development assistants for planning, implementation, review, and iteration.
 
 ### Positioning Angles
 
 - AI-first software engineering
+- AI adoption and internal workflow modernization
+- LLM/API and cloud-service integration planning
 - Secure internal tooling
 - Full-stack product development
 - Developer experience and environment isolation
@@ -82,9 +164,17 @@ SmartSolve work centers on internal software, AI-assisted workflows, and operati
 ### Reusable Bullet Options
 
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
+- Supported a phased AI integration roadmap by auditing AI tool usage opportunities, identifying workflow gaps and redundancies, and translating department-level business needs into candidate AI capstone projects with expected outcomes and success criteria.
+- Worked on LLM/API and cloud-service integration planning for internal workflow automation, including lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
 - Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
 - Supported early planning and architecture for AI-enabled internal systems, including a QMS dependency register designed to connect related quality-management documents.
+
+### Source And Verification Notes
+
+- User-provided SmartSolve offer/JD document visually inspected on August 7, 2026. The document lists role title `AI & Computer Science Intern`, direct report to the CEO, Bowling Green, OH with remote flexibility as role requires, part-time 20-39 hours/week, and an internship description built around a four-phase AI integration roadmap.
+- The SmartSolve document lists official internship dates as May 4, 2026 to August 7, 2026. Aryan separately stated the internship ended in July 2026, so public-facing master resume/CV materials currently keep the visible end date as `Jul. 2026` unless Aryan asks to use the offer-letter end date.
+- Roadmap language should be used carefully: the document supports the planned scope and responsibilities, but completed-outcome claims should require Aryan confirmation or additional source evidence.
 
 ## Bowling Green State University
 
