@@ -22,6 +22,10 @@ Avoid:
 
 ## Software Engineer / Full-Stack Engineer
 
+- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
+- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions to avoid redirect flashes and stuck spinners.
+- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
 - Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication for secure internal user access.
 - Contributed to a React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
@@ -40,7 +44,10 @@ Avoid:
 
 ## AI Engineer / AI Product Engineer
 
+- Contributing to customer-portal engineering in an augmented-intelligence company environment focused on app development, project visibility, and process-improvement contexts.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
+- Supported a phased AI integration roadmap by auditing AI tool usage opportunities, identifying workflow gaps and redundancies, and translating department-level business needs into candidate AI capstone projects with expected outcomes and success criteria.
+- Worked on LLM/API and cloud-service integration planning for internal workflow automation, including lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
 - Developed an LMS feedback agent with Mistral AI and LangChain to automate assignment review.
 - Built a context-aware Mistral AI chatbot that used saved user health-profile details to answer travel-health questions in a React health advisory app.
 - Built an ICSME-published LLM research pipeline that generated evidence-grounded GitHub pull request descriptions from commits, diffs, linked issues, and repository metadata.
