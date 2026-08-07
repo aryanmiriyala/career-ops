@@ -94,6 +94,7 @@ Rules:
 - Use the `Handshake Description` in `experience-master.md` for Handshake experience entries; keep it at or below 500 characters and do not paste the longer platform-ready version into Handshake.
 - Use `Reusable Bullet Options` from `experience-master.md` when the application needs company/role-specific bullets.
 - Use `bullet-bank.md` when the application needs job-family bullets across multiple roles.
+- Treat Actual Reality Technologies as Aryan's current role. Use verified customer-portal evidence from `profile/experience-master.md` when it improves fit, especially Next.js/TypeScript, Firebase, Plane integration, auth/session work, dashboard status logic, Vitest tests, and customer/admin workflows. Keep private customer/client details out of submitted artifacts unless Aryan explicitly confirms they are public-safe.
 - Prefer bullets matching the job's required stack.
 - Build experience depth before project breadth. The Experience section should normally contain at least 11 strong, role-aligned bullets on early-career one-page application resumes; fewer requires an `Experience Bullet Count Waiver` in `tailoring-notes.md`.
 - Put job keywords into bullets only when supported by real experience.

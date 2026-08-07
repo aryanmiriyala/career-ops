@@ -78,6 +78,7 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 
 - Put the strongest matching experience in the top half of the page.
 - Keep recent technical roles prominent.
+- Keep Actual Reality Technologies visible as the current internship when it helps chronology or target fit. Verified source material supports customer-portal engineering claims around Next.js/TypeScript, Firebase, Plane integration, auth/session behavior, dashboard status logic, and Vitest-tested workflows; keep private customer/client details public-safe.
 - Use bold sparingly for important technologies and metrics only.
 - Make role alignment obvious from the first two bullets of each relevant job.
 - Keep bullets concise enough to scan, usually one to two lines.
