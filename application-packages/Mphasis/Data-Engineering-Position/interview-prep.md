@@ -13,6 +13,9 @@ Sources checked:
 - InterviewQuery Mphasis Data Engineer guide, published March 2026: https://www.interviewquery.com/interview-guides/mphasis-data-engineer
 - AmbitionBox Mphasis Data Engineer fresher interview page, updated April 2025: https://www.ambitionbox.com/interviews/mphasis-interview-questions/data-engineer/fresher-candidates
 - LinkedIn candidate/prep posts about Mphasis data engineering interviews, crawled in 2026.
+- User-provided LinkedIn post by Ranjit about Mphasis data engineering interview questions: https://www.linkedin.com/posts/ranjit-a873ba243_mphasis-data-engineering-interview-questions-ugcPost-7446583227869245440-8k0Q/
+- LinkedIn posts surfaced by web search that repeat Mphasis-tagged data engineering interview themes around ADF, ADLS, Databricks, Delta Lake, SQL window functions, PySpark optimization, schema drift, and production pipeline debugging.
+- Official concept references checked for calibration: Spark Structured Streaming watermarking, Microsoft Azure Data Factory watermark-based incremental copy, PostgreSQL window functions, and Databricks Delta Lake `MERGE`.
 
 ## What To Expect
 
@@ -31,6 +34,162 @@ Likely technical focus:
 - Data warehousing and data modeling: fact/dimension tables, star vs. snowflake schema, SCD Type 1 vs. Type 2.
 - Cloud and big-data stack: AWS/Azure, S3/ADLS, Glue/ADF, Spark/Databricks, data lakes, partitioning, orchestration, and pipeline monitoring.
 - Resume deep dives, especially previous data engineering projects.
+
+## Learning Map By Priority
+
+### Tier 1 - Must Know Cold
+
+These are the topics most consistently repeated across Mphasis-specific or Mphasis-tagged reports.
+
+#### SQL Window Functions
+
+Know:
+
+- `ROW_NUMBER()`: unique sequence per partition, useful for deduping by keeping the latest row.
+- `RANK()`: gives tied rows the same rank and leaves gaps.
+- `DENSE_RANK()`: gives tied rows the same rank without gaps.
+- `LAG()`: looks at a previous row in the ordered window, useful for month-over-month or before/after comparisons.
+- `LEAD()`: looks at a following row.
+
+Practice:
+
+- Second-highest salary per department.
+- Top 3 salaries per department with ties.
+- Month-over-month growth with `LAG()`.
+- Deduplicate records by business key using `ROW_NUMBER()`.
+
+AAIS connection:
+
+Use this when discussing table profiling, billing validation, or source-to-target checks. You do not need to claim you used `LAG()` at AAIS unless you did; say you used SQL for profiling and validation, and that window functions are a natural way to solve ranking, dedupe, and trend-analysis questions.
+
+#### Incremental Loads And Watermarks
+
+Know:
+
+- A full load copies all data every run.
+- An incremental load copies only new or changed data since the last successful run.
+- A watermark is the saved high-water mark from the previous run, often a timestamp or increasing ID.
+- A control/watermark table stores the last processed value.
+- The next run reads rows greater than the old watermark and up to the new maximum watermark.
+- After a successful run, update the stored watermark.
+
+Practice answer:
+
+For a batch pipeline, I would choose a reliable `last_updated_at` or increasing ID as the watermark column, store the last processed value in a control table, query only rows where the watermark column is greater than the old value and less than or equal to the current max, validate the load, then update the control table only after success.
+
+AAIS connection:
+
+Connect this to the 24-hour data latency and recurring workflow language. Say your AAIS work involved repeatable production data availability, and you understand that a watermark pattern is how many batch ETL systems avoid expensive full reloads.
+
+#### PySpark DataFrame Syntax
+
+Know exact syntax for:
+
+- `spark.read.option(...).csv(...)`
+- `select`, `filter`, `where`
+- `withColumn`
+- `dropDuplicates`
+- `groupBy().agg(...)`
+- joins
+- null handling with `isNull`, `isNotNull`, `fillna`
+- `when(...).otherwise(...)`
+- `to_timestamp`
+- window functions with `Window.partitionBy(...).orderBy(...)`
+
+Practice:
+
+- Remove duplicates by key while keeping the latest record.
+- Add a risk/category column with `when().otherwise()`.
+- Join two DataFrames and aggregate results.
+- Read malformed CSV data and route bad rows.
+
+AAIS connection:
+
+Use the billing workflow as the anchor: PySpark was the right tool because the data size was production-scale and Glue could run Spark processing in a managed environment.
+
+#### PySpark Optimization
+
+Know:
+
+- Filter early and select only needed columns.
+- Avoid unnecessary `collect()` on large data.
+- Use broadcast joins when one table is small enough to send to executors.
+- Repartition by join key before large joins when useful.
+- Use `coalesce()` to reduce partitions after filtering.
+- Understand data skew and why one partition can become much slower than others.
+- AQE means Adaptive Query Execution, where Spark can adjust parts of the physical plan at runtime.
+
+AAIS connection:
+
+You can say you worked with large-scale PySpark/Glue workflows and are prepared to reason through optimization by checking data size, partitioning, joins, filters, and shuffle-heavy steps. Do not overclaim deep Spark cluster tuning unless asked; answer from principles.
+
+### Tier 2 - Very Likely If Role Is Azure/Databricks Or Client-Facing
+
+These were common in Mphasis-tagged LinkedIn posts. They may matter more if the client stack is Azure.
+
+#### ADF / ADLS / Databricks Pipeline Shape
+
+Know:
+
+- ADF: orchestration and data movement.
+- ADLS: Azure Data Lake Storage, similar role to S3 for lake storage.
+- Databricks: Spark-based processing platform.
+- Delta Lake: storage layer/table format with transaction log, schema evolution, time travel, and `MERGE` support.
+- Power BI/Synapse: consumption/reporting/warehouse layer.
+- Bronze/Silver/Gold: raw, cleaned/conformed, curated/business-ready layers.
+
+How to answer without Azure production experience:
+
+I have stronger hands-on AWS Glue/S3/PySpark experience, but the architecture maps well. In AWS I used Glue for managed Spark ETL and S3 for durable pipeline outputs. In Azure terms, ADF would orchestrate/copy, ADLS would store raw and curated files, Databricks would run Spark transformations, and downstream BI/warehouse tools would consume the curated layer.
+
+#### Delta Lake `MERGE` / UPSERT
+
+Know:
+
+- `MERGE` updates existing rows and inserts new rows based on a match condition.
+- Useful for incremental loads, SCD Type 2, deduped updates, and CDC-style processing.
+- You must prevent ambiguous matches where multiple source rows match one target row.
+
+Practice answer:
+
+For incremental data, I would dedupe the incoming source by business key and latest timestamp first, then `MERGE` into the target. Matched rows get updated, unmatched rows get inserted, and the job updates audit columns or control-table state after validation.
+
+#### SCD Type 1 vs Type 2
+
+Know:
+
+- Type 1 overwrites history. Good when only the current value matters.
+- Type 2 preserves history by expiring the old row and inserting a new current row.
+- Typical columns: `effective_date`, `end_date`, `is_current`, maybe a hash for change detection.
+
+AAIS connection:
+
+Use the MDM migration story. You can say MDM/data-domain work made you familiar with the need for stable business entities and history decisions, even if your resume does not claim you implemented SCD Type 2 directly.
+
+#### Schema Drift
+
+Know:
+
+- Schema drift means source columns/types change unexpectedly.
+- Risks: failed loads, missing data, bad downstream models.
+- Response: validate schema, allow safe schema evolution only where appropriate, default new nullable columns, alert on breaking changes, document/communicate contract changes.
+
+AAIS connection:
+
+Tie this to profiling 160+ tables across systems. Different source systems rarely align perfectly; schema inspection and mapping are the first defense.
+
+### Tier 3 - Good To Know, But Do Not Overclaim
+
+- Azure Data Factory Mapping Data Flows.
+- ADLS ACLs and Managed Identity.
+- Databricks job scheduling.
+- Delta Lake time travel and vacuum.
+- Kafka streaming design.
+- Airflow and dbt.
+- Snowflake virtual warehouses, micro-partitions, clustering, and time travel.
+- Power BI filters/reporting.
+
+Use these only if the interviewer asks conceptually or if the exact JD mentions them. Be direct about hands-on depth: stronger in AWS Glue/S3/PySpark/SQL; conceptually familiar with Azure/Databricks patterns.
 
 ## Highest-Priority Questions To Practice
 
