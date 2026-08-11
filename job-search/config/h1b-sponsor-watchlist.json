@@ -361,6 +361,21 @@
       ]
     },
     {
+      "name": "Mphasis",
+      "aliases": [
+        "Mphasis Corporation",
+        "Mphasis Limited",
+        "Mphasis Corp"
+      ],
+      "priority": 2,
+      "target_roles": [
+        "Data Engineer",
+        "Software Engineer",
+        "Cloud Engineer",
+        "Data Analyst"
+      ]
+    },
+    {
       "name": "The Hartford",
       "aliases": [
         "Hartford Financial Services"
