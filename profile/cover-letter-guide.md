@@ -14,7 +14,7 @@ Do not use the cover letter as a paragraph version of the resume. Use it to conn
 
 ## Non-Negotiable Rules
 
-- Use verified context already in `profile/` and prior application notes. Ask personalization questions only when the letter would be materially weaker or risky without the answer.
+- Use verified context already in `profile/` and targeted user-provided context. Open prior application notes only when they are specifically relevant to the company, domain, prompt, referral, or reusable answer. Ask personalization questions only when the letter would be materially weaker or risky without the answer.
 - Keep the letter under one page.
 - Use a concise opening, one or two evidence paragraphs, and a short closing; three or four short paragraphs are normally appropriate.
 - Tailor every letter to the company and job description.
@@ -28,7 +28,7 @@ Do not use the cover letter as a paragraph version of the resume. Use it to conn
 - Proofread carefully before generating final artifacts.
 - For submitted applications, follow the employer's file instructions and generate an accepted PDF or DOCX artifact. Markdown is acceptable as the editable source, but not as the only final submission file.
 - Keep the final cover-letter artifact under 5 MB unless the employer explicitly permits a larger file.
-- Use the canonical application-letter layout: 11-point Computer Modern typography, approximately 0.80-inch left/right and 0.70-inch top/bottom margins, and the same header/date/addressee/signature hierarchy used by recent accepted letters.
+- Use the canonical application-letter layout from `master-documents/master-cover-letter/` or an approved canonical template: 11-point Computer Modern typography, approximately 0.80-inch left/right and 0.70-inch top/bottom margins, and the approved header/date/addressee/signature hierarchy.
 
 ## Personalization Questions When Materially Needed
 
