@@ -47,7 +47,7 @@ Before drafting submitted artifacts, classify the posting:
 - `Proceed - confirmed compatible`: the posting or company research supports CPT/OPT/STEM OPT, E-Verify, sponsorship, or international-student hiring.
 - `Blocker - explicit incompatibility`: the posting explicitly says no visa/work-visa sponsorship, no current/future sponsorship, independent permanent work authorization, authorization to work for any employer, U.S. citizen/permanent resident only, incompatible clearance, or another direct conflict.
 
-Do not mention F-1, OPT, STEM OPT, E-Verify, Form I-983, visa status, or sponsorship needs in the resume or cover letter unless Aryan explicitly asks. Keep those details in `tailoring-notes.md` and `operations/application-tracker.md`.
+Do not mention F-1, OPT, STEM OPT, E-Verify, Form I-983, visa status, or sponsorship needs in the resume or cover letter unless Aryan explicitly asks. Keep those details in `tailoring-notes.md` and the new or updated tracker row. Do not read the full tracker solely to record these details for a new application.
 
 Record referral status for every package:
 
