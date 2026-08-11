@@ -193,6 +193,8 @@ Use these only if the interviewer asks conceptually or if the exact JD mentions 
 
 ## Highest-Priority Questions To Practice
 
+Worked examples with approaches and sample solutions are in `practice-questions.md`.
+
 ### SQL
 
 - Write a query to find the second-highest salary overall and per department.
