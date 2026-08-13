@@ -3,3 +3,5 @@
 Source-of-truth career material used across resumes, cover letters, LinkedIn, Handshake, and application answers.
 
 Use this folder when updating what Aryan has done, which technologies he has used, project descriptions, reusable bullets, or profile language. Application-specific tailoring should copy from here into `application-packages/` rather than changing the source facts for one role.
+
+For token-efficient application generation, start with `evidence-index.md`. Open the larger master files only for exact wording, source verification, or job-specific gaps that the index does not cover.
