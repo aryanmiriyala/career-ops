@@ -86,7 +86,7 @@ Rules:
 
 ## Step 4: Select Experience Bullets
 
-Use `experience-master.md` and `bullet-bank.md`.
+Use `profile/evidence-index.md` first, then open `experience-master.md` and `bullet-bank.md` only for exact wording, source verification, or job-specific gaps not covered by the index.
 
 Rules:
 
@@ -111,7 +111,7 @@ Rules:
 
 ## Step 5: Select Projects
 
-Use `projects-master.md`.
+Use `profile/evidence-index.md` first, then open `projects-master.md` only for exact wording, source verification, or job-specific gaps not covered by the index.
 
 Rules:
 
@@ -129,7 +129,7 @@ Rules:
 
 ## Step 6: Tune Technical Skills
 
-Use `skills-master.md`.
+Use `profile/evidence-index.md` and `skills-master.md`. Open the full skills master only when the evidence index does not settle a required or preferred tool.
 
 Rules:
 
@@ -147,6 +147,7 @@ After approval and edits:
 - Compile LaTeX.
 - Confirm the resume PDF is exactly one page.
 - Extract PDF text and inspect bullets.
+- Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` after the resume artifact exists and use its exact-term report during the alignment pass.
 - Confirm the exact posted job title appears once in visible summary/title text and is supported by evidence-bearing experience or project bullets.
 - Confirm the Professional Summary is no more than two sentences, concise, and written in the job description's language without becoming a keyword list.
 - Confirm the PDF text preserves section order and important keywords.

@@ -152,16 +152,17 @@ For healthcare or compliance-adjacent roles:
 
 1. Save the job description in `application-packages/<Company>/<Role>/job-description.md`.
 2. Extract keywords and role responsibilities.
-3. Select a primary resume angle from `resume-targeting-guide.md`.
+3. Select a primary resume angle from `resume-targeting-guide.md` and `profile/evidence-index.md`.
 4. Decide whether a professional summary is useful for this specific role.
-5. Choose the strongest experience bullets first, preserving internship roles by default; then choose as many matching projects as the one-page layout can support without reducing experience quality.
+5. Choose the strongest experience bullets first from `profile/evidence-index.md`, preserving internship roles by default; open full master files only for exact wording, source verification, or uncovered gaps. Then choose as many matching projects as the one-page layout can support without reducing experience quality.
 6. Rewrite bullets using the formula above, keeping claims grounded in source docs.
 7. Tune the skills section to the job's language.
 8. Audit every experience and project bullet against the bullet checklist.
 9. Compile LaTeX and confirm the PDF is exactly one page.
 10. Extract PDF text and verify ATS readability.
-11. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
-12. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the visual consistency gate, the page utilization gate, and verification results.
+11. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review.
+12. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
+13. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the visual consistency gate, the page utilization gate, and verification results.
 
 ## Common Failure Modes
 
