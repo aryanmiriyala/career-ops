@@ -19,6 +19,10 @@ Maximize ATS parser and recruiter-search visibility with exact job-description l
 
 Before treating a job requirement as a real gap, check whether Aryan has already built something relevant that is missing from the current resume or profile source material. Recover verified older projects, hackathons, coursework, private repos, and prior builds when they improve fit; ask for/source-update undocumented work before using it in submitted artifacts.
 
+## Token-Efficient Source Priority
+
+Use `profile/evidence-index.md`, canonical templates, and targeted source searches before opening full profile master files. Do not read historical application packages or the full tracker unless the current task specifically requires it.
+
 ## Operating Contract
 
 Read `AGENTS.md` completely first and follow it as the operating contract. Use this prompt only as the job intake wrapper.

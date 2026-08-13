@@ -171,6 +171,8 @@ Job Alignment & Evidence Score:
 
 Internal estimate only; not a predicted ATS score.
 
+Keyword coverage helper:
+
 Strong matches:
 
 - 
@@ -196,6 +198,7 @@ Recommended improvements:
 - Professional Summary line count:
 - Experience bullet count gate:
 - PDF text checked:
+- Keyword coverage helper run:
 - Gap recovery gate checked: Pass -
 - ATS source gate checked: Pass -
 - Visual consistency gate checked: Pass -
