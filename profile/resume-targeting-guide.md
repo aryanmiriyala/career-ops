@@ -60,13 +60,15 @@ Record referral status for every package:
 
 Before treating a job requirement as unsupported, check whether Aryan has already built something relevant that is missing from the current resume, skills list, project summaries, or reusable bullets.
 
+Use the project routing cache in `profile/evidence-index.md` before opening the full project master. For any important JD term that is not already covered by the planned resume evidence, run targeted `rg` searches across `profile/`, `master-documents/`, and relevant project repositories before classifying the term as unsupported.
+
 For each important missing requirement, preferred skill, tool, domain term, or responsibility:
 
 - Mark `Supported - add/use now` when verified source material already proves it. Add it to the resume, cover letter, skills section, or tailoring notes when it improves role fit.
 - Mark `Likely built but undocumented - ask/update source` when Aryan may have built it but current repo source material does not prove it. Do not use it in submitted artifacts until Aryan confirms it and the relevant `profile/` or project source material is updated.
 - Mark `Unsupported - omit` when there is no verified evidence or the claim would be misleading.
 
-Use this gate to recover older projects, hackathons, coursework, private repos, local repositories, and prior builds that might not be visible in the current one-page resume. Record the decision in `tailoring-notes.md` so future packages know whether the gap was filled, needs source-material work, or should stay omitted.
+Use this gate to recover older projects, hackathons, coursework, private repos, local repositories, and prior builds that might not be visible in the current one-page resume. Record the searched terms, searched locations, decision, and selected evidence in `tailoring-notes.md` so future packages know whether the gap was filled, needs source-material work, or should stay omitted.
 
 ## Step 3: Decide Whether to Use a Professional Summary
 
@@ -111,10 +113,11 @@ Rules:
 
 ## Step 5: Select Projects
 
-Use `profile/evidence-index.md` first, then open `projects-master.md` only for exact wording, source verification, or job-specific gaps not covered by the index.
+Use `profile/evidence-index.md` first, especially its project routing cache, then open `projects-master.md` only for exact wording, source verification, or job-specific gaps not covered by the index.
 
 Rules:
 
+- Select projects by matching the JD's highest-priority technologies, domain terms, and proof style against the project routing cache before reading expanded project sections.
 - Start from each project's `Platform-Ready Description` for LinkedIn, portfolios, cover letters, or expanded project sections.
 - Use each project's `Handshake Description` for Handshake project entries; keep it at or below 500 characters and preserve the most important stack, problem, and outcome.
 - Use `Tech Stack`, `Positioning Angles`, and `Reusable Bullet Options` to select only the project details that match the role.

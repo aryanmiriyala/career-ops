@@ -28,6 +28,7 @@ TAILORING_NOTE_MARKERS = [
     "## Job Keyword Map",
     "## Gap Recovery Gate",
     "Gap recovery status:",
+    "Important JD Term Search:",
     "## Bullet Audit",
     "## Scoring Methodology",
     "Job Alignment & Evidence Score:",

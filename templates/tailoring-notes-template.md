@@ -76,6 +76,13 @@ Unsupported terms to avoid:
 
 Gap recovery status:
 
+Important JD Term Search:
+
+- Terms searched:
+- Locations searched:
+- Evidence recovered:
+- Terms still unsupported:
+
 Supported gaps added to package:
 
 - 

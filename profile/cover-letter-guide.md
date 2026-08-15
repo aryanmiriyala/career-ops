@@ -14,7 +14,7 @@ Do not use the cover letter as a paragraph version of the resume. Use it to conn
 
 ## Non-Negotiable Rules
 
-- Use verified context from `profile/evidence-index.md`, targeted profile source sections, and targeted user-provided context. Open prior application notes only when they are specifically relevant to the company, domain, prompt, referral, or reusable answer. Ask personalization questions only when the letter would be materially weaker or risky without the answer.
+- Use verified context from `profile/evidence-index.md`, targeted profile source sections, and targeted user-provided context. Do not open prior application notes for normal drafting unless Aryan explicitly names a specific prior package. Ask personalization questions only when the letter would be materially weaker or risky without the answer.
 - Keep the letter under one page.
 - Use a concise opening, one or two evidence paragraphs, and a short closing; three or four short paragraphs are normally appropriate.
 - Tailor every letter to the company and job description.

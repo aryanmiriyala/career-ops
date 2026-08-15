@@ -28,4 +28,4 @@ Use these files as the visual source of truth for application packages:
 
 ## Review Rule
 
-Check new artifacts against this canonical system and the validator output. Do not open prior application packages solely for visual comparison.
+Check new artifacts against this canonical system and the validator output. Do not open prior application packages for visual comparison unless Aryan explicitly names a specific package for audit or comparison.
