@@ -250,6 +250,7 @@ Experience bullets checked:
 Project bullets checked:
 
 - DreamScape mobile app bullet: Pass - action, React Native/Expo/TypeScript method, AI/audio workflow context, and mobile session tracking result included.
+- DreamScape API integration bullet: Pass - action, Gemini/ElevenLabs API method, document/quiz/audio workflow context, and playback scheduling result included.
 - DreamScape state-management bullet: Pass - action, Zustand/AsyncStorage method, app-data scope, and maintainable mobile state result included.
 
 Weak bullets rewritten:
@@ -259,7 +260,7 @@ Weak bullets rewritten:
 
 ## Changes Made
 
-- Resume: Created a one-page tailored resume with the exact posted title clause, React JS/React Native/Expo, API/cloud/integration, AI-assisted development, and enterprise workflow emphasis. Removed one lower-priority AAIS cloud ETL bullet after the first compile overflowed to two pages, then restored APKD as a compact role for parser consistency.
+- Resume: Created a one-page tailored resume with the exact posted title clause, React JS/React Native/Expo, API/cloud/integration, AI-assisted development, and enterprise workflow emphasis. Removed one lower-priority AAIS cloud ETL bullet after the first compile overflowed to two pages, restored APKD as a compact role for parser consistency, and added a DreamScape API integration bullet after visual review showed avoidable bottom slack.
 - Cover letter: Created a role-specific cover letter focused on enterprise applications, mobile/web development, integrations, and AI-assisted software delivery.
 - Internal notes: Recorded F-1 blocker, JD keyword map, important JD term search, unsupported gaps, project routing result, bullet audit, and alignment score.
 
@@ -329,7 +330,7 @@ Sub-90 Readiness Waiver: Waived - practice/blocked package. The package remains 
 
 Canonical visual review gate checked: Pass - rendered PDF should be compared against canonical application-resume family after compilation.
 
-- Page utilization gate checked: Pass - verified after PDF compile; content fills one page without visible underuse.
+- Page utilization gate checked: Pass - rerendered after adding a role-relevant DreamScape API integration bullet; final content reaches the bottom portion without visible underuse.
 
 Bullet audit checked: Pass - all experience and project bullets reviewed above.
 
