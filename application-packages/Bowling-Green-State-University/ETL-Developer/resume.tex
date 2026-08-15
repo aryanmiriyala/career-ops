@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala} $|$
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala}
+\end{center}\vspace{-10pt}
+
+\resumesection{Professional Summary}
+ETL Developer-aligned data engineer with SQL, Python, PySpark, AWS Glue Workflows, Oracle databases, data mapping, ETL validation, and Enterprise Reporting-adjacent data warehouse migration experience.
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{Master of Science in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{Bachelor of Science in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a manual SQL billing workflow by building a production PySpark job and AWS Glue Workflow, processing 20+ TB of golden-table insurance data for 700+ member companies.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, Impala, and PostgreSQL sources through JDBC with Python, Pandas, and SQL, defining a 25-domain data taxonomy.
+  \item Replaced 160+ legacy Pentaho ETL jobs with AWS Glue Workflows and partitioned S3 pipelines for Semarchy MDM, standardizing cloud data warehouse migration paths.
+  \item Built reverse-ETL, data-validation, and data quality testing workflows with custom AWS IAM roles to support controlled self-service data access, reduce manual entry, and maintain 24-hour data latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered openIDL/openIDS-aligned data-modeling workflows, parsing insurance taxonomies with Python/JSON logic to generate 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
+  \item Built Python data-processing workflows with Pandas, multiprocessing, fuzzy matching, and hashing to clean large CSV datasets and support standardized downstream database processing.
+  \item Automated database validation with AWS Lambda triggers that tokenized PII using hashlib/boto3 and ingested structured JSON into S3 for downstream standardization flows.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 -- Present}
+{Actual Reality Technologies}{Toledo, OH}
+\begin{tightitemize}
+  \item Improve a private Next.js/TypeScript customer portal with Firebase, Plane-backed project data, dashboard status logic, technical documentation, and Vitest-tested customer/admin workflows.
+  \item Hardened data reliability by paginating Plane work-item counts, forcing route/gateway cache refreshes, preventing stale overlapping reads, and deriving project states from counts.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Supported QMS dependency-register planning by modeling quality-document relationships and translating ambiguous operational needs into technical specifications and implementation plans.
+  \item Architected a Next.js/PostgreSQL onboarding tracker with Drizzle ORM, SSO, and auth middleware to centralize HR workflows while protecting sensitive employee data.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Stabilized an AWS-hosted Lucee/CFML healthcare platform with anti-CSRF protection, IP-aware audit logging, HTML5 form updates, import ordering fixes, and duplicate-antigen crash handling.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{HealthTrend: Healthcare Big Data Streaming Pipeline}{Apache NiFi, Kafka, HDFS, Spark, PySpark}
+\begin{tightitemize}
+  \item Built a Dockerized healthcare ETL pipeline using Apache NiFi, Kafka, Hadoop HDFS, and Spark to ingest structured CSV patient records and stream JSON IoT health events.
+  \item Routed batch and streaming data into downstream Spark/PySpark processing for validation and healthcare analytics, simulating a data warehouse support pattern for transactional sources.
+  \item Containerized NiFi, Kafka, HDFS, and Spark services with Docker Compose to reproduce patient-record and IoT event flows in an isolated development environment.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Programming \& Databases:} SQL, Python, PySpark, Pandas, MySQL, Oracle databases, PostgreSQL, Impala, JDBC, JSON, CSV\\
+\textbf{ETL, Warehousing \& BI:} ETL, Business Intelligence systems, data warehouse processes, data mapping, data profiling, data validation, MDM, Semarchy MDM, reverse ETL, golden tables, data quality\\
+\textbf{Cloud, Tools \& Support:} AWS Glue, AWS Glue Workflows, S3, Lambda, IAM, Spark, Kafka, HDFS, Apache NiFi, Docker, Git, Linux, technical documentation, troubleshooting
+
+\end{document}
