@@ -1,13 +1,13 @@
 # Evidence Index
 
-Use this compact index before opening full profile master files. It is a retrieval guide, not a replacement for source-of-truth files. If a job requirement is not covered here, use targeted `rg` searches in `profile/`, `master-documents/`, and project repositories before marking it unsupported.
+Use this compact index before opening full profile master files. It is a retrieval and project-routing cache, not a replacement for source-of-truth files. If a job requirement is not covered here, use targeted `rg` searches in `profile/`, `master-documents/`, and project repositories before marking it unsupported.
 
 ## Source Priority
 
-1. `profile/evidence-index.md` for fast role/project selection and keyword coverage.
+1. `profile/evidence-index.md` for fast role/project selection, project routing, and keyword coverage.
 2. `profile/experience-master.md`, `profile/projects-master.md`, `profile/skills-master.md`, and `profile/bullet-bank.md` for exact wording, additional bullets, and gap recovery.
 3. Project repositories or inspected source material for claims not already documented.
-4. Prior application notes only when Aryan names a package or a known reusable answer exists only there.
+4. Prior application packages only when Aryan explicitly names a specific package for reuse, comparison, or audit.
 
 ## Current / Recent Experience
 
@@ -117,6 +117,30 @@ Resume-ready evidence:
 Source: `profile/experience-master.md`, Alliance for Paired Kidney Donation.
 
 ## Projects
+
+### Project Routing Cache
+
+Use this cache for first-pass project selection before opening `profile/projects-master.md`. Prefer the project whose verified technologies, domain, and proof style match the job description's highest-priority terms. Open the master project section only for exact bullet wording, source verification, or when the JD term search points to a specific gap.
+
+| Project | Best-fit roles / domains | Verified technologies and keywords | Use when the JD emphasizes |
+| :--- | :--- | :--- | :--- |
+| Travel Health Advisor | Healthcare AI, full-stack, geospatial data, hackathon product | React, Vite, Express, Node.js, MongoDB, Mongoose, REST APIs, D3/TopoJSON, Mistral AI API, PDF generation | Healthcare, AI chatbot, full-stack JavaScript, maps, REST APIs, rapid product delivery |
+| Fix-It-Flow | Multimodal AI product, PWA, sustainability, repair workflow | Next.js 14, TypeScript, PWA, Web Speech API, camera input, Gemini Vision, Llama, ElevenLabs, DynamoDB | AI agents, voice/camera workflows, serverless persistence, product UX, sustainability |
+| RocketGrader / RocketGrades | Education AI, LMS workflow, secure full-stack platform | Angular, TypeScript, Express, Node.js, MongoDB, Auth0, AWS S3, LangChain, Mistral AI, REST APIs | EdTech, role dashboards, file upload/parsing, AI feedback, Auth0, AWS-backed apps |
+| FalconGraph Search | RAG/search, campus knowledge systems, source-grounded answers | C++, OpenMP, Python, FastAPI, Next.js, FAISS, Sentence Transformers, OpenAI embeddings, crawling, PDF/DOCX parsing | RAG, search, embeddings, document ingestion, source citations, graph/context retrieval |
+| Diff-Grounded PR Generation | LLM research, software engineering automation, evaluation | Python, OpenAI API, GitHub API, repository mining, commits, diffs, linked issues, LLM evaluation | LLM tooling, developer productivity, grounded generation, evals, GitHub automation |
+| HealthTrend | Data engineering, healthcare streaming, distributed systems | Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark, JSON, CSV, healthcare IoT data | Kafka, Spark, batch/stream processing, data pipelines, healthcare analytics |
+| Self-Adaptive Parallelism | Systems, performance engineering, parallel computing research | C++, OpenMP, Python, Docker, Make, Linux, UCB bandit optimization, telemetry, benchmarking | C++, systems performance, runtime instrumentation, scheduling, optimization |
+| DreamScape | AI mobile, local-first study tools, audio workflows | React Native, Expo, TypeScript, Gemini API, ElevenLabs API, Expo AV, AsyncStorage, Zustand, Zod | Mobile engineering, AI study tools, local-first persistence, TTS/audio, React Native |
+| MarioRL | Reinforcement learning, deep learning experiments | Python, PyTorch, Stable-Baselines3, PPO, DQN, Gym, TensorBoard, checkpoints | Reinforcement learning, model comparison, experiment tracking, PyTorch |
+| RAG App Review Analysis | RAG/NLP research, app review mining, software analytics | Python, Sentence Transformers, ChromaDB, embeddings, vector search, NLP, sentiment analysis, scikit-learn | NLP, review mining, semantic retrieval, software maintenance analytics |
+| AI Project Management Tool | Product prototype, planning/workflow UX, typed frontend architecture | Next.js 15, React 19, TypeScript, App Router, typed domain models, mock-data services | B2B product prototyping, planning dashboards, typed UI architecture, explainable recommendations |
+| Personal Engineering Portfolio | Frontend, design systems, technical storytelling | Next.js 15, React 19, TypeScript, Tailwind CSS 4, Canvas API, GSAP, Lenis, static generation, SEO | Frontend polish, interaction design, accessibility, case studies, responsive UI |
+| FindYourFlame | Consumer/campus product prototype, auth/onboarding UX | Next.js 16, React 19, TypeScript, Tailwind CSS, DaisyUI, Supabase Auth, `.edu` validation | Product prototyping, authentication, onboarding, Supabase, responsive frontend |
+| PDFsplitter | Developer tooling, CLI, file processing | JavaScript, Node.js, CommonJS, pdf-lib, filesystem APIs, CLI validation, npm binary | Node.js tooling, command-line utilities, defensive validation, document processing |
+| Yoda | Mobile navigation, maps, hackathon delivery | Flutter, Dart, google_maps_flutter, Google Maps SDK, map markers, route preview | Flutter, mobile UI, maps/location, campus navigation, hackathon recognition |
+| Career Ops | Workflow automation, ATS ingestion, document generation | Python 3, HTTP/JSON/CSV, Greenhouse, Lever, Ashby, SmartRecruiters APIs, Markdown, LaTeX, validation | Automation, API integrations, data pipelines, workflow systems, document generation |
+| Automated GitHub Profile README | CI automation, generated documentation, API metadata | JavaScript, Node.js, GitHub REST API, GitHub Actions, YAML, JSON, Markdown generation | GitHub Actions, API automation, generated docs, scheduled workflows |
 
 ### Travel Health Advisor - BGSU Hackathon 2025
 
