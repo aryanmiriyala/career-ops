@@ -20,7 +20,7 @@ Why this lane: The posting centers on ETL jobs, data warehouse processes, SQL, d
 
 ## Package Plan
 
-Resume strategy: Use a relevance-first Experience order so AAIS Data Engineering appears first, followed by AAIS Software Engineering, then current/recent software and BGSU documentation experience. Include the exact posted title in the summary and mirror supported terms such as ETL, Business Intelligence systems, data warehouse processes, data mapping, data profiling, data validation, Oracle, SQL, Python, PySpark, AWS Glue Workflows, and technical documentation.
+Resume strategy: Use reverse chronological Experience order, with current 2026 roles first, followed by AAIS Data Engineering, AAIS Software Engineering, and APKD. Keep ETL fit visible through the exact posted title in the summary, the technical skills section, HealthTrend project selection, and ETL-heavy bullets inside the AAIS roles rather than moving older roles above newer roles.
 
 Cover-letter strategy: Lead with Aryan's BGSU connection and the Enterprise Reporting mission, then prove fit through AAIS ETL/data warehouse evidence and BGSU technical-writing experience.
 
@@ -284,7 +284,7 @@ Weak bullets rewritten:
 
 ## Changes Made
 
-- Resume: Created a one-page ETL-focused resume using relevance-first experience order, the exact posted title, AAIS data engineering as lead evidence, HealthTrend as the selected project, and supported ETL/BI/data warehouse keywords. Removed the standalone BGSU GRA entry after the first compile overflowed to two pages, added a role-relevant HealthTrend Docker Compose bullet when the stricter page-utilization measurement found excess bottom space, then added safe exact JD wording for `ETL jobs`, `technical specifications`, `Oracle databases`, `Enterprise Reporting`, and `data quality testing`.
+- Resume: Created a one-page ETL-focused resume using reverse chronological experience order, the exact posted title, AAIS data engineering as the strongest role-matched evidence, HealthTrend as the selected project, and supported ETL/BI/data warehouse keywords. Removed the standalone BGSU GRA entry after the first compile overflowed to two pages, added a role-relevant HealthTrend Docker Compose bullet when the stricter page-utilization measurement found excess bottom space, then added safe exact JD wording for `ETL jobs`, `technical specifications`, `Oracle databases`, `Enterprise Reporting`, and `data quality testing`.
 - Cover letter: Created a BGSU-specific letter connecting Aryan's campus background to Enterprise Reporting and proving fit through AAIS ETL/data quality work.
 - Internal notes: Recorded work-authorization blocker, past best-consideration date, JD keyword map, important JD term search, unsupported preferred tools, bullet audit, alignment score, visual check, and validator result.
 
@@ -305,14 +305,14 @@ Scoring source: Internal Job Alignment & Evidence Score based on AGENTS.md scori
 Score breakdown:
 
 - Keyword coverage: 35/40 - Strong supported coverage for ETL, ETL jobs, SQL, programming, database design, Oracle databases, data warehouse processes, data mapping, data profiling, data validation, data quality testing, data quality, Business Intelligence systems, Enterprise Reporting-adjacent data warehouse work, technical specifications, technical documentation, troubleshooting, AWS Glue Workflows, PySpark, Spark, Kafka, HDFS, and Apache NiFi. Missing unsupported Talend, PeopleSoft, Power BI, Ralph Kimball, dimensional modeling, direct Data Governance ownership, and exact nightly/weekly job operations.
-- Experience relevance: 21/25 - AAIS Data Engineering and AAIS Software Engineering are highly relevant to ETL, data mapping, SQL, database design, validation, and migration. Actual Reality, SmartSolve, BGSU GRA, and APKD provide useful documentation, operational workflow, data reliability, and support context. Direct university Enterprise Reporting experience is absent.
+- Experience relevance: 20/25 - AAIS Data Engineering and AAIS Software Engineering are highly relevant to ETL, data mapping, SQL, database design, validation, and migration, but they now appear below current 2026 roles to preserve reverse chronological order. Actual Reality, SmartSolve, BGSU GRA, and APKD provide useful documentation, operational workflow, data reliability, and support context. Direct university Enterprise Reporting experience is absent.
 - Impact and evidence: 14/15 - Strong metrics include 20+ TB, 700+ member companies, 160+ source tables, 25 MDM domains, 160+ legacy jobs, 1,000+ SQL tables, 10+ insurance lines, 110 internal users, and 24-hour data latency.
 - Formatting and ATS parsing: 10/10 - Canonical one-page text PDF, standard headings, no tables/images/icons/text boxes, extractable text, and exact title clause used.
 - Risk and gap handling: 5/10 - Major work-authorization blocker, past best-consideration date, and unsupported preferred tools are documented. Claims remain truthful and interview-defensible.
 
 ## Alignment Pass
 
-Job Alignment & Evidence Score: 85/100
+Job Alignment & Evidence Score: 84/100
 
 Internal estimate only; not a predicted ATS score.
 
@@ -352,7 +352,7 @@ Sub-90 Readiness Waiver: Waived - blocked/practice package. The package remains 
 - Gap recovery gate checked: Pass - important JD terms were searched, HealthTrend was selected from the project routing cache, and unsupported preferred tools were documented.
 - ATS source gate checked: Pass - resume source uses canonical single-column LaTeX with no tables, images, icons, or text boxes.
 - Visual consistency gate checked: Pass - resume uses canonical 11-point article class, letterpaper geometry, Computer Modern typography, section rules, and tightitemize bullet system.
-- Page utilization gate checked: Pass - rendered the final resume PDF after compile and confirmed evidence-bearing content reaches the bottom portion without clipping, overlap, unreadable density, or a large unused band. `pdftotext -bbox` measurement after final ATS wording pass showed 10.38 pt / 0.14 in unused bottom space.
+- Page utilization gate checked: Pass - rendered the final reverse-chronological resume PDF after compile and confirmed evidence-bearing content reaches the bottom portion without clipping, overlap, unreadable density, or a large unused band. `pdftotext -bbox` measurement after the ordering correction showed 10.38 pt / 0.14 in unused bottom space.
 - Cover-letter artifact checked: Pass - `cover-letter.md` and one-page `cover-letter.pdf` generated and visually rendered.
 
 Application validator checked: Pass - `python3 automation/validate_application_package.py application-packages/Bowling-Green-State-University/ETL-Developer` returned PASS after final PDF generation and LaTeX artifact cleanup.
