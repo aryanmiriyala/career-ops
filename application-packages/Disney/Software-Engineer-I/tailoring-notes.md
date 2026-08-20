@@ -5,7 +5,7 @@ Secondary angle: Applied AI and data integration for operational workflow system
 
 ## Resume Direction
 
-- Target Professional Title Clause: Waived - Aryan requested removing `Software Engineer I-aligned` from the header. The revised header uses only `Software Engineer` under the name to avoid a keyword-heavy title line.
+- Target Professional Title Clause: `Software Engineer I` appears once in the header contact line before phone/email/links, per Aryan's requested placement.
 - Professional Summary decision: removed. For this early-career resume, a full summary section was less valuable than using the space for concrete experience evidence while keeping the title/target positioning visible in the header.
 - Resume angle: full-stack TypeScript/API/data-layer delivery, AI-assisted engineering, testing, production-minded reliability, and secure operational workflow systems.
 - Strongest evidence emphasized: Actual Reality customer/admin portal work, SmartSolve AI-enabled internal software and Docker workflows, AAIS data integration and backend automation, APKD security/reliability work, and RocketGrader as the full-stack AI/API project.
@@ -75,13 +75,13 @@ Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 36/40 - strong truthful coverage for Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. The exact posted title phrase `Software Engineer I` was removed from the resume header at Aryan's request, and the header was kept intentionally minimal. C and C# were also removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/C++ coverage. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
+- Keyword coverage: 37/40 - strong truthful coverage for Software Engineer I, Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. C and C# were removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/C++ coverage. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
 - Experience relevance: 24/25 - current full-stack portal work, AI-enabled internal software, Docker-based development setup, secure workflow systems, REST API/data-modeling project evidence, and large data integration work map well to Rights Management supply chain application responsibilities.
 - Impact and evidence: 14/15 - resume includes verified scale such as 20+ TB, 700+ member companies, 160+ source tables, 1,000+ production SQL tables, 110 users, and 24-hour data latency, plus concrete maintainability and reproducibility outcomes.
 - Formatting and ATS parsing: 10/10 - revised source remains canonical and ATS-readable, compiles to one page, extracts in readable order, and uses a compact visible title line instead of a Professional Summary section.
 - Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, unsupported Java/Jenkins/media-rights ownership claims are omitted, and adjacent evidence is not overstated.
 
-Exact posted title matched in visible summary/title clause: Waived - Aryan requested a cleaner `Software Engineer` header without the `Software Engineer I-aligned` phrase.
+Exact posted title matched in visible summary/title clause: Pass - `Software Engineer I` appears once in the header contact line before phone/email/links.
 
 Strong matches:
 
