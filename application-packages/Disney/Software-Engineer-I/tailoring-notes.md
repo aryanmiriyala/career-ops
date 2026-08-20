@@ -8,7 +8,7 @@ Secondary angle: Applied AI and data integration for operational workflow system
 - Target Professional Title Clause: `Software Engineer I` appears once in the header contact line before phone/email/links, per Aryan's requested placement.
 - Professional Summary decision: removed. For this early-career resume, a full summary section was less valuable than using the space for concrete experience evidence while keeping the title/target positioning visible in the header.
 - Resume angle: full-stack TypeScript/API/data-layer delivery, AI-assisted engineering, testing, production-minded reliability, and secure operational workflow systems.
-- Strongest evidence emphasized: Actual Reality customer/admin portal work, SmartSolve AI-enabled internal software and Docker workflows, AAIS data integration and backend automation, APKD security/reliability work, and RocketGrader as the full-stack AI/API project.
+- Strongest evidence emphasized: Actual Reality customer-side portal work, SmartSolve AI-enabled internal software and Docker workflows, AAIS data integration/backend automation/access-control work, APKD security/reliability work, and RocketGrader as the full-stack AI/API project.
 - Cover-letter angle: Disney Rights & Accounting needs dependable full-stack systems for rights, availability, content sales, and data integration. The letter connects that to portal engineering, AI integration planning, and large operational data workflows.
 
 ## F-1 Work Authorization Gate
@@ -55,7 +55,7 @@ Important JD Term Search:
 - Experience bullets used: 15.
 - Experience Bullet Count Waiver: Not needed.
 - All experience and project bullets begin with active contribution verbs or current-action wording and avoid `Responsible for`, `Helped`, `Worked on`, and `Assisted`.
-- Bullet rewrite check: the SmartSolve AI roadmap bullet now starts with `Analyzed` instead of `Supported` to make Aryan's concrete contribution clearer for ATS and recruiter scanning.
+- Bullet rewrite check: Actual Reality was debloated from four ticket-like bullets to two higher-level customer-portal bullets, then rewritten to avoid internal terms such as `Plane` and `magic link` in submitted-facing wording; AAIS Software and APKD were expanded with verified production data-modeling, access-control, healthcare security, and legacy-form modernization evidence.
 - Each retained bullet states a concrete artifact or workflow, a supported method/tool where relevant, scope/domain context, and a result such as reliability, maintainability, security, standardized data movement, controlled data access, reproducible development setup, or role-based application workflows.
 - Lower-priority project breadth was compressed to preserve experience depth.
 
@@ -64,7 +64,7 @@ Important JD Term Search:
 - Gap recovery gate checked: Pass - exact JD terms were searched and unsupported Java/Jenkins claims were omitted.
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical single-column Computer Modern visual system with consistent headings, rules, contact block, bullets, role/date hierarchy, and no clipping or overlap.
-- Page utilization gate checked: Pass - summary was removed, the exact `Software Engineer I` title was kept in the contact line, verified testing/Docker evidence was retained, and a second verified RocketGrader REST API/data-model bullet was added so the lower page is better used without spacing tricks or unsupported claims.
+- Page utilization gate checked: Pass - summary was removed, the exact `Software Engineer I` title was kept in the contact line, Actual Reality was compressed to stronger portal-level evidence, and AAIS/APKD evidence was expanded so the page remains full without spacing tricks or unsupported claims.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
@@ -76,7 +76,7 @@ Internal estimate only; not a predicted ATS score.
 Score breakdown:
 
 - Keyword coverage: 37/40 - strong truthful coverage for Software Engineer I, Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. C and C# were removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/C++ coverage. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
-- Experience relevance: 24/25 - current full-stack portal work, AI-enabled internal software, Docker-based development setup, secure workflow systems, expanded REST API/data-modeling project evidence, and large data integration work map well to Rights Management supply chain application responsibilities.
+- Experience relevance: 24/25 - current customer-side portal work, AI-enabled internal software, Docker-based development setup, secure workflow systems, expanded REST API/data-modeling project evidence, AAIS access-control/data-modeling work, APKD healthcare workflow security, and large data integration work map well to Rights Management supply chain application responsibilities.
 - Impact and evidence: 14/15 - resume includes verified scale such as 20+ TB, 700+ member companies, 160+ source tables, 1,000+ production SQL tables, 110 users, and 24-hour data latency, plus concrete maintainability and reproducibility outcomes.
 - Formatting and ATS parsing: 10/10 - revised source remains canonical and ATS-readable, compiles to one page, extracts in readable order, and uses a compact visible title line instead of a Professional Summary section.
 - Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, unsupported Java/Jenkins/media-rights ownership claims are omitted, and adjacent evidence is not overstated.
@@ -85,7 +85,7 @@ Exact posted title matched in visible summary/title clause: Pass - `Software Eng
 
 Strong matches:
 
-- Full-stack application work across UI routes, API integrations, REST APIs, data persistence, authentication, dashboards, and tests.
+- Full-stack application work across customer portals, API integrations, REST APIs, data persistence, authentication, dashboards, and tests.
 - TypeScript/JavaScript and C++ coverage without unsupported Java claims.
 - REST API and data persistence coverage through Express REST APIs, MongoDB/Mongoose, PostgreSQL, Firestore, MySQL, Oracle, and S3 pipelines.
 - AI-powered engineering and Generative AI API adjacency through Codex, Claude Code, LLM API evaluation, LangChain, Mistral AI, and OpenAI API evidence.
