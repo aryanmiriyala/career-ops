@@ -45,9 +45,9 @@ Important JD Term Search:
 
 - Searched locations: `profile/`, `master-documents/`, and `templates/`.
 - Searched terms: `Java`, `Jenkins`, `Docker`, `RESTful`, `REST API`, `REST APIs`, `production incident`, `service request`, `incident`, `user stories`, `requirements`, `peer review`, `code review`, `Generative AI`, `machine learning`, `ML`, `media`, `rights`, `content`, `availability`, `supply chain`, `JavaScript`, `TypeScript`, `object-oriented`, `OOP`, `build and deployment`.
-- Supported - add/use now: TypeScript, JavaScript, C++, REST APIs, SQL, NoSQL/MongoDB/Firestore, Git, Docker, full-stack UI/API/data-layer work, testing, code review, AI-powered tools, LLM APIs, intelligent automation, authentication/session behavior, production login behavior, cache/stale-read reliability, data integration, and data availability.
+- Supported - add/use now: TypeScript, JavaScript, Java, C++, REST APIs, SQL, NoSQL/MongoDB/Firestore, Git, Docker, Jenkins, full-stack UI/API/data-layer work, testing, code review, AI-powered tools, LLM APIs, intelligent automation, authentication/session behavior, production login behavior, cache/stale-read reliability, data integration, and data availability.
 - Supported adjacent evidence: requirements/user-story work is supported through SmartSolve department workflow analysis and QMS planning, plus Actual Reality customer/admin workflow implementation. Production incident and service-request language is supported only as production-minded issue resolution, not formal on-call ownership.
-- Unsupported - omit: Java and Jenkins. The evidence index explicitly lists Java as unsupported, and targeted search did not recover verified Jenkins experience.
+- User-confirmed skills added: Java and Jenkins were added to `profile/skills-master.md` and the resume skills section based on Aryan's August 20, 2026 confirmation. They are listed as skills only, not overstated as project/employment accomplishments.
 - Unsupported / domain-limited - omit from resume or keep only in notes/cover-letter context: direct Disney media rights systems, content accounting, talent payments, first-party Disney+ platform work, and third-party digital media sales.
 
 ## Bullet Audit
@@ -61,7 +61,7 @@ Important JD Term Search:
 
 ## Verification Gates
 
-- Gap recovery gate checked: Pass - exact JD terms were searched and unsupported Java/Jenkins claims were omitted.
+- Gap recovery gate checked: Pass - exact JD terms were searched; Java/Jenkins were initially unverified, then added only as user-confirmed skills after Aryan's August 20, 2026 confirmation.
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical single-column Computer Modern visual system with consistent headings, rules, contact block, bullets, role/date hierarchy, and no clipping or overlap.
 - Page utilization gate checked: Pass - summary was removed, the exact `Software Engineer I` title was kept in the contact line, Actual Reality was compressed to stronger portal-level evidence, and AAIS/APKD evidence was expanded so the page remains full without spacing tricks or unsupported claims.
@@ -69,36 +69,36 @@ Important JD Term Search:
 
 ## Scoring Methodology
 
-Job Alignment & Evidence Score: 93/100
+Job Alignment & Evidence Score: 97/100
 
 Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 37/40 - strong truthful coverage for Software Engineer I, Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. C and C# were removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/C++ coverage. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
+- Keyword coverage: 39/40 - strong truthful coverage for Software Engineer I, Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, Java, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, Jenkins, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. C and C# were removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/Java/C++ coverage. Direct Disney media-rights ownership is intentionally omitted.
 - Experience relevance: 24/25 - current customer-side portal work, AI-enabled internal software, Docker-based development setup, secure workflow systems, expanded REST API/data-modeling project evidence, AAIS access-control/data-modeling work, APKD healthcare workflow security, and large data integration work map well to Rights Management supply chain application responsibilities.
 - Impact and evidence: 14/15 - resume includes verified scale such as 20+ TB, 700+ member companies, 160+ source tables, 1,000+ production SQL tables, 110 users, and 24-hour data latency, plus concrete maintainability and reproducibility outcomes.
 - Formatting and ATS parsing: 10/10 - revised source remains canonical and ATS-readable, compiles to one page, extracts in readable order, and uses a compact visible title line instead of a Professional Summary section.
-- Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, unsupported Java/Jenkins/media-rights ownership claims are omitted, and adjacent evidence is not overstated.
+- Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, Java/Jenkins are listed only as user-confirmed skills, unsupported media-rights ownership claims are omitted, and adjacent evidence is not overstated.
 
 Exact posted title matched in visible summary/title clause: Pass - `Software Engineer I` appears once in the header contact line before phone/email/links.
 
 Strong matches:
 
 - Full-stack application work across customer portals, API integrations, REST APIs, data persistence, authentication, dashboards, and tests.
-- TypeScript/JavaScript and C++ coverage without unsupported Java claims.
+- TypeScript/JavaScript, Java, and C++ coverage, with Java listed only as a user-confirmed skill.
 - REST API and data persistence coverage through Express REST APIs, MongoDB/Mongoose, PostgreSQL, Firestore, MySQL, Oracle, and S3 pipelines.
 - AI-powered engineering and Generative AI API adjacency through Codex, Claude Code, LLM API evaluation, LangChain, Mistral AI, and OpenAI API evidence.
 - Operational reliability through production login hardening, stale-read prevention, validation pipelines, and secure workflow fixes.
 
 Gaps / intentionally omitted unsupported keywords:
 
-- Java is preferred but unsupported in verified profile source, so it is omitted.
-- Jenkins is mentioned as an example build/deployment tool but is unsupported, so it is omitted.
-- Formal production on-call ownership and incident rotation ownership are unsupported, so the resume uses verified production issue-resolution examples instead.
+- Employer/brand phrases such as `Disney Entertainment`, `ESPN Product Technology`, and `product technology` are not repeated in the resume because they would read like disconnected company-name stuffing rather than Aryan's evidence.
+- `Supply chain` is present in the job's business context, but direct media supply chain or rights-management supply chain ownership is not claimed.
 - Direct media rights, content accounting, talent payments, Disney+, or digital media sales platform ownership is not claimed.
+- Formal production on-call ownership and incident rotation ownership are unsupported, so the resume uses verified production issue-resolution examples instead.
 
 Recommended improvements:
 
-- If Aryan has verified Java coursework, Jenkins exposure, or direct media-rights/content-workflow experience, add it to `profile/skills-master.md` or the relevant experience/project source before using it in submitted artifacts.
+- If Aryan has direct media-rights/content-workflow experience or formal incident/on-call ownership, add it to the relevant profile source before using it in submitted artifacts.
 - Identify a Disney Product & Technology referral path or recruiter contact tied to Glendale, Rights & Accounting, Content Platforms & Operations, or media supply chain systems.

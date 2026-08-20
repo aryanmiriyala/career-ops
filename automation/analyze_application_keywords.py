@@ -43,6 +43,7 @@ TECH_TERMS = [
     "IAM",
     "Java",
     "JavaScript",
+    "Jenkins",
     "Kafka",
     "Kubernetes",
     "LLM",

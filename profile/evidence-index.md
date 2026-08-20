@@ -249,7 +249,7 @@ Source: `profile/projects-master.md`, Self-Adaptive Parallelism.
 
 Do not claim these unless Aryan provides new source material or targeted repo inspection verifies them:
 
-- Java, Kotlin, Go, Rust, Ruby, Vue, Kubernetes production ownership, Azure/GCP production ownership, Terraform/Puppet/IaC ownership, Datadog/Splunk/OpenSearch/Redis/RocksDB/Airflow/dbt ownership.
+- Kotlin, Go, Rust, Ruby, Vue, Kubernetes production ownership, Azure/GCP production ownership, Terraform/Puppet/IaC ownership, Datadog/Splunk/OpenSearch/Redis/RocksDB/Airflow/dbt ownership.
 - Formal production on-call/SRE ownership, production monitoring ownership, formal CI/CD ownership, formal TDD/code-coverage ownership, high-availability SaaS ownership at senior scale.
 - Direct GraphQL API ownership, direct Stripe/Salesforce/NetSuite/Sage Intacct/QuickBooks/Microsoft Dynamics/Tray.io/iPaaS integration ownership, unless a specific source is added.
 - Direct security-clearance eligibility, U.S.-citizen/permanent-resident-only eligibility, or unrestricted work authorization.

@@ -6,6 +6,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 - Python
 - SQL
+- Java
 - JavaScript
 - TypeScript
 - Lucee / CFML
@@ -85,6 +86,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - AWS Rekognition client code
 - AWS-hosted application work
 - Docker
+- Jenkins
 - Docker Compose
 - Devcontainers
 - WSL2
@@ -97,6 +99,11 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Firestore rules testing
 - Make
 - Linux
+
+## User-Confirmed Additions
+
+- Java - confirmed by Aryan for resume skills use on August 20, 2026.
+- Jenkins - confirmed by Aryan for resume skills use on August 20, 2026.
 
 ## Data Engineering
 
