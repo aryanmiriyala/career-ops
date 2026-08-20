@@ -5,8 +5,9 @@ Secondary angle: Applied AI and data integration for operational workflow system
 
 ## Resume Direction
 
-- Target Professional Title Clause: `Software Engineer I-aligned software engineer` appears once in the Professional Summary.
-- Resume angle: full-stack TypeScript/API/data-layer delivery, AI-assisted engineering, production-minded reliability, and secure operational workflow systems.
+- Target Professional Title Clause: Waived - Aryan requested removing `Software Engineer I-aligned` from the header. The revised header uses one compact positioning line under the name: `Software Engineer | Full-Stack Applications | API & Data Systems | AI-Powered Tools`.
+- Professional Summary decision: removed. For this early-career resume, a full summary section was less valuable than using the space for concrete experience evidence while keeping the title/target positioning visible in the header.
+- Resume angle: full-stack TypeScript/API/data-layer delivery, AI-assisted engineering, testing, production-minded reliability, and secure operational workflow systems.
 - Strongest evidence emphasized: Actual Reality customer/admin portal work, SmartSolve AI-enabled internal software and Docker workflows, AAIS data integration and backend automation, APKD security/reliability work, and RocketGrader as the full-stack AI/API project.
 - Cover-letter angle: Disney Rights & Accounting needs dependable full-stack systems for rights, availability, content sales, and data integration. The letter connects that to portal engineering, AI integration planning, and large operational data workflows.
 
@@ -51,10 +52,11 @@ Important JD Term Search:
 
 ## Bullet Audit
 
-- Experience bullets used: 13.
+- Experience bullets used: 15.
 - Experience Bullet Count Waiver: Not needed.
 - All experience and project bullets begin with active contribution verbs or current-action wording and avoid `Responsible for`, `Helped`, `Worked on`, and `Assisted`.
-- Each retained bullet states a concrete artifact or workflow, a supported method/tool where relevant, scope/domain context, and a result such as reliability, maintainability, security, standardized data movement, or controlled data access.
+- Bullet rewrite check: the SmartSolve AI roadmap bullet now starts with `Analyzed` instead of `Supported` to make Aryan's concrete contribution clearer for ATS and recruiter scanning.
+- Each retained bullet states a concrete artifact or workflow, a supported method/tool where relevant, scope/domain context, and a result such as reliability, maintainability, security, standardized data movement, controlled data access, reproducible development setup, or role-based application workflows.
 - Lower-priority project breadth was compressed to preserve experience depth.
 
 ## Verification Gates
@@ -62,7 +64,7 @@ Important JD Term Search:
 - Gap recovery gate checked: Pass - exact JD terms were searched and unsupported Java/Jenkins claims were omitted.
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical single-column Computer Modern visual system with consistent headings, rules, contact block, bullets, role/date hierarchy, and no clipping or overlap.
-- Page utilization gate checked: Pass - rendered resume is exactly one page and carries evidence-bearing content through the lower page into Technical Skills without a large unused bottom band.
+- Page utilization gate checked: Pass - summary was removed, a compact software-engineer title line was added under the name, and verified testing/Docker evidence was added so the lower page is substantially better used without spacing tricks or unsupported claims.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
@@ -73,13 +75,13 @@ Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 37/40 - strong truthful coverage for Software Engineer I, full-stack software applications, UI/API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
-- Experience relevance: 23/25 - current full-stack portal work, AI-enabled internal software, secure workflow systems, and large data integration work map well to Rights Management supply chain application responsibilities.
-- Impact and evidence: 14/15 - resume includes verified scale such as 20+ TB, 700+ member companies, 160+ source tables, 1,000+ production SQL tables, 110 users, and 24-hour data latency.
-- Formatting and ATS parsing: 10/10 - compiled resume is one page, text-extractable in reading order, and passes canonical source, visual consistency, page utilization, and cover-letter artifact gates.
+- Keyword coverage: 36/40 - strong truthful coverage for Software Engineer, full-stack application work, API/data layers, TypeScript, JavaScript, C++, REST APIs, SQL/NoSQL persistence, Git, Docker, testing, deployment-adjacent tools, AI-powered tools, Generative AI APIs, machine learning, intelligent automation, and data integration. The exact posted title phrase `Software Engineer I` was removed from the resume header at Aryan's request. C and C# were also removed from the skills list to preserve page fit because they are less important than the Disney-matched TypeScript/JavaScript/C++ coverage. Java, Jenkins, and direct Disney media-rights ownership are intentionally omitted.
+- Experience relevance: 24/25 - current full-stack portal work, AI-enabled internal software, Docker-based development setup, secure workflow systems, REST API/data-modeling project evidence, and large data integration work map well to Rights Management supply chain application responsibilities.
+- Impact and evidence: 14/15 - resume includes verified scale such as 20+ TB, 700+ member companies, 160+ source tables, 1,000+ production SQL tables, 110 users, and 24-hour data latency, plus concrete maintainability and reproducibility outcomes.
+- Formatting and ATS parsing: 10/10 - revised source remains canonical and ATS-readable, compiles to one page, extracts in readable order, and uses a compact visible title line instead of a Professional Summary section.
 - Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, unsupported Java/Jenkins/media-rights ownership claims are omitted, and adjacent evidence is not overstated.
 
-Exact posted title matched in visible summary/title clause: Pass - `Software Engineer I` appears once in the Professional Summary.
+Exact posted title matched in visible summary/title clause: Waived - Aryan requested a cleaner `Software Engineer` header without the `Software Engineer I-aligned` phrase.
 
 Strong matches:
 
