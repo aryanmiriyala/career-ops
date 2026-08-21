@@ -23,6 +23,8 @@ Do not use the cover letter as a paragraph version of the resume. Use it to conn
 - Include a personal connection only when it is real and specific.
 - Prefer one deep technical example over a broad list of tools.
 - Do not invent metrics, company interest, product familiarity, or domain motivation.
+- Do not use the letter to repeat every resume keyword. A cover letter should deepen one or two matching proof points and use exact job-description language only where it reads naturally.
+- Keep terminology synchronized with the resume. If the resume translates private/internal work into recruiter-readable product or system language, the cover letter should use the same public-safe language.
 - Do not mention F-1, OPT, STEM OPT, visa status, future sponsorship, E-Verify, Form I-983, or work-authorization risk in the cover letter unless Aryan explicitly asks. Track those issues internally in tailoring notes and the application tracker.
 - Do not volunteer gap language such as `I have not worked directly with...` in the submitted cover letter unless the gap is an obvious central requirement and reframing it is stronger than silence. Prefer positive adjacent evidence and keep unsupported-keyword analysis in `tailoring-notes.md`.
 - Proofread carefully before generating final artifacts.
@@ -72,6 +74,7 @@ Choose one primary angle per letter:
 - If the job description repeats specific keywords, incorporate them naturally only when truthful.
 - Avoid claims like "perfect fit," "expert," or "passionate about technology" unless the sentence proves it.
 - Avoid confidential details, internal names, or unsupported business impact.
+- Avoid generic stack paragraphs that could fit any software role. Name only the tools, systems, domains, and results that directly support this employer's requirements.
 - When a role has missing tools or domain requirements, write toward the strongest verified match instead of apologizing for the missing item. The application notes should document omitted unsupported terms; the cover letter should sell the best truthful case.
 - Keep the tone personal plus technical: enough human motivation to feel specific, enough technical evidence to prove fit.
 
@@ -81,6 +84,7 @@ Choose one primary angle per letter:
 - Purdue OWL describes cover letters as a way to explain experience in a story-like format, go deeper on important skills, relate those skills to job requirements, show individualized tailoring, and demonstrate written communication.
 - MIT CAPD recommends directing each cover letter to a specific position/company, using the job description and company research, sharing brief stories that demonstrate role-related qualifications, and keeping the letter to one page with 10-12 point font.
 - UC Berkeley Career Engagement recommends that cover letters expand on resume experience as it relates to the job description, explain interest in the specific employer, connect qualifications to employer needs, show knowledge of the position and company, and be concise and error-free.
+- Aug. 21, 2026 web check reconfirmed that the cover letter should be customized to the position/company and should support, not duplicate, the resume. The pipeline now treats submitted-facing terminology sync as a verification gate.
 
 ## Sources
 

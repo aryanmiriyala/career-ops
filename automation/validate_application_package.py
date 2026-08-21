@@ -40,12 +40,11 @@ TAILORING_NOTE_MARKERS = [
 ]
 
 RESUME_TEXT_MARKERS = [
+    "Aryan Miriyala",
+    "aryanmiriyala@gmail.com",
+    "Education",
     "Experience",
-    "Projects",
     "Technical Skills",
-    "SmartSolve",
-    "American Association of Insurance Services",
-    "Alliance for Paired Kidney Donation",
 ]
 
 BUILD_ARTIFACT_SUFFIXES = {".aux", ".log", ".out", ".toc", ".fls", ".fdb_latexmk", ".synctex.gz"}
@@ -56,6 +55,7 @@ EXPERIENCE_BULLET_WAIVER_MARKER = "Experience Bullet Count Waiver"
 MAX_PROFESSIONAL_SUMMARY_LINES = 2
 MAX_UNUSED_BOTTOM_POINTS = 30.0
 WARN_UNUSED_BOTTOM_POINTS = 24.0
+MAX_RESUME_PARSE_BYTES = int(2.5 * 1024 * 1024)
 MAX_SUBMISSION_ARTIFACT_BYTES = 5 * 1024 * 1024
 APPLICATION_ANSWER_FILES = ("application-questions.md", "application-answers.md")
 APPLICATION_ANSWER_GATE_NAME = "Application-answer human voice gate checked"
@@ -81,6 +81,12 @@ FORBIDDEN_RESUME_SOURCE_PATTERNS = [
     (r"\\begin\{textblock\*?\}", "text boxes/positioned text blocks are not allowed"),
     (r"\\usepackage(?:\[[^\]]*\])?\{textpos\}", "textpos/text boxes are not allowed in application resume source"),
     (r"\\usepackage(?:\[[^\]]*\])?\{fontawesome5?\}", "icons are not allowed in application resumes"),
+    (r"\\usepackage(?:\[[^\]]*\])?\{xcolor\}", "xcolor/color styling is not allowed in application resumes"),
+    (r"\\usepackage(?:\[[^\]]*\])?\{color\}", "color styling is not allowed in application resumes"),
+    (r"\\(?:text)?color\b", "colored text can create ATS/hidden-text risk in application resumes"),
+    (r"\\colorbox\b", "colored boxes are not allowed in application resumes"),
+    (r"\\usepackage(?:\[[^\]]*\])?\{transparent\}", "transparent text creates hidden-text risk in application resumes"),
+    (r"\\transparent\b", "transparent text creates hidden-text risk in application resumes"),
     (r"\\usepackage(?:\[[^\]]*\])?\{fancyhdr\}", "resume content must not rely on headers or footers"),
     (r"\\pagestyle\{fancy\}", "resume content must not rely on headers or footers"),
     (r"\\fancy(?:head|foot)\b", "resume content must not rely on headers or footers"),
@@ -450,6 +456,12 @@ def check_resume_pdf(app_dir: Path, errors: list[str], warnings: list[str]) -> N
     resume_pdf = app_dir / "resume.pdf"
     if not resume_pdf.is_file():
         return
+
+    if resume_pdf.stat().st_size > MAX_RESUME_PARSE_BYTES:
+        errors.append(
+            "resume.pdf exceeds the conservative 2.5 MB ATS parsing limit "
+            "used by Greenhouse; reduce file size or submit an employer-requested alternate format"
+        )
 
     if shutil.which("pdfinfo"):
         code, stdout, stderr = run_command(["pdfinfo", str(resume_pdf)])

@@ -72,6 +72,10 @@ Nice-to-have tools:
 
 Unsupported terms to avoid:
 
+Low-value / boilerplate terms tracked but not forced:
+
+Internal/private terms translated for recruiter readability:
+
 ## Gap Recovery Gate
 
 Gap recovery status:
@@ -144,6 +148,12 @@ Weak bullets rewritten:
 
 - 
 
+Human recruiter readability notes:
+
+- Internal/tool-specific terms translated:
+- Private details removed or generalized:
+- Current/private-role debloat decision:
+
 ## Changes Made
 
 - Resume:
@@ -208,8 +218,11 @@ Recommended improvements:
 - Keyword coverage helper run:
 - Gap recovery gate checked: Pass -
 - ATS source gate checked: Pass -
+- Human recruiter readability gate checked: Pass -
 - Visual consistency gate checked: Pass -
 - Page utilization gate checked: Pass -
+- Submitted-facing terminology sync checked: Pass -
+- Score consistency gate checked: Pass -
 - Cover-letter artifact checked: Pass -
 - Application-answer human voice gate checked: Pass - Required only when `application-questions.md` or `application-answers.md` exists; answers were checked for concrete personal context, grounded claims, plain language, no semicolons, no em dashes, no unsupported company/personal claims, and no generic AI-sounding phrasing.
 - Application validator run:

@@ -42,7 +42,7 @@ Working as a Software Engineering Intern at Actual Reality Technologies, improvi
 
 ### Handshake Description
 
-Software Engineering Intern improving a private Next.js/TypeScript customer portal with Firebase, Plane integration, authentication/session fixes, dashboard status logic, and Vitest-tested customer/admin workflows.
+Software Engineering Intern improving a private Next.js/TypeScript customer portal with Firebase, project-management API integration, authentication/session fixes, dashboard status logic, and Vitest-tested customer/admin workflows.
 
 ### Tech Stack
 
@@ -50,15 +50,15 @@ Software engineering / Customer portal / Tech stack: TypeScript, Next.js 15, Rea
 
 ### Business / Problem Context
 
-Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development for manufacturing and operational contexts. Aryan's current work is focused on the company customer portal, a private TypeScript/Next.js application that exposes customer/admin workflows and Plane-backed project information.
+Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development for manufacturing and operational contexts. Aryan's current work is focused on the company customer portal, a private TypeScript/Next.js application that exposes customer/admin workflows and project-management data. Submitted-facing bullets should translate internal or vendor-specific details into customer-portal, project-data, workflow, authentication, dashboard, and API-integration language unless the exact vendor/tool is a job-description keyword.
 
 ### Problem / Company Impact Context
 
 - Improved a private customer portal used for customer/admin workflows at `my.actualreality.ai`.
-- Worked across Next.js/TypeScript UI routes, authentication/session behavior, Plane-backed project data, dashboard status logic, health checks, documentation, and automated tests.
+- Worked across Next.js/TypeScript UI routes, authentication/session behavior, project-management data integration, dashboard status logic, health checks, documentation, and automated tests.
 - Consolidated separate Capture, Define, and Whiteboard tools into one tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Improved production auth behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login navigation so users do not see a login-page flash or stranded spinner.
-- Improved Plane-backed project-data reliability by paginating work-item state counts, forcing refreshes through route and gateway cache layers, preventing older overlapping reads from overwriting newer data, and classifying project states from counts.
+- Improved customer-portal project-data reliability by paginating work-item state counts, forcing refreshes through route and gateway cache layers, preventing older overlapping reads from overwriting newer data, and classifying project states from counts.
 - Added or updated Vitest/Testing Library coverage, architecture tests, route tests, and documentation around project phases, Plane integration, auth/session behavior, and team-capacity planning.
 
 ### Work Performed
@@ -90,12 +90,12 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 
 ### Reusable Bullet Options
 
-- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
-- Consolidated separate Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
-- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions to avoid redirect flashes and stuck spinners.
-- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
-- Investigating customer-portal security and reliability issues across magic-link account creation, role-change side effects, client invite domains, Firestore read-error handling, query resubscription correctness, and Firebase Auth/user-document reconciliation.
-- Added tests and documentation across Vitest route/component suites, architecture guardrails, Plane integration, dashboard status decisions, auth/session behavior, and deferred team-capacity planning.
+- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Consolidated customer workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
+- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
+- Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
+- Investigating customer-portal security and reliability issues across account-creation flows, role-change side effects, client invite domains, Firestore read-error handling, query resubscription correctness, and Firebase Auth/user-document reconciliation.
+- Added tests and documentation across Vitest route/component suites, architecture guardrails, project-management API integration, dashboard status decisions, auth/session behavior, and deferred team-capacity planning.
 
 ### Source And Verification Notes
 

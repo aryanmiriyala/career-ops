@@ -26,7 +26,7 @@ I actively use AI-assisted engineering workflows with tools such as Codex and Cl
 
 ## Actual Reality / Augmented Intelligence
 
-At Actual Reality Technologies, I am improving a private Next.js/TypeScript customer portal with Firebase-backed application behavior, Plane-backed project data, customer/admin workflows, authentication/session handling, dashboard status logic, and Vitest-tested changes. Recent work has included consolidating workshop tools into a tabbed route, hardening login/session flows, and making project status reporting more reliable by deriving states from work-item counts instead of rounded progress.
+At Actual Reality Technologies, I am improving a private Next.js/TypeScript customer portal with Firebase-backed application behavior, project-management data integration, customer/admin workflows, authentication/session handling, dashboard status logic, and Vitest-tested changes. Recent work has included consolidating customer workflow tools into a tabbed portal experience, hardening login/session flows, and making project status reporting more reliable by deriving states from work-item counts instead of rounded progress.
 
 ## Security and Compliance
 

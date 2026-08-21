@@ -2,7 +2,7 @@
 
 Dear Hiring Team,
 
-I am applying for the [Role] position at [Company]. My background combines full-stack software engineering, cloud data engineering, AI-assisted development, and security-aware application work across healthcare, insurance, and internal product environments.
+I am applying for the [Role] position at [Company]. I am interested in this role because [specific company/product/domain reason], and my strongest matching experience is [one verified role-aligned system, workflow, or project].
 
 Before drafting the final version, collect Aryan's personal context:
 
@@ -11,11 +11,11 @@ Before drafting the final version, collect Aryan's personal context:
 - What specific company work, product, or value do you want to reference?
 - What do you want the hiring manager to remember about you?
 
-In my recent work, I have built full-stack applications with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and modern authentication patterns including SSO, RBAC, JWT, and Auth0. I have also built cloud and data workflows with AWS Glue, S3, Lambda, PySpark, Impala, Oracle, PostgreSQL, and Semarchy MDM.
+In [experience/project], I [built/improved/automated/secured] [specific system or workflow] using [truthful tools/methods] for [user/business/domain context], which [verified result or qualitative impact]. That maps to this role's need for [specific JD responsibility] because [short connection].
 
-What draws me to [Company] is [specific reason from the job description or company mission]. The role's focus on [specific technical/domain requirement] aligns closely with my experience in [matching experience].
+I would also bring [second concise proof point] from [verified experience/project], where I [specific contribution] to [specific outcome]. I have kept the submitted resume and this letter aligned around the same public-safe terminology for [system/domain/technical area].
 
-I would welcome the opportunity to discuss how my experience building secure, data-driven, AI-enabled software systems can contribute to [Company]'s work.
+I would welcome the opportunity to discuss how this experience can contribute to [Company]'s work on [specific team/product/domain from the posting].
 
 Sincerely,
 

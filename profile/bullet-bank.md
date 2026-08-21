@@ -19,13 +19,14 @@ Avoid:
 - Unsupported metrics.
 - Keyword stuffing that does not read naturally.
 - Bullets that only list tasks without engineering impact.
+- Internal ticket, route, or tool names that an outside recruiter cannot understand without explanation.
 
 ## Software Engineer / Full-Stack Engineer
 
-- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
-- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
-- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions to avoid redirect flashes and stuck spinners.
-- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
+- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Consolidated customer-facing workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
+- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
+- Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
 - Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication for secure internal user access.
 - Contributed to a React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.

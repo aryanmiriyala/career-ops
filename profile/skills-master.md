@@ -198,14 +198,14 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 ## Product Integrations and Workflow Systems
 
-- Plane API
-- Plane project/work-item integration
-- Plane-backed project dashboards
+- Project-management API integration
+- Project/work-item integration
+- Project-data dashboards
 - Customer portals
 - Admin portals
 - Feature flags
 - Session-cookie domain handling
-- Magic-link login flows
+- Secure account-link login flows
 - Password login flows
 - Workshop route consolidation
 - Tabbed product workflows

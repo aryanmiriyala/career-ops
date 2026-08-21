@@ -10,9 +10,11 @@ Use this guide when tailoring resumes for applicant tracking systems, recruiter 
 - Use the canonical LaTeX source structure required by the validator: `letterpaper,11pt` article class, explicit `letterpaper` geometry, `glyphtounicode`, `\pdfgentounicode=1`, `\pagestyle{empty}`, `\linespread{0.92}`, and the canonical single-level `tightitemize` list.
 - Tailor every resume to the job description instead of using a generic all-purpose resume.
 - Use a clean, consistent, ATS-readable layout with conventional section names: `Education`, `Experience`, `Projects`, and `Technical Skills`.
+- Submit a text-based PDF by default when accepted, use DOCX when the employer asks for it or a portal fails PDF parsing, and never submit scanned/image-based/design-flattened resumes. Keep `resume.pdf` under the conservative 2.5 MB parser target.
 - Use bullets, not paragraphs, for experience and project descriptions.
 - Keep formatting consistent: dates, company names, job titles, locations, and project titles should appear in the same pattern throughout.
 - Do not add photos, personal demographic information, references, salary history, or unrelated details.
+- Do not use hidden text, white text, transparent text, colored keyword text, or color packages to manipulate parser output. Every keyword must be visible, truthful, and useful to a human reviewer.
 
 ## Keyword Strategy
 
@@ -92,10 +94,11 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 - Use a simple single-column layout for generated application resumes unless a template has already been tested.
 - Avoid text boxes, images, icons, graphics, and decorative elements in the resume PDF.
 - Do not use tables or LaTeX `tabular`/`tabular*` constructs for resume content, even when the PDF appears text-extractable.
+- Do not use color or transparency in resume source. The canonical resume is black text only; colored or hidden keyword text creates credibility and parser risk.
 - Use standard section headings and chronological ordering.
 - Use normal punctuation and plain text for technologies where possible.
 - Generate a PDF from LaTeX, then extract and inspect the text to confirm the content is readable in order.
-- Keep final submission artifacts under 5 MB unless the employer explicitly permits a larger file.
+- Keep `resume.pdf` under the conservative 2.5 MB parser target and keep final submission artifacts under 5 MB unless the employer explicitly permits a larger file.
 
 ## Human Readability Rules
 
@@ -164,10 +167,11 @@ For healthcare or compliance-adjacent roles:
 7. Tune the skills section to the job's language.
 8. Audit every experience and project bullet against the bullet checklist.
 9. Compile LaTeX and confirm the PDF is exactly one page.
-10. Extract PDF text and verify ATS readability.
-11. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review.
-12. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
-13. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the human recruiter readability gate, the visual consistency gate, the page utilization gate, the submitted-facing terminology sync, score consistency, and verification results.
+10. Confirm the PDF is text-based, under the 2.5 MB parser target, and extractable with `pdftotext`.
+11. Extract PDF text and verify ATS readability.
+12. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review.
+13. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
+14. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the human recruiter readability gate, the visual consistency gate, the page utilization gate, the submitted-facing terminology sync, score consistency, and verification results.
 
 ## Common Failure Modes
 
@@ -184,12 +188,14 @@ For healthcare or compliance-adjacent roles:
 - Too many unrelated skills, making the target role unclear.
 - Project duplication or stale project claims that are no longer repository-grounded.
 - Overstated AI claims that say `built AI` without explaining the product workflow, data flow, or user value.
+- Validator rules that force a fixed employer/project mix instead of allowing the job-description evidence map to decide what belongs on the page.
 
 ## Source Notes
 
 - Yale Office of Career Strategy recommends comparing resumes against a job description, checking ATS visibility, and using specific keywords to improve noticeability.
 - Yale OCS states its resume templates are formatted to work with Applicant Tracking Systems.
 - Greenhouse support documentation identifies resume formatting issues that can break parsing, including graphics, photos, word art, image-based resumes, complex tables, headers, footers, text boxes, columned layouts, unclear sections, and incomplete job titles.
+- Greenhouse support documents a 2.5 MB parsing limit even though candidate uploads can be larger; the pipeline therefore keeps the resume parser target below 2.5 MB.
 - Lever Help Center says parsing extracts readable information and cannot parse image files; it recommends testing whether document text can be highlighted.
 - Workday Resume REST API documentation supports DOCX and text-based PDFs for resume scanning and specifically excludes image-based PDFs.
 - Oracle Taleo, SAP SuccessFactors, and iCIMS documentation reinforce that recruiting systems store and process resume/attachment files through supported document formats rather than arbitrary visual layouts.
@@ -201,6 +207,10 @@ For healthcare or compliance-adjacent roles:
 - University of Michigan Career Center lists a resume summary as optional and more common with experienced professionals, but available to students when useful.
 - University of Michigan Career Center recommends tailoring resumes, keeping formatting easy to skim, using bullets, quantifying when possible, and using the formula `Action Verb + What + How/Why/Impact`.
 - University of Michigan also recommends using AI carefully: useful for keyword extraction and review, but final bullets must be accurate and written in Aryan's own voice.
+
+## Standards Audit Notes
+
+- Aug. 21, 2026 web check: Reconfirmed Greenhouse, Workday, Oracle Taleo, iCIMS, MIT CAPD, UC Berkeley, University of Michigan, Yale, and Harvard guidance. Pipeline changes added the 2.5 MB resume parser target, explicit text-based PDF/DOCX handling, hidden/color-text bans, and removal of fixed-company validator markers that could weaken job-specific tailoring.
 
 ## Sources
 
