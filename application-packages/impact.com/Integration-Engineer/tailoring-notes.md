@@ -67,7 +67,7 @@ Important JD Term Search:
 - Human recruiter readability gate checked: Pass - private/internal wording was translated into recruiter-readable integration, SaaS, customer workflow, AI routing, documentation, and troubleshooting language.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical Computer Modern application family, standard section headings, visible rules, consistent bullet symbols, and no clipping or overlap.
 - Page utilization gate checked: Pass - content extends into the bottom portion of the page with role-aligned experience, two targeted projects, and compact skills without filler or spacing tricks.
-- Submitted-facing terminology sync checked: Pass - resume and cover letter both use AI Gateway, customer-facing SaaS platform/customer portal, project-management API integration, REST APIs, SQL, SaaS-style workflow integration, technical integration documentation, troubleshooting, implementation handoff, and onboarding language consistently.
+- Submitted-facing terminology sync checked: Pass - resume and cover letter both use AI Gateway, customer-facing SaaS platform/customer portal, project-management API integration, REST APIs, SQL, SaaS-style workflow integration, integration documentation, technical issues, implementation handoff, and onboarding language consistently.
 - Score consistency gate checked: Pass - recorded score is 90/100 and the written score breakdown totals 90 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
@@ -87,7 +87,7 @@ Score breakdown:
 
 Exact posted title matched in visible summary/title/header clause: Pass - `Integration Engineer` appears once in the header/contact block.
 
-Exact-term analyzer result: 16/28 found in the final resume. Found terms: `AI`, `client`, `HTML`, `implementation`, `integration documentation`, `Integration Engineer`, `JavaScript`, `Onboarding`, `requirements`, `REST`, `REST APIs`, `SaaS platform`, `SQL`, `technical solutions`, and `web technologies`. Missing exact terms: `affiliate`, `authorization`, `client onboarding`, `client requirements`, `clients`, `customer-centric`, `design and integration`, `digital marketing`, `solution discussions`, `technical discovery`, `technical issues`, and `troubleshoot`. Several are covered with truthful adjacent wording or morphology; unsupported industry/client-discovery terms were not forced.
+Exact-term analyzer result: 18/28 found in the final resume. Found terms: `AI`, `client`, `client requirements`, `HTML`, `implementation`, `integration documentation`, `Integration Engineer`, `JavaScript`, `Onboarding`, `requirements`, `REST`, `REST APIs`, `SaaS platform`, `SQL`, `technical issues`, `technical solutions`, and `web technologies`. Missing exact terms: `affiliate`, `authorization`, `client onboarding`, `clients`, `customer-centric`, `design and integration`, `digital marketing`, `solution discussions`, `technical discovery`, and `troubleshoot`. Several are covered with truthful adjacent wording or morphology; unsupported industry/client-discovery terms were not forced.
 
 Strong matches:
 
