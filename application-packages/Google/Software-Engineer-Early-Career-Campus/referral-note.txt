@@ -1,7 +1,3 @@
-Hey Anderson, thank you again for helping with the referral. I attached my resume.
-
-For the "why hire me" part, you can edit this however you think sounds natural.
-
 I'd recommend Aryan because he has a strong computer science foundation and has applied it across AI infrastructure, product engineering, data systems, research, insurance, and healthcare software. He completed both his B.S. and M.S. in Computer Science at Bowling Green State University with a 4.00 GPA, graduating with his master's in August 2026. He has solid experience with data structures, algorithms, Python, C++, TypeScript, backend/data workflows, and AI-assisted development.
 
 At Actual Reality Technologies, he is working on an AI Gateway for model-call routing and policy enforcement. It is designed as a stateless, OpenAI-compatible layer that builds on LiteLLM while adding task-aware routing, model registry logic, cost and rate controls, fallback behavior, observability, and versioned decision records across cloud and on-prem deployments. He is also building customer portal functionality with Next.js, TypeScript, Firebase, authentication/session flows, dashboard logic, project-management API integration, and tested customer/admin workflows. At SmartSolve, he used Codex and Claude Code in real engineering workflows and helped design an AI-enabled QMS dependency register.
