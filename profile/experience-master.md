@@ -33,7 +33,7 @@ Core themes:
 ## Actual Reality Technologies
 
 Role: Software Engineering Intern
-Location: Toledo, OH
+Location: Perrysburg, OH
 Dates: Jul. 2026 - Present
 
 ### Platform-Ready Description
@@ -100,7 +100,8 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 ### Source And Verification Notes
 
 - Confirmed by Aryan: role title `Software Engineering Intern`, company `Actual Reality Technologies`, start date `July 2026`.
-- Public company context found through LinkedIn/web search: Toledo, OH company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
+- Confirmed by Aryan: Actual Reality Technologies location should be listed as `Perrysburg, OH`.
+- Public company context found through LinkedIn/web search: northwest Ohio company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
 - GitHub source status: authenticated `gh` access inspected `Actual-Reality/customer-portal` on August 7, 2026. Evidence includes private repo metadata, package.json, authored commit history, PR list, file-level stats, and branch diffs. Keep customer/client details public-safe when drafting submitted artifacts.
 - Ticket brief source: user-provided Customer Portal ticket brief snapshot dated August 7, 2026, repo at `87f79a9`, covering Aryan-created or Aryan-assigned Plane tickets across Todo, In review, In progress, Cancelled, and conflict states.
 
