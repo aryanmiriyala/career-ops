@@ -72,7 +72,7 @@ Copy each role into LinkedIn in this order:
 Title: Software Engineering Intern
 Company: Actual Reality Technologies
 Dates: Jul. 2026 - Present
-Location: Toledo, Ohio, United States
+Location: Perrysburg, Ohio, United States
 
 Description:
 

@@ -1,0 +1,14 @@
+Henry DM
+
+Hi Henry, I saw Sixtyfour's Software Engineering Intern role and your post about building agents for open web research.
+I'm a recent CS grad and current Software Engineering Intern at Actual Reality, where I'm working on an AI Gateway for model call routing, cost controls, fallback behavior, observability, and decision records. Before that, I worked on cloud data pipelines and backend automation at AAIS, healthcare workflow software at APKD, and AI assisted internal tooling at SmartSolve.
+I also have a published paper on LLM backed code review support, specifically generating grounded pull request descriptions from commits, diffs, linked issues, and repo metadata. Outside of that, I've built FalconGraph, a source grounded RAG/search system with crawling and cited answers, and I've done OSINT adjacent security lab work as a graduate research assistant.
+More about my work is at www.aryanmiriyala.com. I'd love to be considered for the Software Engineering Intern role.
+
+
+Yahia DM
+
+Hi Yahia, I saw Sixtyfour's Software Engineering Intern role and wanted to reach out directly.
+I'm a recent CS grad and current Software Engineering Intern at Actual Reality, where I'm working on an AI Gateway for model call routing, cost controls, fallback behavior, observability, and decision records. Before that, I worked on cloud data pipelines and backend automation at AAIS, healthcare workflow software at APKD, and AI assisted internal tooling at SmartSolve.
+I also have a published paper on LLM backed code review support, specifically generating grounded pull request descriptions from commits, diffs, linked issues, and repo metadata. Outside of that, I've built FalconGraph, a source grounded RAG/search system with crawling and cited answers, and I've done OSINT adjacent security lab work as a graduate research assistant.
+More about my work is at www.aryanmiriyala.com. I'd love to be considered for the Software Engineering Intern role.
