@@ -1,0 +1,115 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  Full Stack Developer - Securitized Products Technology $|$
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com}\\[-1pt]
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala} $|$
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala}
+\end{center}\vspace{-10pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 -- Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Improving a private Next.js/TypeScript customer portal across customer/admin workflows, project-management API integration, authentication and authorization flows, dashboard logic, health checks, and Vitest unit testing.
+  \item Contributing to an AI Gateway extending LiteLLM with OpenAI-compatible request handling, task-aware routing, cost/rate controls, fallback chains, monitoring and observability, and decision records.
+  \item Added tests and documentation across project-management integration, dashboard status decisions, authentication/session behavior, route coverage, and customer workflow guardrails to improve implementation handoff.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, translating business requirements into secure new-hire software.
+  \item Built Docker devcontainer workflows for WSL2 and Colima, improving developer onboarding reproducibility while isolating AI-assisted development around proprietary source code and data.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of high-volume production insurance data for performance sensitive charges across 700+ member companies.
+  \item Profiled 160+ MySQL, Oracle, and Impala tables with Python, Pandas, SQL, and JDBC, mapping source-system relationships into a 25-domain taxonomy for maintainable migration.
+  \item Replaced 160+ legacy Pentaho jobs with AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, standardizing cloud data movement and maintainability.
+  \item Built reverse-ETL and data-validation workflows with custom AWS IAM roles, supporting controlled self-service access, reduced manual entry, and 24-hour data latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines for scalable standardized data-model delivery.
+  \item Built Python data-processing workflows with Pandas, multiprocessing, fuzzy matching, and hashing to clean large CSV datasets and support insurance standardization pipelines.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad internal access with role-specific controls for about 110 users.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Applied secure coding to stabilize an AWS-hosted Lucee/CFML healthcare workflow platform with anti-CSRF protection, audit logging, JavaScript fallbacks, debugging, issue resolution, and import reliability fixes.
+\end{tightitemize}
+
+\resumesection{Selected Projects}
+\projectHeading{RocketGrader AI Assignment Platform}{Angular, TypeScript, Express, MongoDB, Auth0, AWS S3}
+\begin{tightitemize}
+  \item Built a full-stack assignment-feedback platform with Angular, Express REST APIs, MongoDB/Mongoose, Auth0, AWS S3, LangChain, and role-based teacher/student dashboards.
+\end{tightitemize}
+
+\projectHeading{HealthTrend Streaming Pipeline}{Docker, Kafka, Spark, PySpark, HDFS}
+\begin{tightitemize}
+  \item Built a Dockerized healthcare data pipeline routing CSV patient records into HDFS, streaming JSON health events through Kafka, and processing both sources with Spark/PySpark.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frontend:} Java, JavaScript/TypeScript, Python, SQL, C++, C, C\#, algorithms, object-oriented programming, React, ReactJS, Angular, Next.js, HTML5, CSS\\
+\textbf{Backend, APIs \& Data:} Node.js, Express, REST APIs, JSON, PostgreSQL, MySQL, Oracle, MongoDB, JDBC, PySpark, Spark, Kafka, HDFS\\
+\textbf{Cloud, DevOps \& Security:} AWS Glue, AWS S3, AWS Lambda, AWS IAM, Docker, Jenkins, Git, Linux, Vercel, Vitest, Testing Library, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization
+
+\end{document}
