@@ -38,7 +38,7 @@ Dates: Jul. 2026 - Present
 
 ### Platform-Ready Description
 
-Working as a Software Engineering Intern at Actual Reality Technologies, improving the private customer portal hosted at `my.actualreality.ai`. Current work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage. Contributions include merging separate Capture, Define, and Whiteboard tools into a tabbed Workshop route; hardening production login/session behavior; improving forced refreshes, pagination, caching, and stale-read protection for Plane-backed project data; and deriving customer-facing project states from work-item counts rather than rounded progress.
+Working as a Software Engineering Intern at Actual Reality Technologies, improving the private customer portal hosted at `my.actualreality.ai` and contributing to AI Gateway design for model-call routing and policy enforcement. Customer-portal work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage. AI Gateway work focuses on a stateless, OpenAI-compatible model-call path that builds on LiteLLM while adding task-aware routing, model registry logic, cost/rate controls, fallback behavior, observability, and versioned decision records across cloud and on-prem deployment targets.
 
 ### Handshake Description
 
@@ -46,7 +46,7 @@ Software Engineering Intern improving a private Next.js/TypeScript customer port
 
 ### Tech Stack
 
-Software engineering / Customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+Software engineering / Customer portal and AI Gateway / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, LiteLLM, OpenAI-compatible APIs, AI/model gateway design, task-aware model routing, model registry, cost/rate controls, fallback chains, observability, decision records, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
 
 ### Business / Problem Context
 
@@ -55,6 +55,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 ### Problem / Company Impact Context
 
 - Improved a private customer portal used for customer/admin workflows at `my.actualreality.ai`.
+- Contributing to AI Gateway design for a stateless, OpenAI-compatible model-call policy layer that routes tasks across models using versioned rules, model registry data, cost/rate controls, fallback chains, and decision telemetry.
 - Worked across Next.js/TypeScript UI routes, authentication/session behavior, project-management data integration, dashboard status logic, health checks, documentation, and automated tests.
 - Consolidated separate Capture, Define, and Whiteboard tools into one tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Improved production auth behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login navigation so users do not see a login-page flash or stranded spinner.
@@ -64,6 +65,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 ### Work Performed
 
 - Improving the private `Actual-Reality/customer-portal` repository, described internally as the customer portal hosted at `my.actualreality.ai`.
+- Contributing to AI Gateway architecture for model-call routing and policy enforcement, including LiteLLM-based provider normalization, task-aware routing, model registry design, cost accounting, rate limiting, fallback behavior, OpenAI-compatible request handling, and decision-record telemetry.
 - Authored 68 commits under Aryan's GitHub identities from July 29 to August 6, 2026, across merged and open customer-portal pull requests.
 - Authored merged PRs for Workshop route consolidation, production session-cookie behavior, deferred team-capacity planning, post-login UX, forced Plane refresh behavior, and four-state project status reporting.
 - Open PR work includes dashboard project-status derivation from work-item counts, Plane-membership remediation links, and admin health-feed coverage for revoked write membership.
@@ -74,6 +76,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 
 - Current software engineering internship
 - Customer portal engineering
+- AI Gateway and model-routing infrastructure
 - Full-stack TypeScript/Next.js application development
 - Authentication/session reliability
 - Security/auth hardening and account lifecycle correctness
@@ -82,6 +85,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 - Firestore/Firebase data consistency and read-failure visibility
 - End-to-end customer workflow validation
 - Automated testing and architecture guardrails
+- Cost-aware and observable AI integration architecture
 - Augmented intelligence and applied AI-adjacent product work
 - Industry 4.0/5.0 and manufacturing technology
 - Data modeling and predictive analytics context
@@ -91,6 +95,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 ### Reusable Bullet Options
 
 - Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Contributing to an AI Gateway that extends LiteLLM with OpenAI-compatible request handling, task-aware model routing, cost/rate controls, fallback chains, model registry logic, observability, and versioned decision records.
 - Consolidated customer workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
@@ -101,6 +106,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 
 - Confirmed by Aryan: role title `Software Engineering Intern`, company `Actual Reality Technologies`, start date `July 2026`.
 - Confirmed by Aryan: Actual Reality Technologies location should be listed as `Perrysburg, OH`.
+- Confirmed by Aryan on August 21, 2026: AI Gateway work is active at Actual Reality Technologies and is intended to improve LiteLLM-based model-call routing with task-aware policy, cost/rate controls, fallback behavior, observability, and versioned decision records.
 - Public company context found through LinkedIn/web search: northwest Ohio company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
 - GitHub source status: authenticated `gh` access inspected `Actual-Reality/customer-portal` on August 7, 2026. Evidence includes private repo metadata, package.json, authored commit history, PR list, file-level stats, and branch diffs. Keep customer/client details public-safe when drafting submitted artifacts.
 - Ticket brief source: user-provided Customer Portal ticket brief snapshot dated August 7, 2026, repo at `87f79a9`, covering Aryan-created or Aryan-assigned Plane tickets across Todo, In review, In progress, Cancelled, and conflict states.
