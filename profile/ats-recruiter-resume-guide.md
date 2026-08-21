@@ -18,15 +18,16 @@ Use this guide when tailoring resumes for applicant tracking systems, recruiter 
 
 - Extract exact job-description keywords before editing: exact posted role title, languages, frameworks, cloud tools, data tools, AI/ML terms, security/auth terms, domain terms, role responsibilities, and repeated phrases.
 - Match exact wording where truthful. If the posting says `AWS Lambda`, use `AWS Lambda`, not only `serverless`.
-- Include the exact posted role title once in visible resume text when truthful, normally in the Professional Summary, because recruiter filters may search for job titles and other full-text keywords. Do not change Aryan's actual past job titles or add unsupported seniority/title claims.
+- Include the exact posted role title once in visible resume text when truthful, normally in the centered contact/title line when no Professional Summary is needed. Recruiter filters may search for job titles and other full-text keywords. Do not change Aryan's actual past job titles or add unsupported seniority/title claims.
 - Put the highest-value keywords in three places when supported: skills section, experience/project bullets, and project/role stack line.
 - Prefer keywords in context over keyword lists. A skill is stronger when attached to what was built, automated, secured, analyzed, or improved.
 - Avoid keyword stuffing. If a tool was only lightly used or is unrelated to the role, keep it out.
 - Do not claim tools from the posting that Aryan has not used. For example, do not list `Splunk` or `Datadog` unless there is verified experience.
+- Separate high-value ATS keywords from low-value boilerplate. Required tools, languages, databases, frameworks, role titles, responsibilities, and domain terms belong in the resume when supported; company slogans, equal-opportunity text, generic soft skills, and broad org names usually belong only in `tailoring-notes.md`.
 
 ## Professional Summary Rules
 
-Use a professional summary only when it helps a recruiter understand the target fit faster than the experience section alone. It is useful for roles where Aryan's background crosses several connected areas, such as software engineering, applied AI, cloud/data engineering, healthcare-adjacent software, and full-stack product work.
+Omit the professional summary by default for early-career software resumes when the Experience and Technical Skills sections already make the fit clear. Use a professional summary only when it helps a recruiter understand the target fit faster than the experience section alone, such as roles where Aryan's background crosses several connected areas.
 
 Rules:
 
@@ -34,15 +35,15 @@ Rules:
 - Keep the language concise enough for a 30-60 second recruiter scan; do not write a paragraph or stack unrelated clauses.
 - Write it as a value proposition, not an objective. Avoid `seeking a role where...`.
 - Tailor it to the job description using truthful role keywords.
-- Start with a truthful Target Professional Title Clause when a specific job is provided, such as `<Exact Job Title>-aligned software engineer with...` or `Software engineer aligned with <Exact Job Title> responsibilities through...`.
+- If a summary is used, it may start with a truthful Target Professional Title Clause, but avoid awkward `-aligned` or `aligned with <role> responsibilities` phrasing. If the summary is omitted, place the concise truthful title once in the contact/title line instead.
 - Include the target angle, strongest technical domains, and one clear value theme.
 - Avoid generic traits such as `passionate`, `hard-working`, `fast learner`, or `team player` unless the line proves them through concrete context.
 - Do not repeat the Technical Skills section as a sentence. Mention only the 2-4 highest-value stack, domain, or responsibility terms from the job description that are proven by the bullets below.
 - If adding the summary makes the page crowded, trim the summary before shrinking the resume font.
 
-Default structure:
+Default structure when a summary is truly useful:
 
-`<Exact Job Title>-aligned software engineer with experience in <top domains/tools>, focused on <job-relevant outcome>. Background includes <2-3 strongest proof areas>.`
+`Software engineer with experience in <top domains/tools>, focused on <job-relevant outcome>. Background includes <2-3 strongest proof areas>.`
 
 ## Bullet Formula
 
@@ -69,6 +70,7 @@ Checklist for each bullet:
 - Explains impact without exaggeration.
 - Does not read like a job description responsibility.
 - Uses job-description keywords in context when the keyword is truthful.
+- Is understandable without private ticket IDs, internal route names, private repository knowledge, or unexplained vendor/tool code names.
 
 If a bullet cannot satisfy this checklist, rewrite it before compiling the final resume. If a metric is unavailable, use a truthful qualitative outcome such as reliability, traceability, security, standardization, reduced manual work, reproducibility, or clearer downstream workflows.
 
@@ -78,7 +80,8 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 
 - Put the strongest matching experience in the top half of the page.
 - Keep recent technical roles prominent.
-- Keep Actual Reality Technologies visible as the current internship when it helps chronology or target fit. Verified source material supports customer-portal engineering claims around Next.js/TypeScript, Firebase, Plane integration, auth/session behavior, dashboard status logic, and Vitest-tested workflows; keep private customer/client details public-safe.
+- Keep Actual Reality Technologies visible as the current internship when it helps chronology or target fit. Verified source material supports customer-portal engineering claims around Next.js/TypeScript, Firebase, project-management API integration, auth/session behavior, dashboard status logic, and Vitest-tested workflows; keep private customer/client details public-safe.
+- For current/private-role work, use fewer higher-signal bullets that describe the customer/user surface, Aryan's owned engineering contribution, method, and outcome. Do not make the resume read like a list of recent tickets.
 - Use bold sparingly for important technologies and metrics only.
 - Make role alignment obvious from the first two bullets of each relevant job.
 - Keep bullets concise enough to scan, usually one to two lines.
@@ -98,6 +101,8 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 
 - Use a readable font size. MIT CAPD recommends no smaller than 10pt; this repo should prefer readability over squeezing in marginal content.
 - Keep the resume visually scannable in 30-60 seconds.
+- Translate internal or obscure terms into public-safe product/system language. For example, an internal `magic link` should become an unauthenticated account-creation or secure sign-in flow when that is the meaningful recruiter context, and a private issue-tracker integration should be described by the workflow it enabled unless the specific tool is a target keyword.
+- Keep private-source wording submitted-facing. Private repositories, PRs, branch names, tickets, and customer-specific details can inform the evidence, but the resume and cover letter should describe the system, workflow, method, and result in terms an outside reviewer can understand.
 - Treat visual density as a failure mode during PDF review, but do not confuse healthy white space with an underfilled resume. A small bottom margin is acceptable; a large blank band is not. If the final text stops well above the bottom of the page, first add stronger verified role-aligned evidence, deepen a thin project bullet, or restore a relevant experience detail before considering the package complete.
 - Preserve internship experience by default before project breadth. A weakly relevant internship may be compressed or omitted when it would displace substantially stronger evidence or force unreadable formatting; document that decision in `tailoring-notes.md`.
 - When space is tight, compress or remove lower-priority project detail before cutting strong, verified, role-aligned experience bullets.
@@ -153,7 +158,7 @@ For healthcare or compliance-adjacent roles:
 1. Save the job description in `application-packages/<Company>/<Role>/job-description.md`.
 2. Extract keywords and role responsibilities.
 3. Select a primary resume angle from `resume-targeting-guide.md` and `profile/evidence-index.md`.
-4. Decide whether a professional summary is useful for this specific role.
+4. Decide whether a professional summary is useful for this specific role; omit it when it duplicates visible experience/skills.
 5. Choose the strongest experience bullets first from `profile/evidence-index.md`, preserving internship roles by default; open full master files only for exact wording, source verification, or uncovered gaps. Then choose as many matching projects as the one-page layout can support without reducing experience quality.
 6. Rewrite bullets using the formula above, keeping claims grounded in source docs.
 7. Tune the skills section to the job's language.
@@ -162,7 +167,7 @@ For healthcare or compliance-adjacent roles:
 10. Extract PDF text and verify ATS readability.
 11. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review.
 12. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
-13. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the visual consistency gate, the page utilization gate, and verification results.
+13. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the human recruiter readability gate, the visual consistency gate, the page utilization gate, the submitted-facing terminology sync, score consistency, and verification results.
 
 ## Common Failure Modes
 
@@ -172,6 +177,9 @@ For healthcare or compliance-adjacent roles:
 - Dense bullets that hide the main technology or result.
 - Underfilled one-page resumes where the bottom portion is visibly unused even though verified role-aligned evidence is available.
 - Summary sections that consume space without adding role alignment.
+- Awkward title-keyword phrasing such as `<Role>-aligned software engineer` when a concise title in the header would be cleaner.
+- Internal ticket/tool language that makes a bullet technically true but hard for an outside reviewer to understand.
+- Score breakdowns that do not add up to the recorded Job Alignment & Evidence Score.
 - Skills sections that contain responsibilities instead of supported technologies.
 - Too many unrelated skills, making the target role unclear.
 - Project duplication or stale project claims that are no longer repository-grounded.

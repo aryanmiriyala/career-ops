@@ -63,8 +63,11 @@ APPLICATION_ANSWER_GATE_NAME = "Application-answer human voice gate checked"
 TAILORING_GATE_RULES = [
     ("Gap recovery gate checked", ("Pass", "Waived")),
     ("ATS source gate checked", ("Pass",)),
+    ("Human recruiter readability gate checked", ("Pass",)),
     ("Visual consistency gate checked", ("Pass",)),
     ("Page utilization gate checked", ("Pass", "Waived")),
+    ("Submitted-facing terminology sync checked", ("Pass",)),
+    ("Score consistency gate checked", ("Pass",)),
     ("Cover-letter artifact checked", ("Pass",)),
 ]
 
@@ -96,6 +99,19 @@ REQUIRED_RESUME_SOURCE_PATTERNS = [
 WEAK_BULLET_OPENERS = re.compile(
     r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?)\b",
     re.IGNORECASE,
+)
+
+AWKWARD_TITLE_CLAUSE = re.compile(
+    r"(?:\b[A-Z][A-Za-z0-9 /&+.-]{1,80}-aligned software engineer\b|"
+    r"\baligned with [A-Za-z0-9 /&+.-]{1,80} responsibilities\b)",
+    re.IGNORECASE,
+)
+
+SCORE_BREAKDOWN_RE = re.compile(
+    r"^\s*-\s*"
+    r"(Keyword coverage|Experience relevance|Impact(?: and |/)evidence|Formatting and ATS parsing|Risk and gap handling)"
+    r":\s*(\d{1,3})/(\d{1,3})\b",
+    re.MULTILINE,
 )
 
 PLACEHOLDER_PATTERNS = [
@@ -164,6 +180,7 @@ def check_tailoring_notes(app_dir: Path, errors: list[str]) -> None:
         return
 
     text = notes_path.read_text(encoding="utf-8", errors="replace")
+    recorded_score: int | None = None
     for marker in TAILORING_NOTE_MARKERS:
         if marker not in text:
             errors.append(f"tailoring-notes.md missing marker: {marker}")
@@ -193,14 +210,44 @@ def check_tailoring_notes(app_dir: Path, errors: list[str]) -> None:
         errors.append("Job Alignment & Evidence Score must be between 0 and 100")
     else:
         score = int(score_match.group(1))
+        recorded_score = score
         if score < MIN_ALIGNMENT_SCORE and SUB_90_WAIVER_MARKER not in text:
             errors.append(
                 "Job Alignment & Evidence Score below 90 requires a "
                 "`Sub-90 Readiness Waiver` section in tailoring-notes.md"
             )
 
+    check_score_consistency(text, recorded_score, errors)
+
     if contains_placeholder(text):
         errors.append("tailoring-notes.md contains placeholder text")
+
+
+def check_score_consistency(notes_text: str, recorded_score: int | None, errors: list[str]) -> None:
+    matches = SCORE_BREAKDOWN_RE.findall(notes_text)
+    if not matches:
+        return
+
+    earned_total = sum(int(earned) for _, earned, _ in matches)
+    possible_total = sum(int(possible) for _, _, possible in matches)
+    categories = {category for category, _, _ in matches}
+    required_categories = {
+        "Keyword coverage",
+        "Experience relevance",
+        "Formatting and ATS parsing",
+        "Risk and gap handling",
+    }
+    has_impact_category = any(category in {"Impact and evidence", "Impact/evidence"} for category in categories)
+
+    if len(matches) < 5 or not required_categories.issubset(categories) or not has_impact_category:
+        errors.append("tailoring-notes.md score breakdown must include all five scoring categories")
+    if possible_total != 100:
+        errors.append(f"tailoring-notes.md score breakdown possible points must total 100; found {possible_total}")
+    if recorded_score is not None and earned_total != recorded_score:
+        errors.append(
+            "tailoring-notes.md score breakdown earned points must match "
+            f"Job Alignment & Evidence Score; found {earned_total} vs {recorded_score}"
+        )
 
 
 def check_cover_letter_source(app_dir: Path, errors: list[str]) -> None:
@@ -211,6 +258,8 @@ def check_cover_letter_source(app_dir: Path, errors: list[str]) -> None:
     text = cover_letter.read_text(encoding="utf-8", errors="replace")
     if contains_placeholder(text):
         errors.append("cover-letter.md contains placeholder text")
+    if AWKWARD_TITLE_CLAUSE.search(text):
+        errors.append("cover-letter.md contains awkward target-title alignment phrasing; use plain recruiter-readable wording")
     for pattern, message in FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS:
         if re.search(pattern, text, re.IGNORECASE):
             errors.append(f"cover-letter.md submitted-artifact gate failed: {message}")
@@ -283,6 +332,8 @@ def check_resume_source(app_dir: Path, errors: list[str]) -> None:
 
     if contains_placeholder(text):
         errors.append("resume.tex contains placeholder text")
+    if AWKWARD_TITLE_CLAUSE.search(text):
+        errors.append("resume.tex contains awkward target-title alignment phrasing; use a concise visible title/header clause")
     for pattern, message in FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS:
         if re.search(pattern, text, re.IGNORECASE):
             errors.append(f"resume.tex submitted-artifact gate failed: {message}")

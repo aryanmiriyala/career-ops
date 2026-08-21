@@ -88,6 +88,41 @@ TECH_TERMS = [
     "unit tests",
 ]
 
+JD_RESPONSIBILITY_TERMS = [
+    "AI-powered tools",
+    "API concepts",
+    "application issues",
+    "build and deployment tools",
+    "content rights",
+    "code reviews",
+    "cross-functional teams",
+    "data integration",
+    "data layers",
+    "data persistence",
+    "deployment tools",
+    "full-stack software applications",
+    "Generative AI APIs",
+    "intelligent automation",
+    "machine learning models",
+    "NoSQL",
+    "object-oriented programming",
+    "peer reviews",
+    "production incidents",
+    "product requirements",
+    "requirements",
+    "RESTful services",
+    "rights management",
+    "service requests",
+    "source control",
+    "supply chain",
+    "system configurations",
+    "testing and deployment",
+    "UI",
+    "user stories",
+]
+
+IMPORTANT_TERMS = sorted(set(TECH_TERMS + JD_RESPONSIBILITY_TERMS), key=lambda item: (item.lower(), item))
+
 STOPWORDS = {
     "and",
     "are",
@@ -108,13 +143,54 @@ STOPWORDS = {
 }
 
 EXCLUDED_PHRASES = {
+    "advance technological",
     "base salary",
+    "disney entertainment",
+    "disney entertainment espn",
+    "disney media",
+    "entertainment espn",
+    "entertainment espn product",
+    "espn product",
+    "espn product technology",
     "employment company",
     "equal opportunity",
     "job description",
     "offer employment",
+    "product technology",
     "salary range",
     "u.s. export",
+    "works across",
+}
+
+REPEATED_PHRASE_ANCHOR_WORDS = {
+    "ai",
+    "api",
+    "apis",
+    "application",
+    "applications",
+    "automation",
+    "build",
+    "cloud",
+    "content",
+    "control",
+    "data",
+    "deployment",
+    "engineering",
+    "engineer",
+    "incidents",
+    "integration",
+    "machine",
+    "management",
+    "production",
+    "requirements",
+    "requests",
+    "reviews",
+    "rights",
+    "service",
+    "software",
+    "source",
+    "supply",
+    "testing",
 }
 
 
@@ -156,11 +232,12 @@ def extract_repeated_phrases(text: str) -> list[str]:
         phrase
         for phrase, count in phrases.most_common(30)
         if count >= 2 and phrase not in EXCLUDED_PHRASES
+        and any(word in REPEATED_PHRASE_ANCHOR_WORDS for word in phrase.split())
     ]
 
 
 def extract_terms(jd_text: str, extra_terms: list[str]) -> list[str]:
-    terms = {term for term in TECH_TERMS if contains_term(jd_text, term)}
+    terms = {term for term in IMPORTANT_TERMS if contains_term(jd_text, term)}
     terms.update(term.strip() for term in extra_terms if term.strip())
     terms.update(extract_repeated_phrases(jd_text))
     return sorted(terms, key=lambda item: (item.lower(), item))

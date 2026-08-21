@@ -18,6 +18,7 @@ Extract:
 - Nice-to-have skills
 - Recruiter-screen responsibilities
 - ATS-critical exact terms
+- Low-value or risky terms to track but not force into the resume, such as company slogans, broad soft-skill phrases, equal-opportunity boilerplate, and unsupported internal org names
 
 Save the posting in `application-packages/<Company>/<Role>/job-description.md`.
 
@@ -72,17 +73,18 @@ Use this gate to recover older projects, hackathons, coursework, private repos, 
 
 ## Step 3: Decide Whether to Use a Professional Summary
 
-Use a summary when the job benefits from connecting multiple parts of Aryan's background in the first recruiter scan, especially for software roles that also value applied AI, healthcare, cloud/data engineering, full-stack systems, or cybersecurity.
+Omit the professional summary by default when Aryan's target title, Experience, Technical Skills, and Projects already make the role fit clear. Use a summary only when the job benefits from connecting multiple parts of Aryan's background in the first recruiter scan, especially for roles that combine software engineering with applied AI, healthcare, cloud/data engineering, full-stack systems, cybersecurity, or analyst/product workflow work.
 
 Rules:
 
 - Keep the summary to two sentences maximum and no more than two rendered PDF lines total. Prefer one tight sentence when the fit is obvious.
 - Keep each sentence concise enough to scan quickly; do not write paragraph-style summaries.
 - Make it role-specific and grounded in the job description's language.
-- Include the exact posted job title once in visible summary text when truthful, using a non-misleading clause such as `<Exact Job Title>-aligned software engineer with...` or `Software engineer aligned with <Exact Job Title> responsibilities through...`.
+- Include the exact posted job title once in visible resume text when truthful. Prefer a concise token in the contact/title line, such as `Software Engineer`, `Software Engineer I`, or another adjacent role label, when no summary is needed.
 - Lead with what Aryan brings: systems built, domains worked in, and technical strengths.
 - Do not write an objective statement.
 - Do not rewrite Aryan's actual past job titles, invent seniority, or repeat the posted title as a disconnected keyword.
+- Do not use awkward `-aligned` or `aligned with <role> responsibilities` phrasing when a simple title label is cleaner.
 - Do not turn the summary into a skills dump. Use only the 2-4 strongest job-description terms that are supported by bullets below.
 - Do not use the summary to compensate for weak bullet alignment. The experience and project bullets still need to prove the fit.
 
@@ -96,7 +98,8 @@ Rules:
 - Use the `Handshake Description` in `experience-master.md` for Handshake experience entries; keep it at or below 500 characters and do not paste the longer platform-ready version into Handshake.
 - Use `Reusable Bullet Options` from `experience-master.md` when the application needs company/role-specific bullets.
 - Use `bullet-bank.md` when the application needs job-family bullets across multiple roles.
-- Treat Actual Reality Technologies as Aryan's current role. Use verified customer-portal evidence from `profile/experience-master.md` when it improves fit, especially Next.js/TypeScript, Firebase, Plane integration, auth/session work, dashboard status logic, Vitest tests, and customer/admin workflows. Keep private customer/client details out of submitted artifacts unless Aryan explicitly confirms they are public-safe.
+- Treat Actual Reality Technologies as Aryan's current role. Use verified customer-portal evidence from `profile/experience-master.md` when it improves fit, especially Next.js/TypeScript, Firebase, project-management API integration, auth/session work, dashboard status logic, Vitest tests, and customer/admin workflows. Keep private customer/client details out of submitted artifacts unless Aryan explicitly confirms they are public-safe.
+- Debloat current/private-role bullets. Prefer 2-3 high-signal bullets that explain the customer portal, Aryan's owned engineering contribution, method, user/customer context, and result over a long list of small tickets. Expand AAIS, APKD, SmartSolve, or projects when they provide stronger public-safe evidence for the job.
 - Prefer bullets matching the job's required stack.
 - Build experience depth before project breadth. The Experience section should normally contain at least 11 strong, role-aligned bullets on early-career one-page application resumes; fewer requires an `Experience Bullet Count Waiver` in `tailoring-notes.md`.
 - Put job keywords into bullets only when supported by real experience.
@@ -104,6 +107,7 @@ Rules:
 - Do not impose a fixed bullet maximum or require matching bullet counts across roles. Let the number of distinct, job-relevant accomplishments determine the count, subject to one-page readability.
 - Audit each selected bullet against the formula: action verb + what changed + technology/method + scope/domain + impact/result.
 - Rewrite, combine, or remove any bullet that does not provide a clear contribution, defensible context, and result; never retain a weak bullet for visual symmetry.
+- Translate internal terms before finalizing. Do not assume a recruiter knows private tooling, issue tracker names, route names, or terms like `magic link`; describe the underlying account-creation, authentication, workflow, API integration, dashboard, or customer-portal behavior.
 - When the resume is underfilled, add evidence by quality order: a stronger verified experience bullet, a deeper project bullet explaining purpose/method/result, a missing truthful must-have keyword in context, or a compact skills category. Do not add filler, duplicate claims, broad soft-skill labels, or unsupported technologies just to occupy space.
 - Keep the most recent experience strong.
 - Do not force unrelated skills into a bullet.
@@ -138,6 +142,7 @@ Rules:
 
 - Include skills that appear in the job description and are supported by experience.
 - Prefer exact job-description wording for tools and frameworks when truthful.
+- If Aryan confirms a missing skill during package review, update `profile/skills-master.md` and any conflicting unsupported-skill notes before using it in new submitted artifacts. Add confirmed skills to the skills section only when truthful; do not imply project/work depth unless verified source material supports it.
 - Put the most relevant categories first.
 - Keep the skills section compact.
 - Avoid listing technologies that distract from the target role.
@@ -151,9 +156,10 @@ After approval and edits:
 - Confirm the resume PDF is exactly one page.
 - Extract PDF text and inspect bullets.
 - Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` after the resume artifact exists and use its exact-term report during the alignment pass.
-- Confirm the exact posted job title appears once in visible summary/title text and is supported by evidence-bearing experience or project bullets.
-- Confirm the Professional Summary is no more than two sentences, concise, and written in the job description's language without becoming a keyword list.
+- Confirm the exact posted job title appears once in visible summary/title/header text and is supported by evidence-bearing experience or project bullets.
+- Confirm the Professional Summary is omitted unless it adds clear scan value; when used, confirm it is no more than two sentences, concise, and written in the job description's language without becoming a keyword list.
 - Confirm the PDF text preserves section order and important keywords.
+- Confirm bullets are ATS-friendly and recruiter-readable: action + contribution + method/technology where useful + context + result, with private/internal wording translated.
 - Visually inspect the PDF for readability, spacing, cramped sections, canonical layout consistency, and bottom-page usage. A large unused bottom band fails this step when verified role-aligned evidence is still available.
 - If the resume is too long, first tighten wording, remove repetition, and prioritize stronger evidence. Keep the canonical application-resume geometry and 11-point typography unchanged rather than creating application-specific spacing.
-- Save tailoring notes.
+- Save tailoring notes with the human recruiter readability gate, submitted-facing terminology sync, and score consistency gate recorded explicitly.

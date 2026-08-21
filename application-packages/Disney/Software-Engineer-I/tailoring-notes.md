@@ -63,8 +63,11 @@ Important JD Term Search:
 
 - Gap recovery gate checked: Pass - exact JD terms were searched; Java/Jenkins were initially unverified, then added only as user-confirmed skills after Aryan's August 20, 2026 confirmation.
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize.
+- Human recruiter readability gate checked: Pass - Actual Reality bullets were translated from private ticket/tool language into customer-portal, authentication, dashboard, API integration, and workflow terms an outside reviewer can understand.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical single-column Computer Modern visual system with consistent headings, rules, contact block, bullets, role/date hierarchy, and no clipping or overlap.
 - Page utilization gate checked: Pass - summary was removed, the exact `Software Engineer I` title was kept in the contact line, Actual Reality was compressed to stronger portal-level evidence, and AAIS/APKD evidence was expanded so the page remains full without spacing tricks or unsupported claims.
+- Submitted-facing terminology sync checked: Pass - resume and cover letter both use recruiter-readable product/system language for portal engineering, AI integration, API/data-layer work, and operational reliability.
+- Score consistency gate checked: Pass - recorded score is 97/100 and the written score breakdown totals 97 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
@@ -81,7 +84,7 @@ Score breakdown:
 - Formatting and ATS parsing: 10/10 - revised source remains canonical and ATS-readable, compiles to one page, extracts in readable order, and uses a compact visible title line instead of a Professional Summary section.
 - Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, Java/Jenkins are listed only as user-confirmed skills, unsupported media-rights ownership claims are omitted, and adjacent evidence is not overstated.
 
-Exact posted title matched in visible summary/title clause: Pass - `Software Engineer I` appears once in the header contact line before phone/email/links.
+Exact posted title matched in visible summary/title/header clause: Pass - `Software Engineer I` appears once in the header contact line before phone/email/links.
 
 Strong matches:
 
