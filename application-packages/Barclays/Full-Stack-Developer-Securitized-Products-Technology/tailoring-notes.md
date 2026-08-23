@@ -64,20 +64,20 @@ Important JD Term Search:
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize with no tables, images, icons, color, hidden text, or text boxes.
 - Human recruiter readability gate checked: Pass - internal wording was translated into recruiter-readable full-stack, cloud, API, data, security, and integration language.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical Computer Modern application family, standard section headings, visible rules, consistent bullet symbols, and no clipping or overlap.
-- Page utilization gate checked: Pass - final resume uses the page area with role-aligned experience, two targeted projects, and compact skills without filler or spacing tricks.
+- Page utilization gate checked: Pass - final resume uses the page area with role-aligned experience, two targeted projects, and compact skills, with verified JDBC/Vitest/Testing Library skills restored to reduce bottom whitespace without filler or spacing tricks.
 - Submitted-facing terminology sync checked: Pass - resume and cover letter both use full-stack, customer portal, API integration, REST APIs, AWS, testing, debugging, secure access, cloud workflows, data-platform, monitoring/observability, and enterprise data language consistently.
-- Score consistency gate checked: Pass - recorded score is 91/100 and the written score breakdown totals 91 earned points out of 100 possible.
+- Score consistency gate checked: Pass - recorded score is 92/100 and the written score breakdown totals 92 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
 
-Job Alignment & Evidence Score: 91/100
+Job Alignment & Evidence Score: 92/100
 
 Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 37/40 - final exact-term analyzer found 17/20 checked terms, and the resume now truthfully includes the exact posted title, Java, JavaScript, Angular, ReactJS, AWS, Git, Jenkins, Spring Boot/Springboot, Maven, OpenShift/Open Shift, cloud based micro service APIs, unit testing, code reviews, logging, monitoring, debugging, requirements, object-oriented programming, secure coding, authorization, controls, and related full-stack/cloud/data terms. Remaining keyword limits are mostly Barclays-specific finance-domain and seniority terms rather than ordinary stack gaps.
+- Keyword coverage: 38/40 - final exact-term analyzer found 18/20 checked terms, and the resume now truthfully includes the exact posted title, Java, JavaScript, Angular, ReactJS, AWS, Git, Jenkins, Spring Boot/Springboot, Maven, OpenShift/Open Shift, cloud based micro service APIs, JDBC, Vitest, Testing Library, unit testing, code reviews, logging, monitoring, debugging, requirements, object-oriented programming, secure coding, authorization, controls, and related full-stack/cloud/data terms. Remaining keyword limits are mostly Barclays-specific finance-domain and seniority terms rather than ordinary stack gaps.
 - Experience relevance: 20/25 - Actual Reality, SmartSolve, AAIS, APKD, RocketGrader, and HealthTrend provide meaningful full-stack, cloud, API, data, testing, secure workflow, Product Owner, and enterprise data evidence. The role remains a stretch because it carries VP-level expectations and direct securitized-products/Markets Pre Trade platform context.
 - Impact and evidence: 14/15 - resume includes 20+ TB, 700+ member companies, 160+ tables/jobs, 25 domains, 1,000+ SQL tables, 110 users, secure access patterns, and production/workflow reliability outcomes.
 - Formatting and ATS parsing: 10/10 - source is canonical, one page, text-extractable, under parser-size target, uses standard headings, and includes the exact posted title once in visible text.
@@ -85,7 +85,7 @@ Score breakdown:
 
 Exact posted title matched in visible summary/title/header clause: Pass - `Full Stack Developer - Securitized Products Technology` appears once in the header/contact block.
 
-Exact-term analyzer result: 17/20 found in the final resume. Found terms: `authorization`, `AWS`, `based micro service`, `cloud`, `cloud based`, `cloud based micro`, `code reviews`, `debugging`, `Git`, `Java`, `JavaScript`, `Jenkins`, `micro service`, `monitoring`, `object-oriented programming`, `requirements`, and `unit testing`. Analyzer-reported missing exact terms: `micro service apis.`, `service apis.`, and `testing`; the resume text includes `cloud based micro service APIs`, `REST APIs`, and `Vitest unit testing`, so this is treated as an exact punctuation/case limitation rather than a substantive stack gap.
+Exact-term analyzer result: 18/20 found in the final resume. Found terms: `authorization`, `AWS`, `based micro service`, `cloud`, `cloud based`, `cloud based micro`, `code reviews`, `debugging`, `Git`, `Java`, `JavaScript`, `Jenkins`, `micro service`, `monitoring`, `object-oriented programming`, `requirements`, `testing`, and `unit testing`. Analyzer-reported missing exact terms: `micro service apis.` and `service apis.`; the resume text includes `cloud based micro service APIs` and `REST APIs`, so this is treated as an exact punctuation/case limitation rather than a substantive stack gap.
 
 Strong matches:
 
