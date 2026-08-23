@@ -57,9 +57,10 @@
 {Software Engineering Intern}{Jul. 2026 -- Present}
 {Actual Reality Technologies}{Perrysburg, OH}
 \begin{tightitemize}
-  \item Improving a private Next.js/TypeScript customer portal across customer/admin workflows, project-management API integration, authentication and authorization flows, dashboard logic, health checks, and Vitest unit testing.
-  \item Contributing to an AI Gateway extending LiteLLM with OpenAI-compatible request handling, task-aware routing, cost/rate controls, fallback chains, monitoring and observability, and decision records.
-  \item Conducted code reviews and added tests/documentation across project-management integration, dashboard decisions, auth/session behavior, route coverage, and customer workflow guardrails.
+  \item Improving a private Next.js/TypeScript customer portal across customer/admin workflows, API integration, authentication and authorization, dashboard logic, health checks, and Vitest unit testing.
+  \item Contributing to an AI Gateway extending LiteLLM with task-aware routing, cost/rate controls, fallback chains, monitoring, observability, and decision records.
+  \item Improved project-data caching by bypassing stale route caches, paginating counts, and deriving dashboard states from source data.
+  \item Conducted code reviews and added tests/docs for API integration, dashboard decisions, auth/session behavior, route coverage, and customer workflow guardrails.
 \end{tightitemize}
 
 \resumeSubheading
@@ -67,14 +68,14 @@
 {SmartSolve Industries}{Bowling Green, OH}
 \begin{tightitemize}
   \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, translating business requirements into secure new-hire software.
-  \item Built Docker devcontainer workflows for WSL2 and Colima, improving developer onboarding reproducibility while isolating AI-assisted development around proprietary source code and data.
+  \item Built Docker devcontainers for WSL2/Colima, improving onboarding reproducibility while isolating AI-assisted development around proprietary code and data.
 \end{tightitemize}
 
 \resumeSubheading
 {Data Engineering Intern}{May 2025 -- Aug. 2025}
 {American Association of Insurance Services}{Lisle, IL}
 \begin{tightitemize}
-  \item Automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of high-volume production insurance data for performance sensitive charges across 700+ member companies.
+  \item Automated SQL billing with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for charges across 700+ member companies.
   \item Profiled 160+ MySQL, Oracle, and Impala tables with Python, Pandas, SQL, and JDBC, mapping source-system relationships into a 25-domain taxonomy for maintainable migration.
   \item Replaced 160+ legacy Pentaho jobs with AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, standardizing cloud data movement and maintainability.
   \item Built reverse-ETL and data-validation workflows with custom AWS IAM roles, supporting controlled self-service access, reduced manual entry, and 24-hour data latency.
@@ -93,23 +94,21 @@
 {Software Engineering Intern}{May 2022 -- Aug. 2022}
 {Alliance for Paired Kidney Donation}{Toledo, OH}
 \begin{tightitemize}
-  \item Applied secure coding to stabilize an AWS-hosted Lucee/CFML healthcare workflow platform with anti-CSRF protection, audit logging, JavaScript fallbacks, debugging, issue resolution, and import reliability fixes.
+  \item Applied secure coding to stabilize an AWS-hosted Lucee/CFML healthcare platform with anti-CSRF, audit logging, JavaScript fallbacks, debugging, and import fixes.
 \end{tightitemize}
 
 \resumesection{Selected Projects}
 \projectHeading{RocketGrader AI Assignment Platform}{Angular, TypeScript, Express, MongoDB, Auth0, AWS S3}
 \begin{tightitemize}
-  \item Built a full-stack assignment-feedback platform with Angular, Express REST APIs, MongoDB/Mongoose, Auth0, AWS S3, LangChain, and role-based teacher/student dashboards.
-\end{tightitemize}
-
-\projectHeading{HealthTrend Streaming Pipeline}{Docker, Kafka, Spark, PySpark, HDFS}
-\begin{tightitemize}
-  \item Built a Dockerized healthcare data pipeline routing CSV patient records into HDFS, streaming JSON health events through Kafka, and processing both sources with Spark/PySpark.
+  \item Built an Angular/Express assignment-feedback platform with REST APIs, MongoDB, Auth0, AWS S3, LangChain, and teacher/student dashboards.
 \end{tightitemize}
 
 \resumesection{Technical Skills}
 \textbf{Languages \& Frontend:} Java, JavaScript/TypeScript, Python, SQL, C++, algorithms, object-oriented programming, ReactJS, Angular, Next.js, HTML5, CSS\\
-\textbf{Backend, APIs \& Data:} Spring Boot/Springboot, cloud based micro service APIs, Node.js, Express, REST APIs, JSON, PostgreSQL, MySQL, Oracle, JDBC, MongoDB, PySpark, Spark, Kafka, HDFS\\
-\textbf{Cloud, DevOps \& Security:} AWS Glue, AWS S3, AWS Lambda, AWS IAM, OpenShift/Open Shift, Maven, Jenkins, Git, Docker, Linux, Vitest, Testing Library, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization
+\textbf{Backend \& APIs:} Spring Boot/Springboot, cloud based micro service APIs, Node.js, Express, REST APIs, JSON\\
+\textbf{Data \& Messaging:} PostgreSQL, MySQL, Oracle, JDBC, MongoDB, PySpark, Spark, Kafka, HDFS\\
+\textbf{Cloud, DevOps \& Security:} AWS Glue, AWS S3, AWS Lambda, AWS IAM, OpenShift/Open Shift, Maven, Jenkins, Git, Docker, Linux, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization\\
+\textbf{Reliability \& Observability:} caching, fallback chains, monitoring, observability, health checks, data validation\\
+\textbf{Testing \& Quality:} Vitest, Testing Library, code reviews, route coverage, documentation, debugging, issue resolution
 
 \end{document}
