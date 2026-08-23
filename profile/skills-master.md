@@ -104,6 +104,11 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 - Java - confirmed by Aryan for resume skills use on August 20, 2026.
 - Jenkins - confirmed by Aryan for resume skills use on August 20, 2026.
+- Spring Boot / Springboot - confirmed by Aryan for resume skills use on August 23, 2026.
+- Maven - confirmed by Aryan for resume skills use on August 23, 2026.
+- OpenShift / Open Shift - confirmed by Aryan for resume skills use on August 23, 2026.
+- Microservice APIs / micro service APIs - confirmed by Aryan for resume skills use on August 23, 2026.
+- Product Owner - confirmed by Aryan on August 23, 2026 for temporary AAIS internal-application ownership context; use in experience bullets, not as a standalone technical skill when avoidable.
 
 ## Data Engineering
 

@@ -89,12 +89,13 @@ Primary use: backend automation, database generation, access-control modernizati
 
 Verified keywords:
 
-- Python, JSON, SQL, MySQL, Oracle, PostgreSQL, React, Node.js, RBAC, JWT, AWS Lambda, hashlib, boto3, S3, PII tokenization, insurance data models.
+- Python, JSON, SQL, MySQL, Oracle, PostgreSQL, Java, Spring Boot/Springboot, Maven, OpenShift/Open Shift, microservice APIs, React, Node.js, RBAC, JWT, AWS Lambda, hashlib, boto3, S3, PII tokenization, insurance data models.
 - 1,000+ production SQL tables, 10+ insurance lines, 110 internal users.
 
 Resume-ready evidence:
 
 - Engineered Python/JSON backend automation generating 1,000+ production SQL tables across MySQL, Oracle, and PostgreSQL for 10+ insurance lines.
+- Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks while coordinating delivery priorities.
 - Implemented RBAC/JWT patterns in a React/Node.js modernization, replacing broad employee-wide access with role-specific controls for roughly 110 internal users.
 - Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for secure downstream processing.
 

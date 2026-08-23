@@ -463,7 +463,7 @@ Built insurance data-standardization and modernization workflows using Python, J
 
 ### Tech Stack
 
-Software engineering / Data standardization / Tech stack: Python, JSON, Pandas, multiprocessing, SQL, MySQL, Oracle, PostgreSQL, React, Node.js, JWT, RBAC, AWS Lambda, AWS S3, boto3, hashlib, insurance taxonomies, openIDL / openIDS context, large CSV processing, fuzzy matching, PII tokenization.
+Software engineering / Data standardization / Tech stack: Python, JSON, Pandas, multiprocessing, SQL, MySQL, Oracle, PostgreSQL, Java, Spring Boot / Springboot, Maven, OpenShift / Open Shift, microservice APIs, React, Node.js, JWT, RBAC, AWS Lambda, AWS S3, boto3, hashlib, insurance taxonomies, openIDL / openIDS context, large CSV processing, fuzzy matching, PII tokenization.
 
 ### Business / Problem Context
 
@@ -474,6 +474,7 @@ This role combined software engineering, insurance data modeling, full-stack mod
 - Supported a larger insurance data-standardization effort connected to openIDL/openIDS-style goals: common insurance data models, reduced duplication, and easier sharing/reporting across industry workflows.
 - Generated 1,000+ production SQL tables from Python/JSON-driven taxonomy parsing instead of hand-building schema structures.
 - Helped move internal application access away from broad employee-wide visibility toward role-specific access control for about 110 employees.
+- Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks and coordinating delivery priorities.
 - Automated database validation triggered by new rows in MySQL, Oracle, and PostgreSQL tables, tokenizing PII and moving structured output into S3 for downstream standardization flows.
 
 ### Work Performed
@@ -487,6 +488,7 @@ This role combined software engineering, insurance data modeling, full-stack mod
 - Cleaned and processed large CSV datasets.
 - Implemented fuzzy de-duplication and data hashing.
 - Contributed to React/Node.js modernization work.
+- Temporarily served as Product Owner for an AAIS internal application and translated business requirements into implementation tasks.
 - Implemented RBAC and JWT authentication proposal/workflows to replace broad employee-wide data access.
 - Built secure, role-specific internal landing page functionality for about 110 internal users.
 - Automated database validation triggered by new MySQL, Oracle, and PostgreSQL rows with AWS Lambda.
@@ -495,6 +497,7 @@ This role combined software engineering, insurance data modeling, full-stack mod
 ### Positioning Angles
 
 - Full-stack modernization
+- Temporary Product Owner ownership for an internal application
 - Data modeling and SQL generation
 - Secure access control
 - PII handling
@@ -506,7 +509,12 @@ This role combined software engineering, insurance data modeling, full-stack mod
 - Engineered foundational openIDL/openIDS-aligned data-modeling workflows, parsing insurance taxonomies with Python/JSON logic to generate 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
 - Built Python data-processing workflows with Pandas, multiprocessing, fuzzy matching, and hashing to clean large CSV datasets and support compliant data handling.
 - Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
+- Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks while coordinating delivery priorities.
 - Automated database validation with AWS Lambda triggers that tokenized PII using hashlib/boto3 and ingested structured JSON into S3 for downstream standardization flows.
+
+### Source And Verification Notes
+
+- Confirmed by Aryan on August 23, 2026: AAIS experience included Spring Boot/Springboot, Maven, OpenShift/Open Shift, microservice APIs, and temporary Product Owner responsibility for an AAIS internal application. Use Product Owner wording specifically in the AAIS internal-application context and avoid implying a permanent Product Owner title.
 
 ## Alliance for Paired Kidney Donation
 
