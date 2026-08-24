@@ -5,7 +5,7 @@ Secondary angle: cloud/data engineering, secure workflow modernization, financia
 
 ## Resume Direction
 
-- Target Professional Title Clause: `Full Stack Developer - Securitized Products Technology` appears once in the visible header/contact block.
+- Target Professional Title Clause: `Full Stack Developer` appears once in the visible header/contact block. The specialized `Securitized Products Technology` phrase was intentionally removed from the title line by user direction to keep the header cleaner and avoid over-positioning toward a finance domain Aryan has not directly worked in.
 - Professional Summary decision: omitted. The title line, full-stack experience, cloud/data engineering bullets, projects, and skills section make the role direction visible without adding a summary.
 - Resume angle: full-stack and enterprise platform engineering across JavaScript/TypeScript, React/ReactJS, Angular, Node/Express, Spring Boot/Springboot, REST APIs, cloud based micro service APIs, SQL, AWS, OpenShift/Open Shift, Maven, Git/Jenkins, testing, authentication/authorization, cloud data movement, and financial/insurance-domain data scale.
 - Strongest evidence emphasized: Actual Reality customer portal, project-data caching/reliability, and AI Gateway work; SmartSolve secure full-stack onboarding tracker and Docker workflows; AAIS production AWS/PySpark/SQL insurance data systems; AAIS React/Node.js RBAC modernization; APKD secure AWS-hosted healthcare workflow reliability; and RocketGrader Angular/Express/Auth0/AWS S3 project. Kafka/Spark/HDFS remain in skills, but the HealthTrend project entry was removed to prioritize stronger experience evidence.
@@ -54,6 +54,7 @@ Important JD Term Search:
 - Experience bullets used: 13.
 - Experience Bullet Count Waiver: Not needed.
 - All experience and project bullets begin with active contribution verbs or current-action wording and avoid `Responsible for`, `Helped`, `Worked on`, and `Assisted`.
+- Two-line bullet-wrap check: Pass - `pdftotext -layout` review confirmed each experience and project bullet renders at no more than two visual text lines in the resume PDF.
 - Bullet rewrite check: Actual Reality leads with full-stack customer portal/API/testing work, AI Gateway routing/observability, project-data caching/reliability, and code-review/testing/documentation evidence; SmartSolve covers secure full-stack and Docker developer workflow evidence; AAIS covers production-scale AWS/SQL/PySpark insurance systems, temporary Product Owner responsibility for an internal application, and React/Node.js access controls; APKD covers secure AWS-hosted legacy workflow reliability; the selected project covers Angular/Express/Auth0/AWS S3 evidence.
 - Human recruiter readability notes: private/internal terms were translated into customer portal, project-management API integration, customer/admin workflows, application surfaces, AI Gateway, cloud data movement, and implementation handoff language. No ticket IDs, branch names, private route names, or private client names were used.
 - Each retained bullet states a concrete system or workflow, truthful method/technology, scope/domain context, and result such as maintainability, secure access, standardized data movement, controlled access, reliability, or implementation handoff.
@@ -66,26 +67,26 @@ Important JD Term Search:
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical Computer Modern application family, standard section headings, visible rules, consistent bullet symbols, and no clipping or overlap.
 - Page utilization gate checked: Pass - final resume uses the page area with role-aligned experience, one targeted project, and expanded skills categories for Data & Messaging, Reliability & Observability, and Testing & Quality. A verified Actual Reality project-data caching bullet was added, and the lower-priority HealthTrend project entry was removed under the experience-first rule while retaining Kafka/Spark/HDFS in skills.
 - Submitted-facing terminology sync checked: Pass - resume and cover letter both use full-stack, customer portal, API integration, REST APIs, AWS, testing, debugging, secure access, cloud workflows, data-platform, monitoring/observability, and enterprise data language consistently.
-- Score consistency gate checked: Pass - recorded score is 92/100 and the written score breakdown totals 92 earned points out of 100 possible.
+- Score consistency gate checked: Pass - recorded score is 91/100 and the written score breakdown totals 91 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
 
-Job Alignment & Evidence Score: 92/100
+Job Alignment & Evidence Score: 91/100
 
 Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 38/40 - final exact-term analyzer found 18/20 checked terms, and the resume now truthfully includes the exact posted title, Java, JavaScript, Angular, ReactJS, AWS, Git, Jenkins, Spring Boot/Springboot, Maven, OpenShift/Open Shift, cloud based micro service APIs, JDBC, Vitest, Testing Library, unit testing, code reviews, logging, monitoring, debugging, requirements, object-oriented programming, secure coding, authorization, controls, and related full-stack/cloud/data terms. Remaining keyword limits are mostly Barclays-specific finance-domain and seniority terms rather than ordinary stack gaps.
+- Keyword coverage: 37/40 - final exact-term analyzer found 20/20 checked terms, and the resume now truthfully includes Full Stack Developer, Java, JavaScript, Angular, ReactJS, AWS, Git, Jenkins, Spring Boot/Springboot, Maven, OpenShift/Open Shift, cloud based micro service APIs, JDBC, Vitest, Testing Library, unit testing, code reviews, logging, monitoring, debugging, requirements, object-oriented programming, secure coding, authorization, controls, and related full-stack/cloud/data terms. The exact specialized posted title is not mirrored in the resume header because Aryan requested the cleaner `Full Stack Developer` title line and direct securitized-products experience is not claimed.
 - Experience relevance: 20/25 - Actual Reality, SmartSolve, AAIS, APKD, and RocketGrader provide meaningful full-stack, cloud, API, data, caching, testing, secure workflow, Product Owner, and enterprise data evidence. The role remains a stretch because it carries VP-level expectations and direct securitized-products/Markets Pre Trade platform context.
 - Impact and evidence: 14/15 - resume includes 20+ TB, 700+ member companies, 160+ tables/jobs, 25 domains, 1,000+ SQL tables, 110 users, secure access patterns, and production/workflow reliability outcomes.
-- Formatting and ATS parsing: 10/10 - source is canonical, one page, text-extractable, under parser-size target, uses standard headings, and includes the exact posted title once in visible text.
+- Formatting and ATS parsing: 10/10 - source is canonical, one page, text-extractable, under parser-size target, uses standard headings, and uses the user-directed concise `Full Stack Developer` title line.
 - Risk and gap handling: 10/10 - unsupported seniority, financial-market domain, direct trading-platform ownership, formal people leadership, and direct financial risk/control claims are omitted and documented instead of forced into submitted artifacts.
 
-Exact posted title matched in visible summary/title/header clause: Pass - `Full Stack Developer - Securitized Products Technology` appears once in the header/contact block.
+Exact posted title matched in visible summary/title/header clause: Waived - user-directed title-line change. `Full Stack Developer` appears in the header; `Securitized Products Technology` is intentionally not used in the title line to avoid over-specialized positioning without direct finance-domain experience.
 
-Exact-term analyzer result: 18/20 found in the final resume. Found terms: `authorization`, `AWS`, `based micro service`, `cloud`, `cloud based`, `cloud based micro`, `code reviews`, `debugging`, `Git`, `Java`, `JavaScript`, `Jenkins`, `micro service`, `monitoring`, `object-oriented programming`, `requirements`, `testing`, and `unit testing`. Analyzer-reported missing exact terms: `micro service apis.` and `service apis.`; the resume text includes `cloud based micro service APIs` and `REST APIs`, so this is treated as an exact punctuation/case limitation rather than a substantive stack gap.
+Exact-term analyzer result: 20/20 found in the final resume. Found terms: `authorization`, `AWS`, `based micro service`, `cloud`, `cloud based`, `cloud based micro`, `code reviews`, `debugging`, `Git`, `Java`, `JavaScript`, `Jenkins`, `micro service`, `micro service apis.`, `monitoring`, `object-oriented programming`, `requirements`, `service apis.`, `testing`, and `unit testing`.
 
 Strong matches:
 
