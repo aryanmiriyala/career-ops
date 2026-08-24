@@ -9,6 +9,7 @@ Use this guide when tailoring resumes for applicant tracking systems, recruiter 
 - Use the repository's established one-page application layout: 11-point body text, narrow but fixed canonical borders, single-column text, standard headings, raised 10-point solid bullet markers, and a visible 2-point gap between section headings and divider rules. Use the extra page area for stronger verified evidence; do not create one-off geometry or font changes for a particular application.
 - Use the canonical LaTeX source structure required by the validator: `letterpaper,11pt` article class, explicit `letterpaper` geometry, `glyphtounicode`, `\pdfgentounicode=1`, `\pagestyle{empty}`, `\linespread{0.92}`, and the canonical single-level `tightitemize` list.
 - Tailor every resume to the job description instead of using a generic all-purpose resume.
+- Save and work from the full employer-provided job description. Do not let a summarized posting become the only keyword source.
 - Use a clean, consistent, ATS-readable layout with conventional section names: `Education`, `Experience`, `Projects`, and `Technical Skills`.
 - Submit a text-based PDF by default when accepted, use DOCX when the employer asks for it or a portal fails PDF parsing, and never submit scanned/image-based/design-flattened resumes. Keep `resume.pdf` under the conservative 2.5 MB parser target.
 - Use bullets, not paragraphs, for experience and project descriptions.
@@ -19,7 +20,9 @@ Use this guide when tailoring resumes for applicant tracking systems, recruiter 
 ## Keyword Strategy
 
 - Extract exact job-description keywords before editing: exact posted role title, languages, frameworks, cloud tools, data tools, AI/ML terms, security/auth terms, domain terms, role responsibilities, and repeated phrases.
+- Build the keyword map from the full JD, not only the default analyzer output. There is no fixed "top 20" or "top 30" keyword threshold; role-specific terms, exact variants, and responsibility phrases matter when they are central to the posting.
 - Match exact wording where truthful. If the posting says `AWS Lambda`, use `AWS Lambda`, not only `serverless`.
+- Preserve important employer variants where they are truthful and readable, such as `Springboot` and `Spring Boot`, `Open Shift` and `OpenShift`, or `Jenkins pipeline` and `Jenkins`.
 - Include the exact posted role title once in visible resume text when truthful, normally in the centered contact/title line when no Professional Summary is needed. Recruiter filters may search for job titles and other full-text keywords. Do not change Aryan's actual past job titles or add unsupported seniority/title claims.
 - Put the highest-value keywords in three places when supported: skills section, experience/project bullets, and project/role stack line.
 - Prefer keywords in context over keyword lists. A skill is stronger when attached to what was built, automated, secured, analyzed, or improved.
@@ -73,8 +76,9 @@ Checklist for each bullet:
 - Does not read like a job description responsibility.
 - Uses job-description keywords in context when the keyword is truthful.
 - Is understandable without private ticket IDs, internal route names, private repository knowledge, or unexplained vendor/tool code names.
+- Renders as no more than two visual PDF lines in the canonical resume layout unless a rare high-signal exception is documented.
 
-If a bullet cannot satisfy this checklist, rewrite it before compiling the final resume. If a metric is unavailable, use a truthful qualitative outcome such as reliability, traceability, security, standardization, reduced manual work, reproducibility, or clearer downstream workflows.
+If a bullet cannot satisfy this checklist, rewrite it before compiling the final resume. If a bullet exceeds two visual lines, tighten it before shrinking layout or cutting stronger evidence. If a metric is unavailable, use a truthful qualitative outcome such as reliability, traceability, security, standardization, reduced manual work, reproducibility, or clearer downstream workflows.
 
 ## Recruiter Scan Rules
 
@@ -87,6 +91,7 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 - Use bold sparingly for important technologies and metrics only.
 - Make role alignment obvious from the first two bullets of each relevant job.
 - Keep bullets concise enough to scan, usually one to two lines.
+- Treat two visual PDF lines as the normal maximum for each experience/project bullet; three-line bullets usually mean the sentence is carrying too many ideas.
 - Prioritize the role's must-have skills over impressive but unrelated material.
 
 ## ATS Formatting Rules
@@ -158,8 +163,8 @@ For healthcare or compliance-adjacent roles:
 
 ## Tailoring Workflow
 
-1. Save the job description in `application-packages/<Company>/<Role>/job-description.md`.
-2. Extract keywords and role responsibilities.
+1. Save the full job description in `application-packages/<Company>/<Role>/job-description.md`.
+2. Extract keywords and role responsibilities from the complete posting, including exact tool variants, repeated responsibility phrases, and unsupported or risky terms to avoid.
 3. Select a primary resume angle from `resume-targeting-guide.md` and `profile/evidence-index.md`.
 4. Decide whether a professional summary is useful for this specific role; omit it when it duplicates visible experience/skills.
 5. Choose the strongest experience bullets first from `profile/evidence-index.md`, preserving internship roles by default; open full master files only for exact wording, source verification, or uncovered gaps. Then choose as many matching projects as the one-page layout can support without reducing experience quality.
@@ -169,7 +174,7 @@ For healthcare or compliance-adjacent roles:
 9. Compile LaTeX and confirm the PDF is exactly one page.
 10. Confirm the PDF is text-based, under the 2.5 MB parser target, and extractable with `pdftotext`.
 11. Extract PDF text and verify ATS readability.
-12. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review.
+12. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review. Then run or document an expanded role-specific keyword audit for central JD terms the helper may not know; do not present the default denominator as full ATS coverage.
 13. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
 14. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the human recruiter readability gate, the visual consistency gate, the page utilization gate, the submitted-facing terminology sync, score consistency, and verification results.
 
@@ -178,6 +183,7 @@ For healthcare or compliance-adjacent roles:
 - Generic resume that does not reflect the job description.
 - Unsupported keywords added only to satisfy ATS matching.
 - Bullets that list tasks without impact.
+- Bullets that exceed two visual lines and read like packed mini-paragraphs.
 - Dense bullets that hide the main technology or result.
 - Underfilled one-page resumes where the bottom portion is visibly unused even though verified role-aligned evidence is available.
 - Summary sections that consume space without adding role alignment.
@@ -189,6 +195,8 @@ For healthcare or compliance-adjacent roles:
 - Project duplication or stale project claims that are no longer repository-grounded.
 - Overstated AI claims that say `built AI` without explaining the product workflow, data flow, or user value.
 - Validator rules that force a fixed employer/project mix instead of allowing the job-description evidence map to decide what belongs on the page.
+- Treating a compact analyzer result like `20/20` as proof that every important job-description keyword was covered.
+- Saving a summarized JD instead of the full employer posting, which weakens keyword extraction, gap recovery, and scoring.
 
 ## Source Notes
 
@@ -211,6 +219,7 @@ For healthcare or compliance-adjacent roles:
 ## Standards Audit Notes
 
 - Aug. 21, 2026 web check: Reconfirmed Greenhouse, Workday, Oracle Taleo, iCIMS, MIT CAPD, UC Berkeley, University of Michigan, Yale, and Harvard guidance. Pipeline changes added the 2.5 MB resume parser target, explicit text-based PDF/DOCX handling, hidden/color-text bans, and removal of fixed-company validator markers that could weaken job-specific tailoring.
+- Aug. 23, 2026 Barclays pipeline correction: Full job descriptions must be saved verbatim rather than summarized, default exact-term analyzer counts must be supplemented with a role-specific keyword audit, exact employer variants should be tracked when truthful, and experience/project bullets should normally render at two visual PDF lines or fewer.
 
 ## Sources
 

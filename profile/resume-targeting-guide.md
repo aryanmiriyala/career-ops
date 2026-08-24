@@ -20,7 +20,9 @@ Extract:
 - ATS-critical exact terms
 - Low-value or risky terms to track but not force into the resume, such as company slogans, broad soft-skill phrases, equal-opportunity boilerplate, and unsupported internal org names
 
-Save the posting in `application-packages/<Company>/<Role>/job-description.md`.
+Save the full employer posting in `application-packages/<Company>/<Role>/job-description.md`. Do not replace the posting with a summary; a summary may be added in `tailoring-notes.md` or below the full source, but the complete JD must remain available for keyword extraction and gap recovery.
+
+Do not rely on a fixed keyword threshold or only the default analyzer term count. Build an expanded keyword list for the specific role, including exact tool variants, punctuation/casing variants, high-priority responsibilities, and domain phrases that a recruiter or ATS search might use.
 
 ## Step 2: Select the Resume Angle
 
@@ -103,6 +105,7 @@ Rules:
 - Prefer bullets matching the job's required stack.
 - Build experience depth before project breadth. The Experience section should normally contain at least 11 strong, role-aligned bullets on early-career one-page application resumes; fewer requires an `Experience Bullet Count Waiver` in `tailoring-notes.md`.
 - Put job keywords into bullets only when supported by real experience.
+- Keep keywords inside recruiter-readable accomplishment bullets: action + system/workflow + method/technology + context + result. Do not let the bullet become only a responsibility copied from the JD.
 - Preserve internship roles by default. A weakly relevant internship may be compressed or omitted when it would displace substantially stronger evidence or force unreadable formatting; record the decision in `tailoring-notes.md`.
 - Do not impose a fixed bullet maximum or require matching bullet counts across roles. Let the number of distinct, job-relevant accomplishments determine the count, subject to one-page readability.
 - Audit each selected bullet against the formula: action verb + what changed + technology/method + scope/domain + impact/result.
@@ -112,7 +115,7 @@ Rules:
 - Keep the most recent experience strong.
 - Do not force unrelated skills into a bullet.
 - Do not invent metrics.
-- Keep bullets concise enough for one page.
+- Keep bullets concise enough for one page. Each experience and project bullet should normally render as no more than two visual PDF lines in the canonical layout; rewrite three-line bullets before finalizing unless a rare high-signal exception is documented.
 - Preserve enough technical detail for a human reviewer to understand the work. If the section gets tight, adjust layout before removing the strongest truthful details.
 
 ## Step 5: Select Projects
@@ -142,6 +145,7 @@ Rules:
 
 - Include skills that appear in the job description and are supported by experience.
 - Prefer exact job-description wording for tools and frameworks when truthful.
+- Include exact variants from the posting when they are truthful and useful for parser/recruiter search, such as `Springboot` vs. `Spring Boot`, `Open Shift` vs. `OpenShift`, or `Jenkins pipeline` vs. `Jenkins`.
 - If Aryan confirms a missing skill during package review, update `profile/skills-master.md` and any conflicting unsupported-skill notes before using it in new submitted artifacts. Add confirmed skills to the skills section only when truthful; do not imply project/work depth unless verified source material supports it.
 - Put the most relevant categories first.
 - Keep the skills section compact.
@@ -156,10 +160,12 @@ After approval and edits:
 - Confirm the resume PDF is exactly one page.
 - Extract PDF text and inspect bullets.
 - Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` after the resume artifact exists and use its exact-term report during the alignment pass.
+- Run or document an expanded role-specific keyword audit for important JD terms not covered by the default helper. Record default analyzer coverage separately from the expanded audit, and do not describe either result as an employer ATS score.
 - Confirm the exact posted job title appears once in visible summary/title/header text and is supported by evidence-bearing experience or project bullets.
 - Confirm the Professional Summary is omitted unless it adds clear scan value; when used, confirm it is no more than two sentences, concise, and written in the job description's language without becoming a keyword list.
 - Confirm the PDF text preserves section order and important keywords.
 - Confirm bullets are ATS-friendly and recruiter-readable: action + contribution + method/technology where useful + context + result, with private/internal wording translated.
+- Confirm every experience and project bullet renders at no more than two visual PDF lines, or record a specific exception in `tailoring-notes.md`.
 - Visually inspect the PDF for readability, spacing, cramped sections, canonical layout consistency, and bottom-page usage. A large unused bottom band fails this step when verified role-aligned evidence is still available.
 - If the resume is too long, first tighten wording, remove repetition, and prioritize stronger evidence. Keep the canonical application-resume geometry and 11-point typography unchanged rather than creating application-specific spacing.
 - Save tailoring notes with the human recruiter readability gate, submitted-facing terminology sync, and score consistency gate recorded explicitly.

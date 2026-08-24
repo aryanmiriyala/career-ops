@@ -20,6 +20,7 @@ TECH_TERMS = [
     "AI",
     "API",
     "APIs",
+    "Angular",
     "AWS",
     "AWS Glue",
     "AWS Lambda",
@@ -50,11 +51,14 @@ TECH_TERMS = [
     "LLMs",
     "LangChain",
     "Linux",
+    "Maven",
     "MongoDB",
     "MySQL",
     "Next.js",
     "Node.js",
+    "Open Shift",
     "OpenAI",
+    "OpenShift",
     "Oracle",
     "PostgreSQL",
     "PySpark",
@@ -64,10 +68,13 @@ TECH_TERMS = [
     "REST",
     "REST APIs",
     "React",
+    "ReactJS",
     "S3",
     "SQL",
     "SSO",
     "Spark",
+    "Spring Boot",
+    "Springboot",
     "Supabase",
     "TypeScript",
     "Vercel",
@@ -80,6 +87,7 @@ TECH_TERMS = [
     "debugging",
     "distributed systems",
     "machine learning",
+    "logging",
     "monitoring",
     "observability",
     "prompt engineering",
@@ -100,20 +108,38 @@ JD_RESPONSIBILITY_TERMS = [
     "data layers",
     "data persistence",
     "deployment tools",
+    "business requirement",
     "full-stack software applications",
     "Generative AI APIs",
+    "controls",
+    "failover",
+    "front-end web application",
+    "governance",
+    "high-volume",
     "intelligent automation",
+    "issue resolution",
+    "Jenkins pipeline",
     "machine learning models",
+    "maintainable",
+    "messaging",
     "NoSQL",
     "object-oriented programming",
+    "optimized for performance",
     "peer reviews",
+    "performance tuning",
+    "Product Owner",
     "production incidents",
     "product requirements",
     "requirements",
+    "release engineering",
     "RESTful services",
+    "risk",
+    "scalable",
+    "secure coding",
     "rights management",
     "service requests",
     "source control",
+    "stakeholders",
     "supply chain",
     "system configurations",
     "testing and deployment",
@@ -240,7 +266,15 @@ def extract_terms(jd_text: str, extra_terms: list[str]) -> list[str]:
     terms = {term for term in IMPORTANT_TERMS if contains_term(jd_text, term)}
     terms.update(term.strip() for term in extra_terms if term.strip())
     terms.update(extract_repeated_phrases(jd_text))
-    return sorted(terms, key=lambda item: (item.lower(), item))
+    deduped_terms: list[str] = []
+    seen_normalized: set[str] = set()
+    for term in sorted(terms, key=lambda item: (item.lower(), item)):
+        normalized_term = term.lower()
+        if normalized_term in seen_normalized:
+            continue
+        seen_normalized.add(normalized_term)
+        deduped_terms.append(term)
+    return deduped_terms
 
 
 def parse_args() -> argparse.Namespace:
