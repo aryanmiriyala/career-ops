@@ -56,6 +56,7 @@ SUB_90_WAIVER_MARKER = "Sub-90 Readiness Waiver"
 MIN_EXPERIENCE_BULLETS = 11
 EXPERIENCE_BULLET_WAIVER_MARKER = "Experience Bullet Count Waiver"
 MAX_PROFESSIONAL_SUMMARY_LINES = 2
+MAX_RESUME_BULLET_LINES = 2
 MAX_UNUSED_BOTTOM_POINTS = 30.0
 WARN_UNUSED_BOTTOM_POINTS = 24.0
 MAX_RESUME_PARSE_BYTES = int(2.5 * 1024 * 1024)
@@ -455,6 +456,61 @@ def check_professional_summary_lines(resume_text: str, errors: list[str]) -> Non
         )
 
 
+def check_resume_bullet_line_lengths(app_dir: Path, errors: list[str], warnings: list[str]) -> None:
+    resume_pdf = app_dir / "resume.pdf"
+    if not resume_pdf.is_file() or not shutil.which("pdftotext"):
+        return
+
+    notes_text = ""
+    notes_path = app_dir / "tailoring-notes.md"
+    if notes_path.is_file():
+        notes_text = notes_path.read_text(encoding="utf-8", errors="replace")
+    if re.search(r"Two-line bullet-wrap check:\s*Waived\b", notes_text, re.IGNORECASE):
+        return
+
+    code, stdout, stderr = run_command(["pdftotext", "-layout", str(resume_pdf), "-"])
+    if code != 0:
+        warnings.append(f"pdftotext -layout failed for resume.pdf; skipped bullet line-length check: {stderr.strip()}")
+        return
+
+    bullet_blocks: list[tuple[str, int]] = []
+    current_lines: list[str] = []
+
+    for raw_line in stdout.splitlines():
+        line = raw_line.rstrip()
+        stripped = line.strip()
+        if not stripped:
+            if current_lines:
+                bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+                current_lines = []
+            continue
+
+        if stripped.startswith("•"):
+            if current_lines:
+                bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+            current_lines = [line]
+            continue
+
+        if current_lines and line[:1].isspace():
+            current_lines.append(line)
+            continue
+
+        if current_lines:
+            bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+            current_lines = []
+
+    if current_lines:
+        bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+
+    for bullet_text, line_count in bullet_blocks:
+        if line_count > MAX_RESUME_BULLET_LINES:
+            compact_bullet = re.sub(r"\s+", " ", bullet_text.replace("•", "")).strip()
+            errors.append(
+                "resume.pdf bullet exceeds the two-line visual limit "
+                f"({line_count} lines): {compact_bullet[:140]}"
+            )
+
+
 def check_resume_pdf(app_dir: Path, errors: list[str], warnings: list[str]) -> None:
     resume_pdf = app_dir / "resume.pdf"
     if not resume_pdf.is_file():
@@ -515,6 +571,7 @@ def validate(app_dir: Path) -> int:
     check_application_answer_source(app_dir, errors)
     check_resume_source(app_dir, errors)
     check_resume_pdf(app_dir, errors, warnings)
+    check_resume_bullet_line_lengths(app_dir, errors, warnings)
     check_resume_page_utilization(app_dir, errors, warnings)
     check_build_artifacts(app_dir, errors)
 

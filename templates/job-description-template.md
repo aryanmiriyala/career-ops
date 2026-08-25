@@ -38,7 +38,7 @@ Next referral follow-up:
 
 ## Posting Text
 
-Paste the job description here.
+Paste the full employer-provided job description here. Do not replace it with a summary or keyword digest.
 
 ## Eligibility / Logistics Intake
 
@@ -55,6 +55,7 @@ Paste the job description here.
 ## Extracted Keywords
 
 - Exact posted title:
+- Exact title/header decision:
 - Languages:
 - Frameworks:
 - Cloud/data:
@@ -63,8 +64,10 @@ Paste the job description here.
 - Domain:
 - Responsibilities:
 - Repeated terms:
+- Exact tool/framework variants:
 - Must-have tools:
 - Nice-to-have tools:
+- Expanded role-specific terms to audit:
 - Unsupported terms to avoid:
 
 ## Initial Plan

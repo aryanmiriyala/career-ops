@@ -58,6 +58,28 @@ Notes:
 
 ## Job Keyword Map
 
+Job-description source audit:
+
+- Full employer posting saved in `job-description.md`:
+- Metadata added without replacing full posting:
+- Source limitation, if any:
+
+Default exact-term analyzer result:
+
+- Checked terms:
+- Found:
+- Missing:
+- Notes:
+
+Expanded role-specific keyword pass:
+
+- Checked terms:
+- Found:
+- Missing truthful opportunities:
+- Unsupported / intentionally omitted:
+- Harmless variants:
+- Notes:
+
 Required skills:
 
 Repeated terms:
@@ -135,6 +157,12 @@ Project proof emphasized:
 Every experience and project bullet must satisfy: action verb + what changed + technology/method + scope/domain + impact/result.
 
 Experience bullet count:
+
+Two-line bullet-wrap check:
+
+- Result:
+- Method used:
+- Exceptions, if any:
 
 Experience bullets checked:
 
@@ -216,6 +244,8 @@ Recommended improvements:
 - Experience bullet count gate:
 - PDF text checked:
 - Keyword coverage helper run:
+- Expanded role-specific keyword audit checked: Pass -
+- Two-line bullet-wrap check: Pass -
 - Gap recovery gate checked: Pass -
 - ATS source gate checked: Pass -
 - Human recruiter readability gate checked: Pass -
