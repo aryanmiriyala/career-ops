@@ -10,6 +10,7 @@ Use this guide when tailoring resumes for applicant tracking systems, recruiter 
 - Use the canonical LaTeX source structure required by the validator: `letterpaper,11pt` article class, explicit `letterpaper` geometry, `glyphtounicode`, `\pdfgentounicode=1`, `\pagestyle{empty}`, `\linespread{0.92}`, and the canonical single-level `tightitemize` list.
 - Tailor every resume to the job description instead of using a generic all-purpose resume.
 - Save and work from the full employer-provided job description. Do not let a summarized posting become the only keyword source.
+- After the full posting is saved and parsed, use the compact keyword map, Gap Recovery Gate notes, analyzer output, and targeted source reads for revisions instead of repeatedly rereading the whole posting.
 - Use a clean, consistent, ATS-readable layout with conventional section names: `Education`, `Experience`, `Projects`, and `Technical Skills`.
 - Submit a text-based PDF by default when accepted, use DOCX when the employer asks for it or a portal fails PDF parsing, and never submit scanned/image-based/design-flattened resumes. Keep `resume.pdf` under the conservative 2.5 MB parser target.
 - Use bullets, not paragraphs, for experience and project descriptions.
@@ -172,9 +173,9 @@ For healthcare or compliance-adjacent roles:
 7. Tune the skills section to the job's language.
 8. Audit every experience and project bullet against the bullet checklist.
 9. Compile LaTeX and confirm the PDF is exactly one page.
-10. Confirm the PDF is text-based, under the 2.5 MB parser target, and extractable with `pdftotext`.
-11. Extract PDF text and verify ATS readability.
-12. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review. Then run or document an expanded role-specific keyword audit for central JD terms the helper may not know; do not present the default denominator as full ATS coverage.
+10. Confirm the PDF is text-based, under the 2.5 MB parser target, and extractable with `pdftotext`; use validator summaries or targeted extraction rather than dumping the full PDF text into context.
+11. Verify ATS readability, reading order, and bullet wrapping with bounded local checks.
+12. Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` and use the report for exact-term alignment review. Then run or document an expanded role-specific keyword audit for central JD terms the helper may not know, using `--term-file` when the list is long; do not present the default denominator as full ATS coverage.
 13. Visually inspect the PDF for human readability, canonical visual consistency, and bottom-page usage before considering it done.
 14. Save `tailoring-notes.md` with keywords used, experience emphasized, bullet audit notes, the human recruiter readability gate, the visual consistency gate, the page utilization gate, the submitted-facing terminology sync, score consistency, and verification results.
 

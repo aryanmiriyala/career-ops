@@ -1,0 +1,2 @@
+# Add one role-specific exact keyword or phrase per line.
+# Blank lines and lines starting with # are ignored by analyze_application_keywords.py.

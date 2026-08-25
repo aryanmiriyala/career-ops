@@ -282,6 +282,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("application_dir", help="Path like application-packages/Company/Role")
     parser.add_argument("--resume", default="", help="Optional resume PDF/TEX path; defaults to resume.pdf then resume.tex")
     parser.add_argument("--term", action="append", default=[], help="Extra exact term to check; may be repeated")
+    parser.add_argument(
+        "--term-file",
+        action="append",
+        default=[],
+        help="File containing extra exact terms, one per line; blank lines and # comments are ignored",
+    )
     return parser.parse_args()
 
 
@@ -304,7 +310,17 @@ def main() -> int:
 
     jd_text = normalize(read_text(jd_path))
     resume_text = normalize(read_text(resume_path))
-    terms = extract_terms(jd_text, args.term)
+    extra_terms = list(args.term)
+    for term_file in args.term_file:
+        term_file_path = Path(term_file)
+        if not term_file_path.is_file():
+            raise SystemExit(f"Missing term file: {term_file_path}")
+        for line in term_file_path.read_text(encoding="utf-8", errors="replace").splitlines():
+            term = line.strip()
+            if term and not term.startswith("#"):
+                extra_terms.append(term)
+
+    terms = extract_terms(jd_text, extra_terms)
 
     found = [term for term in terms if contains_term(resume_text, term)]
     missing = [term for term in terms if term not in found]

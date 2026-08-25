@@ -24,6 +24,8 @@ Save the full employer posting in `application-packages/<Company>/<Role>/job-des
 
 Do not rely on a fixed keyword threshold or only the default analyzer term count. Build an expanded keyword list for the specific role, including exact tool variants, punctuation/casing variants, high-priority responsibilities, and domain phrases that a recruiter or ATS search might use.
 
+After the first parse, avoid rereading or pasting the full posting unless a new wording question requires it. Use the compact keyword map, Gap Recovery Gate notes, analyzer output, and targeted `rg`/`sed` reads for later revisions.
+
 ## Step 2: Select the Resume Angle
 
 Choose one primary angle:
@@ -160,12 +162,13 @@ After approval and edits:
 - Confirm the resume PDF is exactly one page.
 - Extract PDF text and inspect bullets.
 - Run `python3 automation/analyze_application_keywords.py application-packages/<Company>/<Role>` after the resume artifact exists and use its exact-term report during the alignment pass.
-- Run or document an expanded role-specific keyword audit for important JD terms not covered by the default helper. Record default analyzer coverage separately from the expanded audit, and do not describe either result as an employer ATS score.
+- Run or document an expanded role-specific keyword audit for important JD terms not covered by the default helper. Prefer `--term-file` when the term list is long. Record default analyzer coverage separately from the expanded audit, and do not describe either result as an employer ATS score.
 - Confirm the exact posted job title appears once in visible summary/title/header text and is supported by evidence-bearing experience or project bullets.
 - Confirm the Professional Summary is omitted unless it adds clear scan value; when used, confirm it is no more than two sentences, concise, and written in the job description's language without becoming a keyword list.
 - Confirm the PDF text preserves section order and important keywords.
 - Confirm bullets are ATS-friendly and recruiter-readable: action + contribution + method/technology where useful + context + result, with private/internal wording translated.
 - Confirm every experience and project bullet renders at no more than two visual PDF lines, or record a specific exception in `tailoring-notes.md`.
 - Visually inspect the PDF for readability, spacing, cramped sections, canonical layout consistency, and bottom-page usage. A large unused bottom band fails this step when verified role-aligned evidence is still available.
+- Use validator summaries and targeted text extraction for PDF checks instead of dumping raw `pdftotext` or `pdftotext -bbox` output into context.
 - If the resume is too long, first tighten wording, remove repetition, and prioritize stronger evidence. Keep the canonical application-resume geometry and 11-point typography unchanged rather than creating application-specific spacing.
 - Save tailoring notes with the human recruiter readability gate, submitted-facing terminology sync, and score consistency gate recorded explicitly.
