@@ -126,7 +126,7 @@ For F-1 job discovery, prioritize U.S. roles at companies with sponsor history i
 - `job-search/`: recent-job discovery tooling for ATS search links, `jobs-inbox.csv` local job storage, scoring, and recency-bucket reports.
 - `templates/`: reusable scaffolds for application folders, notes, and the reusable prompt for starting a new application pipeline.
 
-Do not keep duplicate master resume copies. The canonical resume source is `master-documents/master-resume/resume.tex`.
+Do not keep duplicate master resume copies. The canonical resume source is `master-documents/master-resume/resume.tex`. When updating the master one-page resume PDF, run `python3 automation/validate_resume_pdf.py master-documents/master-resume/resume.pdf` and fix any page-utilization failure before committing or copying it into `master-documents/ready-to-send/`.
 
 Do not commit binary/generated artifacts unless Aryan explicitly asks. This includes PDFs, DOCX files, PNG previews, and LaTeX build artifacts.
 

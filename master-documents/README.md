@@ -8,4 +8,6 @@ Canonical reusable documents.
 - `master-resume/resume-expanded.pdf`: compiled expanded master resume PDF.
 - `master-cover-letter/cover-letter-template.md`: reusable cover-letter structure and language.
 
+When regenerating `master-resume/resume.pdf` or `ready-to-send/Aryan_Miriyala_Resume.pdf`, run `python3 automation/validate_resume_pdf.py master-documents/master-resume/resume.pdf` before committing. This standalone check enforces the same bottom-page utilization expectation as application-package resumes.
+
 Tailored job-specific files belong in `application-packages/<Company>/<Role>/`, not here.
