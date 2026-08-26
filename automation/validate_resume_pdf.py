@@ -15,6 +15,7 @@ from pathlib import Path
 MAX_UNUSED_BOTTOM_POINTS = 24.0
 WARN_UNUSED_BOTTOM_POINTS = 20.0
 MAX_RESUME_PARSE_BYTES = int(2.5 * 1024 * 1024)
+MAX_RESUME_BULLET_LINES = 2
 REQUIRED_TEXT_MARKERS = [
     "Aryan Miriyala",
     "aryanmiriyala@gmail.com",
@@ -66,6 +67,12 @@ def check_pdf(path: Path, errors: list[str], warnings: list[str]) -> None:
             if marker not in stdout:
                 errors.append(f"resume PDF text missing expected marker: {marker}")
 
+    code, stdout, stderr = run_command(["pdftotext", "-layout", str(path), "-"])
+    if code != 0:
+        warnings.append(f"pdftotext -layout failed; skipped bullet line-length check: {stderr.strip()}")
+    else:
+        check_bullet_line_lengths(stdout, errors)
+
     code, stdout, stderr = run_command(["pdftotext", "-bbox", str(path), "-"])
     if code != 0:
         warnings.append(f"pdftotext -bbox failed; skipped page-utilization check: {stderr.strip()}")
@@ -112,6 +119,45 @@ def check_pdf(path: Path, errors: list[str], warnings: list[str]) -> None:
             "resume PDF is close to the bottom-space limit: "
             f"{unused_bottom:.1f}pt ({unused_bottom / 72:.2f}in) unused"
         )
+
+
+def check_bullet_line_lengths(layout_text: str, errors: list[str]) -> None:
+    bullet_blocks: list[tuple[str, int]] = []
+    current_lines: list[str] = []
+
+    for raw_line in layout_text.splitlines():
+        line = raw_line.rstrip()
+        stripped = line.strip()
+        if not stripped:
+            if current_lines:
+                bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+                current_lines = []
+            continue
+
+        if stripped.startswith("•"):
+            if current_lines:
+                bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+            current_lines = [line]
+            continue
+
+        if current_lines and line[:1].isspace():
+            current_lines.append(line)
+            continue
+
+        if current_lines:
+            bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+            current_lines = []
+
+    if current_lines:
+        bullet_blocks.append((" ".join(part.strip() for part in current_lines), len(current_lines)))
+
+    for bullet_text, line_count in bullet_blocks:
+        if line_count > MAX_RESUME_BULLET_LINES:
+            compact_bullet = re.sub(r"\s+", " ", bullet_text.replace("•", "")).strip()
+            errors.append(
+                "resume PDF bullet exceeds the two-line visual limit "
+                f"({line_count} lines): {compact_bullet[:140]}"
+            )
 
 
 def main() -> int:
