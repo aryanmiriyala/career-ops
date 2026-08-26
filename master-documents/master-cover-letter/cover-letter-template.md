@@ -2,7 +2,7 @@
 
 Dear Hiring Team,
 
-I am applying for the [Role] position at [Company]. My background combines full-stack software engineering, cloud data engineering, AI-assisted development, and security-aware application work across healthcare, insurance, and internal product environments.
+I am applying for the [Role] position at [Company]. My background combines full-stack software engineering, applied AI systems, cloud data engineering, and security-aware application work across AI gateway, insurance, healthcare, and internal product environments.
 
 Before drafting the final version, collect Aryan's personal context:
 
@@ -11,7 +11,9 @@ Before drafting the final version, collect Aryan's personal context:
 - What specific company work, product, or value do you want to reference?
 - What do you want the hiring manager to remember about you?
 
-In my recent work, I have built full-stack applications with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and modern authentication patterns including SSO, RBAC, JWT, and Auth0. I have also built cloud and data workflows with AWS Glue, S3, Lambda, PySpark, Impala, Oracle, PostgreSQL, and Semarchy MDM.
+In my current role at Actual Reality Technologies, I am contributing to an OpenAI-compatible AI Gateway that extends LiteLLM with task-aware model routing, model registry logic, cost/rate controls, fallback behavior, observability, and versioned decision records. I have also built full-stack applications with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and modern authentication patterns including SSO, RBAC, JWT, and Auth0.
+
+Earlier, I built cloud and data workflows with AWS Glue, S3, Lambda, PySpark, Impala, Oracle, PostgreSQL, and Semarchy MDM, and improved healthcare workflow software with security, audit logging, and data-entry reliability in mind.
 
 What draws me to [Company] is [specific reason from the job description or company mission]. The role's focus on [specific technical/domain requirement] aligns closely with my experience in [matching experience].
 
