@@ -30,7 +30,7 @@ Resume-ready evidence:
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts.
 
-Source: `profile/experience-master.md` and `ai-gateway-field-guide.docx`, Actual Reality Technologies.
+Source: `profile/experience-master.md` and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
 ### SmartSolve Industries - Artificial Intelligence & Computer Science Intern
 

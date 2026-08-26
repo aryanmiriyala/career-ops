@@ -107,7 +107,7 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 - Confirmed by Aryan: role title `Software Engineering Intern`, company `Actual Reality Technologies`, start date `July 2026`.
 - Confirmed by Aryan: Actual Reality Technologies location should be listed as `Perrysburg, OH`.
 - Confirmed by Aryan on August 25, 2026: AI Gateway work has built a pinned LiteLLM proxy on Railway with routing and safety policy, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, config validators, 134 passing tests, and 44 red-team fixtures.
-- Source document: `ai-gateway-field-guide.docx`, provided by Aryan for understanding work completed so far, not as a submitted artifact.
+- Source document: `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, provided by Aryan for understanding work completed so far, not as a submitted artifact.
 - Public company context found through LinkedIn/web search: northwest Ohio company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
 - GitHub source status: authenticated `gh` access inspected `Actual-Reality/customer-portal` on August 7, 2026. Evidence includes private repo metadata, package.json, authored commit history, PR list, file-level stats, and branch diffs. Keep customer/client details public-safe when drafting submitted artifacts.
 - Ticket brief source: user-provided Customer Portal ticket brief snapshot dated August 7, 2026, repo at `87f79a9`, covering Aryan-created or Aryan-assigned Plane tickets across Todo, In review, In progress, Cancelled, and conflict states.
