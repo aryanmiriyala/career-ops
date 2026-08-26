@@ -36,6 +36,8 @@ Referral target / source:
 
 Next referral follow-up:
 
+Outreach or follow-up request:
+
 ## Posting Text
 
 Paste the full employer-provided job description here. Do not replace it with a summary or keyword digest.
@@ -56,6 +58,7 @@ Paste the full employer-provided job description here. Do not replace it with a 
 
 - Exact posted title:
 - Exact title/header decision:
+- Primary lane:
 - Languages:
 - Frameworks:
 - Cloud/data:
@@ -68,7 +71,9 @@ Paste the full employer-provided job description here. Do not replace it with a 
 - Must-have tools:
 - Nice-to-have tools:
 - Expanded role-specific terms to audit:
+- Package-local expanded keyword file:
 - Unsupported terms to avoid:
+- Low-value boilerplate terms to track but not force:
 
 ## Initial Plan
 
@@ -77,4 +82,9 @@ Paste the full employer-provided job description here. Do not replace it with a 
 - Resume angle:
 - Cover-letter angle:
 - Referral plan:
+- Outreach tone:
+- Gap recovery targets:
+- Bullet quality risks:
+- Visual/page-fill risks:
+- Token-heavy sources to avoid:
 - Main risks:

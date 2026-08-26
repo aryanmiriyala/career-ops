@@ -30,6 +30,8 @@ Skills strategy:
 
 Known stretch/risk strategy:
 
+Token/source-access strategy:
+
 ## F-1 Work Authorization Gate
 
 Result:
@@ -54,6 +56,8 @@ Outreach status:
 
 Next follow-up date:
 
+Outreach tone:
+
 Notes:
 
 ## Job Keyword Map
@@ -73,6 +77,7 @@ Default exact-term analyzer result:
 
 Expanded role-specific keyword pass:
 
+- Term file used:
 - Checked terms:
 - Found:
 - Missing truthful opportunities:
@@ -108,6 +113,7 @@ Important JD Term Search:
 - Locations searched:
 - Evidence recovered:
 - Terms still unsupported:
+- Searches intentionally skipped, if any:
 
 Supported gaps added to package:
 
@@ -176,6 +182,10 @@ Weak bullets rewritten:
 
 - 
 
+- Responsibility-only bullets removed or rewritten:
+
+- Bullets over two visual lines tightened:
+
 Human recruiter readability notes:
 
 - Internal/tool-specific terms translated:
@@ -242,8 +252,9 @@ Recommended improvements:
 - PDF page count:
 - Professional Summary line count:
 - Experience bullet count gate:
-- PDF text checked:
+- PDF text checked with bounded output:
 - Keyword coverage helper run:
+- Expanded keyword term file checked:
 - Expanded role-specific keyword audit checked: Pass -
 - Two-line bullet-wrap check: Pass -
 - Gap recovery gate checked: Pass -
@@ -256,3 +267,4 @@ Recommended improvements:
 - Cover-letter artifact checked: Pass -
 - Application-answer human voice gate checked: Pass - Required only when `application-questions.md` or `application-answers.md` exists; answers were checked for concrete personal context, grounded claims, plain language, no semicolons, no em dashes, no unsupported company/personal claims, and no generic AI-sounding phrasing.
 - Application validator run:
+- Token-efficient source access checked: Pass -

@@ -44,6 +44,8 @@ For every job description, start from this file as the source of truth. Do not r
 
 If a profile guide, template, automation script, prior application, or reusable prompt conflicts with this file, this file takes precedence. Update the conflicting dependency before using it to finalize a new application package; do not silently fall back to the older rule. Do not inspect prior application packages just to look for conflicts or reusable wording unless Aryan explicitly names a specific package.
 
+When a pipeline rule changes, update the reusable prompt and affected templates in the same maintenance pass so new chats and future packages do not fall back to stale wording, missing gates, or older quality assumptions.
+
 Do not mark an application package complete until all required outputs exist and have been verified:
 
 - `application-packages/<Company>/<Role>/job-description.md`

@@ -21,11 +21,23 @@ Before treating a job requirement as a real gap, check whether Aryan has already
 
 ## Quality Gate Priority
 
-Run both the default keyword analyzer and an expanded role-specific keyword audit. Keep experience and project bullets recruiter-readable, impact-oriented, and normally no more than two visual PDF lines in the compiled resume.
+Run both the default keyword analyzer and an expanded role-specific keyword audit. Use a package-local expanded keyword term file when the role has many important exact terms. Keep experience and project bullets recruiter-readable, impact-oriented, and normally no more than two visual PDF lines in the compiled resume.
+
+## Bullet And Evidence Priority
+
+Every resume bullet should follow the repo's evidence format: action verb, Aryan's specific contribution, what system or workflow changed, method or technology when relevant, scope or domain context, and impact or result. Do not keep responsibility-only bullets just because they contain keywords. Use job-description keywords inside natural accomplishment bullets that a human recruiter can understand.
+
+## Visual And ATS Priority
+
+Use the canonical one-page resume visual system without one-off font, margin, heading, bullet, table, color, or spacing changes. Verify page count, text extraction, two-line bullet wrapping, bottom-page usage, and parser-safe source structure through the validator and targeted inspection.
+
+## Referral Outreach Priority
+
+When drafting referral, recruiter, hiring-manager, or employee messages, keep the message proportional to the channel. Initial outreach may include one compact proof point and the website/resume link when useful. Follow-up messages should be shorter, lower-pressure, and focused on a brief conversation or coffee chat; do not repeat Aryan's work history, stack, publications, or projects unless the recipient asked for more detail or a new detail materially changes the conversation.
 
 ## Token-Efficient Source Priority
 
-Use `profile/evidence-index.md`, canonical templates, and targeted source searches before opening full profile master files. Do not read historical application packages or the full tracker unless the current task specifically requires it.
+Use `profile/evidence-index.md`, canonical templates, the compact keyword map, package-local expanded keyword term files, validator/analyzer summaries, and targeted source searches before opening full profile master files. Do not read historical application packages, broad job-search cache files, raw full PDF text, raw `pdftotext -bbox` output, or the full tracker unless the current task specifically requires it.
 
 ## Operating Contract
 
@@ -46,6 +58,8 @@ Use the job description and optional context below to run the appropriate applic
 - Company/product interest:
 - Personal connection to company, industry, mission, or team:
 - Referral target/source or connection path:
+- Outreach or follow-up request:
 - Cover letter tone or emphasis:
+- Expanded keyword terms supplied by Aryan:
 - Desired status if not Applied:
 ```
