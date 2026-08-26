@@ -1,0 +1,69 @@
+# Role title and role family
+Full Stack Engineer
+Full-Stack Engineer
+full-stack
+backend microservices
+front-end applications
+front-end interfaces
+user-facing interfaces
+Angular-based user interfaces
+concept to production
+
+# Core stack
+FastAPI
+FastAPI (Python)
+Python
+Angular
+React
+TypeScript
+JavaScript
+PostgreSQL
+Neo4j
+relational databases
+Docker
+AWS
+cloud platforms
+
+# AI, search, and data systems
+LLMs
+RAG
+natural language
+vector databases
+vector search
+Weaviate
+Pinecone
+SageMaker
+Bedrock
+AI/ML model deployment
+large-scale evidence ingestion
+evidence ingestion
+processing
+search
+document pipelines
+video, audio, and document pipelines
+structured evidence data
+
+# Security and domain
+public safety
+digital forensics
+law enforcement
+CJIS-compliant
+CJIS-Compliant
+AWS GovCloud
+high security
+secure, scalable APIs
+intelligent automation
+officers
+investigators
+analysts
+
+# AI-assisted engineering and work style
+agentic programming tools
+Cursor
+Codex
+Claude Code
+ownership
+adaptability
+fast-moving startup
+organization and attention to detail
+reliability
