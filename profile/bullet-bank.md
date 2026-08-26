@@ -23,6 +23,7 @@ Avoid:
 
 ## Software Engineer / Full-Stack Engineer
 
+- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and 44 red-team fixtures for testable model-call routing.
 - Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
 - Consolidated customer-facing workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.

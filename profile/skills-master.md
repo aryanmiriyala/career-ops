@@ -186,6 +186,12 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Automated LLM evaluation
 - AI-assisted code review
 - AI-assisted implementation planning
+- LiteLLM
+- AI/model gateways
+- Smart-router tiers
+- Guardrails
+- Langfuse tracing
+- Slack block alerts
 
 ## Testing and Quality
 
@@ -196,6 +202,8 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Next.js route tests
 - Component tests
 - Architecture guardrail tests
+- Red-team fixtures
+- CI/deploy gates
 - Firebase rules unit testing
 - Auth/session test coverage
 - Cache and stale-read test coverage

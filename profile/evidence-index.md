@@ -13,22 +13,24 @@ Use this compact index before opening full profile master files. It is a retriev
 
 ### Actual Reality Technologies - Software Engineering Intern
 
-Primary use: current software engineering internship, customer/admin portal work, TypeScript/Next.js/Firebase, auth/session reliability, project-management API integration, dashboard/project-state logic, testing, documentation, manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
+Primary use: current software engineering internship, AI Gateway/model-call routing, LiteLLM proxy configuration, guardrails, Langfuse tracing, Slack alerting, CI/deploy gates, customer/admin portal work, TypeScript/Next.js/Firebase, auth/session reliability, project-management API integration, dashboard/project-state logic, testing, documentation, manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable AI Gateway, model-call routing, safety policy, customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
 
 Verified keywords:
 
 - TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore, Vercel, project-management API integration, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
+- LiteLLM, AI Gateway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy.
 - Authentication/session cookies, production login behavior, password and secure account-link navigation, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, documentation.
 - Augmented intelligence, Industry 4.0/5.0, manufacturing technology, process improvement, data modeling, predictive analytics, cloud consulting, app development.
 
 Resume-ready evidence:
 
+- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and 44 red-team fixtures for testable model-call routing.
 - Improving a private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
 - Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts.
 
-Source: `profile/experience-master.md`, Actual Reality Technologies.
+Source: `profile/experience-master.md` and `ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
 ### SmartSolve Industries - Artificial Intelligence & Computer Science Intern
 

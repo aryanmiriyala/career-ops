@@ -11,7 +11,7 @@ Before drafting the final version, collect Aryan's personal context:
 - What specific company work, product, or value do you want to reference?
 - What do you want the hiring manager to remember about you?
 
-In my current role at Actual Reality Technologies, I am contributing to an OpenAI-compatible AI Gateway that extends LiteLLM with task-aware model routing, model registry logic, cost/rate controls, fallback behavior, observability, and versioned decision records. I have also built full-stack applications with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and modern authentication patterns including SSO, RBAC, JWT, and Auth0.
+In my current role at Actual Reality Technologies, I built AI Gateway routing and safety infrastructure around a LiteLLM proxy, including smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and red-team fixtures. I have also built full-stack applications with Next.js, React, Angular, Node.js, PostgreSQL, MongoDB, and modern authentication patterns including SSO, RBAC, JWT, and Auth0.
 
 Earlier, I built cloud and data workflows with AWS Glue, S3, Lambda, PySpark, Impala, Oracle, PostgreSQL, and Semarchy MDM, and improved healthcare workflow software with security, audit logging, and data-entry reliability in mind.
 

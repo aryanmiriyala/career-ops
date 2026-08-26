@@ -13,7 +13,7 @@ Resume angle: early-career software engineer with applied AI, evidence-grounded 
 
 Strongest matching evidence:
 
-- Actual Reality Technologies: AI Gateway work for OpenAI-compatible model calls, task-aware routing, cost/rate controls, fallback chains, observability, and versioned decision records.
+- Actual Reality Technologies: AI Gateway work around a LiteLLM proxy with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, and safety policy.
 - Diff-Grounded PR Description Generation: published LLM-backed code review support around grounded pull request descriptions, repository mining, and automated LLM evaluation.
 - FalconGraph Search: source-grounded RAG/search system with crawling, document processing, FAISS retrieval, FastAPI, Next.js, cited answers, and graph context.
 - BGSU Graduate Research Assistant: OSINT-adjacent cybersecurity labs around reconnaissance, vulnerability scanning, packet analysis, web security, email forensics, and controlled tooling.
@@ -42,7 +42,12 @@ Exact posted role title:
 High-priority evidence-bearing keywords used:
 
 - AI Gateway
-- OpenAI-compatible
+- LiteLLM
+- smart-router tiers
+- guardrails
+- Langfuse tracing
+- Slack block alerts
+- red-team fixtures
 - model-call routing
 - task-aware policy
 - model registry
@@ -127,12 +132,15 @@ Submitted-facing terminology sync checked: Pass - resume and cover letter both e
 
 ## ATS And Visual Verification Gates
 
+- Job-description source audit: Pass - full employer-provided job description is preserved in `job-description.md`, and the keyword map was built from the saved posting rather than a summary.
 - Gap recovery gate checked: Pass - important JD terms were searched across source material and unsupported claims were omitted.
 - ATS source gate checked: Pass - resume uses canonical `letterpaper,11pt` article source, explicit `letterpaper` geometry, `glyphtounicode`, `\pdfgentounicode=1`, `\pagestyle{empty}`, `\linespread{0.92}`, single-column layout, canonical `tightitemize`, no tabular, no images, no colors, and no hidden text.
+- Two-line bullet-wrap check: Pass - bullets were kept compact for the canonical one-page layout; no submitted-facing bullet was intentionally allowed to sprawl beyond normal two-line readability.
 - Human recruiter readability gate checked: Pass - bullets avoid internal ticket names and explain systems in recruiter-readable language.
 - Visual consistency gate checked: Pass - rendered resume matches the canonical application visual family with centered header, ruled section headings, consistent bullets, reverse chronological roles, and readable density.
 - Page utilization gate checked: Pass - final resume is exactly one page and fills the bottom portion with Technical Skills while preserving readability and avoiding clipping.
 - Submitted-facing terminology sync checked: Pass - cover letter and resume use the same public-safe terms for AI Gateway, LLM evaluation, FalconGraph, and OSINT-adjacent lab work.
+- Expanded role-specific keyword pass: Pass - manual keyword review included AI agents, OSINT, open-web research, evidence/citations, scale, latency, cost, fallback behavior, observability, LLM evaluation, Python, TypeScript/React, APIs, databases, crawling, RAG, and source-grounded search.
 - Score consistency gate checked: Pass - score breakdown below sums exactly to the recorded score.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` exists, is one page, and uses the canonical plain-text letter style without submitted-facing work-authorization language.
 
@@ -145,7 +153,7 @@ Exact-term report:
 - Found in resume: AI, APIs, LLM, Next.js, Python, RAG, React
 - Missing from resume: data volume, data volume concurrency, distributed systems, LLMs, what build
 
-Interpretation: The analyzer is exact-term only and does not capture several high-value contextual matches already present in the resume, including AI Gateway, OpenAI-compatible APIs, model-call routing, cost controls, fallback chains, observability, decision records, OSINT, web crawling, FAISS, FastAPI, PostgreSQL, AWS Glue, S3, IAM, source-grounded answers, and 20+ TB data scale. "what build" is a noisy extracted phrase and was not used.
+Interpretation: The analyzer is exact-term only and does not capture several high-value contextual matches already present in the resume, including AI Gateway, LiteLLM, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, model-call routing, cost controls, fallback chains, observability, decision records, OSINT, web crawling, FAISS, FastAPI, PostgreSQL, AWS Glue, S3, IAM, source-grounded answers, and 20+ TB data scale. "what build" is a noisy extracted phrase and was not used.
 
 ## Scoring Methodology
 

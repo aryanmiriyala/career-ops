@@ -76,18 +76,19 @@ Location: Perrysburg, Ohio, United States
 
 Description:
 
-Working as a Software Engineering Intern at Actual Reality Technologies, improving the private customer portal hosted at `my.actualreality.ai`. My work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage.
+Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. My work spans a LiteLLM-based gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, and a Next.js/TypeScript/Firebase customer portal with customer/admin surfaces, Plane-backed project data, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage.
 
-Software engineering / Customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+Software engineering / AI Gateway and customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, LiteLLM, Railway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, red-team fixtures, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
 
 Highlights:
 
+- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and red-team fixtures for testable model-call routing.
 - Improving a private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and automated tests.
 - Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions.
 - Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through cache layers, preventing stale reads, and deriving project states from work-item counts instead of rounded progress.
 
-Source verification note: authenticated GitHub access inspected `Actual-Reality/customer-portal` on August 7, 2026. Keep customer/client details public-safe when drafting LinkedIn or submitted artifacts.
+Source verification note: authenticated GitHub access inspected `Actual-Reality/customer-portal` on August 7, 2026. AI Gateway field guide provided by Aryan on August 25, 2026. Keep customer/client and internal gateway details public-safe when drafting LinkedIn or submitted artifacts.
 
 ### SmartSolve
 
