@@ -47,8 +47,8 @@ Important JD Term Search:
 - Terms searched: `Integration`, `integrat`, `client`, `customer`, `SaaS`, `onboarding`, `technical documentation`, `documentation`, `troubleshoot`, `support`, `HTML`, `JavaScript`, `SQL`, `REST API`, `REST APIs`, `API`, `stakeholder`, `discovery`, `solution`, `requirements`, `affiliate`, `digital marketing`, `marketing`, `AI Gateway`, `LiteLLM`, `model-call`, `policy enforcement`, `cost`, `rate`.
 - Locations searched: `profile/`, `master-documents/`, `templates/`, and the saved job description.
 - Evidence recovered: Actual Reality customer portal/API integration/testing/documentation; user-confirmed Actual Reality AI Gateway with LiteLLM, task-aware routing, cost/rate controls, fallback behavior, observability, and decision records; SmartSolve AI integration roadmap, LLM/API planning, onboarding tracker, QMS dependency register, and documentation/handoff planning; AAIS Python/SQL/AWS Glue data migration and billing workflows; AAIS RBAC/JWT modernization; APKD HTML5/JavaScript/healthcare workflow reliability and security; Career Ops Greenhouse/Lever/Ashby/SmartRecruiters API integration project; FalconGraph HTML/PDF/DOCX ingestion and FastAPI/Next.js RAG project.
-- Supported - add/use now: Integration Engineer, SaaS-style integration, technical solutions, client/customer workflows, onboarding, technical documentation, troubleshooting, HTML, JavaScript/TypeScript, SQL, REST APIs, API integration, webhooks, AI hands-on application, LiteLLM, OpenAI-compatible APIs, model routing, cost/rate controls, observability, data migration, implementation handoff, customer/admin workflows.
-- Supported adjacent evidence: client-facing communication is supported by customer portal, teaching/support, GRA/CyberCamp, documentation, and implementation handoff evidence, but direct external enterprise-client ownership is not overstated. Digital marketing/affiliate domain familiarity is adjacent only through impact.com research, not prior work.
+- Supported - add/use now: Integration Engineer, SaaS-style integration, technical solutions, client/customer workflows, onboarding, onboarding experience, technical discovery, solution discussions, technical documentation, troubleshooting, HTML, JavaScript/TypeScript, SQL, REST APIs, API integration, webhooks, AI hands-on application, LiteLLM, OpenAI-compatible APIs, model routing, cost/rate controls, observability, data migration, implementation handoff, customer/admin workflows.
+- Supported adjacent evidence: client-facing communication is supported by customer portal, teaching/support, GRA/CyberCamp, documentation, and implementation handoff evidence, but direct external enterprise-client ownership is not overstated. Technical discovery and solution discussions are now supported by user-confirmed AI Gateway work at Actual Reality Technologies. End-to-end onboarding experience is now supported by the SmartSolve tracker covering first interview through end-of-pipeline decisions and insurance/I-9 steps. Digital marketing/affiliate domain familiarity is adjacent only through impact.com research, not prior work.
 - Unsupported / intentionally omitted: direct affiliate marketing employment, direct impact.com platform implementation, formal Sales Engineering title, direct ownership of external client discovery calls, and formal customer-success quota ownership.
 
 ## Bullet Audit
@@ -56,43 +56,48 @@ Important JD Term Search:
 - Experience bullets used: 13.
 - Experience Bullet Count Waiver: Not needed.
 - All experience and project bullets begin with active contribution verbs or current-action wording and avoid `Responsible for`, `Helped`, `Worked on`, and `Assisted`.
-- Bullet rewrite check: Actual Reality leads with AI Gateway and customer portal integration; SmartSolve covers AI implementation and onboarding workflow software; AAIS demonstrates SQL, data migration, self-service access, and internal-user impact; APKD covers HTML/JavaScript, security, troubleshooting, and workflow reliability; projects cover ATS API integrations and document-ingestion/RAG implementation.
+- Bullet rewrite check: Actual Reality leads with AI Gateway technical discovery, solution discussions, and customer portal integration; SmartSolve covers AI implementation and full onboarding experience workflow software; AAIS demonstrates SQL, data migration, self-service access, and internal-user impact; APKD covers HTML/JavaScript, security, troubleshooting, and workflow reliability; projects cover ATS API integrations and document-ingestion/RAG implementation.
 - Human recruiter readability notes: internal names were translated into customer-facing SaaS platform, project-management API integration, client/admin workflows, implementation handoff, and AI Gateway policy/routing language. No ticket IDs, private route names, branch names, or private client names were used.
 - Each retained bullet states a concrete system or workflow, truthful method/technology, scope/domain context, and a result such as implementation handoff, maintainability, access control, reduced manual work, reliability, or source traceability.
 
 ## Verification Gates
 
 - Gap recovery gate checked: Pass - exact JD terms were searched and supported/unsupported decisions are recorded above.
+- Job-description source audit: Pass - full posting remains saved in `job-description.md`, and the revised resume terms were drawn from the provided JD plus user-confirmed role evidence.
 - ATS source gate checked: Pass - canonical single-column LaTeX source uses 11pt article class, explicit letterpaper geometry, glyphtounicode, pdfgentounicode, empty pagestyle, canonical linespread, and single-level tightitemize with no tables, images, icons, color, hidden text, or text boxes.
 - Human recruiter readability gate checked: Pass - private/internal wording was translated into recruiter-readable integration, SaaS, customer workflow, AI routing, documentation, and troubleshooting language.
+- Two-line bullet-wrap check: Pass - revised resume was compiled after adding exact JD phrases, and bullet wrapping was checked by the application validator.
 - Visual consistency gate checked: Pass - rendered resume and cover letter use the canonical Computer Modern application family, standard section headings, visible rules, consistent bullet symbols, and no clipping or overlap.
 - Page utilization gate checked: Pass - content extends into the bottom portion of the page with role-aligned experience, two targeted projects, and compact skills without filler or spacing tricks.
 - Submitted-facing terminology sync checked: Pass - resume and cover letter both use AI Gateway, customer-facing SaaS platform/customer portal, project-management API integration, REST APIs, SQL, SaaS-style workflow integration, integration documentation, technical issues, implementation handoff, and onboarding language consistently.
-- Score consistency gate checked: Pass - recorded score is 90/100 and the written score breakdown totals 90 earned points out of 100 possible.
+- Expanded role-specific keyword pass: Pass - revised resume includes exact JD phrases for `technical discovery`, `solution discussions`, `onboarding experience`, `stakeholders`, `technical solutions`, HTML, JavaScript, SQL, REST APIs, and Integration Engineer. Affiliate/digital-marketing terms and direct client onboarding are intentionally omitted because verified direct experience was not established.
+- Score consistency gate checked: Pass - recorded score is 93/100 and the written score breakdown totals 93 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` compiled to one page, remained under 5 MB, and used the canonical cover-letter layout without submitted-artifact work-authorization language.
 
 ## Scoring Methodology
 
-Job Alignment & Evidence Score: 90/100
+Job Alignment & Evidence Score: 93/100
 
 Internal estimate only; not a predicted ATS score.
 
 Score breakdown:
 
-- Keyword coverage: 36/40 - strong truthful coverage for Integration Engineer, SaaS platform, technical solutions, client/customer workflows, onboarding, implementation, technical integration documentation, troubleshooting, HTML, JavaScript/TypeScript, SQL, REST APIs, API integration, AI hands-on application, and web technologies. Direct affiliate/digital marketing experience, direct client discovery ownership, and formal solution-discussion ownership are intentionally omitted.
-- Experience relevance: 20/25 - Actual Reality, SmartSolve, AAIS, APKD, Career Ops, and FalconGraph provide strong integration, API, documentation, support-adjacent, troubleshooting, AI, data migration, and workflow evidence. The main weakness is limited explicit external client-facing implementation ownership in a formal Integration Support or Sales Engineering setting.
+- Keyword coverage: 38/40 - strong truthful coverage for Integration Engineer, SaaS platform, technical solutions, client/customer workflows, onboarding experience, technical discovery, solution discussions, implementation, technical integration documentation, troubleshooting, HTML, JavaScript/TypeScript, SQL, REST APIs, API integration, AI hands-on application, stakeholders, and web technologies. Direct affiliate/digital marketing experience and direct client onboarding are intentionally omitted.
+- Experience relevance: 21/25 - Actual Reality, SmartSolve, AAIS, APKD, Career Ops, and FalconGraph provide strong integration, API, documentation, support-adjacent, troubleshooting, AI, data migration, workflow, technical discovery, solution discussion, and onboarding evidence. The main weakness is limited explicit external client-facing implementation ownership in a formal Integration Support or Sales Engineering setting.
 - Impact and evidence: 14/15 - resume includes verified scope such as 20+ TB, 700+ member companies, 160+ tables, 1,000+ SQL tables, 110 users, 24-hour data latency, customer/admin workflows, and concrete security/reliability outcomes.
 - Formatting and ATS parsing: 10/10 - source is canonical, one page, text-extractable, under parser-size target, uses standard headings, and includes the exact posted title once in visible text.
 - Risk and gap handling: 10/10 - sponsorship ambiguity is tracked internally, unsupported affiliate/digital-marketing/client-discovery claims are omitted, and adjacent customer/integration evidence is described without overclaiming.
 
 Exact posted title matched in visible summary/title/header clause: Pass - `Integration Engineer` appears once in the header/contact block.
 
-Exact-term analyzer result: 18/28 found in the final resume. Found terms: `AI`, `client`, `client requirements`, `HTML`, `implementation`, `integration documentation`, `Integration Engineer`, `JavaScript`, `Onboarding`, `requirements`, `REST`, `REST APIs`, `SaaS platform`, `SQL`, `technical issues`, `technical solutions`, and `web technologies`. Missing exact terms: `affiliate`, `authorization`, `client onboarding`, `clients`, `customer-centric`, `design and integration`, `digital marketing`, `solution discussions`, `technical discovery`, and `troubleshoot`. Several are covered with truthful adjacent wording or morphology; unsupported industry/client-discovery terms were not forced.
+Exact-term analyzer result: 9/10 found in the final resume using the default helper. Found terms: `AI`, `HTML`, `integration engineer`, `JavaScript`, `requirements`, `REST`, `REST APIs`, `SQL`, and `stakeholders`. Missing exact term: `authorization`, which is intentionally omitted from submitted-facing materials because work authorization is tracked internally.
+
+Expanded exact-term pass: Found `technical discovery`, `solution discussions`, `onboarding experience`, `onboarding tracker`, `first interview`, `end-of-pipeline`, `insurance/I-9`, `business and technical stakeholders`, and `technical solutions` in the revised resume PDF.
 
 Strong matches:
 
 - Web integration stack: HTML, JavaScript/TypeScript, SQL, REST APIs, API integration, JSON, webhooks, Firebase, Node/Express, React/Next.js/Angular.
-- SaaS/client implementation responsibilities: customer-facing SaaS platform, project-management API integration, onboarding tracker, technical integration documentation, implementation handoff, troubleshooting, data validation, and workflow reliability.
+- SaaS/client implementation responsibilities: customer-facing SaaS platform, project-management API integration, onboarding tracker, full onboarding experience, technical discovery, solution discussions, technical integration documentation, implementation handoff, troubleshooting, data validation, and workflow reliability.
 - AI requirement: AI Gateway, LiteLLM, task-aware model routing, Codex/Claude Code workflows, LLM/API planning, OpenAI-compatible APIs, and RAG project work.
 - Customer/stakeholder communication evidence: documentation, teaching/support, GRA/CyberCamp, QMS dependency planning, and cross-functional workflow translation.
 - Impact evidence: 20+ TB, 700+ member companies, 1,000+ SQL tables, 160+ source tables, 25-domain taxonomy, 110 users, 24-hour data latency, security/audit reliability.
