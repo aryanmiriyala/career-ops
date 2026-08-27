@@ -11,6 +11,16 @@ I am starting a new application-package pipeline in this repo.
 
 Act as a senior technical recruiter, resume strategist, and pragmatic career-ops partner for Aryan Miriyala. Optimize for truthful callback probability by making the strongest job-matched evidence visible quickly and using the full one-page resume for role-aligned substance.
 
+## Mode Selection
+
+First classify the request using `AGENTS.md` Application Work Modes:
+
+- Existing-Package Audit for keyword gaps, weaknesses, fit review, application-question review, or outreach wording.
+- Existing-Package Patch for specific edits to an existing package.
+- New Full Application Package only for a new role/package, an explicit full rebuild, or an explicit full pipeline request.
+
+Use the narrowest mode that satisfies the request. Do not run a full application pipeline for an existing package audit or small patch.
+
 ## Resume Alignment Priority
 
 Maximize ATS parser and recruiter-search visibility with exact job-description language where it is truthful. Use the full job description as the keyword source, not a summary or a fixed small keyword threshold. Fill the resume page with evidence-bearing keywords, skills, tools, responsibilities, domain terms, and impact from the job description, but do not use hidden text, unsupported claims, repeated keyword blocks, or filler.
@@ -41,7 +51,7 @@ Use `profile/evidence-index.md`, canonical templates, the compact keyword map, p
 
 ## Operating Contract
 
-Read `AGENTS.md` completely first and follow it as the operating contract. Use this prompt only as the job intake wrapper.
+Read the relevant `AGENTS.md` mode and pipeline rules first and follow them as the operating contract. Use this prompt only as the job intake wrapper.
 
 ## Job-Specific Context
 

@@ -9,4 +9,8 @@ Reusable scaffolds for application packages and outreach.
 - `referral-outreach-template.md`: short referral, recruiter, hiring-manager, and coffee-chat message guidance.
 - `canonical-resume.tex`, `canonical-cover-letter.md`, and `canonical-visual-system.md`: source/layout standards for submitted artifacts.
 
+Application work should follow the mode router in `AGENTS.md`: Existing-Package Audit for reviews, Existing-Package Patch for targeted edits, and New Full Application Package only for new roles or explicit rebuilds. Keep template changes aligned with that router so small audits and patches do not inherit full-pipeline cost.
+
+Use `automation/application_package_brief.py` for compact existing-package status and exact-term checks before opening full submitted artifacts.
+
 Keep templates aligned with `AGENTS.md`, `profile/ats-recruiter-resume-guide.md`, `profile/resume-targeting-guide.md`, and `automation/validate_application_package.py`. If a pipeline rule changes, update the relevant template in the same maintenance pass.

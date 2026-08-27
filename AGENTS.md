@@ -38,6 +38,67 @@ Every final application response must include the ready artifact paths, one-page
 
 Make incremental commits for small, coherent changes so the repository stays easy to review and push to GitHub. Do not bundle unrelated resume, cover-letter, application, tracker, and source-material updates into one large commit.
 
+## Application Work Modes And Token Budget Rule
+
+Before doing application-package work, classify the request into one of these modes and state the mode briefly in the first user-facing update. Use the narrowest mode that satisfies Aryan's request. Do not run the full application pipeline for an existing package unless Aryan explicitly asks for a full rebuild, full audit, or new application package.
+
+### Mode 1: Existing-Package Audit
+
+Use this mode when Aryan asks for weaknesses, missing keywords, JD/resume/cover-letter comparison, fit assessment, application-question review, or outreach wording for a role that already has a package.
+
+Scope:
+
+- Read only the saved or provided job description, current submitted-facing artifacts (`resume.tex`/`resume.pdf`, `cover-letter.md`/`cover-letter.pdf`, `application-questions.md` when relevant), and targeted `tailoring-notes.md` sections if needed.
+- Prefer `python3 automation/application_package_brief.py <package> --term ...` as the first compact package summary when exact terms are known.
+- Use `pdftotext` only as compact text extraction; do not print full raw PDF text unless Aryan asks.
+- Run `automation/analyze_application_keywords.py` only when exact-term evidence is useful.
+- Do not read broad profile files, the full tracker, historical packages, job-search outputs, or templates unless a specific gap cannot be evaluated from the package.
+- Do not compile, validate, update tracker rows, commit, or push.
+
+Output contract:
+
+- Return a compact prioritized gap list, missing keyword list, and specific suggested edits.
+- Include clear distinctions between `missing exact wording`, `covered by adjacent evidence`, and `unsupported claim`.
+
+### Mode 2: Existing-Package Patch
+
+Use this mode when Aryan asks to update a specific existing resume, cover letter, application answer, tailoring note, or outreach message.
+
+Scope:
+
+- Read only the target file(s), the relevant local package notes or JD excerpt, and targeted profile/source snippets needed to keep claims grounded.
+- Use `python3 automation/application_package_brief.py <package> --term ...` after edits when a compact keyword/status check is enough.
+- Apply the requested edit directly and avoid re-running unrelated pipeline steps.
+- Compile only the artifact that changed and only when the changed artifact requires compilation for use.
+- Run targeted keyword checks only for changed/high-priority terms.
+- Run `automation/validate_application_package.py <package>` only when the package contents changed in a way that validator covers or when preparing final submitted artifacts.
+- Commit and push the small coherent change after validation unless Aryan explicitly asks not to commit or the change is only a conversational draft.
+
+Output contract:
+
+- Report changed file paths, validation result, page count if a PDF was compiled, and commit/push status.
+- Do not restate the full application pipeline or long score rationale unless the score changed.
+
+### Mode 3: New Full Application Package
+
+Use this mode only when Aryan provides a new job description/application link for a role without an existing package, asks for a full rebuild of a package, or explicitly requests the complete package pipeline.
+
+Scope:
+
+- Run the full Application Package Pipeline below.
+- Use `profile/evidence-index.md`, the compact keyword map, targeted source searches, canonical templates, and automation summaries before opening large source files.
+- Keep expanded keyword checks in package-local term files when term lists are long.
+
+Output contract:
+
+- Final response must include ready artifact paths, one-page PDF verification, application validator result, tracker update status, commit/push status, and the Job Alignment & Evidence Score.
+
+### Model And Reasoning Guidance
+
+- Use the lighter available reasoning setting for Mode 1 and most Mode 2 work unless the wording, eligibility, or evidence judgment is genuinely hard.
+- Reserve high-reasoning work for Mode 3 strategy, difficult gap recovery, and final quality passes where the added reasoning has clear value.
+- Prefer compact script outputs, targeted `rg`/`sed` reads, and brief final responses over dumping full files into model context.
+
 ## Application Pipeline Execution Contract
 
 For every job description, start from this file as the source of truth. Do not rely on memory from the current chat, prior application habits, or an abbreviated version of the workflow. Re-read the relevant `AGENTS.md` instructions and then execute the pipeline as a checklist.
