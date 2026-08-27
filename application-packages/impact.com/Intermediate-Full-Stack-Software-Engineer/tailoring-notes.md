@@ -34,14 +34,14 @@ Token/source-access strategy: Used AGENTS.md, `profile/evidence-index.md`, targe
 
 ## F-1 Work Authorization Gate
 
-Result: Proceed - posting silent/ambiguous
+Result: Proceed - no explicit blocker, but live application form asks work-authorization follow-up
 
 Internal notes only:
 
-- Posting sponsorship language: The pasted and Greenhouse-checked posting does not state no sponsorship, citizen-only, permanent-resident-only, independent work authorization, authorization-for-any-employer, or clearance language.
+- Posting sponsorship language: The pasted posting does not state no sponsorship, citizen-only, permanent-resident-only, independent work authorization, authorization-for-any-employer, or clearance language. The live Greenhouse application form asks whether employer support is needed now or in the future, so Aryan must answer that portal question directly and truthfully.
 - E-Verify / STEM OPT / Form I-983 follow-up: Confirm impact.com's U.S. hiring entity and STEM OPT/E-Verify/Form I-983 support before or during recruiter contact.
 - Future sponsorship follow-up: Confirm future sponsorship path if process advances.
-- Location / schedule / clearance / degree constraints: Columbus, OH office role. Degree requirement is satisfied by B.S. and M.S. in Computer Science. No clearance requirement listed.
+- Location / schedule / clearance / degree constraints: Columbus, OH office role. The live form asks whether Aryan can attend onsite interviews in Columbus and states relocation assistance is not provided. Degree requirement is satisfied by B.S. and M.S. in Computer Science. No clearance requirement listed.
 - Submitted artifact rule: Do not mention F-1, OPT, STEM OPT, visa status, sponsorship, E-Verify, or Form I-983 in the resume or cover letter unless Aryan explicitly asks.
 
 ## Referral Plan
@@ -59,6 +59,13 @@ Next follow-up date: 2026-08-28
 Outreach tone: Short, low-pressure, one proof point around React/Next.js customer portal plus AAIS SQL/data work if a referral target is found.
 
 Notes: Avoid repeating the full work history in first outreach. Lead with the Data Viz squad role and one compact reason for fit.
+
+## Application Questions
+
+- Required interactive data visualization project answer drafted: Pass - `application-questions.md` uses Travel Health Advisor and stays grounded in verified React/Vite, Express/MongoDB, D3/TopoJSON, JavaScript, HTML, and CSS evidence.
+- Work-authorization form question: Tracked internally, not drafted as reusable submitted prose. Aryan must answer the live form directly and truthfully.
+- Salary expectation form question: No custom salary narrative drafted. Posted base range is $90,000-$110,000 plus bonus/RSU eligibility.
+- Onsite interview form question: Confirm Columbus onsite interview availability before submission.
 
 ## Job Keyword Map
 
@@ -205,6 +212,7 @@ Project bullets checked:
 - Submitted-facing terminology sync checked: Pass - cover letter and resume both use React/Next.js customer portal, Data Viz/reporting, SQL/JDBC/database, Java/Spring Boot, and interactive data visualization wording.
 - Score consistency gate checked: Pass - final score is 92/100 and the written breakdown sums to 92 earned points out of 100 possible.
 - Cover-letter artifact checked: Pass - `cover-letter.pdf` generated as a one-page text PDF under the 5 MB artifact limit.
+- Application-answer human voice gate checked: Pass - drafted project answer is concise, specific to Travel Health Advisor, contains no semicolons or em dashes, avoids generic AI phrasing, and uses plain first-person language.
 
 ## ATS / Parser Validation
 
