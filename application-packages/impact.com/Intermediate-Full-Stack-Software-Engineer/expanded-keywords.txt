@@ -1,0 +1,56 @@
+Intermediate Full Stack Software Engineer
+Full Stack Software Engineer
+Data Viz
+data visualization
+dynamic data presentation features
+interactive data visualization components
+presentation features
+React
+JavaScript
+HTML
+CSS
+Java
+Java 8+
+Spring
+Spring frameworks
+Spring Boot
+Spring MVC
+Hibernate/JPA
+SQL
+MySQL
+RDBMS
+JDBC
+RESTful APIs
+secure APIs
+backend services
+complex data queries
+reporting
+Product Management
+UX/UI Designers
+user-friendly visual interfaces
+unit tests
+integration tests
+TDD
+code reviews
+debug
+optimize performance
+client-side rendering bottlenecks
+backend database queries
+Git
+command-line environments
+Docker
+Kubernetes
+Gradle
+Vite
+Webpack
+Redux
+Vuex
+CSS preprocessors
+Elasticsearch
+Large Language Models
+LLMs
+Agentic software development
+agentic workflows
+commerce partnership marketing platform
+partnerships
+performance-based growth
