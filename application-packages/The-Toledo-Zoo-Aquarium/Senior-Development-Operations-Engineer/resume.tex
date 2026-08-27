@@ -1,0 +1,112 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  Development Operations Engineer $|$
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com}\\[-1pt]
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala} $|$
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala}
+\end{center}\vspace{-10pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 -- Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Engineering a LiteLLM-based AI Gateway with routing policy, Langfuse tracing, Slack alerts, CI/deploy gates, config validators, and red-team fixtures for monitored software and infrastructure.
+  \item Improving a private Next.js/TypeScript/Firebase portal for internal users across project-management API integration, auth/session flows, dashboard logic, health checks, and Vitest-tested implementation paths.
+  \item Hardened project-data reliability by paginating work-item counts, refreshing route/gateway caches, preventing stale reads, and deriving dashboard states for operational visibility.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, centralizing HR workflows while protecting sensitive employee data.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima, improving reproducible developer environments while isolating AI-assisted work around proprietary code.
+  \item Supported AI and cloud-service integration planning by auditing workflow gaps, evaluating LLM/API automation paths, and translating department needs into implementation plans.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data to calculate charges for 700+ member companies.
+  \item Profiled 160+ MySQL, Oracle, Impala, and PostgreSQL tables with Python, Pandas, SQL, and JDBC, mapping source-system relationships into 25 MDM domains.
+  \item Replaced 160+ legacy Pentaho jobs with AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, standardizing cloud data movement.
+  \item Built reverse-ETL and data-validation workflows with custom AWS IAM roles, supporting controlled self-service access, reduced manual entry, and 24-hour data latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for secure downstream processing.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad internal access with role-specific controls for about 110 users.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured an AWS-hosted Lucee/CFML healthcare workflow platform with anti-CSRF protection, IP-aware audit logging, protected routing, JavaScript fallbacks, and data-entry safeguards.
+  \item Resolved complex technical issues in clinical workflows by fixing import ordering, file-location handling, logistics defaults, and duplicate-antigen crash handling for transplant operations.
+\end{tightitemize}
+
+\resumesection{Selected Projects}
+\projectHeading{Career Ops Automation}{Python, HTTP/JSON/CSV, Markdown, LaTeX, Git}
+\begin{tightitemize}
+  \item Built a Python system for workflows and automations that integrates job-board APIs, normalizes structured data, generates application artifacts, validates PDFs, and tracks package readiness.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Web:} Python, JavaScript/TypeScript, SQL, C++, Java, HTML, CSS, object oriented programming, web servers, React, Next.js, Angular, Node.js, Express, REST APIs\\
+\textbf{Databases, Cloud \& DevOps:} PostgreSQL, MySQL, Oracle, MongoDB, NoSQL, AWS, cloud technologies, DevOps tooling, Glue, S3, Lambda, IAM, DynamoDB, Docker, Git, Linux, Firebase, Vercel, CI/deploy gates\\
+\textbf{Security, Monitoring \& Data:} SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, Langfuse tracing, Slack alerts, health checks, PySpark, AWS Glue Workflows
+
+\end{document}
