@@ -7,6 +7,10 @@ This repository has two active workflows:
 
 The detailed operating rules live in `AGENTS.md`.
 
+## Local Web Workspace
+
+The React/FastAPI workspace adds private login (local owner or Supabase Auth), a recent-job board, background discovery scans, provider diagnostics, and saved JD/evidence intake. Setup and tests are documented in [workspace_app/README.md](workspace_app/README.md). Document generation remains a separate, not-yet-enabled stage in this UI.
+
 ## Start Here
 
 - Want to find jobs? Use `job-search/`.
