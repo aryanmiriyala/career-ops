@@ -576,4 +576,3 @@ The practical target should be:
 - mid-tier model for first drafts.
 - strong model only for final strategy and hard cases.
 - every run measured for tokens, cost, latency, validation, and score drift.
-
