@@ -23,12 +23,12 @@ Avoid:
 
 ## Software Engineer / Full-Stack Engineer
 
-- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and 44 red-team fixtures for testable model-call routing.
-- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+- Building a remote MCP server with keyed access for Actual Reality's Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 - Consolidated customer-facing workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
-- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
+- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication for secure internal user access.
 - Contributed to a React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
 - Built a full-stack AI assignment feedback platform with Angular, TypeScript, Express, MongoDB, Auth0, AWS S3, LangChain, and Mistral AI.
@@ -39,20 +39,20 @@ Avoid:
 ## Data Engineer
 
 - Automated a fully manual SQL billing workflow by developing a production PySpark job and AWS Glue Workflow, processing 20+ TB of golden-table insurance data for 700+ member companies.
-- Profiled 160+ MySQL/Oracle/Impala tables using Python, Pandas, SQL, and JDBC to map cross-system similarities and define a unified taxonomy across 25 MDM domains.
-- Replaced 160+ legacy Pentaho workflows with AWS Glue ETL pipelines and partitioned S3 data movement for Semarchy MDM.
-- Built reverse-ETL and validation workflows with custom AWS IAM roles to support controlled self-service data access, reduce manual entry, and maintain 24-hour data latency.
-- Engineered openIDL/openIDS-aligned data-modeling workflows by parsing insurance taxonomies with Python/JSON logic and generating 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
+- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+- Modernized 160+ legacy Pentaho workflows into AWS Glue ETL pipelines and partitioned S3 data movement for Semarchy MDM, improving maintainability for governed MDM ingestion.
+- Delivered reverse-ETL and validation workflows with custom AWS IAM roles, giving Data Solutions controlled self-service access to validated insurance data while maintaining 24-hour latency.
+- Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
 
 ## AI Engineer / AI Product Engineer
 
-- Contributing to customer-portal engineering in an augmented-intelligence company environment focused on app development, project visibility, and process-improvement contexts.
+- Building customer-portal and AI Gateway infrastructure in an augmented-intelligence environment, improving client project visibility, model-serving governance, and process-improvement workflows.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
-- Supported a phased AI integration roadmap by auditing AI tool usage opportunities, identifying workflow gaps and redundancies, and translating department-level business needs into candidate AI capstone projects with expected outcomes and success criteria.
-- Worked on LLM/API and cloud-service integration planning for internal workflow automation, including lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
+- Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+- Evaluated LLM/API and cloud-service integration paths for internal workflow automation, shaping proprietary-tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
 - Developed an LMS feedback agent with Mistral AI and LangChain to automate assignment review.
 - Built a context-aware Mistral AI chatbot that used saved user health-profile details to answer travel-health questions in a React health advisory app.
-- Built an ICSME-published LLM research pipeline that generated evidence-grounded GitHub pull request descriptions from commits, diffs, linked issues, and repository metadata.
+- Developed an ICSME-published LLM research pipeline that generated evidence-grounded GitHub pull request descriptions from commits, diffs, linked issues, and repository metadata.
 - Built a cross-platform React Native/Expo mobile app for sleep-based microlearning with AI-generated study cues, quizzes, text-to-speech audio, and local-first session tracking.
 - Built a BGSU campus search prototype combining lightweight RAG, live web search, crawled webpages, PDFs, and LLM inference to generate source-grounded answers.
 - Built a RAG research pipeline using Sentence Transformers and ChromaDB to analyze how mobile app update frequency relates to Google Play review feedback.
@@ -69,7 +69,7 @@ Avoid:
 ## Security-Conscious Software Engineer
 
 - Implemented SSO, auth middleware, RBAC, and JWT authentication to protect employee and internal user workflows.
-- Secured an AWS-hosted Lucee/CFML healthcare workflow platform by implementing global anti-CSRF form protection, IP-aware audit logging, and protected 404/access-denied workflows.
+- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
 - Automated PII tokenization with hashlib and boto3 before ingesting structured JSON into S3.
 - Built role-specific access paths for about 110 internal users through React, Node.js, RBAC, and JWT authentication.
 
@@ -80,7 +80,7 @@ Use these mainly for LinkedIn, cover letters, education/cybersecurity roles, or 
 - Led a team of 10 undergraduate students to organize a middle-school CyberCamp using CyberGuardian modules, cryptography activities, phishing demos, password-security exercises, and cyber escape-room materials.
 - Developed cybersecurity lab and presentation materials across OSINT, port scanning, service enumeration, vulnerability scanning, packet analysis, credential attacks, web application security, exploit-development concepts, and payload-generation workflows.
 - Organized ethical-hacking tool inventories and instructional material covering Kali Linux, Nmap/NSE, Metasploit, OpenVAS/Greenbone, Wireshark, Burp Suite, OWASP ZAP, Shodan, John the Ripper, Hydra, Mimikatz, Immunity Debugger, DVWA, Metasploitable2, Vulnserver, and PentesterLab.
-- Supported NICE Framework and CAE-CD curriculum analysis by mapping cybersecurity roles, knowledge areas, tools, and instructional requirements into student- and instructor-facing materials.
+- Mapped NICE Framework and CAE-CD curriculum requirements into student- and instructor-facing materials covering cybersecurity roles, knowledge areas, tools, and instructional requirements.
 - Built email security and forensics learning material covering phishing analysis, email headers, SPF/DKIM/DMARC, PGP/GnuPG, packet captures, and secure email communication.
 - Created cryptography and secure key-management content involving AES/RSA concepts, hashing, PKI, key storage, key recovery, key distribution, HSM concepts, Azure Key Vault lab material, and Shamir's Secret Sharing.
 
