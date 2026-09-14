@@ -17,15 +17,15 @@ Primary use: current software engineering internship, AI Gateway/model-call rout
 
 Verified keywords:
 
-- TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore, Vercel, project-management API integration, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
-- LiteLLM, AI Gateway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy.
+- TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore, Vercel, project-management API integration, Plane ticket/project status, remote MCP server, Model Context Protocol, customer/admin AI tools, keyed access, intake requests, scoped security, cost controls, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
+- LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy.
 - Authentication/session cookies, production login behavior, password and secure account-link navigation, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, documentation.
 - Augmented intelligence, Industry 4.0/5.0, manufacturing technology, process improvement, data modeling, predictive analytics, cloud consulting, app development.
 
 Resume-ready evidence:
 
-- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and 44 red-team fixtures for testable model-call routing.
-- Improving a private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
+- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+- Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 - Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts.
@@ -43,10 +43,11 @@ Verified keywords:
 
 Resume-ready evidence:
 
-- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
+- Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
 - Applied Codex and Claude Code across implementation planning, debugging, code review, and self-review while keeping human validation central.
-- Supported QMS dependency-register planning to connect related quality-management documents and translate ambiguous operational needs into reviewable implementation plans.
+- Modeled QMS dependency-register relationships to make quality-document dependencies traceable and translate ambiguous operational needs into reviewable implementation plans.
 
 Source: `profile/experience-master.md`, SmartSolve Industries.
 
@@ -63,7 +64,7 @@ Resume-ready evidence:
 
 - Developed cybersecurity education materials and hands-on lab content across cryptography, secure key management, phishing, email forensics, ethical hacking, OSINT, vulnerability scanning, packet analysis, and web application security.
 - Led a team of 10 undergraduate students to organize a middle-school CyberCamp using CyberGuardian modules, cryptography activities, phishing demos, password-security exercises, and cyber escape-room materials.
-- Supported NICE Framework and CAE-CD curriculum analysis by organizing cybersecurity roles, knowledge areas, tools, and instructional requirements.
+- Organized NICE Framework and CAE-CD curriculum analysis across cybersecurity roles, knowledge areas, tools, and instructional requirements.
 
 Source: `profile/experience-master.md`, Bowling Green State University Graduate Research Assistant.
 
@@ -78,10 +79,10 @@ Verified keywords:
 
 Resume-ready evidence:
 
-- Automated a manual SQL billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of insurance data for 700+ member companies.
-- Profiled 160+ MySQL, Oracle, Impala, and PostgreSQL source tables with Python, Pandas, SQL, and JDBC to map source-system similarities and define 25 MDM domains.
-- Replaced legacy ETL jobs with AWS Glue workflows and partitioned S3 pipelines to standardize cloud data movement.
-- Built reverse-ETL and data-validation workflows with AWS IAM access controls and S3 pipelines, supporting controlled self-service data access and 24-hour data latency.
+- Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
+- Architected a 160+ table MDM migration by profiling MySQL, Oracle, Impala, and PostgreSQL sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+- Modernized legacy ETL jobs into AWS Glue workflows and partitioned S3 pipelines to improve maintainability for governed MDM ingestion.
+- Delivered reverse-ETL and data-validation workflows with AWS IAM access controls and S3 pipelines, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
 
 Source: `profile/experience-master.md`, American Association of Insurance Services Data Engineering Intern.
 
@@ -96,10 +97,10 @@ Verified keywords:
 
 Resume-ready evidence:
 
-- Engineered Python/JSON backend automation generating 1,000+ production SQL tables across MySQL, Oracle, and PostgreSQL for 10+ insurance lines.
+- Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
 - Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks while coordinating delivery priorities.
 - Implemented RBAC/JWT patterns in a React/Node.js modernization, replacing broad employee-wide access with role-specific controls for roughly 110 internal users.
-- Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for secure downstream processing.
+- Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
 
 Source: `profile/experience-master.md`, American Association of Insurance Services Software Engineering Intern.
 
@@ -114,7 +115,7 @@ Verified keywords:
 
 Resume-ready evidence:
 
-- Secured an AWS-hosted Lucee/CFML healthcare workflow platform with global anti-CSRF protection, IP-aware audit logging, and protected access routing.
+- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
 - Stabilized data-entry and import workflows by modernizing HTML5 inputs, JavaScript/CSS fallbacks, Matchgrid import ordering, MFI upload paths, and duplicate-antigen crash handling.
 
 Source: `profile/experience-master.md`, Alliance for Paired Kidney Donation.
@@ -215,7 +216,7 @@ Verified keywords:
 
 Resume-ready evidence:
 
-- Built an ICSME-published LLM pipeline that generated evidence-grounded pull request descriptions from commits, diffs, linked issues, and repository metadata, then evaluated outputs against raw code-change evidence.
+- Developed an ICSME-published LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
 
 Source: `profile/projects-master.md`, Diff-Grounded PR Generation.
 
