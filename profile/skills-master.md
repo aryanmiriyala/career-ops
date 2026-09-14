@@ -213,6 +213,9 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 - Project-management API integration
 - Project/work-item integration
+- Remote MCP server
+- Model Context Protocol
+- Customer/admin AI tools
 - Project-data dashboards
 - Customer portals
 - Admin portals
