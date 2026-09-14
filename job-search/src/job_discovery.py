@@ -1471,6 +1471,7 @@ def fetch_direct_ats_jobs(args: argparse.Namespace) -> dict[str, Any]:
     selected_sources = set(args.sources or [])
     selected_companies = {company.lower() for company in (args.companies or [])}
     targets = payload.get("targets", [])
+    fetch_error_count = 0
     fetched_by_source: dict[str, int] = {}
     skipped_by_source: dict[str, int] = {}
     shortlist: list[dict[str, str]] = []
@@ -1485,6 +1486,7 @@ def fetch_direct_ats_jobs(args: argparse.Namespace) -> dict[str, Any]:
         try:
             jobs = fetch_direct_ats_target(target)
         except Exception as exc:
+            fetch_error_count += 1
             fetched_by_source[source] = fetched_by_source.get(source, 0)
             skipped_by_source[source] = skipped_by_source.get(source, 0) + 1
             continue
@@ -1516,6 +1518,7 @@ def fetch_direct_ats_jobs(args: argparse.Namespace) -> dict[str, Any]:
     return {
         "generated_at": now.replace(microsecond=0).isoformat(),
         "sources": sorted(fetched_by_source),
+        "fetch_error_count": fetch_error_count,
         "fetched_by_source": fetched_by_source,
         "skipped_by_source": skipped_by_source,
         "imported_count": 0 if getattr(args, "dry_run", False) else len(shortlist),
@@ -1630,7 +1633,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
         include_seniority_review=False,
         write_review_to_inbox=False,
         workers=8,
-        company_limit=0,
+        company_limit=getattr(args, "company_limit", 0),
         source_company_limit=0,
         error_limit=25,
         cache_dir=str(BROAD_ATS_CACHE_DIR),
@@ -1653,6 +1656,9 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
     result = {
         "generated_at": utc_now().replace(microsecond=0).isoformat(),
         "search_links_path": search_links_path.as_posix(),
+        "company_limit": getattr(args, "company_limit", 0),
+        "fetched_jobs": sum(direct_result["fetched_by_source"].values()) + sum(public_result["fetched_by_source"].values()) + sum(s["jobs_fetched"] for s in broad_result["source_stats"].values()),
+        "source_errors": direct_result.get("fetch_error_count", 0) + len(public_result.get("errors", [])) + sum(s["company_errors"] for s in broad_result["source_stats"].values()),
         "layers": [
             {
                 "name": "direct-ats",
@@ -1681,6 +1687,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
         ],
     }
     write_output(render_pipeline_summary(result, args), str(results_dir / "run-summary.md"))
+    (results_dir / "run-state.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     return result
 
 
@@ -2049,6 +2056,7 @@ def build_parser() -> argparse.ArgumentParser:
     pipeline = sub.add_parser("run-pipeline", help="Run the standard job-discovery pipeline with configured sources, locations, and recency windows")
     pipeline.add_argument("--dry-run", action="store_true", help="Write reports without updating jobs-inbox.csv")
     pipeline.add_argument("--refresh-cache", action="store_true", help="Refresh broad ATS company-directory caches")
+    pipeline.add_argument("--company-limit", type=int, default=0, help="Broad ATS boards per source for a bounded test; 0 scans all configured boards")
     pipeline.add_argument("--results-dir", default=str(DEFAULT_RESULTS_DIR / utc_now().date().isoformat() / "pipeline"))
 
     q = sub.add_parser("generate-queries", help="Generate recent ATS Google search links")
