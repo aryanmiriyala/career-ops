@@ -155,9 +155,9 @@ AI / Tech stack: Python, OpenAI API, LLM inference, prompt engineering, GitHub A
 
 #### Reusable Bullet Options
 
-- Built an ICSME-published LLM research pipeline that generated evidence-grounded GitHub pull request descriptions from commits, diffs, linked issues, and repository metadata.
+- Developed an ICSME-published LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
 - Developed structured PR-context construction, weak-commit-message improvement, file-level summarization, and grounding-constrained generation workflows using Python, OpenAI API, and GitHub API.
-- Built an automated LLM evaluation workflow comparing generated PR descriptions against raw code-change evidence, outperforming AIDev and PRSummarizer baselines in correctness, coverage, and clarity.
+- Evaluated generated PR descriptions with LLM-as-judge and human review, showing stronger grounding and reviewer preference than current AI-generated and human-written baselines.
 
 ### DreamScape: AI-Powered Sleep Learning Companion
 
