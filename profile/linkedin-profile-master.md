@@ -76,14 +76,14 @@ Location: Perrysburg, Ohio, United States
 
 Description:
 
-Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. My work spans a LiteLLM-based gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, and a Next.js/TypeScript/Firebase customer portal with customer/admin surfaces, Plane-backed project data, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage.
+Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. My work spans a LiteLLM-based gateway that enables intelligent model routing and policy-controlled LLM serving for multiple AI projects, smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, red-team fixtures, and a Next.js/TypeScript/Firebase customer portal with customer/admin surfaces, Plane-backed project/ticket data, authentication/session handling, dashboard status logic, health checks, documentation, Vitest/Testing Library coverage, and an in-progress remote MCP server with keyed customer/admin AI access.
 
 Software engineering / AI Gateway and customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, LiteLLM, Railway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, red-team fixtures, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
 
 Highlights:
 
-- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and red-team fixtures for testable model-call routing.
-- Improving a private Next.js/TypeScript customer portal across customer/admin workflows, Plane-backed project data, auth/session behavior, dashboard status logic, and automated tests.
+- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and red-team fixtures.
+- Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 - Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions.
 - Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through cache layers, preventing stale reads, and deriving project states from work-item counts instead of rounded progress.
@@ -105,8 +105,8 @@ AI / Full-stack / Tech stack: Next.js, TypeScript / JavaScript, PostgreSQL, Driz
 
 Highlights:
 
-- Supported early architecture and planning for AI-oriented internal projects, including a QMS dependency register designed to link related quality-management documents and model connected QMS documentation.
-- Built a full-stack onboarding tracker using Next.js, PostgreSQL, Drizzle ORM, SSO, and authentication middleware to centralize onboarding workflows and protect sensitive employee data.
+- Modeled early architecture for AI-oriented internal projects, including a QMS dependency register designed to make quality-document relationships traceable.
+- Built a full-stack onboarding tracker using Next.js, PostgreSQL, Drizzle ORM, SSO, and authentication middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Created a cross-platform Docker devcontainer setup for WSL2 and Colima to make development environments easier to reproduce and reduce setup friction.
 - Using AI-assisted engineering workflows with tools such as Codex and Claude Code for planning, implementation, debugging, and code review support.
 
@@ -130,7 +130,7 @@ Highlights:
 - Built and refined hands-on lab and presentation materials for ethical-hacking workflows, including OSINT, port scanning, service enumeration, vulnerability scanning, packet analysis, credential attacks, web application testing, exploit-development concepts, and payload delivery.
 - Organized tool and framework inventories for cybersecurity instruction, covering Kali Linux, Nmap/NSE, Metasploit, OpenVAS/Greenbone, Wireshark, Burp Suite, OWASP ZAP, Shodan, John the Ripper, Hydra, Mimikatz, Immunity Debugger, DVWA, Metasploitable2, Vulnserver, and PentesterLab.
 - Built email-security and cryptography learning material involving SPF/DKIM/DMARC, PGP/GnuPG, email header analysis, packet captures, PKI, secure key-management concepts, and Azure Key Vault lab material.
-- Supported NICE Framework and CAE-CD curriculum analysis by mapping cybersecurity roles, knowledge areas, tools, and instructional requirements into student- and instructor-facing materials.
+- Mapped NICE Framework and CAE-CD curriculum requirements into student- and instructor-facing materials covering cybersecurity roles, knowledge areas, tools, and instructional requirements.
 - Contributed to outreach and learning activities including CyberGuardian modules, cyber escape-room exercises, password-security games, phishing demos, and email-security workshops.
 
 ### AAIS - Data Engineering Intern
@@ -151,7 +151,7 @@ Highlights:
 - Automated a fully manual SQL billing workflow with a production PySpark job and AWS Glue Workflow, processing 20+ TB of insurance data to calculate charges for 700+ member companies.
 - Profiled 160+ Oracle/Impala tables with Python, Pandas, SQL, and JDBC, mapping cross-system similarities and designing migration architecture across 25 MDM domains.
 - Replaced 160+ legacy Pentaho jobs with AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM.
-- Built reverse-ETL, validation workflows, and custom AWS IAM roles to support controlled self-service data access and maintain 24-hour data latency.
+- Built reverse-ETL, validation workflows, and custom AWS IAM roles to give Data Solutions controlled self-service access to validated insurance data while maintaining 24-hour latency.
 
 ### AAIS - Software Engineer Intern
 
@@ -169,8 +169,8 @@ Software engineering / Data standardization / Tech stack: Python, JSON, Pandas, 
 Highlights:
 
 - Engineered foundational openIDL/openIDS-aligned data-modeling workflows by parsing insurance taxonomies with Python/JSON logic and generating 1,000+ production SQL tables across Oracle/PostgreSQL and 10+ insurance lines.
-- Built Python data-processing workflows with Pandas, multiprocessing, fuzzy matching, and hashing to clean large CSV datasets and support compliant data handling.
-- Contributed to a React/Node.js modernization effort by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
+- Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality for insurance standardization pipelines.
+- Implemented RBAC and JWT authentication patterns in a React/Node.js modernization, reducing broad employee-wide data access with role-specific controls for about 110 users.
 - Automated database validation with AWS Lambda triggers that tokenized PII using hashlib/boto3 and ingested structured JSON into S3 for downstream standardization workflows.
 
 ### Bowling Green State University - Teaching Assistant
@@ -274,9 +274,9 @@ AI / Tech stack: Python, OpenAI API, LLM inference, prompt engineering, GitHub A
 
 Highlights:
 
-- Built an ICSME-published LLM research pipeline that generated evidence-grounded GitHub pull request descriptions from commits, diffs, linked issues, and repository metadata.
+- Developed an ICSME-published LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
 - Developed structured PR-context construction, weak-commit-message improvement, file-level summarization, and grounding-constrained generation workflows using Python, OpenAI API, and GitHub API.
-- Built an automated LLM evaluation workflow comparing generated PR descriptions against raw code-change evidence, outperforming AIDev and PRSummarizer baselines in correctness, coverage, and clarity.
+- Evaluated generated PR descriptions with LLM-as-judge and human review, showing stronger grounding and reviewer preference than current AI-generated and human-written baselines.
 
 ### DreamScape: AI-Powered Sleep Learning Companion
 
