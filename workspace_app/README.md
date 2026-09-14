@@ -1,6 +1,6 @@
 # Local Career Ops Workspace
 
-React + TypeScript + Vite frontend, FastAPI backend. This is the first application increment: login, recent job board, background discovery, provider diagnostics, and saved JD/evidence intake. It does not generate or approve submitted-facing resumes or cover letters yet.
+React + TypeScript + Vite frontend, Tailwind CSS with Radix-backed UI primitives, and FastAPI backend. This is the first application increment: login, recent job board, background discovery, provider diagnostics, and saved JD/evidence intake. It does not generate or approve submitted-facing resumes or cover letters yet.
 
 ## Run
 
@@ -11,12 +11,12 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-workspace.txt
 ```
 
-Build the frontend:
+Build the frontend with Bun 1.3.13 (pinned in `web/.bun-version` and `packageManager`):
 
 ```sh
 cd web
-npm ci
-npm run build
+bun install --frozen-lockfile
+bun run build
 ```
 
 Then, from the repository root:
@@ -27,7 +27,7 @@ Then, from the repository root:
 
 Open http://127.0.0.1:8765. Without Supabase settings, create the single local owner account on first visit. Passwords require 12 characters and are stored as salted scrypt hashes. Sessions use HttpOnly, SameSite=Strict cookies. The local HTTP cookie is intentionally not Secure; this mode must remain bound to loopback and is not a cloud authentication solution.
 
-For frontend development, run `npm run dev` from `web/` while the backend runs on port 8765. Vite proxies `/api` to the backend. No Vercel account is involved.
+For frontend development, run `bun run dev` from `web/` while the backend runs on port 8765. Vite proxies `/api` to the backend. Bun runs the TypeScript checker and Vite, manages frontend dependencies, and owns the single `web/bun.lock` lockfile. Use `bun add` for dependency changes; do not regenerate an npm lockfile. No Vercel account is involved.
 
 ## Supabase Auth
 
@@ -82,8 +82,8 @@ From the repository root:
 From `web/`, after building:
 
 ```sh
-npx playwright install chromium
-npm run test:e2e
+bunx playwright install chromium
+bun run test:e2e
 ```
 
 Browser tests start a separate API on port 8876 against synthetic data in a temporary directory. They do not use the real owner account, API keys, profile data, or an existing browser session. They cover desktop and mobile login, date/search filters, job selection, evidence intake, provider settings, and sign-out. Screen recordings and traces are disabled. Screenshots capture only synthetic test pages.
