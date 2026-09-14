@@ -12,6 +12,8 @@ Quality preservation must be demonstrated on a fixed evaluation set. Neither che
 
 ## Current State: Implemented Versus Discussed
 
+Implementation checkpoint after this research: the local `workspace_app/` API and `web/` frontend now provide a recent-job board, bounded lexical evidence intake, provider diagnostics, and local/Supabase authentication integration. The frontend uses React, TypeScript, Vite, Tailwind CSS, Radix-backed controls, and Bun tooling. See [workspace setup](../workspace_app/README.md) and [frontend decisions](../web/README.md). Live Supabase sign-in still requires project configuration. Model drafting, stage caching, independent evaluation, document generation in the UI, and AWS deployment remain pending. The observations below describe the repository before that first application increment.
+
 - Implemented: exact-term analyzer, compact package brief, PDF/package validators, token-hotspot inventory, tracker upsert, canonical templates, profile evidence index, and an environment-variable template.
 - Discussed but not implemented in the inspected automation: structured evidence retrieval, standalone model-call runner, stage caching, enforced run budgets, Langfuse integration, model regression evaluations, and a web frontend.
 - No dependency manifest was found in the bounded repository search. Introduce a pinned Python project environment before adding runtime dependencies.
