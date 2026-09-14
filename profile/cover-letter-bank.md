@@ -26,7 +26,7 @@ I actively use AI-assisted engineering workflows with tools such as Codex and Cl
 
 ## Actual Reality / Augmented Intelligence
 
-At Actual Reality Technologies, I built AI Gateway routing and safety infrastructure around a LiteLLM proxy, including smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and red-team fixtures. I am also improving a private Next.js/TypeScript customer portal with Firebase-backed application behavior, project-management data integration, customer/admin workflows, authentication/session handling, dashboard status logic, and Vitest-tested changes. For submitted materials, this experience should be described through the system, routing, policy, reliability, and customer workflow outcomes rather than private internal tickets or code names.
+At Actual Reality Technologies, I built AI Gateway routing and safety infrastructure around a LiteLLM proxy to enable intelligent model routing and policy-controlled LLM serving for multiple AI projects, using smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and red-team fixtures. I am also building a remote MCP server with keyed access for the private Next.js/Firebase customer portal so customer/admin AI tools can query Plane ticket/project status and submit intake requests with scoped security and cost controls. For submitted materials, this experience should be described through the system, intelligent routing, policy, reliability, and customer workflow outcomes rather than private internal tickets or code names.
 
 ## Security and Compliance
 
