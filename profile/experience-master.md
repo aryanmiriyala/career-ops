@@ -38,7 +38,7 @@ Dates: Jul. 2026 - Present
 
 ### Platform-Ready Description
 
-Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. AI Gateway work includes a pinned LiteLLM proxy on Railway, smart-router model tiers, guardrail policy, Langfuse tracing, Slack block alerts, config validators, CI/deploy gates, and red-team fixtures for testable model-call routing. Customer-portal work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, and Vitest/Testing Library coverage.
+Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. AI Gateway work includes a pinned LiteLLM proxy on Railway, smart-router model tiers, guardrail policy, Langfuse traces, Slack alerts, config validators, CI/deploy gates, and red-team fixtures that enable intelligent model routing and policy-controlled LLM serving for multiple AI projects. Customer-portal work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project/ticket data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, Vitest/Testing Library coverage, and an in-progress remote MCP server with keyed access so customer/admin AI tools can query ticket status, project status, and intake requests with scoped security and cost controls.
 
 ### Handshake Description
 
@@ -46,7 +46,7 @@ Software Engineering Intern improving a private Next.js/TypeScript customer port
 
 ### Tech Stack
 
-Software engineering / Customer portal and AI Gateway / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, LiteLLM, Railway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, config validators, CI/deploy gates, red-team fixtures, model-call routing, routing/safety policy, model registry, cost/rate controls, fallback chains, observability, decision records, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+Software engineering / Customer portal and AI Gateway / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Plane ticket/project status, remote MCP server, Model Context Protocol, customer/admin AI tools, keyed access, intake requests, scoped security, cost controls, LiteLLM, Railway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, config validators, CI/deploy gates, red-team fixtures, model-call routing, routing/safety policy, model registry, cost/rate controls, fallback chains, observability, decision records, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
 
 ### Business / Problem Context
 
@@ -54,7 +54,8 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 
 ### Problem / Company Impact Context
 
-- Built AI Gateway routing and safety infrastructure around a pinned LiteLLM proxy on Railway, including smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and red-team fixtures.
+- Built AI Gateway routing and safety infrastructure around a pinned LiteLLM proxy on Railway, enabling intelligent model routing and policy-controlled LLM serving for multiple AI projects with smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and red-team fixtures.
+- Building a remote MCP server with keyed access for the customer portal so customer/admin AI tools can query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 - Improved a private customer portal used for customer/admin workflows at `my.actualreality.ai`.
 - Worked across Next.js/TypeScript UI routes, authentication/session behavior, project-management data integration, dashboard status logic, health checks, documentation, and automated tests.
 - Consolidated separate Capture, Define, and Whiteboard tools into one tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
@@ -94,8 +95,8 @@ Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, d
 
 ### Reusable Bullet Options
 
-- Improving Actual Reality's private Next.js/TypeScript customer portal across customer/admin workflows, project-management data integration, auth/session behavior, dashboard status logic, and Vitest-tested application surfaces.
-- Built a LiteLLM-based AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, and 44 red-team fixtures for testable model-call routing.
+- Building a remote MCP server with keyed access for Actual Reality's Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
+- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
 - Consolidated customer workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
@@ -171,12 +172,12 @@ SmartSolve work centered on internal software, AI adoption, AI-assisted workflow
 
 ### Reusable Bullet Options
 
-- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware to centralize new-hire workflows and protect sensitive employee data.
-- Supported a phased AI integration roadmap by auditing AI tool usage opportunities, identifying workflow gaps and redundancies, and translating department-level business needs into candidate AI capstone projects with expected outcomes and success criteria.
-- Worked on LLM/API and cloud-service integration planning for internal workflow automation, including lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
+- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+- Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+- Evaluated LLM/API and cloud-service integration paths for internal workflow automation, shaping lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
 - Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
-- Supported early planning and architecture for AI-enabled internal systems, including a QMS dependency register designed to connect related quality-management documents.
+- Modeled early architecture for AI-enabled internal systems, including a QMS dependency register designed to make quality-document relationships traceable.
 
 ### Source And Verification Notes
 
@@ -242,7 +243,7 @@ Graduate research assistant work centered on cybersecurity education, cyber work
 
 - Developed cybersecurity education materials and hands-on lab content across cryptography, secure key management, phishing, password security, email authentication, email forensics, ethical hacking, OSINT, vulnerability scanning, packet analysis, exploit-development concepts, and web application security.
 - Led a team of 10 undergraduate students to organize a middle-school CyberCamp using CyberGuardian modules, cryptography activities, phishing demos, password-security exercises, and cyber escape-room materials.
-- Supported NICE Framework and CAE-CD curriculum analysis by organizing cybersecurity roles, knowledge areas, tools, and instructional requirements into student- and instructor-facing materials.
+- Organized NICE Framework and CAE-CD curriculum analysis across cybersecurity roles, knowledge areas, tools, and instructional requirements, translating them into student- and instructor-facing materials.
 - Created and refined presentations, lab guides, workshop activities, and outreach exercises, including CyberGuardian modules, cyber escape-room activities, password games, email-security labs, cryptography modules, and ethical-hacking tool inventories.
 
 ## Bowling Green State University
@@ -426,7 +427,7 @@ AAIS is a P&C insurance advisory and statistical-agent organization that support
 - Defined a unified taxonomy of 25 MDM domains.
 - Replaced 160+ Pentaho jobs with AWS Glue-based ETL.
 - Loaded partitioned data into S3 for Semarchy MDM.
-- Built reverse-ETL/data validation workflows.
+- Delivered reverse-ETL/data validation workflows.
 - Supported a self-service application with automated data availability.
 - Maintained 24-hour data latency across new MDM domains.
 - Built custom AWS IAM roles for controlled data access.
@@ -443,10 +444,10 @@ AAIS is a P&C insurance advisory and statistical-agent organization that support
 
 ### Reusable Bullet Options
 
-- Automated a 100% manual SQL billing workflow by building a production PySpark job and AWS Glue Workflow, processing 20+ TB of golden-table insurance data to calculate charges for 700+ member companies.
-- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala data through JDBC with Python, Pandas, and SQL, mapping cross-system similarities, and defining a unified taxonomy across 25 MDM domains.
-- Replaced 160+ legacy Pentaho jobs with AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, improving maintainability and standardizing cloud data movement.
-- Built reverse-ETL and data-validation workflows with custom AWS IAM roles to support controlled self-service data access, reduce manual entry, and maintain 24-hour data latency.
+- Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
+- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources through JDBC with Python, Pandas, and SQL, standardizing inconsistent legacy insurance data into 25 domains.
+- Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, improving maintainability for governed MDM ingestion.
+- Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
 
 ## American Association of Insurance Services
 
@@ -507,11 +508,11 @@ This role combined software engineering, insurance data modeling, full-stack mod
 
 ### Reusable Bullet Options
 
-- Engineered foundational openIDL/openIDS-aligned data-modeling workflows, parsing insurance taxonomies with Python/JSON logic to generate 1,000+ production SQL tables across MySQL, Oracle, PostgreSQL, and 10+ insurance lines.
-- Built Python data-processing workflows with Pandas, multiprocessing, fuzzy matching, and hashing to clean large CSV datasets and support compliant data handling.
-- Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
+- Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+- Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality for insurance standardization pipelines.
+- Implemented RBAC and JWT patterns in a full-stack React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 users.
 - Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks while coordinating delivery priorities.
-- Automated database validation with AWS Lambda triggers that tokenized PII using hashlib/boto3 and ingested structured JSON into S3 for downstream standardization flows.
+- Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
 
 ### Source And Verification Notes
 
@@ -580,7 +581,7 @@ Alliance for Paired Kidney Donation works in kidney-paired donation, where inter
 
 ### Reusable Bullet Options
 
-- Secured an AWS-hosted Lucee/CFML healthcare workflow platform by implementing global anti-CSRF form protection, IP-aware audit logging, and protected 404/access-denied workflows.
+- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
 - Modernized legacy ColdFusion forms with HTML5 date/time pickers, themed CSS, JavaScript fallbacks, and cfform script updates to improve standards compliance, data entry, and graceful degradation.
 - Improved internal transplant logistics by adding center-level blood-tube defaults, logistics-sheet population, Matchgrid upload ordering, MFI file-location fixes, and duplicate-antigen MFI crash handling.
 - Refactored MatchRun, registration, offer, and combination interfaces into reusable modal/tab components with icons and tooltips to improve usability and maintainability for internal operations.
