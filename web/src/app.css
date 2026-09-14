@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;500;600;700&display=swap');
+@import "tailwindcss";
+@import "./style.css" layer(components);
+
+@theme {
+  --color-surface: #ffffff;
+  --color-ink: #202a27;
+  --color-subtle: #6c7770;
+  --color-line: #d7ded8;
+  --color-accent: #205744;
+  --color-accent-hover: #174735;
+  --color-soft: #f0f4ef;
+}
+
+@layer base {
+  html { letter-spacing: 0; }
+}
