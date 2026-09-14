@@ -21,8 +21,18 @@ test('owner login, board filtering, evidence intake, providers and logout', asyn
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.getByRole('button', { name: 'Junior Data Engineer', exact: true }).click();
   await expect(page.getByRole('dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Junior Data Engineer', exact: true }).click();
   await page.getByRole('button', { name: 'Prepare application' }).click();
   await expect(page.getByLabel('Company', { exact: true })).toHaveValue('Example Systems');
+  const bounds = await page.getByRole('dialog').boundingBox();
+  expect(bounds).not.toBeNull();
+  expect(bounds!.x).toBeGreaterThanOrEqual(0);
+  expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(page.viewportSize()!.width);
+  await page.getByRole('button', { name: 'Save & review evidence' }).focus();
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button', { name: 'Close', exact: true })).toBeFocused();
   await page.getByLabel('Full job description').fill('Seeking a junior engineer to build Python and SQL data pipelines, write automated tests, and maintain data validation workflows. This is a synthetic job description for local testing.');
   await page.screenshot({ path: testInfo.outputPath('intake.png') });
   await page.getByRole('button', { name: 'Faithful', exact: true }).click();
