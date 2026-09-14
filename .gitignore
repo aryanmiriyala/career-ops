@@ -23,3 +23,13 @@ job-search/data/scan-history.tsv
 
 # Environment variables
 .env
+.env.*
+!.env.example
+.venv/
+.local-workspace/
+node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+*.tsbuildinfo
+job-search/results/*/workspace-*/
