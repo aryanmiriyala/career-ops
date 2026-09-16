@@ -60,6 +60,18 @@ def timestamp(value, reference=None):
         return None
 
 
+def screening(status, flags):
+    if 'work_auth_blocker' in flags:
+        return {'bucket': 'blocked', 'label': 'Eligibility flag', 'reason': 'Source text triggered a configured work-authorization blocker. Verify the full posting.'}
+    if status == 'shortlist':
+        return {'bucket': 'shortlist', 'label': 'Rule match', 'reason': 'Passed this source scan\'s configured shortlist filters. Not a human review or confirmation of eligibility.'}
+    if status in {'review', 'needs_review'}:
+        reasons = {'no_early_career_signal': 'No early-career wording detected', 'location_needs_review': 'Location needs checking', 'location_india_review': 'India location', 'no_role_bucket_match': 'No target role category matched'}
+        detail = '; '.join(reasons[f] for f in flags if f in reasons)
+        return {'bucket': 'review', 'label': 'Check fit', 'reason': (detail + '. ' if detail else '') + 'Retained for review rather than the automatic shortlist; check the full requirements.'}
+    return {'bucket': 'unassessed', 'label': 'Not assessed', 'reason': 'No screening decision is saved for this imported posting. It has not been shortlisted or reviewed.'}
+
+
 def job_paths(root: Path):
     inbox = root / "job-search/jobs-inbox.csv"
     return ([inbox] if inbox.exists() else []) + sorted((root / "job-search/results").glob("**/jobs.csv"))
@@ -92,6 +104,8 @@ def load_jobs(root: Path, paths=None):
                             "flags": flags, "score": int(score) if score.isdigit() else None,
                             "status": "blocked" if "work_auth_blocker" in flags else row.get("status") or "inbox",
                             "notes": row.get("notes") or "", "report": str(path.relative_to(root))}
+                    item['screening'] = screening(item['status'], flags)
+                    item['status'] = item['screening']['bucket']
                     previous = merged.get(url)
                     if previous:
                         firsts = [v for v in (previous["first_seen_at"], pulled) if v]
@@ -139,7 +153,9 @@ def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", pa
             continue
         if source and source != item["source"]:
             continue
-        if scope == "shortlist" and item["status"] not in {"shortlist", "inbox"}:
+        if scope == "shortlist" and item["status"] != "shortlist":
+            continue
+        if scope == "unassessed" and item["status"] != "unassessed":
             continue
         if scope == "review" and item["status"] != "review":
             continue

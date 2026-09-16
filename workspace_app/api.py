@@ -49,7 +49,7 @@ class Intake(BaseModel):
 
 
 class ScanRequest(BaseModel):
-    company_limit: int = Field(default=20, ge=0, le=500)
+    company_limit: int = Field(default=100, ge=0, le=500)
 
 
 def create_app(root: Path = REPO):
@@ -184,7 +184,7 @@ def create_app(root: Path = REPO):
 
     @app.get("/api/jobs")
     def jobs(q: str = Query("", max_length=200), hours: int = Query(48, ge=0, le=87600),
-             basis: Literal["posted", "discovered"] = "posted", scope: Literal["all", "shortlist", "review", "blocked"] = "all",
+             basis: Literal["posted", "discovered"] = "posted", scope: Literal["all", "shortlist", "review", "blocked", "unassessed"] = "all",
              source: str = "", page: int = Query(1, ge=1), page_size: int = Query(30, ge=1, le=100)):
         return board(root, q, hours, basis, scope, source, page, page_size, index=job_index)
 
