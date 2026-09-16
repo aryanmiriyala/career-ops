@@ -9,7 +9,7 @@ import { Dialog, DialogTitle } from './components/ui/dialog';
 type Session = { authenticated: boolean; setup_required?: boolean; email?: string };
 type Job = { id: string; company: string; title: string; location: string; url: string; source: string; posted_at: string | null; first_seen_at: string | null; status: string; flags: string[]; score: number | null; notes: string; report: string };
 type Board = { jobs: Job[]; total: number; stored: number; undated: number; sources: string[]; issues: string[]; last_seen_at: string | null };
-type Scan = { status: string; message?: string; started_at?: string; company_limit?: number; results_dir?: string; source_errors?: number; fetched_jobs?: number };
+type Scan = { status: string; message?: string; stage?: string; started_at?: string; finished_at?: string; company_limit?: number; results_dir?: string; source_errors?: number; fetched_jobs?: number; coverage?: { layer: string; source: string; fetched: number; errors: number; scanned?: number; available?: number }[] };
 type Evidence = { id: string; source: string; line: number; heading: string; text: string };
 type Intake = { id: string; company: string; title: string; status: string; mode: string; created_at: string; flags: string[]; jd?: string; brief?: { evidence: Evidence[]; unmatched_terms: string[]; characters: number; estimated_tokens: number; notice: string } };
 type Provider = { id: string; name: string; configured: boolean; variables: string[]; check_kind: string };
@@ -76,6 +76,8 @@ function Jobs({ onIntake }: { onIntake: (job: Job) => void }) {
     {error && <Notice>{error}</Notice>}
     {!!board?.issues.length && <Notice>{board.issues.length} report files could not be loaded.</Notice>}
     {!!scan.source_errors && <Notice>{scan.source_errors} source requests failed. {scan.fetched_jobs ?? 0} postings were fetched before filtering. Results may be incomplete.</Notice>}
+    {running && scan.stage && <p className="text-xs text-subtle" role="status">Scanning: {label(scan.stage)}</p>}
+    {!!scan.coverage?.length && <details className="mb-5"><summary>Source coverage · {date(scan.finished_at)}</summary><div className="overflow-x-auto"><table className="mt-3 w-full"><thead><tr><th>Source</th><th>Layer</th><th>Boards scanned</th><th>Fetched</th><th>Failures</th></tr></thead><tbody>{scan.coverage.map(s => <tr key={s.layer + s.source}><td>{s.source}</td><td>{s.layer}</td><td>{s.scanned == null ? 'Not recorded' : `${s.scanned} / ${s.available}`}</td><td>{s.fetched}</td><td>{s.errors}</td></tr>)}</tbody></table></div></details>}
     <div className="filters"><div className="search-box"><Search size={17}/><input aria-label="Search jobs" placeholder="Search role, company, location" value={q} onChange={e => { setQ(e.target.value); setPage(1); }}/></div>
       <select aria-label="Date basis" value={basis} onChange={e => { setBasis(e.target.value); setPage(1); }}><option value="posted">Posted date</option><option value="discovered">First discovered</option></select>
       <select aria-label="Time window" value={hours} onChange={e => { setHours(e.target.value); setPage(1); }}><option value="6">Last 6 hours</option><option value="12">Last 12 hours</option><option value="24">Last 24 hours</option><option value="48">Last 48 hours</option><option value="168">Last 7 days</option><option value="0">All stored dates</option></select>
