@@ -27,7 +27,8 @@ test('local board opens without login, filters jobs and saves evidence intake', 
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).toHaveCount(0);
   await page.getByRole('button', { name: 'Junior Data Engineer', exact: true }).click();
-  await page.getByRole('button', { name: 'Prepare application' }).click();
+  await expect(page.getByText('No screening decision is saved', { exact: false })).toBeVisible();
+  await page.getByRole('button', { name: 'Review evidence' }).click();
   await expect(page.getByLabel('Company', { exact: true })).toHaveValue('Example Systems');
   const bounds = await page.getByRole('dialog').boundingBox();
   expect(bounds).not.toBeNull();
