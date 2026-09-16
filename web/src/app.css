@@ -15,3 +15,15 @@
 @layer base {
   html { letter-spacing: 0; }
 }
+
+@layer utilities {
+  @media (max-width: 760px) {
+    input, select, textarea { font-size: 16px; }
+    table { min-width: 0; }
+    .board-content th:nth-child(2), .board-content td:nth-child(2),
+    .board-content th:nth-child(4), .board-content td:nth-child(4),
+    .board-content th:nth-child(5), .board-content td:nth-child(5) { display: none; }
+    .board-content th:first-child { width: 65%; }
+    .board-content th:nth-child(3) { width: 35%; }
+  }
+}
