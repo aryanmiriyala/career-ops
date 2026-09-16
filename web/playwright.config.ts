@@ -10,7 +10,7 @@ mkdirSync(join(root, 'profile'));
 mkdirSync(join(root, '.local-workspace'));
 writeFileSync(join(root, '.local-workspace/scan.json'), JSON.stringify({ status: 'completed_with_warnings', company_limit: 20, fetched_jobs: 12, source_errors: 1, finished_at: new Date().toISOString(), coverage: [{ layer: 'broad-ats', source: 'Fixture Greenhouse', fetched: 12, errors: 1, scanned: 3, available: 50 }] }));
 writeFileSync(join(root, 'job-search/config/filters.json'), JSON.stringify({ work_authorization_policy: { sponsorship_blocker_terms: ['no visa sponsorship'] } }));
-writeFileSync(join(root, 'job-search/jobs-inbox.csv'), `company,position,posted_at,pulled_at,url\nExample Systems,Junior Data Engineer,${new Date().toISOString()},${new Date().toISOString()},https://example.test/jobs/1\nExample Labs,Software Engineer Intern,2026-01-01T00:00:00Z,2026-01-01T00:00:00Z,https://example.test/jobs/2\n`);
+writeFileSync(join(root, 'job-search/jobs-inbox.csv'), `company,position,posted_at,pulled_at,url,location\nExample Systems,Junior Data Engineer,${new Date().toISOString()},${new Date().toISOString()},https://example.test/jobs/1,United States\nExample Labs,Software Engineer Intern,2026-01-01T00:00:00Z,2026-01-01T00:00:00Z,https://example.test/jobs/2,United States\n`);
 writeFileSync(join(root, 'profile/experience-master.md'), '# Experience\n## Example internship\n- Built Python and SQL data pipelines with automated validation for a synthetic classroom dataset of 500 records.\n');
 
 export default defineConfig({
