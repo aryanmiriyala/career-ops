@@ -9,6 +9,11 @@ test('owner login, board filtering, evidence intake, providers and logout', asyn
   await page.getByLabel('Password', { exact: true }).fill('synthetic-password-123');
   await page.getByRole('button', { name: /Create account|Sign in/ }).click();
   await expect(page.getByRole('heading', { name: 'Job board', exact: true })).toBeVisible();
+  await expect(page.getByText('1 source requests failed.', { exact: false })).toBeVisible();
+  await page.getByText('Source coverage', { exact: false }).click();
+  await expect(page.getByRole('cell', { name: 'Fixture Greenhouse', exact: true })).toBeVisible();
+  await expect(page.getByRole('cell', { name: '3 / 50', exact: true })).toBeVisible();
+  await page.getByText('Source coverage', { exact: false }).click();
   await expect(page.getByRole('button', { name: 'Junior Data Engineer', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Software Engineer Intern', exact: true })).toHaveCount(0);
   await page.getByLabel('Time window').selectOption('0');
@@ -19,6 +24,7 @@ test('owner login, board filtering, evidence intake, providers and logout', asyn
   await expect(page.getByRole('button', { name: 'Junior Data Engineer', exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('board.png') });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  expect(await page.evaluate(() => window.innerWidth)).toBe(page.viewportSize()!.width);
   await page.getByRole('button', { name: 'Junior Data Engineer', exact: true }).click();
   await expect(page.getByRole('dialog')).toBeVisible();
   await page.keyboard.press('Escape');
