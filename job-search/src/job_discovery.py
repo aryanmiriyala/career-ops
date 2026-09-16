@@ -1283,6 +1283,13 @@ def passes_broad_shortlist_filters(record: dict[str, str], args: argparse.Namesp
     return passes_shortlist_filters(record, args)
 
 
+def company_batch(entries, limit, offset=0):
+    if not entries or not limit:
+        return entries
+    start = offset % len(entries)
+    return (entries[start:] + entries[:start])[:limit]
+
+
 def run_broad_ats_scan(args: argparse.Namespace) -> dict[str, Any]:
     now = utc_now()
     role_buckets = load_json(ROLE_BUCKETS_PATH)
@@ -1306,8 +1313,7 @@ def run_broad_ats_scan(args: argparse.Namespace) -> dict[str, Any]:
         }
         entries = load_broad_ats_company_entries(source, cache_dir, args.refresh_cache)
         source_stats[source]["companies_loaded"] = len(entries)
-        if args.company_limit:
-            entries = entries[: args.company_limit]
+        entries = company_batch(entries, args.company_limit, getattr(args, 'company_offset', 0))
         if args.source_company_limit:
             entries = entries[: args.source_company_limit]
         if not entries:
@@ -1642,6 +1648,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
         write_review_to_inbox=False,
         workers=8,
         company_limit=getattr(args, "company_limit", 0),
+        company_offset=getattr(args, "company_offset", 0),
         source_company_limit=0,
         error_limit=25,
         cache_dir=str(BROAD_ATS_CACHE_DIR),
@@ -1666,6 +1673,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at": utc_now().replace(microsecond=0).isoformat(),
         "search_links_path": search_links_path.as_posix(),
         "company_limit": getattr(args, "company_limit", 0),
+        "company_offset": getattr(args, "company_offset", 0),
         "fetched_jobs": sum(direct_result["fetched_by_source"].values()) + sum(public_result["fetched_by_source"].values()) + sum(s["jobs_fetched"] for s in broad_result["source_stats"].values()),
         "source_errors": direct_result.get("fetch_error_count", 0) + len(public_result.get("errors", [])) + sum(s["company_errors"] for s in broad_result["source_stats"].values()),
         "coverage": [
@@ -2074,6 +2082,7 @@ def build_parser() -> argparse.ArgumentParser:
     pipeline.add_argument("--dry-run", action="store_true", help="Write reports without updating jobs-inbox.csv")
     pipeline.add_argument("--refresh-cache", action="store_true", help="Refresh broad ATS company-directory caches")
     pipeline.add_argument("--company-limit", type=int, default=0, help="Broad ATS boards per source for a bounded test; 0 scans all configured boards")
+    pipeline.add_argument("--company-offset", type=int, default=0, help="Starting offset for a rotating broad ATS batch")
     pipeline.add_argument("--results-dir", default=str(DEFAULT_RESULTS_DIR / utc_now().date().isoformat() / "pipeline"))
 
     q = sub.add_parser("generate-queries", help="Generate recent ATS Google search links")

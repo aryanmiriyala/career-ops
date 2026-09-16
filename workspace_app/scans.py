@@ -38,9 +38,14 @@ class Scans:
             if self.state["status"] in {"running", "cancelling"}:
                 raise ValueError("A discovery scan is already running.")
             identifier = uuid.uuid4().hex[:12]
+            offset = self.state.get('company_offset', 0)
+            if self.state['status'] in {'completed', 'completed_with_warnings'}:
+                offset += self.state.get('company_limit', 0)
+            if not company_limit:
+                offset = 0
             results = self.root / "job-search/results" / now_iso()[:10] / f"workspace-{identifier}"
             self.state = {"status": "running", "id": identifier, "started_at": now_iso(),
-                          "company_limit": company_limit, "results_dir": str(results.relative_to(self.root)),
+                          "company_limit": company_limit, "company_offset": offset, "results_dir": str(results.relative_to(self.root)),
                           "llm_calls": 0, "message": "Scanning configured ATS boards and public feeds."}
             write_json(self.state_path, self.state)
             threading.Thread(target=self._run, args=(results, company_limit), daemon=True).start()
@@ -57,7 +62,8 @@ class Scans:
                         return
                     self.process = subprocess.Popen([
                         sys.executable, "job-search/src/job_discovery.py", "run-pipeline", "--dry-run",
-                        "--company-limit", str(company_limit), "--results-dir", str(results)
+                        "--company-limit", str(company_limit), "--results-dir", str(results),
+                        "--company-offset", str(self.state.get('company_offset', 0))
                     ], cwd=self.root, stdout=log, stderr=log)
                     process = self.process
                 try:

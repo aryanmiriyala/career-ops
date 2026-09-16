@@ -54,6 +54,34 @@ class DiscoveryWorkspaceTests(unittest.TestCase):
             self.assertEqual(board(self.root, hours=0, q='absent', index=index)['total'], 0)
             self.assertEqual(read.call_count, 1)
 
+    def test_unscreened_imports_are_not_shortlisted(self):
+        csv_file(self.inbox, [self.row])
+        self.assertEqual(board(self.root, hours=0, scope='shortlist')['total'], 0)
+        result = board(self.root, hours=0, scope='unassessed')
+        self.assertEqual(result['total'], 1)
+        self.assertEqual(result['jobs'][0]['screening']['label'], 'Not assessed')
+
+    def test_screening_explains_saved_review_and_blockers(self):
+        csv_file(self.inbox, [{**self.row, 'status': 'review', 'flags': 'no_early_career_signal'}])
+        result = board(self.root, hours=0)['jobs'][0]
+        self.assertIn('No early-career wording', result['screening']['reason'])
+        csv_file(self.inbox, [{**self.row, 'status': 'shortlist', 'flags': 'work_auth_blocker'}])
+        self.assertEqual(board(self.root, hours=0)['jobs'][0]['screening']['label'], 'Eligibility flag')
+
+    def test_rotating_company_batches_wrap_without_duplicate_entries(self):
+        self.assertEqual(discovery.company_batch(list(range(5)), 3, 4), [4, 0, 1])
+        self.assertEqual(discovery.company_batch(list(range(5)), 20, 4), [4, 0, 1, 2, 3])
+        self.assertEqual(discovery.company_batch(list(range(5)), 0, 4), list(range(5)))
+        self.assertEqual(discovery.company_batch([], 20, 4), [])
+
+    def test_successful_scan_advances_batch_but_failure_retries_it(self):
+        scans = Scans(self.root)
+        scans.state = {'status': 'completed', 'company_limit': 20, 'company_offset': 0}
+        with patch('workspace_app.scans.threading.Thread'):
+            self.assertEqual(scans.start(100)['company_offset'], 20)
+            scans.state['status'] = 'failed'
+            self.assertEqual(scans.start(100)['company_offset'], 20)
+
     def test_index_refreshes_changed_added_and_deleted_reports(self):
         csv_file(self.inbox, [self.row])
         index = JobIndex(self.root)
