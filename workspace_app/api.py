@@ -1,4 +1,5 @@
 import os
+import ipaddress
 import asyncio
 import threading
 import time
@@ -52,6 +53,7 @@ class ScanRequest(BaseModel):
 
 
 def create_app(root: Path = REPO):
+    local_only = os.environ.get("CAREER_OPS_LOCAL_ONLY") == "1"
     auth = Auth(root / ".local-workspace")
     supabase = SupabaseAuth(root)
     scans = Scans(root)
@@ -76,6 +78,13 @@ def create_app(root: Path = REPO):
 
     @app.middleware("http")
     async def security(request: Request, call_next):
+        if local_only:
+            try:
+                local_peer = request.client is not None and ipaddress.ip_address(request.client.host).is_loopback
+            except ValueError:
+                local_peer = False
+            if not local_peer or request.headers.get("sec-fetch-site") == "cross-site":
+                return JSONResponse({"detail": "Local access only."}, status_code=403)
         if request.method not in {"GET", "HEAD", "OPTIONS"}:
             origin = request.headers.get("origin")
             if origin and urlsplit(origin).netloc != request.headers.get("host"):
@@ -86,7 +95,9 @@ def create_app(root: Path = REPO):
             except ValueError:
                 return JSONResponse({"detail": "Invalid request length."}, status_code=400)
         if request.url.path.startswith("/api/") and request.url.path not in {"/api/health", "/api/auth/config", "/api/auth/session", "/api/auth/setup", "/api/auth/login"}:
-            if supabase.config()["mode"] == "supabase":
+            if local_only:
+                valid = True
+            elif supabase.config()["mode"] == "supabase":
                 token = request.headers.get("authorization", "").removeprefix("Bearer ")
                 valid = await asyncio.to_thread(supabase.user, token)
             else:
@@ -106,6 +117,8 @@ def create_app(root: Path = REPO):
 
     @app.get("/api/auth/session")
     def session(request: Request):
+        if local_only:
+            return {"authenticated": True, "setup_required": False, "local_only": True}
         if supabase.config()["mode"] == "supabase":
             identity = supabase.user(request.headers.get("authorization", "").removeprefix("Bearer "))
             return {"authenticated": bool(identity), "setup_required": False, "email": identity["email"] if identity else None}

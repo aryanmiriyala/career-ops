@@ -3,6 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from fastapi.testclient import TestClient
+from workspace_app.api import create_app
 
 from workspace_app.auth import SupabaseAuth
 from workspace_app.core import JobIndex, board, discovery, load_jobs
@@ -11,6 +13,27 @@ from workspace_app.tests.test_workspace import csv_file
 
 
 class DiscoveryWorkspaceTests(unittest.TestCase):
+    def local_client(self, peer='127.0.0.1'):
+        with patch.dict('os.environ', {'CAREER_OPS_LOCAL_ONLY': '1'}):
+            return TestClient(create_app(self.root), client=(peer, 50000))
+
+    def test_local_board_needs_no_account(self):
+        with self.local_client() as client:
+            self.assertEqual(client.get('/api/jobs').status_code, 200)
+            session = client.get('/api/auth/session').json()
+            self.assertTrue(session['local_only'])
+            self.assertTrue(session['authenticated'])
+            self.assertFalse(session['setup_required'])
+
+    def test_passwordless_mode_rejects_non_loopback_peers(self):
+        with self.local_client('192.0.2.10') as client:
+            self.assertEqual(client.get('/api/jobs').status_code, 403)
+
+    def test_passwordless_mode_rejects_cross_site_requests(self):
+        with self.local_client() as client:
+            self.assertEqual(client.get('/api/jobs', headers={'sec-fetch-site': 'cross-site'}).status_code, 403)
+            self.assertEqual(client.post('/api/scans', json={'company_limit': 5}, headers={'origin': 'https://example.test'}).status_code, 403)
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
