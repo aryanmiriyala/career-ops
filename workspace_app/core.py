@@ -144,8 +144,12 @@ class JobIndex:
             return self.data
 
 
-def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", page=1, page_size=30, index=None):
+def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", page=1, page_size=30, index=None, us_only=False):
     items, issues = index.snapshot() if index else load_jobs(root)
+    stored_total = len(items)
+    if us_only:
+        filters = discovery.load_json(discovery.FILTERS_PATH)
+        items = [item for item in items if discovery.classify_location(item['location'], filters)[0] == 'us']
     now = datetime.now(timezone.utc)
     selected = []
     for item in items:
@@ -168,7 +172,8 @@ def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", pa
     field = "posted_at" if basis == "posted" else "first_seen_at"
     selected.sort(key=lambda item: (item[field] or "", item["score"] or 0), reverse=True)
     return {"jobs": selected[(page - 1) * page_size:page * page_size], "total": len(selected),
-            "stored": len(items), "undated": sum(not i["posted_at"] for i in items),
+            "stored": len(items), "excluded_location": stored_total - len(items), "region": "United States" if us_only else "All",
+            "undated": sum(not i["posted_at"] for i in items),
             "sources": sorted({i["source"] for i in items}), "issues": issues,
             "last_seen_at": max((i["last_seen_at"] or "" for i in items), default="") or None}
 

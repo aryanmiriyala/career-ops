@@ -61,6 +61,15 @@ class DiscoveryWorkspaceTests(unittest.TestCase):
         self.assertEqual(result['total'], 1)
         self.assertEqual(result['jobs'][0]['screening']['label'], 'Not assessed')
 
+    def test_us_only_board_excludes_unknown_remote_and_foreign_locations(self):
+        locations = ['Nashville, Tennessee', 'Denver, CO', 'Remote, United States', 'Remote', '', 'Toronto, Canada', 'Bengaluru, India', 'London, UK', 'Georgia']
+        csv_file(self.inbox, [{**self.row, 'url': f'https://example.test/{n}', 'location': location} for n, location in enumerate(locations)])
+        result = board(self.root, hours=0, us_only=True)
+        self.assertEqual(result['total'], 3)
+        self.assertEqual(result['excluded_location'], 6)
+        with self.local_client() as client:
+            self.assertEqual(client.get('/api/jobs?hours=0').json()['total'], 3)
+
     def test_screening_explains_saved_review_and_blockers(self):
         csv_file(self.inbox, [{**self.row, 'status': 'review', 'flags': 'no_early_career_signal'}])
         result = board(self.root, hours=0)['jobs'][0]

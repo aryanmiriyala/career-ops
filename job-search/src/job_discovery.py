@@ -350,12 +350,19 @@ def classify_location(location: str, filters: dict[str, Any]) -> tuple[str, list
 
     if not text:
         return "unknown", ["location_needs_review"]
-    if any(contains_term(text, term) for term in us_terms):
+    if re.search(r'\b(?:united states|usa|us)\b|\bu\.s\.', location, re.I):
         return "us", []
+    if text == 'georgia':
+        return "unknown", ["location_needs_review"]
     if any(contains_term(text, term) for term in india_terms):
         return "india", ["location_india_review"]
     if any(contains_term(text, term) for term in foreign_terms):
         return "foreign", ["location_foreign"]
+    states = 'Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming|District of Columbia'
+    codes = 'AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC'
+    # State codes require a city separator to avoid treating ordinary words as states.
+    if any(contains_term(text, term) for term in us_terms) or re.search(r'\b(' + states + r')\b', location, re.I) or re.search(r',\s*(' + codes + r')\b', location):
+        return "us", []
     if any(contains_term(text, term) for term in remote_ambiguous_terms):
         return "remote_ambiguous", ["location_needs_review"]
     if re.search(r"\b\d+\s+locations?\b", text):
