@@ -22,16 +22,16 @@ bun run build
 Then, from the repository root:
 
 ```sh
-.venv/bin/python -m uvicorn workspace_app.api:app --host 127.0.0.1 --port 8765
+python3 automation/run_workspace.py
 ```
 
-Open http://127.0.0.1:8765. Without Supabase settings, create the single local owner account on first visit. Passwords require 12 characters and are stored as salted scrypt hashes. Sessions use HttpOnly, SameSite=Strict cookies. The local HTTP cookie is intentionally not Secure; this mode must remain bound to loopback and is not a cloud authentication solution.
+Open the URL printed by the launcher (normally http://127.0.0.1:8765). It selects another port if busy and explicitly uses local authentication, even if Supabase settings exist in `.env`. Create the single local owner account on first visit. Passwords require 12 characters and are stored as salted scrypt hashes. Sessions use HttpOnly, SameSite=Strict cookies. The local HTTP cookie is intentionally not Secure; this mode must remain bound to loopback and is not a cloud authentication solution. No cloud account or model key is required to browse or refresh jobs. Live discovery still requires internet access; saved jobs work offline.
 
 For frontend development, run `bun run dev` from `web/` while the backend runs on port 8765. Vite proxies `/api` to the backend. Bun runs the TypeScript checker and Vite, manages frontend dependencies, and owns the single `web/bun.lock` lockfile. Use `bun add` for dependency changes; do not regenerate an npm lockfile. No Vercel account is involved.
 
 ## Supabase Auth
 
-To use Supabase instead of local login, add these settings to the root `.env`, then reload the page:
+Supabase is optional and deferred for the local-only workflow. To explicitly use it instead of local login, start Uvicorn directly without `CAREER_OPS_LOCAL_ONLY=1`, add these settings to the root `.env`, then reload the page:
 
 ```dotenv
 SUPABASE_URL=https://YOUR_PROJECT.supabase.co
@@ -50,6 +50,10 @@ Tests mock Supabase responses. Live project sign-in must be verified after setti
 ## Jobs
 
 The board reads `job-search/jobs-inbox.csv` and dated `jobs.csv` reports. It does not read historical application package contents. Posted-date filters exclude undated and future-dated records. Relative posting dates are anchored to the recorded scan observation, not the current page load. Discovery date and publication date are separate controls.
+
+An in-memory index caches parsed reports and invalidates when reports are added, edited, or removed. Time-window filtering is evaluated on every request, so cached jobs do not retain stale freshness labels. The index is disposable; source CSVs stay authoritative.
+
+The UI reports the current scan layer and shows completed source coverage: fetched posting counts before filtering, failures, and attempted versus available boards for broad ATS sources. Zero returned matches does not imply zero source failures. The default 20-board cap is a sample per broad source, not complete coverage; use All boards for the uncapped scan. Discovery is deterministic and makes no LLM calls. It does not generate application packages.
 
 Refresh starts the existing `run-pipeline --dry-run` command in a background subprocess. The default UI scope caps the broad scan at 20 boards per ATS source; choose all boards for the full broad scan. Configured direct targets and supplemental public feeds are still included. The original CLI default remains unlimited. Each UI scan has a unique directory under `job-search/results/YYYY-MM-DD/workspace-<id>/`.
 
