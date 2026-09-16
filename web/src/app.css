@@ -22,9 +22,9 @@
     input, select, textarea { font-size: 16px; }
     table { min-width: 0; }
     .board-content th:nth-child(2), .board-content td:nth-child(2),
-    .board-content th:nth-child(4), .board-content td:nth-child(4),
-    .board-content th:nth-child(5), .board-content td:nth-child(5) { display: none; }
-    .board-content th:first-child { width: 65%; }
-    .board-content th:nth-child(3) { width: 35%; }
+    .board-content th:nth-child(4), .board-content td:nth-child(4) { display: none; }
+    .board-content th:first-child { width: 55%; }
+    .board-content th:nth-child(3) { width: 30%; }
+    .board-content th:nth-child(5) { width: 15%; }
   }
 }

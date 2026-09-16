@@ -20,6 +20,11 @@ test('local board opens without login, filters jobs and saves evidence intake', 
   await page.getByLabel('Search jobs').fill('');
   await expect(page.getByRole('button', { name: 'Junior Data Engineer', exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('board.png') });
+  const postingLink = page.getByRole('link', { name: 'Open posting for Junior Data Engineer at Example Systems', exact: true });
+  await expect(postingLink).toBeVisible();
+  await expect(postingLink).toHaveAttribute('href', 'https://example.test/jobs/1');
+  await expect(postingLink).toHaveAttribute('target', '_blank');
+  await expect(postingLink).toHaveAttribute('rel', 'noopener noreferrer');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect(await page.evaluate(() => window.innerWidth)).toBe(page.viewportSize()!.width);
   await page.getByRole('button', { name: 'Junior Data Engineer', exact: true }).click();
