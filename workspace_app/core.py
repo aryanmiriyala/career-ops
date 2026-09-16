@@ -60,9 +60,13 @@ def timestamp(value, reference=None):
         return None
 
 
-def load_jobs(root: Path):
+def job_paths(root: Path):
     inbox = root / "job-search/jobs-inbox.csv"
-    paths = ([inbox] if inbox.exists() else []) + sorted((root / "job-search/results").glob("**/jobs.csv"))
+    return ([inbox] if inbox.exists() else []) + sorted((root / "job-search/results").glob("**/jobs.csv"))
+
+
+def load_jobs(root: Path, paths=None):
+    paths = job_paths(root) if paths is None else paths
     merged = {}
     issues = []
     for path in paths:
@@ -101,8 +105,33 @@ def load_jobs(root: Path):
     return list(merged.values()), issues
 
 
-def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", page=1, page_size=30):
-    items, issues = load_jobs(root)
+class JobIndex:
+    """Cache parsed source reports, not time-sensitive filter results."""
+
+    def __init__(self, root):
+        self.root = root
+        self.lock = threading.Lock()
+        self.signature = None
+        self.data = ([], [])
+
+    def snapshot(self):
+        with self.lock:
+            paths = job_paths(self.root)
+            signature = []
+            for path in paths:
+                try:
+                    stat = path.stat()
+                    signature.append((str(path), stat.st_mtime_ns, stat.st_ctime_ns, stat.st_size))
+                except OSError:
+                    signature.append((str(path), None))
+            if signature != self.signature:
+                self.data = load_jobs(self.root, paths)
+                self.signature = signature
+            return self.data
+
+
+def board(root: Path, q="", hours=48, basis="posted", scope="all", source="", page=1, page_size=30, index=None):
+    items, issues = index.snapshot() if index else load_jobs(root)
     now = datetime.now(timezone.utc)
     selected = []
     for item in items:

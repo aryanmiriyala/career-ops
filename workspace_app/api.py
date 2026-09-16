@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .auth import Auth, SupabaseAuth
-from .core import IntakeStore, REPO, board
+from .core import IntakeStore, JobIndex, REPO, board
 from .providers import probe, statuses
 from .scans import Scans
 
@@ -56,6 +56,7 @@ def create_app(root: Path = REPO):
     supabase = SupabaseAuth(root)
     scans = Scans(root)
     intakes = IntakeStore(root)
+    job_index = JobIndex(root)
     attempts = {}
     attempt_lock = threading.Lock()
     probe_lock = threading.Lock()
@@ -172,7 +173,7 @@ def create_app(root: Path = REPO):
     def jobs(q: str = Query("", max_length=200), hours: int = Query(48, ge=0, le=87600),
              basis: Literal["posted", "discovered"] = "posted", scope: Literal["all", "shortlist", "review", "blocked"] = "all",
              source: str = "", page: int = Query(1, ge=1), page_size: int = Query(30, ge=1, le=100)):
-        return board(root, q, hours, basis, scope, source, page, page_size)
+        return board(root, q, hours, basis, scope, source, page, page_size, index=job_index)
 
     @app.get("/api/scans/current")
     def scan_status():
