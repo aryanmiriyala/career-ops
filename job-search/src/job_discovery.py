@@ -1614,6 +1614,13 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
     results_dir = Path(args.results_dir)
     results_dir.mkdir(parents=True, exist_ok=True)
 
+    def progress(stage):
+        path = results_dir / "progress.json"
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(json.dumps({"stage": stage, "updated_at": iso_now()}), encoding="utf-8")
+        temporary.replace(path)
+
+    progress("direct-ats")
     direct_args = namespace_with(
         standard_filter_args(args, results_dir / "direct-ats"),
         targets=str(DIRECT_ATS_TARGETS_PATH),
@@ -1624,6 +1631,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
     direct_result = fetch_direct_ats_jobs(direct_args)
     write_run_outputs(direct_result, direct_args)
 
+    progress("broad-ats")
     broad_args = namespace_with(
         standard_filter_args(args, results_dir / "broad-ats"),
         sources=["greenhouse", "lever", "ashby", "workday"],
@@ -1642,6 +1650,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
     broad_result = run_broad_ats_scan(broad_args)
     write_broad_ats_outputs(broad_result, broad_args)
 
+    progress("public-search")
     public_args = namespace_with(
         standard_filter_args(args, results_dir / "public-search"),
         sources=["arbeitnow", "remoteok"],
@@ -1659,6 +1668,13 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
         "company_limit": getattr(args, "company_limit", 0),
         "fetched_jobs": sum(direct_result["fetched_by_source"].values()) + sum(public_result["fetched_by_source"].values()) + sum(s["jobs_fetched"] for s in broad_result["source_stats"].values()),
         "source_errors": direct_result.get("fetch_error_count", 0) + len(public_result.get("errors", [])) + sum(s["company_errors"] for s in broad_result["source_stats"].values()),
+        "coverage": [
+            {"layer": "direct-ats", "source": "Configured employer boards", "fetched": sum(direct_result["fetched_by_source"].values()), "errors": direct_result.get("fetch_error_count", 0)},
+            *[{"layer": "broad-ats", "source": source, "fetched": stats["jobs_fetched"],
+               "errors": stats["company_errors"], "scanned": stats["companies_scanned"], "available": stats["companies_loaded"]}
+              for source, stats in broad_result["source_stats"].items()],
+            {"layer": "public-search", "source": "Arbeitnow / RemoteOK", "fetched": sum(public_result["fetched_by_source"].values()), "errors": len(public_result.get("errors", []))},
+        ],
         "layers": [
             {
                 "name": "direct-ats",
@@ -1688,6 +1704,7 @@ def run_standard_pipeline(args: argparse.Namespace) -> dict[str, Any]:
     }
     write_output(render_pipeline_summary(result, args), str(results_dir / "run-summary.md"))
     (results_dir / "run-state.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+    progress("finished")
     return result
 
 

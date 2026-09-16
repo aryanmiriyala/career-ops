@@ -24,7 +24,14 @@ class Scans:
 
     def snapshot(self):
         with self.lock:
-            return dict(self.state)
+            state = dict(self.state)
+            if state.get("results_dir"):
+                try:
+                    progress = json.loads((self.root / state["results_dir"] / "progress.json").read_text())
+                    state["stage"] = progress["stage"]
+                except (OSError, ValueError, KeyError):
+                    pass
+            return state
 
     def start(self, company_limit):
         with self.lock:
@@ -63,7 +70,7 @@ class Scans:
             with self.lock:
                 if status == "completed" and (results / "run-state.json").exists():
                     summary = json.loads((results / "run-state.json").read_text())
-                    self.state.update(fetched_jobs=summary.get("fetched_jobs", 0), source_errors=summary.get("source_errors", 0))
+                    self.state.update(fetched_jobs=summary.get("fetched_jobs", 0), source_errors=summary.get("source_errors", 0), coverage=summary.get("coverage", []))
                     if summary.get("source_errors"):
                         status = "completed_with_warnings"
                 if self.state["status"] == "cancelling":
