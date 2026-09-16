@@ -7,6 +7,7 @@ import sqlite3
 import time
 import base64
 import json
+import os
 import threading
 from urllib.parse import urlsplit
 from pathlib import Path
@@ -23,6 +24,8 @@ class SupabaseAuth:
         self.lock = threading.Lock()
 
     def config(self):
+        if os.environ.get("CAREER_OPS_LOCAL_ONLY") == "1":
+            return {"mode": "local"}
         values = credentials(self.root)
         url = (values.get("SUPABASE_URL") or "").rstrip("/")
         key = values.get("SUPABASE_PUBLISHABLE_KEY") or values.get("SUPABASE_ANON_KEY") or ""
