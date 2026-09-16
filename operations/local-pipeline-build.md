@@ -17,7 +17,7 @@ Local-only is the active development target. React/Vite serves a compiled UI thr
 
 ## This Increment
 
-- One local launch command with local-owner login and loopback binding.
+- One local launch command with direct job-board entry, no login, and loopback binding.
 - Cached job report parsing with source-change invalidation.
 - Source/layer coverage and scan progress in the job board.
 - Real discovery scan to populate recent matches; no paid APIs or model calls.

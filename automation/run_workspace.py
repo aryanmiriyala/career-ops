@@ -30,7 +30,7 @@ def main():
     else:
         parser.error("No available local port. Choose another with --port.")
     env = {**os.environ, "CAREER_OPS_LOCAL_ONLY": "1", "CAREER_OPS_ROOT": str(root)}
-    print(f"Career Ops: http://127.0.0.1:{port} (local account; no Supabase required)", flush=True)
+    print(f"Career Ops: http://127.0.0.1:{port} (local only; no login required)", flush=True)
     return subprocess.call([str(python), "-m", "uvicorn", "workspace_app.api:app", "--host", "127.0.0.1", "--port", str(port)], cwd=root, env=env)
 
 

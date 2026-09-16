@@ -25,7 +25,7 @@ Then, from the repository root:
 python3 automation/run_workspace.py
 ```
 
-Open the URL printed by the launcher (normally http://127.0.0.1:8765). It selects another port if busy and explicitly uses local authentication, even if Supabase settings exist in `.env`. Create the single local owner account on first visit. Passwords require 12 characters and are stored as salted scrypt hashes. Sessions use HttpOnly, SameSite=Strict cookies. The local HTTP cookie is intentionally not Secure; this mode must remain bound to loopback and is not a cloud authentication solution. No cloud account or model key is required to browse or refresh jobs. Live discovery still requires internet access; saved jobs work offline.
+Open the URL printed by the launcher (normally http://127.0.0.1:8765). It selects another port if busy and opens directly to the job board, even if Supabase settings exist in `.env`. No login or account setup is required. This explicit local-only mode rejects non-loopback clients and cross-site browser requests; do not expose it through a public proxy or tunnel. Any trusted program running on your computer can access it. No cloud account or model key is required to browse or refresh jobs. Live discovery still requires internet access; saved jobs work offline. Direct Uvicorn startup without `CAREER_OPS_LOCAL_ONLY=1` retains the previous authenticated behavior.
 
 For frontend development, run `bun run dev` from `web/` while the backend runs on port 8765. Vite proxies `/api` to the backend. Bun runs the TypeScript checker and Vite, manages frontend dependencies, and owns the single `web/bun.lock` lockfile. Use `bun add` for dependency changes; do not regenerate an npm lockfile. No Vercel account is involved.
 
@@ -90,7 +90,7 @@ bunx playwright install chromium
 bun run test:e2e
 ```
 
-Browser tests start a separate API on port 8876 against synthetic data in a temporary directory. They do not use the real owner account, API keys, profile data, or an existing browser session. They cover desktop and mobile login, date/search filters, job selection, evidence intake, provider settings, and sign-out. Screen recordings and traces are disabled. Screenshots capture only synthetic test pages.
+Browser tests start a separate API on port 8876 against synthetic data in a temporary directory. They do not use the real owner account, API keys, profile data, or an existing browser session. They cover passwordless local entry and reload, date/search filters, job selection, evidence intake, and provider settings on desktop and mobile. Authenticated-mode behavior remains covered by backend tests. Screen recordings and traces are disabled. Screenshots capture only synthetic test pages.
 
 ## Deployment Boundary
 
