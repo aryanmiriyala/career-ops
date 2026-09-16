@@ -1,13 +1,10 @@
 import { expect, test } from '@playwright/test';
 
-test('owner login, board filtering, evidence intake, providers and logout', async ({ page }, testInfo) => {
+test('local board opens without login, filters jobs and saves evidence intake', async ({ page }, testInfo) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
-  await expect(page.getByLabel('Email', { exact: true })).toBeVisible();
-  await page.getByLabel('Email', { exact: true }).fill('owner@example.test');
-  await page.getByLabel('Password', { exact: true }).fill('synthetic-password-123');
-  await page.getByRole('button', { name: /Create account|Sign in/ }).click();
+  await expect(page.getByLabel('Password', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Job board', exact: true })).toBeVisible();
   await expect(page.getByText('1 source requests failed.', { exact: false })).toBeVisible();
   await page.getByText('Source coverage', { exact: false }).click();
@@ -52,9 +49,10 @@ test('owner login, board filtering, evidence intake, providers and logout', asyn
   await expect(page.getByRole('heading', { name: 'Model providers' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Z.ai', exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await page.getByRole('button', { name: 'Sign out', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Welcome back' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Sign out', exact: true })).toBeHidden();
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Job board', exact: true })).toBeVisible();
   const response = await page.request.get('/api/jobs');
-  expect(response.status()).toBe(401);
+  expect(response.status()).toBe(200);
   expect(errors).toEqual([]);
 });
