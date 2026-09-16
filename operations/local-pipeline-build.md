@@ -25,6 +25,11 @@ Local-only is the active development target. React/Vite serves a compiled UI thr
 
 ## Next Milestone
 
+The repository audit and concrete generation contract are recorded in
+[Local Application Generation Architecture](local-generation-architecture.md).
+It includes the master-document viewer, stage responsibilities, output preferences,
+score/waiver enforcement gaps, token controls, and implementation acceptance tests.
+
 Implement an explicit selected-job application run with a persisted manifest and stage statuses. Cache stages by full JD hash, verified source hashes, template/prompt versions, model identity, and tailoring mode. Never reuse a result after its inputs change. Limit repair attempts; persist failures for review rather than silently producing a ready package. Use confirmed source claims, not historical application outputs, as evidence.
 
 Build a representative evaluation set before changing model routing. Token reduction is measurable; preservation of writing quality must be demonstrated with evidence checks, deterministic document gates, and human review. Do not claim equivalent quality solely from a smaller prompt or an internal alignment score.
