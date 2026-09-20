@@ -1,6 +1,6 @@
 # Local Career Ops Workspace
 
-React + TypeScript + Vite frontend, Tailwind CSS with Radix-backed UI primitives, and FastAPI backend. This is the first application increment: login, recent job board, background discovery, provider diagnostics, and saved JD/evidence intake. It does not generate or approve submitted-facing resumes or cover letters yet.
+React + TypeScript + Vite frontend, Tailwind CSS with Radix-backed UI primitives, and FastAPI backend. The local application supports recent-job discovery, saved job-description intake, evidence-grounded resume and cover-letter generation, independent review, deterministic alignment scoring, one-page PDF compilation, human approval, package validation, and tracker updates.
 
 ## Run
 
@@ -63,19 +63,27 @@ Only one scan runs at a time in the local process. Cancellation terminates the c
 
 Dry-run scans leave the manually maintained inbox and discovery history unchanged. The board deduplicates URLs and preserves the earliest observation available across saved reports. This is a browsing index, not a replacement application tracker.
 
-## Intake and Evidence
+## Application Generation
 
 Selecting a job prefills an intake form. Paste the complete employer posting before saving. Inputs and deterministic evidence candidates are stored under `.local-workspace/intakes/<fingerprint>/`. Repeating identical intake input reopens the same snapshot with zero model calls. Intake snapshots intentionally retain their original evidence/source hashes; automatic invalidation or refresh after profile edits is not implemented yet.
 
-Candidates come only from the named profile source files. The initial retriever uses lexical ranking and a maximum of 18 excerpts / 18,000 evidence characters. Estimated tokens use characters divided by four, not provider token accounting. Missing terms need manual source/gap recovery. Source-linked excerpts are not an independent guarantee that a future generated claim is truthful.
+Candidates come only from canonical profile and master-document sources, never historical application packages. Retrieval is requirement-aware and bounded. Each generated claim cites stable evidence IDs; deterministic checks reject unknown evidence IDs, unsupported numbers, mismatched entry metadata, and duplicate submitted claims. The independent review and required human factual check cover semantic overstatement that deterministic checks cannot prove.
 
-Faithful, Balanced, and Aggressive are saved mode selections for the future writer. All preserve verified facts. Selecting a mode does not currently rewrite content. Explicit configured work-authorization phrases block the intake; ambiguity is not automatically resolved. No final application folder, tracker entry, score, or PDF is fabricated by this preliminary workflow.
+Faithful keeps close to original verified wording. Balanced curates evidence and blends supported JD language naturally. Aggressive maximizes exact JD terminology, evidence selection, and ordering while retaining the same evidence boundary. Aggressive never permits synthetic tools, projects, titles, metrics, scope, ownership, or outcomes.
+
+Runs persist under `.local-workspace/generation-runs/`. Stage cache keys include prompt version, model route, full structured input, source hashes, and mode. Matching runs reuse cached model output; the UI can explicitly regenerate writing stages while retaining cached requirements. There are no silent provider fallbacks and only one bounded repair attempt.
+
+The Job Alignment & Evidence Score is a 100-point internal estimate: exact requirement coverage 40, experience relevance 25, impact and evidence 15, formatting and parsing 10, and risk/gap handling 10. It is not an employer ATS prediction. Scores below 90 require a substantive release waiver. Final release also requires factual, visual, and editorial review, one-page resume and cover-letter checks, the repository package validator, and any experience-bullet waiver required by repository policy.
+
+Approved artifacts are copied to `application-packages/<Company>/<Role>/` and the bounded tracker helper records the package as `Ready`. Generation never marks an application as submitted. The package includes the full JD, PDFs and source files, tailoring notes, alignment and validation results, requirement/eligibility/gap/strategy records, evidence selection, and editorial review.
 
 ## Providers
 
 `/api/providers` exposes presence booleans and variable names only. Existing `ZAI_KEY`, `OPENCODE_API_KEY`, `OPEN_ROUTER_KEY`, and `LANGFUSE_BASE_URL` aliases are supported. `.env` is never served by the app.
 
-Connection buttons request account/model metadata. Metadata reachability does not establish authentication, generation permissions, or free quota for every provider. The Z.ai button sends a synthetic `glm-4.7-flash` request capped at 32 output tokens with thinking disabled. There are no retries or paid fallbacks. It sends no profile content and returns only sanitized status, latency, and numeric usage. Verify the model's current free pricing before future use; provider promotions can change. Langfuse credential presence is displayed, but tracing is not integrated yet.
+Connection buttons request account/model metadata. Metadata reachability does not establish authentication, generation permissions, or free quota for every provider. The Z.ai button sends a synthetic `glm-4.7-flash` request capped at 32 output tokens with thinking disabled. The default generation route permits only that model without the explicit paid/quota checkbox. Other configured routes require explicit approval and never become silent fallbacks.
+
+Each request reserves against a local run token budget and writes actual provider usage, served model, latency, and billing uncertainty to a local ledger. Langfuse tracing is metadata-only: run IDs, stages, model names, latency, and token usage may be sent, but job descriptions, profile excerpts, prompts, resumes, and cover letters are not uploaded as trace content.
 
 ## Test
 
@@ -92,10 +100,10 @@ bunx playwright install chromium
 bun run test:e2e
 ```
 
-Browser tests start a separate API on port 8876 against synthetic data in a temporary directory. They do not use the real owner account, API keys, profile data, or an existing browser session. They cover passwordless local entry and reload, date/search filters, job selection, evidence intake, and provider settings on desktop and mobile. Authenticated-mode behavior remains covered by backend tests. Screen recordings and traces are disabled. Screenshots capture only synthetic test pages.
+Browser tests start a separate API on port 8876 against synthetic data in a temporary directory. They do not use the real owner account, API keys, profile data, or an existing browser session. They cover passwordless local entry, date/search filters, job selection, application controls, master documents, and provider settings on desktop and mobile. Backend tests exercise the staged generation workflow with synthetic sources and a fake model transport, including real LaTeX compilation. Screen recordings and traces are disabled.
 
 ## Deployment Boundary
 
 This single-process server is a local development build. The recommended production target is React on AWS Amplify Hosting, a Python API on AWS, S3 for artifacts, DynamoDB for job state, and Fargate/Step Functions for generation tasks, with Supabase Auth. AWS deployments must replace the in-process subprocess manager and filesystem store, add persistent distributed admission control, enforce HTTPS, and configure the real frontend origin. Do not deploy local-owner mode publicly.
 
-The next increment is a source-grounded draft engine, persisted stage cache, independent quality evaluation, and deterministic canonical PDF rendering. It should be benchmarked before enabling a submission-ready workflow.
+Before cloud deployment, replace the in-process generation thread and local filesystem with durable task and artifact services. Build a representative human-rated evaluation set before changing model routing or claiming that a cheaper model preserves writing quality.
