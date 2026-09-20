@@ -221,11 +221,15 @@ def check_tailoring_notes(app_dir: Path, errors: list[str]) -> None:
     else:
         score = int(score_match.group(1))
         recorded_score = score
-        if score < MIN_ALIGNMENT_SCORE and SUB_90_WAIVER_MARKER not in text:
-            errors.append(
-                "Job Alignment & Evidence Score below 90 requires a "
-                "`Sub-90 Readiness Waiver` section in tailoring-notes.md"
-            )
+        if score < MIN_ALIGNMENT_SCORE:
+            waiver = re.search(r"## Sub-90 Readiness Waiver\s*\n(.*?)(?=\n## |\Z)", text, re.DOTALL)
+            waiver_text = waiver.group(1).strip() if waiver else ""
+            rejected = {"", "required before release.", "not required."}
+            if waiver_text.casefold() in rejected or len(waiver_text.split()) < 8:
+                errors.append(
+                    "Job Alignment & Evidence Score below 90 requires a substantive "
+                    "`Sub-90 Readiness Waiver` explaining the truthful gap and decision to proceed"
+                )
 
     check_score_consistency(text, recorded_score, errors)
 
@@ -248,11 +252,20 @@ def check_score_consistency(notes_text: str, recorded_score: int | None, errors:
         "Risk and gap handling",
     }
     has_impact_category = any(category in {"Impact and evidence", "Impact/evidence"} for category in categories)
+    expected = {"Keyword coverage": 40, "Experience relevance": 25, "Impact and evidence": 15,
+                "Impact/evidence": 15, "Formatting and ATS parsing": 10, "Risk and gap handling": 10}
 
     if len(matches) < 5 or not required_categories.issubset(categories) or not has_impact_category:
         errors.append("tailoring-notes.md score breakdown must include all five scoring categories")
     if possible_total != 100:
         errors.append(f"tailoring-notes.md score breakdown possible points must total 100; found {possible_total}")
+    if len(matches) != len(categories):
+        errors.append("tailoring-notes.md score breakdown must not repeat categories")
+    for category, earned, possible in matches:
+        if int(possible) != expected[category]:
+            errors.append(f"tailoring-notes.md `{category}` must use {expected[category]} possible points")
+        if int(earned) > int(possible):
+            errors.append(f"tailoring-notes.md `{category}` earned points exceed possible points")
     if recorded_score is not None and earned_total != recorded_score:
         errors.append(
             "tailoring-notes.md score breakdown earned points must match "
