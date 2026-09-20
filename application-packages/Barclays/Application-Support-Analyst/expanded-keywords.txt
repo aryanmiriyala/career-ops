@@ -1,0 +1,48 @@
+# Exact posted title and operating context
+Application Support Analyst
+application support
+production systems
+incident resolution
+continuous improvement
+business continuity
+risk
+controls
+stakeholders
+monitoring
+observability
+
+# Supported technologies and variants
+Jenkins
+CI/CD
+Linux
+Java
+APIs
+Oracle
+Open Shift
+OpenShift
+AWS
+cloud
+Spring Boot
+Maven
+microservice APIs
+
+# Important unsupported or adjacent requirements retained for audit
+AppDynamics
+Elasticsearch
+Netcool
+Kibana
+WebSphere
+JBoss
+Apache
+Tomcat
+Chef
+Unix
+shell scripting
+J2EE
+PL/SQL
+banking
+financial sector
+fraud
+Agile
+Waterfall
+SLA

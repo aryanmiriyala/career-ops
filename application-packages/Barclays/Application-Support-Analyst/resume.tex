@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{LinkedIn} $|$
+  \href{https://github.com/aryanmiriyala}{GitHub} $|$
+  Application Support Analyst
+\end{center}\vspace{-10pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 -- Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a production AI Gateway with policy-controlled routing, Langfuse monitoring and observability, Slack alerts, CI gates, and 44 red-team fixtures, improving failure detection across multiple AI projects.
+  \item Hardened production authentication by deriving session-cookie domains from request hosts and stabilizing login transitions, preventing redirect flashes and stalled sessions.
+  \item Improved customer-portal reliability by paginating work-item counts, refreshing cache layers, preventing stale overlapping reads, and deriving accurate project states.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a secure Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with traceable handoffs.
+  \item Built a Docker devcontainer for Linux-based WSL2 and Colima environments, standardizing reproducible development while isolating proprietary code and company data.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for internal teams and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling Oracle, MySQL, and Impala sources with Python, SQL, and JDBC, standardizing legacy data into 25 domains.
+  \item Modernized 160+ legacy Pentaho jobs into AWS Glue workflows and partitioned S3 pipelines, reducing job sprawl and improving maintainability for governed ingestion.
+  \item Delivered validation and reverse-ETL workflows with AWS IAM controls, giving users access to reliable insurance data while maintaining 24-hour latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating data standardization.
+  \item Developed Java/Spring Boot microservice APIs with Maven and OpenShift for internal insurance application workflows, supporting cloud-based service delivery.
+  \item Served temporarily as Product Owner for an internal application, translating business stakeholders' requirements into implementation tasks and coordinating delivery priorities.
+  \item Automated AWS Lambda validation that tokenized PII and delivered structured JSON to S3, strengthening controls for downstream insurance data processing.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured an AWS-hosted Lucee/CFML platform with anti-CSRF, IP-aware audit logging, protected routing, and crash fixes for reliable transplant operations.
+  \item Resolved production data issues involving import ordering, file paths, and duplicate-antigen crashes, improving continuity for internal clinical workflows.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Self-Adaptive Parallel Runtime}{C++, OpenMP, Python, Linux, Docker}
+\begin{tightitemize}
+  \item Built a Linux-based runtime that records per-epoch telemetry and adapts scheduling policy, chunk size, and thread count across parallel workloads.
+  \item Evaluated adaptive, serial, and fixed-policy runs with reproducible benchmarks and CSV reports, surfacing runtime, speedup, efficiency, and scheduler decisions.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Enterprise Applications:} Java, Spring Boot, Maven, microservice APIs, REST APIs, Oracle, PostgreSQL, SQL, Python, TypeScript/JavaScript\\
+\textbf{Cloud \& DevOps:} AWS Glue, S3, Lambda, IAM, OpenShift, Jenkins, CI/CD, Docker, Linux, Git, PySpark\\
+\textbf{Operations \& Controls:} Langfuse observability, Slack alerting, logging, data validation, audit logging, RBAC, JWT, SSO, anti-CSRF, PII tokenization
+
+\end{document}
