@@ -46,11 +46,15 @@ test('local board opens without login, filters jobs and saves evidence intake', 
   await page.screenshot({ path: testInfo.outputPath('intake.png') });
   await page.getByRole('button', { name: 'Faithful', exact: true }).click();
   await page.getByRole('button', { name: 'Save & review evidence' }).click();
-  await expect(page.getByRole('heading', { name: 'Evidence workspace' })).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'Evidence candidates' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Application workspace' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Generate resume and cover letter' })).toBeVisible();
+  await expect(page.getByText('Balanced mode curates verified evidence', { exact: false })).toBeVisible();
+  await page.getByText('Initial evidence candidates', { exact: false }).click();
   await expect(page.getByText('500 records.', { exact: false })).toBeVisible();
-  await expect(page.getByText('Drafting and submission validation are not enabled', { exact: false })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('evidence.png') });
+  await page.getByRole('button', { name: 'Documents', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Master documents' })).toBeVisible();
+  await expect(page.getByText('resume.tex', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Providers', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Model providers' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Z.ai', exact: true })).toBeVisible();
