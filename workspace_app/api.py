@@ -10,13 +10,15 @@ from urllib.parse import urlsplit
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .auth import Auth, SupabaseAuth
 from .core import IntakeStore, JobIndex, REPO, board
+from .generation_engine import GenerationRuns
+from .generation_models import Approval, RunRequest
 from .providers import probe, statuses
 from .scans import Scans
 
@@ -58,6 +60,7 @@ def create_app(root: Path = REPO):
     supabase = SupabaseAuth(root)
     scans = Scans(root)
     intakes = IntakeStore(root)
+    runs = GenerationRuns(root)
     job_index = JobIndex(root)
     attempts = {}
     attempt_lock = threading.Lock()
@@ -217,6 +220,78 @@ def create_app(root: Path = REPO):
         if result is None:
             raise HTTPException(404, "Intake not found.")
         return result
+
+    @app.get("/api/runs")
+    def list_runs():
+        return runs.list()
+
+    @app.post("/api/runs")
+    def start_run(body: RunRequest):
+        try:
+            return runs.start(body)
+        except ValueError as exc:
+            raise HTTPException(409, str(exc))
+
+    @app.get("/api/runs/{identifier}")
+    def get_run(identifier: str):
+        result = runs.get(identifier)
+        if result is None:
+            raise HTTPException(404, "Generation run not found.")
+        return result
+
+    @app.post("/api/runs/{identifier}/approve")
+    def approve_run(identifier: str, body: Approval):
+        try:
+            return runs.approve(identifier, body)
+        except ValueError as exc:
+            raise HTTPException(409, str(exc))
+
+    @app.get("/api/runs/{identifier}/files/{name}")
+    def run_file(identifier: str, name: str):
+        allowed = {"resume.pdf", "cover-letter.pdf", "resume.tex", "cover-letter.md", "tailoring-notes.md",
+                   "requirements.json", "eligibility.json", "gaps.json", "strategy.json", "alignment.json",
+                   "validation.json", "editorial-review.json"}
+        if name not in allowed or runs.get(identifier) is None:
+            raise HTTPException(404, "Run file not found.")
+        path = runs.directory / identifier / name
+        if not path.is_file() or path.is_symlink():
+            raise HTTPException(404, "Run file not found.")
+        return FileResponse(path, filename=name if name.endswith('.pdf') else None,
+                            content_disposition_type="inline",
+                            media_type="application/pdf" if name.endswith('.pdf') else "text/plain")
+
+    documents = {
+        "master-resume-pdf": "master-documents/master-resume/resume.pdf",
+        "master-resume-source": "master-documents/master-resume/resume.tex",
+        "expanded-resume-pdf": "master-documents/master-resume/resume-expanded.pdf",
+        "expanded-resume-source": "master-documents/master-resume/resume-expanded.tex",
+        "cover-letter-template": "master-documents/master-cover-letter/cover-letter-template.md",
+        "ready-resume": "master-documents/ready-to-send/Aryan_Miriyala_Resume.pdf",
+        "ready-cv": "master-documents/ready-to-send/Aryan_Miriyala_Curriculum_Vitae.pdf",
+    }
+
+    @app.get("/api/master-documents")
+    def master_documents():
+        result = []
+        for identifier, relative in documents.items():
+            path = root / relative
+            if path.is_file() and not path.is_symlink():
+                result.append({"id": identifier, "name": path.name, "path": relative,
+                               "kind": path.suffix.removeprefix('.'), "bytes": path.stat().st_size,
+                               "modified_at": path.stat().st_mtime})
+        return result
+
+    @app.get("/api/master-documents/{identifier}")
+    def master_document(identifier: str):
+        relative = documents.get(identifier)
+        if not relative:
+            raise HTTPException(404, "Document not found.")
+        path = root / relative
+        if not path.is_file() or path.is_symlink():
+            raise HTTPException(404, "Document not found.")
+        return FileResponse(path, filename=path.name if path.suffix == '.pdf' else None,
+                            content_disposition_type="inline",
+                            media_type="application/pdf" if path.suffix == '.pdf' else "text/plain")
 
     dist = REPO / "web/dist"
     if dist.exists():

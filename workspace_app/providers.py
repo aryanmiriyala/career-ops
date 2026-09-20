@@ -32,7 +32,7 @@ def statuses(root: Path) -> dict:
     return {"providers": rows, "langfuse_configured": all([
         values.get("LANGFUSE_PUBLIC_KEY"), values.get("LANGFUSE_SECRET_KEY"),
         values.get("LANGFUSE_HOST") or values.get("LANGFUSE_BASE_URL")]),
-        "langfuse_connected": False, "generation_enabled": False}
+        "langfuse_connected": False, "generation_enabled": any(row["configured"] for row in rows)}
 
 
 def probe(root: Path, provider: str, client=None) -> dict:
