@@ -2,6 +2,8 @@
 
 Application status and referral tracking.
 
+- `conversation-handoff-2026-09-22.md`: current product context, implementation
+  state, Git state, known limitations, and exact continuation milestone.
 - `application-tracker.md`: high-level tracker for applications, outcomes, referral status, and follow-up status.
 
 Status updates should be entered manually in `application-tracker.md`.
