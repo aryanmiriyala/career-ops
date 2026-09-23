@@ -1,0 +1,35 @@
+Software Engineering Intern | Actual Reality Technologies | Jul. 2026 -- Present
+- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+- Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
+
+Artificial Intelligence & Computer Science Intern | SmartSolve Industries | May 2026 -- Jul. 2026
+- Deployed role-specific AI agents for employee-requested workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+- Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+- Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes, reviews, and downstream implementation work.
+
+Graduate Research Assistant I | Bowling Green State University | Aug. 2024 -- May 2026
+- Developed cybersecurity education materials, lab guides, workshops, and presentations across ethical hacking, OSINT, web security, email security, cryptography, secure key management, and cyber workforce topics.
+- Built hands-on instructional content using Kali Linux, Nmap/NSE, Metasploit, OpenVAS/Greenbone, Wireshark/tcpdump, Burp Suite, OWASP ZAP, Shodan, Netcat/Ncat, Snort, John the Ripper, Hydra, DVWA, Metasploitable2, Vulnserver, and PentesterLab.
+- Mapped NICE Framework and CAE-CD curriculum requirements into student- and instructor-facing materials covering cybersecurity roles, knowledge areas, tools, and instructional requirements.
+- Created email security and forensics material covering phishing analysis, email headers, SPF/DKIM/DMARC, PGP/GnuPG, packet captures, and secure email communication.
+- Built cryptography and secure key-management content involving symmetric/asymmetric encryption, hashing, PKI, key storage, key recovery, Azure Key Vault lab material, and Shamir's Secret Sharing.
+- Led 10 undergraduate students in organizing a middle-school CyberCamp using CyberGuardian modules, cryptography activities, phishing demos, password-security exercises, and cyber escape-room material.
+
+Data Engineering Intern | American Association of Insurance Services | May 2025 -- Aug. 2025
+- Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
+- Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+- Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl for governed MDM ingestion.
+- Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
+
+Software Engineering Intern | American Association of Insurance Services | May 2023 -- May 2024
+- Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+- Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality before insurance data standardization.
+- Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 internal users.
+- Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
+
+Software Engineering Intern | Alliance for Paired Kidney Donation | May 2022 -- Aug. 2022
+- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
+
+Project: Diff-Grounded PR Description Generation | Python, OpenAI API, GitHub API
+- Developed an ICSME-published LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
+- Evaluated generated PR descriptions with LLM-as-judge and human review, showing stronger grounding and reviewer preference than current AI-generated and human-written baselines.
