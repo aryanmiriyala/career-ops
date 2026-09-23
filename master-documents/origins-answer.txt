@@ -1,0 +1,5 @@
+The first thing I remember building because I wanted to was a campus navigation app during the BGSU Hackathon in 2023. I was still early in computer science then, and I did not fully know what kind of engineer I wanted to become. But I knew the problem felt familiar. As someone who had moved to the U.S. at 19 and had to learn a new campus, new systems, and a new way of finding my place, the idea of helping students navigate campus made sense to me.
+
+The app was not some massive system. It was a Flutter and Dart project that let students choose an origin and destination, see building information, view campus images and metadata, and preview a route on a map. What pulled me in was the feeling of turning a vague frustration into something usable. I liked that software could take confusion and give it structure.
+
+That project ended up earning second prize, but the bigger thing was that it changed how I saw building. I stopped thinking of software as only assignments or syntax. I started seeing it as a way to design small systems that help people move through real problems with a little more clarity.
