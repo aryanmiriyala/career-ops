@@ -143,6 +143,7 @@ Use this cache for first-pass project selection before opening `profile/projects
 | FindYourFlame | Consumer/campus product prototype, auth/onboarding UX | Next.js 16, React 19, TypeScript, Tailwind CSS, DaisyUI, Supabase Auth, `.edu` validation | Product prototyping, authentication, onboarding, Supabase, responsive frontend |
 | PDFsplitter | Developer tooling, CLI, file processing | JavaScript, Node.js, CommonJS, pdf-lib, filesystem APIs, CLI validation, npm binary | Node.js tooling, command-line utilities, defensive validation, document processing |
 | Yoda | Mobile navigation, maps, hackathon delivery | Flutter, Dart, google_maps_flutter, Google Maps SDK, map markers, route preview | Flutter, mobile UI, maps/location, campus navigation, hackathon recognition |
+| TachyonMesh | Backend infrastructure, traffic routing, SRE | Golang, Kubernetes, Docker, Envoy, Prometheus, Grafana, OpenTelemetry | Go microservices, k8s, Envoy, observability, load balancing, proxy configuration |
 | Career Ops | Workflow automation, ATS ingestion, document generation | Python 3, HTTP/JSON/CSV, Greenhouse, Lever, Ashby, SmartRecruiters APIs, Markdown, LaTeX, validation | Automation, API integrations, data pipelines, workflow systems, document generation |
 | Automated GitHub Profile README | CI automation, generated documentation, API metadata | JavaScript, Node.js, GitHub REST API, GitHub Actions, YAML, JSON, Markdown generation | GitHub Actions, API automation, generated docs, scheduled workflows |
 

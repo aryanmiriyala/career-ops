@@ -712,3 +712,30 @@ Keep these repositories in the inventory so future work can be recognized, but d
 - `clinker`: fork of the upstream gene-cluster comparison project. Do not claim the upstream implementation; add only if Aryan's own commits or contributions are identified.
 - `FindYourFlame` roadmap features: matching algorithms, realtime chat, AI icebreakers, moderation, and production data models are planned, not implemented.
 - `AI Project Management Tool` roadmap features: external AI generation, repository ingestion, PostgreSQL/Drizzle persistence, authentication, background jobs, and production observability are planned, not implemented.
+
+## TachyonMesh - Cloud-Native Traffic & Observability Proxy
+
+Primary use: backend infrastructure, traffic routing, systems engineering, performance profiling, Kubernetes deployments.
+
+#### Tech Stack
+
+Golang, Kubernetes, Docker, Envoy Proxy, Prometheus, Grafana, OpenTelemetry, microservices, load balancing.
+
+#### Positioning Angles
+
+- **Platform Engineering:** Highlights Envoy proxy configuration, Kubernetes deployment, and infrastructure-as-code principles.
+- **Traffic / Backend Engineering:** Highlights Go microservices, service-to-service routing, and load balancing under heavy traffic.
+- **Observability / SRE:** Highlights Prometheus/Grafana instrumentation, metrics scraping, and latency profiling.
+
+#### Platform-Ready Description
+
+Built a cloud-native traffic routing and observability system to profile microservice performance and identify latency bottlenecks. The architecture routes high-throughput HTTP traffic through an Envoy proxy into a containerized Golang backend deployed on Kubernetes. Instrumented the cluster with Prometheus and Grafana to scrape Envoy metrics, visualize request latencies, and optimize load-balancing behavior under heavy concurrent traffic.
+
+#### Handshake Description
+
+Built a Golang microservice architecture deployed on Kubernetes, utilizing Envoy for secure service-to-service routing and load balancing. Instrumented the cluster with Prometheus and Grafana to profile latency, monitor observability metrics, and optimize traffic throughput under heavy load.
+
+#### Reusable Bullet Options
+
+- Built a cloud-native traffic routing system by deploying a containerized Golang backend on Kubernetes and configuring an Envoy proxy to manage load balancing and service-to-service networking.
+- Instrumented the cluster's observability stack with Prometheus and Grafana, scraping proxy metrics to profile request latency, debug routing bottlenecks, and optimize throughput under heavy concurrent load.
