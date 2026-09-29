@@ -1,0 +1,115 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[-1pt]
+  \small
+  +1 419-315-0444 $|$
+  \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$
+  \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala} $|$
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$
+  Software Engineer | Distributed Systems \& Performance
+\end{center}\vspace{-10pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 -- Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 -- Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 -- Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple projects, configuring smart-router tiers, guardrails, and telemetry.
+  \item Building a secure remote backend server to manage secure service communication with scoped access controls, enforcing API limits and data retrieval workflows.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 -- Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects to prioritize internal engineering investments.
+  \item Architected a full-stack HR tracking system with Next.js, PostgreSQL, SSO, and auth middleware, replacing memory-based follow-ups with secure data visibility.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 -- Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a DBeaver SQL process with Python, PySpark, and AWS, processing 20+ TB of production data for reporting and analytics workflows.
+  \item Modernized 160+ legacy jobs into AWS Glue ETL workflows and partitioned S3 pipelines, reducing job sprawl and improving distributed data ingestion reliability.
+  \item Delivered reverse-ETL data pipelines with custom AWS IAM roles, providing governed self-service access to validated datasets while ensuring strict access controls.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 -- May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python automation that generated 1,000+ production SQL tables and consolidated views across 10+ lines, accelerating standardized reporting pipelines.
+  \item Implemented RBAC and JWT authentication patterns in a backend modernization, replacing broad employee-wide data visibility with secure, role-specific API controls.
+  \item Automated AWS Lambda validation that tokenized sensitive data with hashlib/boto3 and delivered structured JSON to S3, enabling safer downstream processing.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 -- Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured AWS-hosted healthcare match-run workflows with anti-CSRF protections, IP-aware audit logging, and protected routing to ensure application safety.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Self-Adaptive Parallelism / Runtime Coordination}{C++, OpenMP, Linux, Python}
+\begin{tightitemize}
+  \item Built a C++/OpenMP adaptive runtime system that recorded per-epoch telemetry to dynamically tune scheduling policy, chunk size, and thread count for concurrency.
+  \item Benchmarked adaptive scheduling across data-intensive workloads, performing profiling and latency reduction analysis for improved throughput and efficiency.
+\end{tightitemize}
+
+\projectHeading{HealthTrend - Distributed Streaming Pipeline}{Kafka, Spark, Docker, Linux}
+\begin{tightitemize}
+  \item Built a Dockerized data pipeline that streams JSON health events through Apache Kafka and processes both batch and streaming sources with Spark/PySpark.
+  \item Designed a distributed ingestion architecture for high-throughput messaging, managing reliable service communication and pipeline logs for event tracing.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Java, C++, Python, JavaScript, TypeScript, SQL, Node.js, Express, REST APIs\\
+\textbf{Networking \& Security:} TCP/IP, HTTP/HTTPS, DNS basics, Load balancing basics, TLS basics, SSO, JWT, RBAC, Anti-CSRF\\
+\textbf{Infrastructure \& Cloud:} Linux, Docker containers, Apache Kafka, Spark, PySpark, AWS S3, AWS Lambda, IAM, DynamoDB\\
+\textbf{Concepts:} Distributed systems basics, concurrency basics, performance profiling, latency reduction, benchmarking, debugging, safe routing
+\end{document}
