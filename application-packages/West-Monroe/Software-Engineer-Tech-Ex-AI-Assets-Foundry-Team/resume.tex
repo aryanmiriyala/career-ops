@@ -1,0 +1,116 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Software Engineer (Full-Stack \& Applied AI)
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, traces, and CI gates to support secure, data-driven features.
+  \item Building a remote server with keyed API integrations for the Next.js/Firebase customer portal, enabling customer AI tools to query project status and submit requests with scoped security controls.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a full-stack onboarding tracker with React, Next.js, TypeScript, PostgreSQL, SSO, and auth middleware, replacing memory-based HR follow-up with secure, iterative delivery.
+  \item Deployed role-specific Generative AI agents for employee workflows and converted prompt tool audits into scoped projects, helping operations leaders prioritize internal software assets.
+  \item Modeled an AI-enabled dependency register to make quality-document relationships traceable before process changes, reviews, and downstream implementation work.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS, processing 20+ TB of production data for Data Solutions, internal teams, and CFO reporting.
+  \item Architected a 160+ table data integration migration by profiling legacy sources with Python, Pandas, and SQL, standardizing inconsistent legacy databases into 25 domains.
+  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated data while maintaining 24-hour latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views, accelerating open-standard data integration and reporting.
+  \item Implemented REST APIs, RBAC, and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for internal users.
+  \item Automated AWS Lambda validation that tokenized data with boto3 and delivered structured JSON to S3, supporting safer downstream data processing for workflows.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 - Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured AWS-hosted match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, and crash fixes for safer transplant operations.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{FalconGraph Search}{Python, FastAPI, Next.js, FAISS, Embeddings}
+\begin{tightitemize}
+  \item Built a source-grounded RAG search system that crawled campus resources, processed documents, generated embeddings, retrieved with FAISS, and served answers through FastAPI to a Next.js interface.
+\end{tightitemize}
+
+\projectHeading{Diff-Grounded PR Description Generation}{Python, OpenAI API, GitHub API}
+\begin{tightitemize}
+  \item Developed an LLM pipeline that turns commits, file diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
+\end{tightitemize}
+
+\projectHeading{HealthTrend - Healthcare Streaming Pipeline}{Python, Docker, Kafka, PySpark, HDFS}
+\begin{tightitemize}
+  \item Built a Dockerized data pipeline that routes CSV records into HDFS, streams JSON health events through Kafka, and processes both sources with PySpark for analytics validation.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Node.js, Python, TypeScript, JavaScript, HTML5, CSS3, React, Next.js, Express, REST APIs, GraphQL, Java, SQL, C++, C\#\\
+\textbf{AI, Data \& Cloud:} Generative AI, OpenAI API, RAG, Embeddings, Prompt Engineering, LLM Integration, AI Evaluation, PostgreSQL, MongoDB, AWS, PySpark, DynamoDB, MySQL\\
+\textbf{DevOps, Testing \& Tools:} Git, Docker, CI/CD, GitHub Actions, Unit Testing, Integration Testing, Vitest, npm, SSO, JWT, RBAC
+
+\end{document}
