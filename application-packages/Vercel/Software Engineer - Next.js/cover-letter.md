@@ -1,0 +1,21 @@
+Aryan Miriyala
++1 419-315-0444 | aryanmiriyala@gmail.com | linkedin.com/in/aryan-miriyala | github.com/aryanmiriyala
+
+October 4, 2026
+
+Vercel
+Hiring Team
+
+Dear Hiring Team,
+
+I am applying for the Software Engineer - Next.js position at Vercel. I have been building with Next.js extensively, from AI-native PWAs to static case-study platforms. Vercel's mission to enable developers to just ship things resonates strongly because Next.js has fundamentally shaped how I build for the web.
+
+At Actual Reality Technologies, I’ve seen firsthand the importance of reliable caching and routing in production. I improved the project-data reliability in our Next.js portal by paginating work-item counts and forcing state refreshes through the route and gateway cache layers to prevent stale, overlapping reads. Furthermore, when building my own engineering portfolio, I relied heavily on Next.js SSG and fluid typography to achieve high performance and accessibility scores without sacrificing scroll-driven architecture walkthroughs.
+
+Your posting also emphasizes open-source engagement. Through my published LLM-evaluation research, I developed a pipeline that uses the GitHub API to turn commits, diffs, and linked issues into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 pull requests. I am deeply familiar with the open-source lifecycle and the importance of clear, RFC-driven community collaboration.
+
+I would welcome the opportunity to bring my full-stack Next.js experience to Vercel and help the community build faster, more scalable applications. Thank you for your time and consideration.
+
+Sincerely,
+
+Aryan Miriyala

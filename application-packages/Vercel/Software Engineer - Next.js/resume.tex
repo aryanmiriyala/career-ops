@@ -1,0 +1,110 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  Software Engineer $|$ +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala}
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
+  \item Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through Next.js route and caching layers, and deriving project states from work-item counts.
+  \item Consolidated customer workflow tools into a tabbed Next.js portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and Vitest route/component tests.
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase portal, enabling customer/admin AI tools to query Plane ticket status and submit intake requests with scoped security controls.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a full-stack Next.js onboarding tracker with TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+  \item Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes, reviews, and downstream implementation work.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Implemented RBAC and JWT patterns in a full-stack React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 internal users.
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization.
+  \item Temporarily served as Product Owner for an AAIS internal application, translating business requirements into implementation tasks while coordinating delivery priorities.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Personal Engineering Portfolio}{Next.js 15, React 19, TypeScript, Web Fundamentals}
+\begin{tightitemize}
+  \item Built a responsive Next.js 15, React 19, and TypeScript engineering portfolio with a custom star-chart visual system, statically generated case studies, and scroll-driven architecture walkthroughs.
+  \item Optimized web performance, HTTP caching, and search visibility with Next.js SSG, semantic landmarks, fluid typography, and reduced-motion accessibility guardrails.
+\end{tightitemize}
+
+\projectHeading{Fix-It-Flow}{Next.js 14, PWA, DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first Next.js PWA that uses camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues.
+  \item Implemented typed API routes and AWS-backed persistence for structured findings, safety warnings, contextual Q\&A, and step-by-step repair workflows.
+\end{tightitemize}
+
+\projectHeading{Diff-Grounded PR Description Generation}{Open-Source tooling, Python, GitHub API}
+\begin{tightitemize}
+  \item Developed an ICSME-published LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} JavaScript, TypeScript, HTML, CSS, React, Next.js, Node.js, Python, SQL\\
+\textbf{Web Fundamentals \& Tools:} Vercel, Webpack, caching models, rendering models, HTTP, REST APIs, Git, Docker\\
+\textbf{Architecture \& Testing:} React Server Components (RSCs), Vitest, Testing Library, SSO, JWT, RBAC
+\end{document}
