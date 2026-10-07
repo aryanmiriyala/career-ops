@@ -1,0 +1,21 @@
+Option 1: Connection Request Note (Under 300 characters)
+
+Hi Rinesa,
+I saw you are hiring for the Backend Engineer role. I am currently deploying an AI Gateway for model routing at Actual Reality Technologies and previously built 20TB data pipelines at AAIS. I just applied and would love to connect.
+Best,
+Aryan
+
+--------------------------------------------------
+
+Option 2: LinkedIn InMail or Direct Message
+
+Hi Rinesa,
+
+I saw you are hiring for the Backend Engineer role and went ahead and applied. Building the backend for voice AI agents at your scale sounds like a great problem to work on. 
+
+I am currently an engineering intern at Actual Reality Technologies where I am deploying an AI Gateway for policy-controlled model routing. Before that, I built distributed data pipelines handling over 20TB of data at AAIS. I would love to bring my infrastructure and prompt orchestration experience to your team.
+
+Do you have a few minutes next week to chat about the role?
+
+Best,
+Aryan
