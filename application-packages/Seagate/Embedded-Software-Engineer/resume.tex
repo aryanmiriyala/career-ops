@@ -1,0 +1,109 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Embedded Software Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+  \item Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl for governed MDM ingestion.
+  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
+  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+  \item Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality before insurance data standardization.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 internal users.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 - Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Self-Adaptive Parallelism Runtime Coordination}{C++, OpenMP, Linux}
+\begin{tightitemize}
+  \item Built a C++/OpenMP adaptive runtime research system that used per-epoch telemetry and a UCB controller to tune scheduling policy, chunk size, and thread count for varying computational loads.
+  \item Benchmarked adaptive scheduling against serial and fixed-policy baselines across Mandelbrot, heat diffusion, and reduction workloads to analyze memory management and concurrency efficiency.
+  \item Generated paper-ready performance summaries and plots for runtime, speedup, Karp-Flatt behavior, and scheduler decisions to support robust root-cause analysis of parallel system bottlenecks.
+\end{tightitemize}
+
+\projectHeading{FalconGraph Multithreaded Search Engine}{C++, OpenMP, Python, FastAPI, Docker}
+\begin{tightitemize}
+  \item Built a campus answer engine integrating a multithreaded C++/OpenMP crawler, Python document processing, FAISS retrieval, FastAPI RAG, and a Next.js interface into a config-driven pipeline.
+  \item Implemented reliable checkpointed cleaning, graph-node and edge reconstruction, document chunking, embeddings, and semantic ranking to ensure maintainable processing of university resources.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages:} C/C++, Python, Rust, SQL, JavaScript, TypeScript, Java, C\#\\
+\textbf{Systems \& Concepts:} Operating Systems, Concurrency, Memory Management, Data Structures, Algorithms, Computer Architecture, Root-Cause Analysis, Resource-Constrained Design, Modular Architecture\\
+\textbf{Tools \& Infrastructure:} Linux, Docker, Make, Git, CI/CD, Jenkins, AWS Lambda, DynamoDB, PySpark, FastAPI, Vitest, Testing Library, PII tokenization, Apache NiFi, Apache Kafka, REST APIs, GraphQL, Firebase
+
+\vspace{10pt}
+\end{document}
