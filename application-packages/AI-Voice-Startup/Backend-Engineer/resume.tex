@@ -1,0 +1,106 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Backend Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled prompt orchestration and model routing, adding smart-router tiers, guardrails, Langfuse observability, Slack alerts, and CI testing gates.
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer and admin developer tooling to query ticket status and submit intake requests with scoped security and cost controls.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents for employee-requested workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
+  \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of data in a high-performance backend system for Data Solutions, internal teams, and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+  \item Modernized legacy ETL jobs into AWS Glue workflows and partitioned S3 pipelines to improve maintainability for governed data ingestion.
+  \item Delivered reverse-ETL and data-validation workflows with AWS IAM access controls and S3 pipelines, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+  \item Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, leveraging concurrency to improve source data quality before standardization.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{TachyonMesh (Backend Infrastructure \& SRE)}{Golang, Kubernetes, Docker, Envoy, Prometheus}
+\begin{tightitemize}
+  \item Built high-scale backend infrastructure microservices in Golang with Kubernetes orchestration and Envoy proxy routing, improving distributed systems reliability and load balancing.
+  \item Integrated observability through Prometheus, Grafana, and OpenTelemetry to track service health, latency, and throughput across the distributed traffic mesh.
+\end{tightitemize}
+
+\projectHeading{Fix-It-Flow (Voice-First AI)}{Next.js 14, Web Speech API, ElevenLabs TTS, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first Next.js PWA that uses camera input, the Web Speech API, Gemini Vision, multimodal LLM reasoning, ElevenLabs text-to-speech, and DynamoDB for contextual Q\&A and repair guidance.
+  \item Implemented real-time audio interaction and hands-free voice commands to guide users through AI-generated steps, integrating conversation history and safety warnings into the live inspection workflow.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Python, TypeScript, Golang, SQL, Java, C++, React, Next.js, Node.js, Express, REST APIs\\
+\textbf{Backend, Data \& Cloud:} Distributed systems, concurrency, Kubernetes, Envoy, Prometheus, observability, PostgreSQL, MySQL, MongoDB, AWS DynamoDB, PySpark, AWS Glue, S3, Lambda, IAM\\
+\textbf{AI, Audio \& Testing Tools:} Prompt orchestration, LiteLLM, AI Gateway, Langfuse tracing, Gemini Vision, ElevenLabs TTS, Web Speech API, Vitest, testing infrastructure, Docker, Git
+\end{document}
