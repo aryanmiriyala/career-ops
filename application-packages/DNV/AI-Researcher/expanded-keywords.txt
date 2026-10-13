@@ -1,0 +1,39 @@
+AI Researcher
+machine learning model development
+digital tool implementation
+presentation skills
+research projects
+research directions
+research collaborations
+internal prototypes
+test and evaluate
+scientific results
+publications
+conferences
+academia
+industry
+AI assurance
+assurance principles
+embodied AI assurance
+embodied AI safety
+safety and reliability
+AI technologies
+robotics
+control systems
+deep learning
+reinforcement learning
+machine learning
+model development
+model evaluation
+research evaluation
+Python
+PyTorch
+TensorFlow
+Stable-Baselines3
+PPO
+DQN
+TensorBoard
+guardrails
+red-team fixtures
+LLM evaluation
+technical communication

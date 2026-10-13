@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ AI Researcher
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+  \item Building a remote MCP server with keyed access for a Next.js/Firebase customer portal, enabling AI tools to query project status and submit intake requests with scoped security and cost controls.
+  \item Added tests and technical documentation for AI safety policy, model routing, portal integrations, and authentication behavior, supporting reproducible review and lower deployment risk.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped prototypes, helping operations and executive leaders prioritize internal AI investments.
+  \item Architected a Next.js onboarding tool with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Evaluated LLM/API and cloud-service options for workflow automation, translating department needs into implementation plans, documentation, and technical updates for stakeholders.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly billing workflow with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for internal teams and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing legacy data into 25 domains.
+  \item Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines, improving maintainability for data governance and MDM ingestion.
+\end{tightitemize}
+
+\resumeSubheading
+{Graduate Research Assistant I}{Aug. 2024 - May 2026}
+{Bowling Green State University}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Developed technical presentations, lab guides, and workshops that translated complex cybersecurity concepts into accessible material for diverse student audiences.
+  \item Led 10 undergraduate students in organizing a middle-school CyberCamp with cryptography activities, phishing demonstrations, password exercises, and cyber escape-room material.
+  \item Organized NICE Framework and CAE-CD curriculum research across cybersecurity roles, knowledge areas, tools, and instructional requirements for student- and instructor-facing materials.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and views across 10+ insurance lines, accelerating data standardization and reporting.
+\end{tightitemize}
+
+\resumesection{Research \& Projects}
+\projectHeading{Diff-Grounded PR Description Generation}{Python, OpenAI API, GitHub API}
+\begin{tightitemize}
+  \item Developed an ICSME-published LLM research pipeline that converts commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions across 1,450 pull requests.
+  \item Evaluated generated descriptions with LLM-as-judge and human review, demonstrating stronger grounding and reviewer preference than AI-generated and human-written baselines.
+\end{tightitemize}
+
+\projectHeading{MarioRL Model Development \& Evaluation}{Python, PyTorch, Stable-Baselines3}
+\begin{tightitemize}
+  \item Built and evaluated PPO and DQN reinforcement-learning agents in Gym, applying frame preprocessing and tracking reward, episode length, and training speed with checkpoints and TensorBoard.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Development:} Python, C++, SQL, TypeScript/JavaScript, Git, Linux, Docker, REST APIs\\
+\textbf{AI \& Machine Learning:} Machine learning, deep learning, reinforcement learning, PyTorch, TensorFlow, Stable-Baselines3, PPO, DQN, Gym, TensorBoard, OpenAI API, LLM evaluation, RAG\\
+\textbf{AI Safety, Data \& Cloud:} Guardrails, red-team fixtures, Langfuse, AWS Glue, S3, Lambda, IAM, PySpark, Pandas, PostgreSQL, MySQL
+
+\end{document}
