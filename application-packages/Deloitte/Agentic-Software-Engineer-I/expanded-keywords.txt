@@ -1,0 +1,89 @@
+Agentic Software Engineer I
+Software Engineer I
+software development lifecycle
+SDLC
+AI-assisted software delivery
+agent-assisted delivery
+structured workflows
+build
+test
+release
+validation
+business requirements
+technical requirements
+technical tasks
+structured tasks
+structured context
+agent-generated code
+agent-generated requirements
+test assets
+technical documentation
+code quality
+delivery controls
+engineering standards
+AI agents
+building AI agents
+prompt engineering
+context design
+structured prompting
+code review
+automated testing
+static analysis
+release validation
+monitoring
+CI/CD
+DevSecOps
+automation toolchain
+deployment automation
+containerization
+platform engineering
+Amazon Web Services
+AWS
+quality assurance
+product
+user experience
+architecture
+requirements traceability
+Agile
+sprint execution
+backlog refinement
+iterative delivery
+implementation tasks
+build activities
+test cases
+deployment steps
+Python
+JavaScript
+Java
+Bachelor's degree
+Computer Science
+travel
+Generative AI
+advanced analytics
+customer
+delivery consistency
+productivity
+prioritize
+deadlines
+documentation
+requirements into
+Java, C++, C#
+Golang
+Go
+Kubernetes
+Terraform
+Datadog
+Splunk
+Jest
+Pytest
+unit tests
+Scrum
+Jira
+Confluence
+Azure
+GCP
+Google Cloud Platform
+SOC 2
+HIPAA
+sales
+service

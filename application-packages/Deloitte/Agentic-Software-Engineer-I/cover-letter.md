@@ -1,0 +1,23 @@
+Aryan Miriyala
+Perrysburg, OH | +1 419-315-0444 | aryanmiriyala@gmail.com | linkedin.com/in/aryan-miriyala
+
+October 15, 2026
+
+Deloitte Hiring Team
+Deloitte Consulting LLP
+
+Dear Deloitte Hiring Team,
+
+I am applying for the Agentic Software Engineer I position on the Customer team. What draws me to the role is the specific problem it names: turning ambiguous requirements into structured context that an AI coding agent can act on, then reviewing what comes back against the original requirements. That is the part of agent-assisted delivery that determines whether the workflow produces something a team can ship, and it is the work I have spent my recent internships doing.
+
+Most of my day at SmartSolve Industries was spent inside that loop. I drove development with Claude Code, GitHub Copilot, Cursor, and Codex across planning, debugging, code review, and self-review, and my responsibility was to validate agent-generated code for quality and alignment to requirements before it merged. The harder part was upstream of that. Operations requests arrived as one-sentence problems, so I structured them into technical tasks and explicit context for the agent to work from, and wrote the plan so a reviewer could check the output against what had actually been asked. That work turned into a quality-management dependency register that both technical and non-technical reviewers could trace.
+
+At Actual Reality Technologies I built the release controls on the other side of the same loop. I deployed a LiteLLM AI Gateway that routes model calls by policy across several AI projects, then added guardrails, Langfuse tracing, Slack alerts, and 44 red-team fixtures, along with CI and deploy gates that block unsafe routing configurations before they ship. I also built a remote Model Context Protocol server with keyed access so customer and admin AI tools can query ticket and project status under scoped security and cost controls. What I take from that is that an agentic workflow only earns trust if the delivery controls around it are as carefully built as the model calls inside it.
+
+Earlier, as a temporary Product Owner for an internal application at the American Association of Insurance Services, I translated business requirements into implementation tasks and coordinated delivery priorities, which is the same requirements-decomposition skill the role calls for. I hold an M.S. in Computer Science from Bowling Green State University with a 4.00 GPA, alongside earlier internship work across AWS data platforms, access control, and automated testing.
+
+I would welcome the chance to discuss how this experience contributes to the Customer team's AI-assisted delivery work.
+
+Sincerely,
+
+Aryan Miriyala

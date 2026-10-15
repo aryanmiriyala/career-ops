@@ -102,6 +102,8 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 ## User-Confirmed Additions
 
+- GitHub Copilot and Cursor - confirmed by Aryan on October 15, 2026 as AI-assisted development tools used alongside Claude Code and Codex, in professional and project-based settings. Safe to list in submitted artifacts for AI-assisted development roles.
+- Structured context design for agent-assisted delivery workflows - confirmed by Aryan on October 15, 2026. Reflects decomposing business and technical requirements into structured tasks and context supplied to AI coding agents, and reviewing agent-generated output against those requirements.
 - Java - confirmed by Aryan for resume skills use on August 20, 2026.
 - Jenkins - confirmed by Aryan for resume skills use on August 20, 2026.
 - Spring Boot / Springboot - confirmed by Aryan for resume skills use on August 23, 2026.
@@ -157,6 +159,10 @@ This document records all known technologies and skill areas. Use it to tailor t
 
 - Codex
 - Claude Code
+- GitHub Copilot
+- Cursor
+- Prompt engineering for AI-assisted development
+- Structured context design for agent-assisted delivery workflows
 - OpenAI API
 - Gemini API
 - ElevenLabs API

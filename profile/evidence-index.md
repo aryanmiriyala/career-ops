@@ -21,6 +21,7 @@ Verified keywords:
 - LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy.
 - Authentication/session cookies, production login behavior, password and secure account-link navigation, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, documentation.
 - Augmented intelligence, Industry 4.0/5.0, manufacturing technology, process improvement, data modeling, predictive analytics, cloud consulting, app development.
+- AI-assisted development toolchain (confirmed by Aryan Oct. 15, 2026): Claude Code, GitHub Copilot, Cursor, Codex; structured context design for agent-assisted delivery workflows; reviewing agent-generated code and test assets against documented requirements.
 
 Resume-ready evidence:
 
