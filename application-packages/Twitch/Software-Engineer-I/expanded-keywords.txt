@@ -1,0 +1,63 @@
+# Expanded role-specific keyword terms for Twitch Software Engineer I (TW9303)
+# Exact employer wording and close variants only. One term per line.
+
+Software Engineer I
+Software Engineer
+React
+React Native
+frontend
+frontend development
+backend
+fullstack
+TypeScript
+JavaScript
+Next.js
+Angular
+Expo
+Node.js
+Express
+REST API
+REST APIs
+user experience
+consumer-facing
+consumer products
+web
+mobile
+mobile app
+Go
+Golang
+AWS
+Lambda
+DynamoDB
+S3
+SQS
+Step Functions
+ECS
+code review
+design review
+product managers
+designers
+customer problems
+business impact
+AI driven engineering
+automated tools
+development lifecycles
+gaming
+streaming
+Twitch
+customer portal
+authentication
+accessibility
+testing
+CI
+infrastructure
+Kubernetes
+Docker
+PostgreSQL
+MongoDB
+Firebase
+microservices
+observability
+latency
+prototype
+software used by

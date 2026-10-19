@@ -1,0 +1,114 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Software Engineer I
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Consolidated three customer workflow tools into one tabbed customer portal with feature gating, legacy redirects, accessibility and tab-history guardrails, and route/component tests.
+  \item Hardened production authentication on the consumer-facing portal by deriving session-cookie domains from request hosts and stabilizing login transitions, so users no longer hit redirect flashes or stranded spinners.
+  \item Improved project-data reliability by paginating work-item counts, forcing refreshes through route and gateway cache layers, and deriving project states from counts instead of rounded progress.
+  \item Deployed a LiteLLM AI Gateway infrastructure for policy-controlled model routing, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a fullstack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, making expected outcomes and business impact explicit for operations and executive leaders.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima and used Claude Code and Codex daily for code review and debugging, isolating AI-assisted development around proprietary code.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for internal teams and CFO reporting.
+  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated data while maintaining 24-hour latency.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+  \item Served as temporary Product Owner for an internal application, translating business requirements into implementation tasks and coordinating delivery priorities with stakeholders.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing employee-wide visibility with role-specific controls for about 110 internal users.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 - Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Secured an AWS-hosted transplant match platform in Lucee/CFML with anti-CSRF protection, IP-aware audit logging, and protected routing for safer clinical operations.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{DreamScape: AI Sleep Learning App}{React Native, Expo, TypeScript}
+\begin{tightitemize}
+  \item Built a cross-platform React Native/Expo mobile app for sleep-based microlearning, adding AI-generated study cues, quizzes, text-to-speech audio, and a local-first mobile user experience.
+  \item Integrated Gemini and ElevenLabs APIs to summarize documents, generate quizzes, cache synthesized audio, and schedule sleep-mode playback across iOS and Android.
+\end{tightitemize}
+
+\projectHeading{TachyonMesh: Traffic \& Observability Proxy}{Golang, Kubernetes, Envoy, Prometheus}
+\begin{tightitemize}
+  \item Built a containerized Golang microservices backend on Kubernetes behind an Envoy proxy, instrumented with Prometheus and Grafana to profile request latency and tune throughput under heavy concurrent traffic.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Web \& Mobile Frontend:} React, React Native, Expo, Next.js, Angular, TypeScript, JavaScript, HTML/CSS\\
+\textbf{Backend \& APIs:} Node.js, Express, Go, REST APIs, PostgreSQL, MySQL, MongoDB, Firebase, SSO, JWT, RBAC\\
+\textbf{AWS \& DevOps:} Lambda, S3, DynamoDB, IAM, AWS Glue, Vercel, Railway, Docker, Kubernetes, Prometheus\\
+\textbf{AI \& Quality:} LiteLLM, AI gateway and model routing, guardrails, Langfuse, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, Vitest, Testing Library, Codex, Claude Code
+
+\end{document}
