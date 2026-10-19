@@ -1,0 +1,57 @@
+Junior Fullstack Engineer
+Junior Fullstack Engineer
+Software Engineer
+React
+TypeScript
+Node
+Node.js
+TypeScript
+GraphQL
+Relay
+Vite
+Vanilla Extract
+React Aria
+Storybook
+Vitest
+React Testing Library
+RabbitMQ
+Postgres
+PostgreSQL
+Elasticsearch
+Redis
+Claude Code
+GitHub Copilot
+Cursor
+Codex
+AI coding tools
+Linear
+Notion
+Slack
+Figma
+HubSpot
+Salesforce
+webhook
+webhooks
+public API
+billing
+subscriptions
+pricing
+taxes
+verification
+number porting
+monitoring
+observability
+performance
+usage
+errors
+ownership
+end to end
+end-to-end
+user-facing features
+Figma designs
+component library
+code review
+documentation
+mentor
+squads
+grow

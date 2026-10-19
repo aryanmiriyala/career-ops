@@ -1,0 +1,22 @@
+Aryan Miriyala
++1 419-315-0444 | aryanmiriyala@gmail.com
+linkedin.com/in/aryan-miriyala | github.com/aryanmiriyala
+
+October 19, 2026
+
+Hiring Team
+Quo
+
+Dear Hiring Team,
+
+I have followed Quo's mission to modernize small business communication since your Y Combinator launch, and the Junior Fullstack Engineer role stood out because it matches exactly the kind of work I want to do: shipping user-facing features in React and TypeScript on the frontend while building the Node and TypeScript APIs that power them. Having spent the last year building a customer-facing Next.js portal at Actual Reality Technologies and a full-stack onboarding tracker at SmartSolve, I know how much careful API design, authentication, and end-to-end ownership matter when real customers rely on the product every day.
+
+At Actual Reality, I work on the private customer portal that serves both customers and admins. I deployed a LiteLLM AI Gateway with policy-controlled model routing, guardrails, and Langfuse tracing across multiple AI projects, and I am now building a remote MCP server with keyed access so customer and admin AI tools can query project-management data and submit intake requests with scoped security. Before that, at SmartSolve, I architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and authentication middleware that replaced a fragile manual process with a secure, auditable handoff system for new hires. Both roles required owning features from ticket to production, writing tests alongside code, and using AI coding tools like Claude Code and GitHub Copilot daily while maintaining rigorous human review.
+
+Quo's Gateway and Connect squads resonate with this background. The Gateway squad's focus on signup, billing, and verification flows maps directly to the authentication, session management, and project-state logic I have built. The Connect squad's work on HubSpot and Salesforce integrations, public API, and webhooks aligns with the REST API design, third-party integration, and webhook patterns I have implemented across projects. I am also drawn to your emphasis on AI coding tools and the mentor-driven growth model — I use Codex, Cursor, and Claude Code every day and have seen how they accelerate delivery when paired with strong fundamentals and critical review.
+
+I would welcome the chance to discuss how my full-stack experience and ownership mindset can contribute to Quo's platform. Thank you for your time and consideration.
+
+Sincerely,
+
+Aryan Miriyala
