@@ -33,3 +33,6 @@ web/test-results/
 web/playwright-report/
 *.tsbuildinfo
 job-search/results/*/workspace-*/
+
+# Local scratch scripts (one-off edits, not version controlled)
+scratch/
