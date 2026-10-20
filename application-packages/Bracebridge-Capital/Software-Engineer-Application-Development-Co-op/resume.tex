@@ -1,0 +1,103 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Software Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query project/ticket status and submit intake requests with scoped security and cost controls.
+  \item Hardened production authentication by deriving session-cookie domains from request hosts and stabilizing login transitions to avoid redirect flashes and stuck spinners.
+  \item Collaborated with senior engineers across the full software development lifecycle to design and develop new features on application platforms, implementing unit and integration tests with Vitest and Testing Library.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
+  \item Applied object-oriented programming and web development expertise across Next.js, React, and Node.js application platforms, conducting root cause analysis on production issues.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for 110 internal users.
+  \item Developed Spring Boot microservice APIs on OpenShift with Maven, exposing REST endpoints for internal insurance data standardization workflows.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for safer downstream insurance data processing.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions and CFO reporting.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing legacy data into 25 domains.
+  \item Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, improving maintainability for governed ingestion.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{Fix-It-Flow - Multimodal AI Repair Assistant}{Next.js 14, TypeScript, PWA, Gemini Vision, Llama, ElevenLabs, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first Next.js PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues with typed API routes and AWS-backed persistence.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, SQL, Java, C++, C, C\#, .NET, React, Next.js, Angular, Node.js, Express, Spring Boot, REST APIs, Firebase\\
+\textbf{Data \& Cloud:} PostgreSQL, MySQL, Oracle, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, JDBC, Semarchy MDM, Drizzle ORM\\
+\textbf{Testing, Security \& Tools:} Vitest, Testing Library, unit testing, integration testing, Docker, Git, Linux, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, hashlib, boto3, Codex, Claude Code, GitHub Copilot, Cursor, OpenShift, Maven\\
+\textbf{Coursework:} Algorithms, Distributed Systems, Machine Learning, Database Systems, Operating Systems, Computer Networks, Cybersecurity, Software Engineering
+
+\end{document}
