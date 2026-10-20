@@ -1,0 +1,9 @@
+# Application Questions - Amazon Software Development Engineer
+
+## Question 1: Please share your work experience/project summary (3-4 lines) you have done in the specialized domain selected above
+
+I built a C++ adaptive runtime system that uses per-epoch telemetry and a UCB controller to tune scheduling policy, chunk size, and thread count across Mandelbrot and heat diffusion workloads. At Actual Reality I deployed a LiteLLM AI Gateway with smart-router tiers, guardrails, and Langfuse tracing for policy-controlled model routing across multiple projects. At AAIS I automated production data workflows processing 20+ TB of insurance data with PySpark and AWS Glue, and built 1000+ SQL tables through Python-driven schema generation. My graduate research involved developing cybersecurity lab materials across ethical hacking, cryptography, and network analysis using Kali Linux tooling.
+
+## Question 2: Describe your experience/familiarity coding and designing in C or C++ programing language (Any internship or project work experience is counted)
+
+My strongest C++ work is a self-adaptive parallelism research project where I built a runtime system using OpenMP that instruments per-epoch telemetry and applies a UCB bandit controller to adjust scheduling policy, chunk size, and thread count at runtime. I benchmarked it across Mandelbrot, heat diffusion, and reduction workloads measuring speedup, efficiency, and Karp-Flatt metrics. I also used C in systems coursework for memory management, pointer arithmetic, and low-level data structure implementation. Day to day I work more in Python and TypeScript, but I am comfortable reading, debugging, and extending C/C++ codebases when the role calls for it.

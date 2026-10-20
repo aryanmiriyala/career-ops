@@ -273,6 +273,7 @@ Score consistency gate checked: Pass
 - Submitted-facing terminology sync checked: Pass
 - Score consistency gate checked: Pass
 - Cover-letter artifact checked: Pass
+- Application-answer human voice gate checked: Pass - answers grounded in Self-Adaptive Parallelism C++/OpenMP project, Actual Reality AI Gateway, AAIS production data workflows, and BGSU cybersecurity research; no AI cliches, semicolons, em dashes, or colons in prose
 
 ## Cover Letter Artifact
 - cover-letter.pdf generated: 1 page, 44 KB (<5 MB limit)
