@@ -2,6 +2,9 @@
 
 Primary role lane: Software Engineering / Full-Stack Engineering (primary), Applied AI / Agentic Systems Engineering (secondary)
 
+## Specialized Domains Selected (from application form)
+Database, Machine Learning, Mobile (Android), Mobile (iOS), Automated Reasoning
+
 ## F-1 Work Authorization Gate
 **Classification: Proceed - posting silent/ambiguous**
 
