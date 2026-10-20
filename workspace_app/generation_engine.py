@@ -6,7 +6,7 @@ import subprocess
 import sys
 import threading
 import uuid
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from .core import IntakeStore, digest, now_iso, write_json
@@ -140,7 +140,7 @@ Referral status: Not started
 Referral target / source: Not identified yet
 Connection path: Pending
 Outreach status: Pending
-Next follow-up date: TBD
+Next follow-up date: {(date.today() + timedelta(days=7)).isoformat()}
 Outreach tone: Direct and role-specific
 Notes: Generation does not represent application submission.
 
@@ -527,7 +527,7 @@ class GenerationRuns:
             raise ValueError('A substantive experience-bullet waiver is required')
         run_dir, package = self._state_path(identifier).parent, self.root / state['package']
         write_text(run_dir / 'tailoring-notes.md', notes_text(state, approval))
-        validator = self.validator(run_dir)
+        validator = self.validator(package)
         validation = json.loads((run_dir / 'validation.json').read_text())
         validation['package_validator'] = validator
         write_json(run_dir / 'validation.json', validation)
