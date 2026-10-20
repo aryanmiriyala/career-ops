@@ -91,9 +91,9 @@ class Review(Record):
 
 class RunRequest(Record):
     intake_id: str = Field(pattern=r'^[a-f0-9]{24}$')
-    provider: Literal['zai', 'openrouter', 'groq', 'gemini', 'opencode', 'mistral', 'featherless'] = 'zai'
+    provider: Literal['zai', 'openrouter', 'groq', 'gemini', 'opencode', 'mistral', 'featherless', 'cerebras', 'deepseek', 'together', 'cloudflare', 'huggingface', 'ollama', 'lmstudio', 'local_openai'] = 'zai'
     model: str = Field(default='glm-4.7-flash', min_length=1, max_length=160, pattern=r'^[\w./:@+-]+$')
-    review_provider: Literal['zai', 'openrouter', 'groq', 'gemini', 'opencode', 'mistral', 'featherless'] = 'openrouter'
+    review_provider: Literal['zai', 'openrouter', 'groq', 'gemini', 'opencode', 'mistral', 'featherless', 'cerebras', 'deepseek', 'together', 'cloudflare', 'huggingface', 'ollama', 'lmstudio', 'local_openai'] = 'openrouter'
     review_model: str = Field(default='google/gemini-flash-1.5:free', min_length=1, max_length=160, pattern=r'^[\w./:@+-]+$')
     max_output_tokens: int = Field(default=6000, ge=1000, le=12000)
     token_budget: int = Field(default=400000, ge=10000, le=800000)

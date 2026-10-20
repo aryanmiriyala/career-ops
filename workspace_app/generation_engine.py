@@ -14,6 +14,7 @@ from .generation_models import Approval, LetterDraft, PackageDraft, Requirements
 from .generation_render import compile_pdf, cover_letter_markdown, cover_letter_tex, pdf_pages, pdf_text, resume_tex
 from .generation_sources import grounding_checks, retrieve, snapshot, validate_requirements
 from .generation_transport import Transport
+from .jd_parser import parse_jd, parsed_jd_to_requirements
 
 PROMPT_VERSION = 'application-pipeline-v1'
 
@@ -305,10 +306,13 @@ class GenerationEngine:
         sources = snapshot(self.root)
         state['source_snapshot'] = sources
         self.checkpoint(run_dir, state, 'requirements', 'Extracting quoted requirements and eligibility constraints.')
-        req, hit = self.cached_call(run_dir, state['id'], 'requirements', Requirements, REQUIREMENTS_PROMPT,
-                                    {'company': intake['company'], 'posted_title': intake['title'], 'jd': intake['jd']}, config, sources)
+        
+        # Use deterministic JD parser instead of LLM
+        parsed = parse_jd(intake['jd'], intake['company'], intake['title'])
+        req = parsed_jd_to_requirements(parsed)
         validate_requirements(req, intake['jd'])
-        state['cache_hits']['requirements'] = hit
+        
+        state['cache_hits']['requirements'] = True  # Deterministic, always cache hit
         state['requirements'] = req.model_dump()
         write_json(run_dir / 'requirements.json', state['requirements'])
         write_json(run_dir / 'eligibility.json', {
@@ -367,9 +371,9 @@ class GenerationEngine:
             state.update(status='blocked', stage='independent_review', message=review.eligibility_reason)
             return state
         self.checkpoint(run_dir, state, 'render', 'Compiling canonical resume and cover-letter PDFs.')
-        write_text(run_dir / 'resume.tex', resume_tex(resume))
+        write_text(run_dir / 'resume.tex', resume_tex(resume, self.root))
         write_text(run_dir / 'cover-letter.md', cover_letter_markdown(letter))
-        write_text(run_dir / 'cover-letter.tex', cover_letter_tex(letter, intake['company'], intake['title']))
+        write_text(run_dir / 'cover-letter.tex', cover_letter_tex(letter, intake['company'], intake['title'], self.root))
         compile_pdf(run_dir, 'resume.tex', 'resume.pdf')
         compile_pdf(run_dir, 'cover-letter.tex', 'cover-letter.pdf')
         pages = {'resume_pages': pdf_pages(run_dir / 'resume.pdf'), 'cover_letter_pages': pdf_pages(run_dir / 'cover-letter.pdf')}
@@ -410,9 +414,9 @@ class GenerationEngine:
             if review.unsupported_claims or review.eligibility == 'blocked':
                 state.update(status='needs_review', stage='repair_review', message='The single repair attempt left a hard review issue.')
                 return state
-            write_text(run_dir / 'resume.tex', resume_tex(resume))
+            write_text(run_dir / 'resume.tex', resume_tex(resume, self.root))
             write_text(run_dir / 'cover-letter.md', cover_letter_markdown(letter))
-            write_text(run_dir / 'cover-letter.tex', cover_letter_tex(letter, intake['company'], intake['title']))
+            write_text(run_dir / 'cover-letter.tex', cover_letter_tex(letter, intake['company'], intake['title'], self.root))
             compile_pdf(run_dir, 'resume.tex', 'resume.pdf')
             compile_pdf(run_dir, 'cover-letter.tex', 'cover-letter.pdf')
             pages = {'resume_pages': pdf_pages(run_dir / 'resume.pdf'), 'cover_letter_pages': pdf_pages(run_dir / 'cover-letter.pdf')}

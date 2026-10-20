@@ -1,0 +1,640 @@
+# Evidence Bank - Structured, traceable facts for resume/cover-letter generation
+# Each bullet has a unique ID, ownership level, metrics, tech tags, and measured line count.
+# This replaces the flat bullet-bank.md and enables deterministic selection + grounding checks.
+
+version: 1
+schema: "bullet-bank-v1"
+
+allowlist_skills: &allowlist_skills
+  - Python
+  - TypeScript
+  - JavaScript
+  - SQL
+  - Java
+  - C++
+  - C
+  - C#
+  - React
+  - Next.js
+  - Angular
+  - Node.js
+  - Express
+  - REST APIs
+  - Firebase
+  - LiteLLM
+  - AI/model gateways
+  - smart-router tiers
+  - guardrails
+  - Langfuse
+  - OpenAI API
+  - Gemini API
+  - Mistral AI
+  - LangChain
+  - RAG
+  - LLM evaluation
+  - PostgreSQL
+  - MySQL
+  - MongoDB
+  - AWS Glue
+  - S3
+  - Lambda
+  - IAM
+  - DynamoDB
+  - PySpark
+  - Vercel
+  - Vitest
+  - Testing Library
+  - Docker
+  - Git
+  - Linux
+  - SSO
+  - JWT
+  - RBAC
+  - Auth0
+  - anti-CSRF
+  - audit logging
+  - PII tokenization
+  - Codex
+  - Claude Code
+  - Drizzle ORM
+  - Plane API
+  - Model Context Protocol
+  - AWS Glue Workflows
+  - Semarchy MDM
+  - Pandas
+  - JDBC
+  - hashlib
+  - boto3
+  - Apache NiFi
+  - Kafka
+  - HDFS
+  - Spark
+  - FastAPI
+  - FAISS
+  - Sentence Transformers
+  - OpenAI embeddings
+  - GitHub API
+  - OpenMP
+  - UCB bandit optimization
+  - React Native
+  - Expo
+  - ElevenLabs API
+  - AsyncStorage
+  - Zustand
+  - Zod
+  - PyTorch
+  - Stable-Baselines3
+  - PPO
+  - DQN
+  - Gym
+  - TensorBoard
+  - ChromaDB
+  - scikit-learn
+  - Tailwind CSS
+  - DaisyUI
+  - Supabase Auth
+  - pdf-lib
+  - Flutter
+  - Dart
+  - google_maps_flutter
+  - Google Maps SDK
+  - Greenhouse API
+  - Lever API
+  - Ashby API
+  - SmartRecruiters API
+  - Markdown
+  - LaTeX
+  - validation
+
+blocklist_skills: &blocklist_skills
+  - Kotlin
+  - Go
+  - Rust
+  - Ruby
+  - Vue
+  - Kubernetes production ownership
+  - Azure production ownership
+  - GCP production ownership
+  - Terraform
+  - Puppet
+  - IaC ownership
+  - Datadog
+  - Splunk
+  - OpenSearch
+  - Redis
+  - RocksDB
+  - Airflow
+  - dbt ownership
+  - Formal production on-call/SRE ownership
+  - Production monitoring ownership
+  - Formal CI/CD ownership
+  - Formal TDD/code-coverage ownership
+  - High-availability SaaS ownership at senior scale
+  - Direct GraphQL API ownership
+  - Direct Stripe/Salesforce/NetSuite/Sage Intacct/QuickBooks/Microsoft Dynamics/Tray.io/iPaaS integration ownership
+  - Direct security-clearance eligibility
+  - U.S.-citizen/permanent-resident-only eligibility
+  - Unrestricted work authorization
+
+bullets:
+  # Actual Reality Technologies - Software Engineering Intern (Jul 2026 - Present)
+  - id: "ART-001"
+    role: "Actual Reality Technologies"
+    title: "Software Engineering Intern"
+    dates: "Jul 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures."
+    metrics: {"red_team_fixtures": 44, "projects_served": "multiple"}
+    tech_tags: ["TypeScript", "Next.js", "LiteLLM", "Langfuse", "Firebase", "CI/CD", "guardrails"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:98", "source-materials/actual-reality/ai-gateway-field-guide.docx"]
+    lane_tags: ["full-stack", "ai-infrastructure", "software-engineering"]
+
+  - id: "ART-002"
+    role: "Actual Reality Technologies"
+    title: "Software Engineering Intern"
+    dates: "Jul 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls."
+    metrics: {}
+    tech_tags: ["TypeScript", "Next.js", "Firebase", "Model Context Protocol", "Plane API", "MCP"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:99", "source-materials/actual-reality/ai-gateway-field-guide.docx"]
+    lane_tags: ["full-stack", "ai-infrastructure", "api-integration"]
+
+  - id: "ART-003"
+    role: "Actual Reality Technologies"
+    title: "Software Engineering Intern"
+    dates: "Jul 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Consolidated customer workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests."
+    metrics: {}
+    tech_tags: ["TypeScript", "Next.js", "React", "ARIA", "Vitest", "Testing Library"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:100"]
+    lane_tags: ["full-stack", "frontend", "accessibility"]
+
+  - id: "ART-004"
+    role: "Actual Reality Technologies"
+    title: "Software Engineering Intern"
+    dates: "Jul 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners."
+    metrics: {}
+    tech_tags: ["TypeScript", "Next.js", "Firebase Auth", "session management", "cookies"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:101"]
+    lane_tags: ["security", "auth", "frontend"]
+
+  - id: "ART-005"
+    role: "Actual Reality Technologies"
+    title: "Software Engineering Intern"
+    dates: "Jul 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress."
+    metrics: {}
+    tech_tags: ["TypeScript", "Next.js", "Firebase", "Firestore", "caching", "Plane API"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:102"]
+    lane_tags: ["full-stack", "data-reliability", "caching"]
+
+  # SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)
+  - id: "SS-001"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "primary"
+    text: "Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking."
+    metrics: {}
+    tech_tags: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle ORM", "SSO", "auth middleware"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:175"]
+    lane_tags: ["full-stack", "backend", "auth", "hr-tech"]
+
+  - id: "SS-002"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "contributor"
+    text: "Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments."
+    metrics: {}
+    tech_tags: ["AI agents", "LLM APIs", "workflow automation", "tool auditing"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:176"]
+    lane_tags: ["ai-engineering", "ai-agents", "internal-tools"]
+
+  - id: "SS-003"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "contributor"
+    text: "Evaluated LLM/API and cloud-service integration paths for internal workflow automation, shaping lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material."
+    metrics: {}
+    tech_tags: ["LLM APIs", "cloud services", "API integration", "webhook automation", "technical documentation"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:177"]
+    lane_tags: ["ai-engineering", "cloud", "api-integration"]
+
+  - id: "SS-004"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "primary"
+    text: "Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data."
+    metrics: {}
+    tech_tags: ["Docker", "WSL2", "Colima", "devcontainers", "AI-assisted development"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:178"]
+    lane_tags: ["devops", "developer-experience", "security"]
+
+  - id: "SS-005"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "primary"
+    text: "Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review."
+    metrics: {}
+    tech_tags: ["Codex", "Claude Code", "AI-assisted development", "code review"]
+    line_count: 1
+    evidence_refs: ["experience-master.md:179"]
+    lane_tags: ["ai-engineering", "developer-productivity"]
+
+  - id: "SS-006"
+    role: "SmartSolve Industries"
+    title: "Artificial Intelligence & Computer Science Intern"
+    dates: "May 2026 - Jul 2026"
+    location: "Bowling Green, OH"
+    ownership: "contributor"
+    text: "Modeled early architecture for AI-enabled internal systems, including a QMS dependency register designed to make quality-document relationships traceable."
+    metrics: {}
+    tech_tags: ["QMS", "dependency modeling", "architecture", "quality management"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:180"]
+    lane_tags: ["backend", "data-modeling", "quality-systems"]
+
+  # Bowling Green State University - Graduate Research Assistant (Aug 2024 - May 2026)
+  - id: "BGSU-GRA-001"
+    role: "Bowling Green State University"
+    title: "Graduate Research Assistant I"
+    dates: "Aug 2024 - May 2026"
+    location: "Bowling Green, OH"
+    ownership: "primary"
+    text: "Developed cybersecurity education materials and hands-on lab content across cryptography, secure key management, phishing, email forensics, ethical hacking, OSINT, vulnerability scanning, packet analysis, and web application security."
+    metrics: {"domains_covered": 9}
+    tech_tags: ["cryptography", "phishing", "email forensics", "ethical hacking", "OSINT", "vulnerability scanning", "packet analysis", "web app security"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:266"]
+    lane_tags: ["cybersecurity", "education", "technical-training"]
+
+  - id: "BGSU-GRA-002"
+    role: "Bowling Green State University"
+    title: "Graduate Research Assistant I"
+    dates: "Aug 2024 - May 2026"
+    location: "Bowling Green, OH"
+    ownership: "lead"
+    text: "Led a team of 10 undergraduate students to organize a middle-school CyberCamp using CyberGuardian modules, cryptography activities, phishing demos, password-security exercises, and cyber escape-room materials."
+    metrics: {"team_size": 10, "audience": "middle-school"}
+    tech_tags: ["CyberGuardian", "cryptography", "phishing", "password security", "team leadership", "curriculum design"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:267"]
+    lane_tags: ["cybersecurity", "education", "leadership", "curriculum-design"]
+
+  - id: "BGSU-GRA-003"
+    role: "Bowling Green State University"
+    title: "Graduate Research Assistant I"
+    dates: "Aug 2024 - May 2026"
+    location: "Bowling Green, OH"
+    ownership: "primary"
+    text: "Organized NICE Framework and CAE-CD curriculum analysis across cybersecurity roles, knowledge areas, tools, and instructional requirements."
+    metrics: {"frameworks": ["NICE", "CAE-CD"]}
+    tech_tags: ["NICE Framework", "CAE-CD", "curriculum analysis", "cybersecurity roles"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:268"]
+    lane_tags: ["cybersecurity", "education", "curriculum-design", "compliance"]
+
+  # AAIS - Data Engineering Intern (May 2025 - Aug 2025)
+  - id: "AAIS-DE-001"
+    role: "American Association of Insurance Services"
+    title: "Data Engineering Intern"
+    dates: "May 2025 - Aug 2025"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Automated a fully manual SQL billing workflow by developing a production PySpark job and AWS Glue Workflow, processing 20+ TB of golden-table insurance data for 700+ member companies."
+    metrics: {"data_volume_tb": 20, "member_companies": 700, "automation_type": "fully manual to production"}
+    tech_tags: ["Python", "PySpark", "AWS Glue", "AWS Glue Workflows", "SQL", "S3", "IAM"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:324"]
+    lane_tags: ["data-engineering", "cloud", "aws", "etl", "insurance"]
+
+  - id: "AAIS-DE-002"
+    role: "American Association of Insurance Services"
+    title: "Data Engineering Intern"
+    dates: "May 2025 - Aug 2025"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Contributed to a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains."
+    metrics: {"tables_migrated": 160, "domains": 25, "sources": ["MySQL", "Oracle", "Impala"]}
+    tech_tags: ["Python", "Pandas", "SQL", "JDBC", "MySQL", "Oracle", "Impala", "MDM", "data profiling"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:325"]
+    lane_tags: ["data-engineering", "mdm", "migration", "data-quality", "insurance"]
+
+  - id: "AAIS-DE-003"
+    role: "American Association of Insurance Services"
+    title: "Data Engineering Intern"
+    dates: "May 2025 - Aug 2025"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl for governed MDM ingestion."
+    metrics: {"jobs_modernized": 160, "target_platform": "Semarchy MDM"}
+    tech_tags: ["AWS Glue", "S3", "Pentaho", "Semarchy MDM", "ETL", "partitioned pipelines"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:326"]
+    lane_tags: ["data-engineering", "cloud", "aws", "etl", "modernization", "mdm"]
+
+  - id: "AAIS-DE-004"
+    role: "American Association of Insurance Services"
+    title: "Data Engineering Intern"
+    dates: "May 2025 - Aug 2025"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency."
+    metrics: {"latency_hours": 24, "access_model": "self-service with IAM controls"}
+    tech_tags: ["AWS IAM", "S3", "reverse ETL", "data validation", "self-service analytics"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:327"]
+    lane_tags: ["data-engineering", "cloud", "aws", "data-governance", "self-service"]
+
+  # AAIS - Software Engineering Intern (May 2023 - May 2024)
+  - id: "AAIS-SE-001"
+    role: "American Association of Insurance Services"
+    title: "Software Engineering Intern"
+    dates: "May 2023 - May 2024"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting."
+    metrics: {"tables_generated": 1000, "insurance_lines": 10, "standards": ["openIDL", "openIDS"]}
+    tech_tags: ["Python", "JSON", "SQL", "automation", "data standardization"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:374"]
+    lane_tags: ["software-engineering", "backend", "automation", "insurance", "data-engineering"]
+
+  - id: "AAIS-SE-002"
+    role: "American Association of Insurance Services"
+    title: "Software Engineering Intern"
+    dates: "May 2023 - May 2024"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality before insurance data standardization."
+    metrics: {}
+    tech_tags: ["Python", "Pandas", "multiprocessing", "fuzzy matching", "hashing", "data cleaning"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:375"]
+    lane_tags: ["software-engineering", "data-quality", "backend"]
+
+  - id: "AAIS-SE-003"
+    role: "American Association of Insurance Services"
+    title: "Software Engineering Intern"
+    dates: "May 2023 - May 2024"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 internal users."
+    metrics: {"users_affected": 110, "auth_patterns": ["RBAC", "JWT"]}
+    tech_tags: ["React", "Node.js", "RBAC", "JWT", "auth modernization", "TypeScript"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:376"]
+    lane_tags: ["full-stack", "security", "auth", "frontend", "backend"]
+
+  - id: "AAIS-SE-004"
+    role: "American Association of Insurance Services"
+    title: "Software Engineering Intern"
+    dates: "May 2023 - May 2024"
+    location: "Lisle, IL"
+    ownership: "primary"
+    text: "Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows."
+    metrics: {"pii_tokenization": "hashlib/boto3", "target": "S3", "workflow": "SDMA"}
+    tech_tags: ["AWS Lambda", "hashlib", "boto3", "S3", "PII tokenization", "JSON"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:377"]
+    lane_tags: ["cloud", "security", "aws", "serverless", "data-processing", "insurance"]
+
+  # Alliance for Paired Kidney Donation - Software Engineering Intern (May 2022 - Aug 2022)
+  - id: "APKD-001"
+    role: "Alliance for Paired Kidney Donation"
+    title: "Software Engineering Intern"
+    dates: "May 2022 - Aug 2022"
+    location: "Toledo, OH"
+    ownership: "primary"
+    text: "Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations."
+    metrics: {}
+    tech_tags: ["AWS", "Lucee", "CFML", "anti-CSRF", "audit logging", "healthcare", "security"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:416"]
+    lane_tags: ["security", "healthcare", "backend", "legacy-modernization", "aws"]
+
+  - id: "APKD-002"
+    role: "Alliance for Paired Kidney Donation"
+    title: "Software Engineering Intern"
+    dates: "May 2022 - Aug 2022"
+    location: "Toledo, OH"
+    ownership: "primary"
+    text: "Stabilized data-entry and import workflows by modernizing HTML5 inputs, JavaScript/CSS fallbacks, Matchgrid import ordering, MFI upload paths, and duplicate-antigen crash handling."
+    metrics: {}
+    tech_tags: ["HTML5", "JavaScript", "CSS", "legacy modernization", "healthcare", "data entry"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:417"]
+    lane_tags: ["frontend", "healthcare", "legacy-modernization", "ux"]
+
+  # Projects
+  - id: "PROJ-DIFF-PR-001"
+    role: "Projects"
+    title: "Diff-Grounded PR Description Generation"
+    dates: "2024-2025"
+    location: "Research Project"
+    ownership: "primary"
+    text: "Developed an ICSME-published LLM pipeline turning commits, diffs, and repo metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs."
+    metrics: {"prs_evaluated": 1450, "publication": "ICSME", "methods": ["LLM-as-judge", "human review"]}
+    tech_tags: ["Python", "OpenAI API", "GitHub API", "LLM evaluation", "RAG", "evidence-grounded generation"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:221", "master-documents/master-resume/resume.tex:99"]
+    lane_tags: ["ai-engineering", "llm-tooling", "developer-productivity", "research"]
+
+  - id: "PROJ-TRAVEL-HEALTH-001"
+    role: "Projects"
+    title: "Travel Health Advisor"
+    dates: "2025"
+    location: "BGSU Hackathon 2025"
+    ownership: "primary"
+    text: "Built a full-stack health AI prototype with React, Vite, Express, MongoDB/Mongoose, and Mistral AI for country-specific travel-health guidance."
+    metrics: {"award": "BGSU Hackathon 2025 AI & ML Track Winner"}
+    tech_tags: ["React", "Vite", "Express", "Node.js", "MongoDB", "Mongoose", "Mistral AI", "REST APIs", "D3/TopoJSON"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:162", "evidence-index.md:162"]
+    lane_tags: ["full-stack", "ai-engineering", "healthcare", "hackathon", "geospatial"]
+
+  - id: "PROJ-TRAVEL-HEALTH-002"
+    role: "Projects"
+    title: "Travel Health Advisor"
+    dates: "2025"
+    location: "BGSU Hackathon 2025"
+    ownership: "primary"
+    text: "Implemented an interactive map retrieving disease records from an Express/MongoDB API, surfacing risk, vaccine availability, healthcare access, and recovery-rate data."
+    metrics: {}
+    tech_tags: ["react-simple-maps", "D3", "TopoJSON", "Express", "MongoDB", "REST APIs"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:163", "evidence-index.md:163"]
+    lane_tags: ["full-stack", "geospatial", "data-visualization", "healthcare"]
+
+  - id: "PROJ-TRAVEL-HEALTH-003"
+    role: "Projects"
+    title: "Travel Health Advisor"
+    dates: "2025"
+    location: "BGSU Hackathon 2025"
+    ownership: "primary"
+    text: "Generated downloadable vaccination checklist PDFs based on country-specific vaccine-required disease data."
+    metrics: {}
+    tech_tags: ["@react-pdf/renderer", "PDF generation", "React"]
+    line_count: 1
+    evidence_refs: ["projects-master.md:164", "evidence-index.md:164"]
+    lane_tags: ["full-stack", "pdf-generation", "healthcare"]
+
+  - id: "PROJ-FIXITFLOW-001"
+    role: "Projects"
+    title: "Fix-It-Flow"
+    dates: "2026"
+    location: "RocketHacks 2026"
+    ownership: "primary"
+    text: "Built a voice-first Next.js PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues and guide repair decisions."
+    metrics: {}
+    tech_tags: ["Next.js 14", "TypeScript", "PWA", "Web Speech API", "camera input", "Gemini Vision", "Llama", "ElevenLabs", "DynamoDB"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:178", "evidence-index.md:178"]
+    lane_tags: ["full-stack", "ai-engineering", "multimodal", "pwa", "serverless", "sustainability"]
+
+  - id: "PROJ-FIXITFLOW-002"
+    role: "Projects"
+    title: "Fix-It-Flow"
+    dates: "2026"
+    location: "RocketHacks 2026"
+    ownership: "primary"
+    text: "Implemented typed API routes and AWS-backed persistence for structured findings, safety warnings, contextual Q&A, and step-by-step repair workflows."
+    metrics: {}
+    tech_tags: ["Next.js", "TypeScript", "API routes", "DynamoDB", "AWS"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:179", "evidence-index.md:179"]
+    lane_tags: ["full-stack", "backend", "api-design", "aws"]
+
+  - id: "PROJ-ROCKETGRADER-001"
+    role: "Projects"
+    title: "RocketGrader"
+    dates: "2024-2025"
+    location: "AI Assignment Feedback Platform"
+    ownership: "primary"
+    text: "Built a full-stack AI assignment-feedback platform with Angular, Express REST APIs, MongoDB/Mongoose, Auth0, AWS S3, LangChain, and Mistral AI for classes, assignments, submissions, files, chat, and role dashboards."
+    metrics: {}
+    tech_tags: ["Angular", "TypeScript", "Express", "Node.js", "MongoDB", "Mongoose", "Auth0", "AWS S3", "LangChain", "Mistral AI"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:193", "evidence-index.md:193"]
+    lane_tags: ["full-stack", "edtech", "ai-engineering", "auth0", "aws", "rest-api"]
+
+  - id: "PROJ-FALCONGRAPH-001"
+    role: "Projects"
+    title: "FalconGraph Search"
+    dates: "2024-2025"
+    location: "Campus RAG Search System"
+    ownership: "primary"
+    text: "Built a source-grounded RAG search system that crawled campus resources, processed documents, generated embeddings, retrieved with FAISS, served answers through FastAPI, and exposed a Next.js interface."
+    metrics: {}
+    tech_tags: ["Python", "FastAPI", "Next.js", "RAG", "embeddings", "FAISS", "vector search", "crawling", "document processing"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:207", "evidence-index.md:207"]
+    lane_tags: ["ai-engineering", "rag", "search", "full-stack", "embeddings"]
+
+  - id: "PROJ-HEALTHTREND-001"
+    role: "Projects"
+    title: "HealthTrend"
+    dates: "2024"
+    location: "Healthcare Streaming Pipeline"
+    ownership: "primary"
+    text: "Built a Dockerized healthcare data pipeline routing CSV patient records into HDFS, streaming JSON health events through Kafka, and processing both sources with Spark/PySpark."
+    metrics: {}
+    tech_tags: ["Docker", "Apache NiFi", "Kafka", "HDFS", "Spark", "PySpark", "healthcare", "streaming", "batch"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:235", "evidence-index.md:235"]
+    lane_tags: ["data-engineering", "streaming", "healthcare", "kafka", "spark", "docker"]
+
+  - id: "PROJ-SELFADAPTIVE-001"
+    role: "Projects"
+    title: "Self-Adaptive Parallelism"
+    dates: "2024"
+    location: "Systems Performance Research"
+    ownership: "primary"
+    text: "Built a C++/OpenMP adaptive runtime research system using per-epoch telemetry and a UCB controller to tune scheduling policy, chunk size, and thread count."
+    metrics: {}
+    tech_tags: ["C++", "OpenMP", "Python", "Docker", "UCB bandit optimization", "runtime instrumentation", "benchmarking"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:249", "evidence-index.md:249"]
+    lane_tags: ["systems", "performance-engineering", "cpp", "parallel-computing", "research"]
+
+  - id: "PROJ-DREAMSCAPE-001"
+    role: "Projects"
+    title: "DreamScape"
+    dates: "2024"
+    location: "AI Mobile Study Tools"
+    ownership: "primary"
+    text: "Built a cross-platform React Native/Expo mobile app for sleep-based microlearning with AI-generated study cues, quizzes, text-to-speech audio, and local-first session tracking."
+    metrics: {}
+    tech_tags: ["React Native", "Expo", "TypeScript", "Gemini API", "ElevenLabs API", "Expo AV", "AsyncStorage", "Zustand", "Zod"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:255", "evidence-index.md:255"]
+    lane_tags: ["mobile", "ai-engineering", "local-first", "education", "audio"]
+
+  - id: "PROJ-CAREEROPS-001"
+    role: "Projects"
+    title: "Career Ops"
+    dates: "2025-2026"
+    location: "Workflow Automation"
+    ownership: "primary"
+    text: "Built a Python job-discovery and application-package automation pipeline integrating Greenhouse, Lever, Ashby, SmartRecruiters APIs with Markdown/LaTeX document generation and validation."
+    metrics: {}
+    tech_tags: ["Python", "HTTP/JSON/CSV", "Greenhouse API", "Lever API", "Ashby API", "SmartRecruiters API", "Markdown", "LaTeX", "validation", "automation"]
+    line_count: 2
+    evidence_refs: ["evidence-index.md:148"]
+    lane_tags: ["automation", "api-integration", "document-generation", "workflow-systems", "ats"]
+
+  - id: "PROJ-TACHYONMESH-001"
+    role: "Projects"
+    title: "TachyonMesh"
+    dates: "2024"
+    location: "Backend Infrastructure"
+    ownership: "contributor"
+    text: "Designed backend traffic routing infrastructure with Go, Kubernetes, Docker, Envoy, Prometheus, Grafana, and OpenTelemetry for observability and load balancing."
+    metrics: {}
+    tech_tags: ["Go", "Kubernetes", "Docker", "Envoy", "Prometheus", "Grafana", "OpenTelemetry", "load balancing", "proxy configuration"]
+    line_count: 2
+    evidence_refs: ["evidence-index.md:147"]
+    lane_tags: ["backend", "infrastructure", "sre", "observability", "microservices"]
+    note: "Go/Kubernetes claimed as contributor-level; verify repo access before using in submitted artifacts"
+
+  - id: "PROJ-HEALTHTREND-002"
+    role: "Projects"
+    title: "HealthTrend"
+    dates: "2024"
+    location: "Healthcare Streaming Pipeline"
+    ownership: "primary"
+    text: "Validated streaming/batch healthcare data pipeline processing CSV patient records and JSON IoT events with Spark/PySpark, ensuring data quality and schema compliance."
+    metrics: {}
+    tech_tags: ["Spark", "PySpark", "Kafka", "HDFS", "NiFi", "data validation", "healthcare"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:235", "evidence-index.md:235"]
+    lane_tags: ["data-engineering", "data-quality", "healthcare", "streaming"]

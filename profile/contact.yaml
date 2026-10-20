@@ -1,0 +1,18 @@
+# Central contact information - single source of truth
+# Used by resume renderer, cover letter renderer, and outreach templates
+
+name: "Aryan Miriyala"
+phone: "+1 419-315-0444"
+email: "aryanmiriyala@gmail.com"
+linkedin: "https://www.linkedin.com/in/aryan-miriyala-7788a21b6/"
+github: "https://github.com/aryanmiriyala"
+portfolio: ""  # Optional portfolio URL
+
+# For resume header (compact format)
+header_format: "{name}\n{phone} | {email} | {linkedin} | {github} | {title}"
+
+# For cover letter header
+letter_format: "{name}\n{phone} | {email} | {linkedin}"
+
+# Default title for resume header when no specific role title
+default_title: "Software Engineer"

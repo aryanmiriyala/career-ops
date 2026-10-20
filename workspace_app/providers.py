@@ -16,6 +16,14 @@ PROVIDERS = {
     "opencode": ("OpenCode Zen", ("OPENCODE_API_KEY",), "https://opencode.ai/zen/v1/models"),
     "mistral": ("Mistral", ("MISTRAL_API_KEY",), "https://api.mistral.ai/v1/models"),
     "featherless": ("Featherless", ("FEATHERLESS_API_KEY",), "https://api.featherless.ai/v1/models"),
+    "cerebras": ("Cerebras", ("CEREBRAS_API_KEY",), "https://api.cerebras.ai/v1/models"),
+    "deepseek": ("DeepSeek", ("DEEPSEEK_API_KEY",), "https://api.deepseek.com/v1/models"),
+    "together": ("Together", ("TOGETHER_API_KEY",), "https://api.together.xyz/v1/models"),
+    "cloudflare": ("Cloudflare Workers AI", ("CLOUDFLARE_API_TOKEN",), "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/models"),
+    "huggingface": ("Hugging Face", ("HUGGINGFACE_API_KEY",), "https://api-inference.huggingface.co/models"),
+    "ollama": ("Ollama (local)", (), "http://localhost:11434/api/tags"),
+    "lmstudio": ("LM Studio (local)", ("LOCAL_OPENAI_COMPATIBLE_API_KEY",), "http://localhost:1234/v1/models"),
+    "local_openai": ("Local OpenAI-compatible", ("LOCAL_OPENAI_COMPATIBLE_API_KEY",), "custom"),
 }
 
 

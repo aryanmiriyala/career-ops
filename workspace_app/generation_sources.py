@@ -1,8 +1,10 @@
 """Bounded requirement-aware retrieval from canonical sources, never old packages."""
 import re
 from pathlib import Path
+from typing import Any
 
 from .core import digest, tokens
+from .bm25_retrieval import build_bm25_index, retrieve_bm25
 
 POLICY_PATHS = ['AGENTS.md', 'profile/ats-recruiter-resume-guide.md', 'profile/resume-targeting-guide.md',
                 'profile/cover-letter-guide.md', 'templates/canonical-resume.tex',
@@ -11,6 +13,10 @@ POLICY_PATHS = ['AGENTS.md', 'profile/ats-recruiter-resume-guide.md', 'profile/r
 SOURCE_PATHS = ['profile/evidence-index.md', 'profile/experience-master.md', 'profile/projects-master.md',
                 'profile/skills-master.md', 'profile/bullet-bank.md',
                 'master-documents/master-resume/resume.tex', 'master-documents/master-resume/resume-expanded.tex']
+
+
+# Module-level cache for BM25 index
+_bm25_index_cache: dict[str, Any] = {}
 
 
 def snapshot(root):
@@ -48,30 +54,19 @@ def source_chunks(root):
     return chunks
 
 
+def get_bm25_index(root: Path):
+    """Get or build BM25 index, cached by source snapshot hash."""
+    snap = snapshot(root)
+    snap_hash = digest(str(sorted(snap.items())))
+    if snap_hash not in _bm25_index_cache:
+        _bm25_index_cache[snap_hash] = build_bm25_index(root)
+    return _bm25_index_cache[snap_hash]
+
+
 def retrieve(root, requirements, max_chars=35000):
-    chunks = source_chunks(root)
-    selected, searched, used = {}, [], 0
-    for req in requirements.requirements:
-        query = set(tokens(req.term + ' ' + req.quote))
-        ranked = sorted(chunks, key=lambda c: len(query & set(tokens(c['heading'] + ' ' + c['text']))), reverse=True)
-        matches = [c for c in ranked if query & set(tokens(c['heading'] + ' ' + c['text']))][:3]
-        ids = []
-        for chunk in matches:
-            if chunk['id'] not in selected and used + len(chunk['text']) <= max_chars:
-                selected[chunk['id']] = chunk
-                used += len(chunk['text'])
-            if chunk['id'] in selected:
-                ids.append(chunk['id'])
-        searched.append({'requirement_id': req.id, 'term': req.term, 'searched_locations': SOURCE_PATHS,
-                         'candidate_ids': ids, 'needs_source_review': not ids})
-    # Preserve resume chronology and source metadata even when not lexical winners.
-    for chunk in chunks:
-        if chunk['source'] in {'profile/evidence-index.md', 'master-documents/master-resume/resume.tex'}:
-            if chunk['id'] not in selected and used + len(chunk['text']) <= max_chars:
-                selected[chunk['id']] = chunk
-                used += len(chunk['text'])
-    return {'evidence': list(selected.values()), 'searches': searched, 'characters': used,
-            'scope': 'Canonical indexed sources only. Unrecorded project/repository evidence needs human recovery.'}
+    """Retrieve evidence using BM25 ranking (replaces lexical overlap)."""
+    index = get_bm25_index(root)
+    return retrieve_bm25(root, requirements, index, max_chars=max_chars)
 
 
 def validate_requirements(requirements, jd):

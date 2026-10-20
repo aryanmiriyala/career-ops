@@ -16,14 +16,60 @@ BASES = {
     'opencode': 'https://opencode.ai/zen/v1',
     'mistral': 'https://api.mistral.ai/v1',
     'featherless': 'https://api.featherless.ai/v1',
+    'cerebras': 'https://api.cerebras.ai/v1',
+    'deepseek': 'https://api.deepseek.com/v1',
+    'together': 'https://api.together.xyz/v1',
+    'cloudflare': 'https://api.cloudflare.com/client/v4/accounts/{account_id}/ai',
+    'huggingface': 'https://api-inference.huggingface.co',
+    'ollama': 'http://localhost:11434/v1',
+    'lmstudio': 'http://localhost:1234/v1',
+    'local_openai': 'custom',
+}
+
+
+def get_base_url(provider, values):
+    """Get the base URL for a provider, substituting env vars where needed."""
+    base = BASES[provider]
+    if provider == 'cloudflare':
+        account_id = values.get('CLOUDFLARE_ACCOUNT_ID')
+        if not account_id:
+            raise ValueError('CLOUDFLARE_ACCOUNT_ID required for Cloudflare provider')
+        base = base.format(account_id=account_id)
+    elif provider == 'local_openai':
+        custom_base = values.get('LOCAL_OPENAI_COMPATIBLE_BASE_URL')
+        if not custom_base:
+            raise ValueError('LOCAL_OPENAI_COMPATIBLE_BASE_URL required for local_openai provider')
+        base = custom_base.rstrip('/')
+    elif provider in ('ollama', 'lmstudio'):
+        # Allow override via env vars
+        if provider == 'ollama':
+            override = values.get('OLLAMA_BASE_URL')
+        else:
+            override = values.get('LM_STUDIO_BASE_URL')
+        if override:
+            base = override.rstrip('/v1').rstrip('/') + '/v1'
+    return base
+
+
+# Providers that are free/local and don't require allow_paid
+FREE_PROVIDERS = {
+    'zai': 'glm-4.7-flash',
+    'ollama': None,  # any model
+    'lmstudio': None,
+    'local_openai': None,
 }
 
 
 def allowed_route(provider, model, allow_paid):
     if provider not in BASES:
         raise ValueError('Unsupported provider')
+    # Free/local providers don't require allow_paid
+    if provider in FREE_PROVIDERS:
+        free_model = FREE_PROVIDERS[provider]
+        if free_model is None or model == free_model:
+            return
     # Do not infer free quota from the existence of a key or a model name.
-    if not allow_paid and not (provider == 'zai' and model == 'glm-4.7-flash'):
+    if not allow_paid:
         raise ValueError('This route requires explicit paid/quota usage approval; no fallback was made')
 
 
@@ -79,7 +125,7 @@ class Transport:
         allowed_route(provider, model, config.allow_paid)
         values = credentials(self.root)
         key = next((values.get(a) for a in PROVIDERS[provider][1] if values.get(a)), None)
-        if not key:
+        if not key and provider not in ('ollama', 'lmstudio', 'local_openai'):
             raise ValueError('No configured key for selected provider')
         messages = [{'role': 'system', 'content': system + '\nReturn only JSON matching this schema:\n' + json.dumps(schema.model_json_schema())},
                     {'role': 'user', 'content': json.dumps(payload, ensure_ascii=True)}]
@@ -102,7 +148,9 @@ class Transport:
         try:
             with self.telemetry.generation(stage, model, run_id) as span:
                 with self.client_factory(timeout=180, follow_redirects=False) as client:
-                    response = client.post(BASES[provider] + '/chat/completions', headers={'Authorization': 'Bearer ' + key}, json=body)
+                    base_url = get_base_url(provider, values)
+                    headers = self._build_headers(provider, key, values)
+                    response = client.post(base_url + '/chat/completions', headers=headers, json=body)
                 if response.status_code != 200:
                     record['http_status'] = response.status_code
                     raise ValueError(f'Provider returned HTTP {response.status_code}; no automatic retry or fallback')
@@ -131,3 +179,16 @@ class Transport:
             record['latency_ms'] = round((time.monotonic() - start) * 1000)
             record['finished_at'] = now_iso()
             write_json(ledger_path, ledger)
+
+    def _build_headers(self, provider, key, values):
+        if provider == 'gemini':
+            return {'x-goog-api-key': key}
+        elif provider == 'cloudflare':
+            return {'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'}
+        elif provider in ('ollama', 'lmstudio', 'local_openai'):
+            # Local providers may not need auth, but include if key exists
+            if key:
+                return {'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'}
+            return {'Content-Type': 'application/json'}
+        else:
+            return {'Authorization': f'Bearer {key}', 'Content-Type': 'application/json'}
