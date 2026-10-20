@@ -1,0 +1,112 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Agentic AI Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+  \item Built multi-agent workflows with the Claude Agent SDK and native Anthropic API, defining agent orchestration, tool integration, permissions, and structured outputs for production AI features.
+  \item Building a remote Model Context Protocol (MCP) server with keyed access so customer and admin AI tools can query project-management API data and submit intake requests under scoped permissions and cost controls.
+  \item Hardened production authentication and session handling for the customer portal, stabilizing login transitions and preventing redirect flashes and stuck spinners.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents on hosted LLM APIs for employee-requested workflows, converting tool audits into scoped projects that helped stakeholders prioritize internal AI investments.
+  \item Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+\end{tightitemize}
+
+\resumeSubheading
+{Graduate Research Assistant}{Aug. 2024 - May 2026}
+{Bowling Green State University}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Led a team of 10 undergraduate students to deliver a middle-school CyberCamp, translating security concepts into hands-on labs, phishing demos, cryptography exercises, and curriculum materials.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for CFO reporting across 700+ member companies.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, and SQL, standardizing legacy insurance data into 25 governed domains.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned standardization.
+  \item Served as temporary Product Owner for an internal application, translating business requirements into implementation tasks and coordinating delivery priorities across the team.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide access with role-specific controls for 110 internal users.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{FalconGraph Search: Source-Grounded RAG Engine}{Python, FastAPI, FAISS, Next.js}
+\begin{tightitemize}
+  \item Built a retrieval-augmented generation engine that crawls campus resources, parses PDF and DOCX documents, generates embeddings, retrieves with FAISS, and serves cited answers through FastAPI and a Next.js interface.
+\end{tightitemize}
+
+\projectHeading{Diff-Grounded PR Description Generation}{Python, OpenAI API, GitHub API, LLM Evaluation}
+\begin{tightitemize}
+  \item Developed an ICSME-published LLM pipeline that converts commits, diffs, linked issues, and repository metadata into evidence-grounded pull request descriptions across 1,450 PRs.
+  \item Evaluated generated descriptions with LLM-as-judge and human review, showing stronger grounding and reviewer preference than current AI-generated and human-written baselines.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, SQL, C++, React, Next.js, Node.js, Express, FastAPI, REST APIs\\
+\textbf{AI \& Agentic Systems:} Claude Agent SDK, Anthropic Claude API, Model Context Protocol (MCP), multi-agent orchestration, tool integration, structured outputs, LiteLLM, model routing, guardrails, Langfuse tracing, prompt engineering, context engineering, RAG, LangChain, LLM evaluation, OpenAI API\\
+\textbf{Data, Cloud \& Delivery:} PostgreSQL, MySQL, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, Docker, Git, Vitest, SSO, JWT, RBAC, Claude Code
+
+\end{document}

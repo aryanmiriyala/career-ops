@@ -1,0 +1,131 @@
+# Expanded Keywords for Deloitte Agentic AI Engineer - Anthropic/Claude
+
+# Exact posted role title
+Agentic AI Engineer
+Agentic AI Engineer - Anthropic/Claude
+AI and Data Science Engineer II
+
+# Required skills & experience (exact phrasing from JD)
+3+ years of experience designing, developing, and delivering AI/ML solutions
+2+ years of hands-on experience developing AI/ML applications in Python
+1+ year of direct experience designing or implementing production agentic workflows
+orchestration
+tool integration
+state management
+evaluation
+guardrails
+human-in-the-loop controls
+6+ months of hands-on experience developing agentic AI solutions using the Claude Agent SDK
+agent orchestration
+tool integration
+permissions
+MCP integrations
+Model Context Protocol
+6+ months of hands-on experience developing and deploying production solutions using Anthropic Claude models
+native Anthropic API
+supported cloud platform
+Azure AI Foundry
+Amazon Bedrock
+Google Vertex AI
+6+ months of experience applying prompt engineering
+context engineering
+structured outputs
+1+ year of experience leading project workstreams or engagements
+Bachelor's or Master's degree in Computer Science, Engineering, Data Science, AI, or a related field
+Ability to travel up to 50%
+Limited immigration sponsorship may be available
+
+# Preferred skills
+consulting or other client-facing delivery roles
+Claude Cowork
+enterprise workflows
+automation
+research
+knowledge-work use cases
+multi-agent systems
+MCP integrations
+agent evaluation
+observability
+safety controls
+production governance
+Claude Certified Architect – Professional (CCAR-P)
+Claude Certified Architect – Foundations (CCAR-F)
+Claude Certified Developer – Foundations (CCDV-F)
+cloud certification(s)
+AWS
+Azure
+Google Cloud
+client workshop collateral
+interactive working sessions
+presenting technical content
+large and small audiences
+
+# Responsibilities & work descriptions
+engage with client stakeholders and sponsors
+primary technical point of contact
+workstream
+Generative AI and agentic solutions using Claude
+agent orchestration
+tool integration
+Model Context Protocol (MCP) based integrations
+Claude Agent SDK
+Claude Cowork
+solution design
+prototyping
+testing
+production rollout
+lead small teams
+business requirements gathering
+functional design
+process mapping
+support-model definition
+technical direction
+monitor progress against plan
+identify variances
+drive corrective action
+identify risks, assumptions, and constraints
+implement approved mitigations
+protect delivery
+clear, consistent communication
+client stakeholders
+internal engagement leadership
+designing and building agentic AI solutions powered by Claude
+proof-of-concept through production deployment
+implementing multi-agent systems
+automate business processes
+integrate with enterprise tools
+operate within defined autonomy and guardrails
+modernizing existing AI/ML or data platforms
+incorporate Generative AI capabilities
+retrieval-augmented generation
+agent-based orchestration
+advising clients on Generative AI adoption strategy
+responsible AI practices
+model/platform selection
+partnering directly with client technology, data, and business stakeholders
+scope and deliver AI solutions
+
+# Domain language
+AI & Engineering
+AI & Data practice
+Data and AI platforms, products, insights, and services
+verticalized sector solutions
+software, data, AI, network, and hybrid cloud infrastructure
+engineering for business advantage
+mission-critical operations
+modernizing technology & data platforms
+delivery models
+
+# Tools & technologies
+Claude Agent SDK
+Claude Cowork
+Anthropic API
+Azure AI Foundry
+Amazon Bedrock
+Google Vertex AI
+Model Context Protocol (MCP)
+prompt engineering
+context engineering
+structured outputs
+retrieval-augmented generation (RAG)
+agent-based orchestration
