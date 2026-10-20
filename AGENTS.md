@@ -352,10 +352,15 @@ Cover-letter guidance incorporated from a 2026 web check:
 
 Outreach covers referral asks, LinkedIn connection requests and DMs, recruiter replies, hiring-manager notes, and coffee-chat follow-ups. Use `templates/referral-outreach-template.md` as the drafting guide and follow its channel-length table, human-voice gate, and message shapes.
 
-- Keep each message proportional to its channel. An initial message may carry one compact proof point plus Aryan's site or resume link. Do not send a cover letter as a DM.
+- Start from Aryan's own reference message in the template. It sets the voice, the order (recipient, who Aryan is, the role, the ask), and the length. Most weak drafts drift from it rather than being too brief.
+- Describe what Aryan is building in plain words. Do not name frameworks, languages, databases, internal tools, project names, or product names, and do not bolt "AI-powered" onto things. A message that reads like a resume summary fails.
+- Do not invent mission resonance or company flattery. Include a company connection only when Aryan actually has one. Otherwise say he has been following them and stop there.
+- Keep each message proportional to its channel. Do not send a cover letter as a DM. Include the exact job title and link, since the referrer should never have to go looking.
+- Include the portfolio only when it earns its place. Offer a virtual coffee chat only, never in person.
 - Lead with the recipient and the specific role, team, product, or post that prompted the message before making any ask.
-- Follow-ups must be shorter and lower-pressure than the first message, and must give the recipient an easy out. Do not repeat Aryan's work history, stack, publications, or project list in a follow-up unless the recipient asked for more detail or a new detail materially changes the conversation.
+- Follow-ups must be shorter and lower-pressure than the first message, and must give the recipient an easy out, since a referral puts their reputation on the line. Do not repeat Aryan's work history, stack, publications, or project list in a follow-up unless the recipient asked for more detail or a new detail materially changes the conversation.
 - Keep the ask small and specific: a referral, a brief chat, or whether they are open to connecting.
+- Confirm the current title and employer before sending. Aryan was still being described as an intern after he had started as a software engineer.
 - Apply the same human-voice standard as application answers: grounded in verified experience, no generic praise, no invented personal feelings, no AI-sounding filler, no colons in message prose, and no semicolons or em dashes.
 - Never include F-1, OPT, STEM OPT, visa status, sponsorship, E-Verify, or Form I-983 language in outreach messages unless Aryan explicitly asks.
 - Track referral status, referral target or source, connection path, outreach status, next follow-up date, and outreach tone in `operations/application-tracker.md` and `tailoring-notes.md`.
