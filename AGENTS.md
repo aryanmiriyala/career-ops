@@ -348,6 +348,18 @@ Cover-letter guidance incorporated from a 2026 web check:
 - Yale Office of Career Strategy: tailor each letter to a specific job, connect skills to employer needs, use job-description keywords truthfully, write in confident active language, keep it to one page, and use a clear opening/body/closing structure.
 - Purdue OWL: use the cover letter to explain experience in a story-like format, go deeper on relevant skills, relate those skills to job requirements, show individualized tailoring, and demonstrate written communication quality.
 
+## Outreach Rules
+
+Outreach covers referral asks, LinkedIn connection requests and DMs, recruiter replies, hiring-manager notes, and coffee-chat follow-ups. Use `templates/referral-outreach-template.md` as the drafting guide and follow its channel-length table, human-voice gate, and message shapes.
+
+- Keep each message proportional to its channel. An initial message may carry one compact proof point plus Aryan's site or resume link. Do not send a cover letter as a DM.
+- Lead with the recipient and the specific role, team, product, or post that prompted the message before making any ask.
+- Follow-ups must be shorter and lower-pressure than the first message, and must give the recipient an easy out. Do not repeat Aryan's work history, stack, publications, or project list in a follow-up unless the recipient asked for more detail or a new detail materially changes the conversation.
+- Keep the ask small and specific: a referral, a brief chat, or whether they are open to connecting.
+- Apply the same human-voice standard as application answers: grounded in verified experience, no generic praise, no invented personal feelings, no AI-sounding filler, no colons in message prose, and no semicolons or em dashes.
+- Never include F-1, OPT, STEM OPT, visa status, sponsorship, E-Verify, or Form I-983 language in outreach messages unless Aryan explicitly asks.
+- Track referral status, referral target or source, connection path, outreach status, next follow-up date, and outreach tone in `operations/application-tracker.md` and `tailoring-notes.md`.
+
 ## Resume And Cover-Letter Standards Maintenance
 
 Treat these rules as evidence-based operating standards, not timeless folklore. Employer instructions for a specific application override repository defaults for file type, page length, requested sections, and naming conventions.
