@@ -3,7 +3,7 @@
 Use this when drafting LinkedIn DMs, email introductions, referral asks, recruiter
 replies, hiring-manager notes, and coffee-chat follow-ups for a specific role.
 
-This is the standalone outreach guide. It is deliberately separate from the `start-app`
+This is the standalone outreach guide. It is deliberately separate from the `new-job`
 skill, which covers the resume and cover-letter pipeline only.
 
 ## Start From Aryan's Own Voice
