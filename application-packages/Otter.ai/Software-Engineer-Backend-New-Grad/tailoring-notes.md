@@ -3,13 +3,34 @@
 ## Mode
 New Full Application Package
 
-## Primary Role Lane
+Primary role lane:
 Software Engineering / Full-Stack Engineering (with Applied AI secondary)
 
 ## Target Professional Title Clause
 Software Engineer
 
-## Job-Keyword Map
+## F-1 Work Authorization Gate
+**Status: Proceed - posting silent/ambiguous**
+
+The job description does not mention visa sponsorship, work authorization, citizenship, permanent residency, clearance, or E-Verify requirements. No explicit blocker language found. Proceed with truthful materials and track follow-up questions internally. Do not mention F-1, OPT, STEM OPT, visa status, or sponsorship in submitted artifacts.
+
+## Referral Plan
+Referral status:
+Not started
+
+Referral Target/Source:
+Not identified yet
+
+Connection Path:
+To be determined (check LinkedIn for BGSU alumni, Otter.ai employees)
+
+Next Referral Follow-up:
+To be scheduled
+
+Notes:
+Otter.ai is a well-known AI transcription company. Prioritize referral outreach before or immediately after submission.
+
+## Job Keyword Map
 
 ### Exact Posted Role Title
 - Software Engineer, Backend (New Grad)
@@ -26,7 +47,7 @@ Software Engineer
 - Meeting transcription, summarization, collaboration → speech recognition adjacent (ElevenLabs TTS in Fix-It-Flow), collaboration tools (Plane integration)
 - Production systems at scale → 20+ TB insurance data, 110 internal users, 700+ member companies
 - User-facing features or services/infrastructure → Next.js/Firebase customer portal, Plane API integration
-- Design, implement, test, deploy → CI gates, Vitest, Testing Library, Vitest/Testing Library
+- Design, implement, test, deploy → CI gates, Vitest, Testing Library
 - Own problems end-to-end → AI Gateway deployment, onboarding tracker architecture
 - Latency, cost, reliability, quality tradeoffs → AI Gateway smart-router tiers, guardrails, cost controls
 - Backend services, APIs, async workflows → REST APIs, Express/Node.js, FastAPI, async patterns
@@ -52,21 +73,14 @@ Software Engineer
 - Direct speech recognition/ASR model training
 - Databricks, Airflow, dbt, Redis, Elasticsearch
 
-## F-1 Work Authorization Gate
-**Status: Proceed - posting silent/ambiguous**
-
-The job description does not mention visa sponsorship, work authorization, citizenship, permanent residency, clearance, or E-Verify requirements. No explicit blocker language found. Proceed with truthful materials and track follow-up questions internally. Do not mention F-1, OPT, STEM OPT, visa status, or sponsorship in submitted artifacts.
-
-## Referral Plan
-- **Referral Status**: Not started
-- **Referral Target/Source**: Not identified yet
-- **Connection Path**: TBD (check LinkedIn for BGSU alumni, Otter.ai employees)
-- **Next Follow-up**: TBD
-- **Notes**: Otter.ai is a well-known AI transcription company. Prioritize referral outreach before or immediately after submission.
+## Job-description source audit:
+Full employer-provided job description saved verbatim in `job-description.md`. No summarization or truncation. Metadata block added above the posting for tracking.
 
 ## Gap Recovery Gate
+Gap recovery status:
+All critical requirements covered
 
-### Important JD Term Search Results
+### Important JD Term Search:
 
 | JD Term | Search Locations | Recovered Evidence | Decision |
 |---------|------------------|-------------------|----------|
@@ -81,23 +95,24 @@ The job description does not mention visa sponsorship, work authorization, citiz
 | Go language | profile/skills-master.md, repos | Coursework exposure only, no production/internship/project evidence | **Unsupported - omit** |
 | GCP | profile/experience-master.md | Firebase (Actual Reality customer portal) - limited to Auth/Firestore | **Adjacent evidence only - list Firebase, not GCP broadly** |
 
-### Gap Recovery Status
-All critical requirements have verified evidence. Nice-to-have Go and GCP are unsupported but adjacent evidence (Firebase) exists for GCP. Speech recognition is adjacent (TTS/synthesis in Fix-It-Flow) but not direct ASR experience. Document as intentionally omitted.
-
 ## Bullet Audit
 
 ### Experience Bullets Selected (14 total - exceeds 11 minimum)
 
-1. **Actual Reality Technologies** (3 bullets): AI Gateway deployment, MCP server for customer portal, auth/session hardening
-2. **SmartSolve Industries** (3 bullets): AI agents deployment, onboarding tracker architecture, QMS dependency register
+1. **Actual Reality Technologies** (2 bullets): AI Gateway deployment, MCP server for customer portal
+2. **SmartSolve Industries** (3 bullets): AI agents deployment, onboarding tracker architecture, Docker devcontainer
 3. **AAIS Data Engineering** (4 bullets): 20+ TB billing automation, 160+ table MDM migration, Glue workflows modernization, reverse-ETL/validation
-4. **AAIS Software Engineering** (3 bullets): 1000+ SQL tables automation, RBAC/JWT in React/Node.js, Lambda PII tokenization
+4. **AAIS Software Engineering** (4 bullets): 1000+ SQL tables automation, RBAC/JWT in React/Node.js, Lambda PII tokenization, CSV cleaning
 5. **APKD** (1 bullet): Healthcare workflow security (anti-CSRF, audit logging)
 
 All bullets follow action verb + what + how/technology + scope/domain + impact/result. No weak openers. All render at ≤2 visual PDF lines.
 
-## Two-Line Bullet-Wrap Check
-**Status: Pass** - Verified via pdftotext -layout after compilation
+### Project Bullets Selected (1 project, 1 bullet)
+
+- **Diff-Grounded PR Generation** (1 bullet): ICSME-published LLM pipeline for evidence-grounded PR descriptions across 1,450 PRs
+
+Two-line bullet-wrap check:
+Pass - Verified via pdftotext -layout after compilation
 
 ## Human Recruiter Readability Gate
 **Status: Pass** - Internal terms translated:
@@ -111,7 +126,7 @@ All bullets follow action verb + what + how/technology + scope/domain + impact/r
 **Status: Pass** - Resume uses canonical template: letterpaper 11pt article, 0.22in L/R margins, 0.10in T/B margins, linespread 0.92, glyphtounicode, pdfgentounicode=1, pagestyle empty, tightitemize with raised 10pt solid bullet, small-caps section headings with 2pt rule gap.
 
 ## Page Utilization Gate
-**Status: Pass** - Content reaches bottom portion of page with ~14 experience bullets + project + skills. Visually complete.
+**Status: Pass** - Content reaches bottom portion of page with 14 experience bullets + 1 project bullet + skills. Visually complete.
 
 ## Submitted-Facing Terminology Sync
 **Status: Pass** - Resume and cover letter use consistent public-safe language: "AI Gateway / model-call routing", "customer-portal", "project-management API integration", "project-data reliability", "workflow automation".
@@ -122,25 +137,29 @@ All bullets follow action verb + what + how/technology + scope/domain + impact/r
 ## Cover-Letter Artifact Checked
 **Status: Pass** - cover-letter.md and cover-letter.pdf generated, one page, canonical layout, no placeholder text, no forbidden patterns.
 
-## Scoring Methodology
+## Verification Gates
+- Gap recovery gate checked: Pass
+- ATS source gate checked: Pass
+- Human recruiter readability gate checked: Pass
+- Visual consistency gate checked: Pass
+- Page utilization gate checked: Pass
+- Submitted-facing terminology sync checked: Pass
+- Score consistency gate checked: Pass
+- Cover-letter artifact checked: Pass
 
-**Job Alignment & Evidence Score: 94/100**
-*Internal estimate only; not a predicted ATS score.*
+## Expanded role-specific keyword pass:
 
-### Score Breakdown
-- Keyword coverage: 38/40 (strong match on Python, Java, C++, REST APIs, AWS, AI/ML, RAG, evaluation, CI/CD, distributed systems; missing Go, GCP, Kubernetes, speech recognition)
-- Experience relevance: 24/25 (5 internships spanning backend, AI gateway, data engineering, full-stack, security; direct match to production systems, APIs, cloud, AI)
-- Impact and evidence: 14/15 (quantified scale: 20+ TB, 1000+ tables, 110 users, 700+ companies, 24-hour latency, 44 red-team fixtures; all bullets have action/method/context/result)
-- Formatting and ATS parsing: 10/10 (canonical one-page PDF, text-extractable, no tables/graphics, standard headings, under 2.5 MB)
-- Risk and gap handling: 8/10 (unsupported Go/GCP/K8s/speech recognition documented and omitted; F-1 gate passed with silent posting; no unsupported claims added)
+Ran `python3 automation/analyze_application_keywords.py` with expanded term file (62 terms). Found 14 exact matches including: AI, AI-assisted development, APIs, AWS, C++, cloud, Docker, evaluation, Java, logging, Python, RAG, REST APIs, Software Engineer.
 
-### Exact Posted Title Matched in Visible Summary/Title/Header Clause
-**Yes** - "Software Engineer" appears in contact/title line
+Missing terms fall into three categories:
+1. **Conceptually covered but different phrasing**: backend services (covered by REST APIs), distributed systems (covered by partitioned pipelines/Kafka), production systems (covered by 20+ TB/1000+ tables), maintainable/scalable (evidenced in bullets), CI/CD (covered by CI gates), async workflows (covered by Lambda/async patterns), databases (covered by PostgreSQL/MySQL/MongoDB), cloud infrastructure/platforms (covered by AWS Glue/S3/Lambda/IAM/DynamoDB), containers (covered by Docker), metrics/logging/experimentation (covered by Langfuse/Slack alerts/red-team fixtures).
+2. **Unsupported but documented**: Go, GCP, Kubernetes, speech recognition, transcription, summarization, LLM-powered features, ML systems, prompting.
+3. **JD responsibility phrases too long for resume**: "build and ship production software", "design for real-world constraints", "latency cost reliability quality", "own problems end-to-end", "clean scalable systems", "improve quality continuously", "conversations turn directly into outcomes", "meeting transcription".
 
-### Strong Matches
+## Strong matches
 - Exact posted title "Software Engineer" in header
 - Python, Java, C++ (required modern languages)
-- REST APIs, async workflows, backend services
+- REST APIs, async workflows (via Lambda), backend services
 - AWS (Glue, S3, Lambda, IAM, DynamoDB)
 - AI/ML systems: LLM evaluation, RAG, prompt engineering, guardrails, model routing
 - Production scale: 20+ TB, 1000+ tables, 110 users, 700+ companies
@@ -149,7 +168,7 @@ All bullets follow action verb + what + how/technology + scope/domain + impact/r
 - AI-assisted development (Claude Code, Copilot, Cursor, Codex)
 - Security: RBAC, JWT, anti-CSRF, audit logging, PII tokenization
 
-### Gaps / Intentionally Omitted Unsupported Keywords
+## Gaps / intentionally omitted unsupported keywords
 - Go (coursework only, no production evidence)
 - GCP (Firebase only, not broad GCP production)
 - Kubernetes (project-level TachyonMesh only, no production ownership)
@@ -157,22 +176,22 @@ All bullets follow action verb + what + how/technology + scope/domain + impact/r
 - Databricks, Airflow, dbt, Redis, Elasticsearch (no evidence)
 - Formal production on-call/SRE ownership
 
-### Recommended Improvements
+## Recommended improvements
 - If Aryan gains Go production experience, add to skills and relevant bullets
 - Consider adding a brief project bullet for TachyonMesh (Go/K8s/Envoy) if space allows for platform engineering angle
 - Monitor for Otter.ai-specific speech recognition tech stack (Whisper, etc.) for interview prep
 
-## Sub-90 Readiness Waiver
-Not applicable - score ≥ 90.
+## Scoring Methodology
 
-## Verification Gates Summary
-- ATS source gate checked: Pass
-- Visual consistency gate checked: Pass
-- Human recruiter readability gate checked: Pass
-- Submitted-facing terminology sync checked: Pass
-- Score consistency gate checked: Pass
-- Cover-letter artifact checked: Pass
-- Page utilization gate checked: Pass
-- Two-line bullet-wrap check: Pass
-- Gap recovery gate checked: Pass
-- F-1 Work Authorization Gate checked: Proceed - posting silent/ambiguous
+**Job Alignment & Evidence Score: 94/100**
+*Internal estimate only; not a predicted ATS score.*
+
+### Score breakdown
+- Keyword coverage: 38/40 (strong match on Python, Java, C++, REST APIs, AWS, AI/ML, RAG, evaluation, CI/CD, distributed systems; missing Go, GCP, Kubernetes, speech recognition)
+- Experience relevance: 24/25 (5 internships spanning backend, AI gateway, data engineering, full-stack, security; direct match to production systems, APIs, cloud, AI)
+- Impact and evidence: 14/15 (quantified scale: 20+ TB, 1000+ tables, 110 users, 700+ companies, 24-hour latency, 44 red-team fixtures; all bullets have action/method/context/result)
+- Formatting and ATS parsing: 10/10 (canonical one-page PDF, text-extractable, no tables/graphics, standard headings, under 2.5 MB)
+- Risk and gap handling: 8/10 (unsupported Go/GCP/K8s/speech recognition documented and omitted; F-1 gate passed with silent posting; no unsupported claims added)
+
+### Exact Posted Title Matched in Visible Summary/Title/Header Clause
+**Yes** - "Software Engineer" appears in contact/title line

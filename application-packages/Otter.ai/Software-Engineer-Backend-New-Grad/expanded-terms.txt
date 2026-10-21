@@ -1,0 +1,72 @@
+# Expanded Role-Specific Keywords for Otter.ai Software Engineer, Backend (New Grad)
+
+# Exact posted title variants
+Software Engineer, Backend (New Grad)
+Software Engineer
+Backend Engineer
+New Grad
+New Graduate
+
+# Required languages (exact from JD)
+Python
+Go
+Java
+C++
+
+# Core CS fundamentals
+data structures
+algorithms
+systems basics
+
+# Backend/systems concepts
+APIs
+REST APIs
+RESTful services
+databases
+distributed systems
+cloud infrastructure
+cloud platforms
+AWS
+GCP
+containers
+Docker
+CI/CD
+
+# AI/ML terms (nice-to-have)
+LLM-powered features
+ML systems
+prompting
+evaluation
+RAG
+speech recognition
+transcription
+summarization
+
+# Responsibilities from JD
+build and ship production software
+design implement test deploy
+own problems end-to-end
+design for real-world constraints
+latency cost reliability quality
+clean scalable systems
+backend services
+async workflows
+maintainable
+built to evolve
+improve quality continuously
+metrics logging user feedback experimentation
+AI-assisted development
+modern tooling
+
+# Company/domain
+meeting transcription
+summarization
+collaboration
+AI-native product experiences
+conversations turn directly into outcomes
+
+# Scale/impact
+real users at scale
+production systems
+user-facing features
+services and infrastructure
