@@ -1,0 +1,112 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Full Stack Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway with smart-router tiers, guardrails, Langfuse tracing, and 44 red-team fixtures using AI-assisted development (Claude Code, Copilot, Cursor, Codex).
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query project status and submit intake requests with scoped security and cost controls.
+  \item Hardened production authentication by deriving session-cookie domains from request hosts, stabilizing login transitions, and eliminating redirect flashes for customer-facing workflows.
+  \item Consolidated three tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects using Codex and Claude Code for planning, debugging, and code review with human validation.
+  \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes and downstream implementation.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated a weekly SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for CFO reporting across 700+ member companies.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing legacy data into 25 governed domains.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation generating 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL-aligned standardization and reporting.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific access controls for 110 internal users.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for safer downstream insurance data processing.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{DreamScape — AI Mobile Study App}{React Native, Expo, TypeScript, Gemini API, ElevenLabs}
+\begin{tightitemize}
+  \item Built a consumer-facing React Native mobile app with local-first persistence offering AI-generated study content via Gemini API and text-to-speech via ElevenLabs, featuring audio workflows and offline capability.
+\end{tightitemize}
+
+\vspace{-4pt}
+\projectHeading{Fix-It-Flow — Multimodal Repair PWA}{Next.js 14, TypeScript, PWA, Gemini Vision, Llama, ElevenLabs, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, and ElevenLabs TTS to diagnose appliance issues with typed API routes and DynamoDB persistence.
+\end{tightitemize}
+
+\vspace{-4pt}
+\projectHeading{Diff-Grounded PR Generation}{Python, OpenAI API, GitHub API, LLM Evaluation}
+\begin{tightitemize}
+  \item Developed an ICSME-published LLM pipeline turning commits, diffs, and repo metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs with correctness and clarity evaluation.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} TypeScript/JavaScript, Python, SQL, C++, Java, React, Next.js 15, React Native, Angular, Node.js, Express, FastAPI, Firebase, Tailwind CSS\\
+\textbf{AI, Data \& Cloud:} LiteLLM, AI Gateway, MCP, guardrails, Langfuse, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, LLM evaluation, PostgreSQL, MySQL, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, Docker, Vercel\\
+\textbf{Security, Testing \& Tools:} SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, Vitest, Testing Library, Git, Linux, CI/CD, Claude Code, GitHub Copilot, Cursor, Codex
+
+\end{document}

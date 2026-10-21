@@ -1,0 +1,79 @@
+AI-Native
+AI coding tools
+AI-assisted development
+AI-facilitated development
+AI-first engineering
+Full Stack Engineer
+full stack
+frontend
+backend
+consumer-facing
+consumer scale
+100M
+performance optimization
+page load
+checkout conversion
+crash rates
+render latency
+e-commerce
+checkout
+purchase experiences
+user accounts
+home page
+cross-device
+mobile
+React Native
+Swift
+Kotlin
+A/B testing
+experimentation
+data-driven
+zero-to-one
+greenfield
+small team
+fast iteration
+high velocity
+Next.js
+React
+TypeScript
+Node.js
+Express
+FastAPI
+Python
+AI Gateway
+LiteLLM
+MCP
+Model Context Protocol
+guardrails
+Langfuse
+OpenAI API
+Gemini API
+Mistral AI
+LangChain
+RAG
+LLM evaluation
+PostgreSQL
+MySQL
+MongoDB
+AWS Glue
+S3
+Lambda
+IAM
+DynamoDB
+PySpark
+Docker
+Vercel
+SSO
+JWT
+RBAC
+Auth0
+anti-CSRF
+audit logging
+PII tokenization
+Vitest
+Testing Library
+CI/CD
+Claude Code
+GitHub Copilot
+Cursor
+Codex
