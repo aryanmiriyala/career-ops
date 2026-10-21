@@ -21,6 +21,7 @@ from .generation_engine import GenerationRuns
 from .generation_models import Approval, RunRequest
 from .providers import probe, statuses
 from .scans import Scans
+from .gmail_integration import GmailMonitor, GmailConfig
 
 
 class Login(BaseModel):
@@ -62,6 +63,7 @@ def create_app(root: Path = REPO):
     intakes = IntakeStore(root)
     runs = GenerationRuns(root)
     job_index = JobIndex(root)
+    gmail_monitor = GmailMonitor(GmailConfig())
     attempts = {}
     attempt_lock = threading.Lock()
     probe_lock = threading.Lock()
@@ -205,6 +207,94 @@ def create_app(root: Path = REPO):
     @app.post("/api/scans/cancel")
     def cancel_scan():
         return scans.cancel()
+
+    # Gmail endpoints
+    class GmailSyncRequest(BaseModel):
+        days: int = 7
+
+    class GmailConfigRequest(BaseModel):
+        poll_interval_seconds: int = 300
+        lookback_days: int = 7
+        auto_update_tracker: bool = True
+
+    @app.get("/api/gmail/status")
+    def gmail_status():
+        """Get Gmail monitor status."""
+        try:
+            authenticated = gmail_monitor.client.credentials is not None and gmail_monitor.client.credentials.valid
+        except Exception:
+            authenticated = False
+        return {
+            "configured": (CREDENTIALS_PATH := root / ".local-workspace/gmail/credentials.json").exists(),
+            "authenticated": authenticated,
+            "running": gmail_monitor._running,
+            "last_poll": gmail_monitor.client._last_poll_time.isoformat() if gmail_monitor.client._last_poll_time else None,
+            "processed_count": len(gmail_monitor.processor.processed_ids),
+        }
+
+    @app.post("/api/gmail/auth")
+    def gmail_auth():
+        """Start OAuth flow - returns auth URL for user to visit."""
+        if not (root / ".local-workspace/gmail/credentials.json").exists():
+            raise HTTPException(409, "credentials.json not found. Run setup guide first.")
+        # In a real implementation, you'd return an auth URL for the user to visit
+        # For desktop flow, this just triggers the local server flow
+        # Here we just indicate the CLI should be used
+        return {
+            "message": "Use CLI for initial auth: python3 -m workspace_app.gmail_integration --auth",
+            "guide": "See .local-workspace/gmail/SETUP_GUIDE.md"
+        }
+
+    @app.post("/api/gmail/sync")
+    def gmail_sync(body: GmailSyncRequest):
+        """Run one-time sync of job emails."""
+        if not gmail_monitor.client.authenticate():
+            raise HTTPException(409, "Gmail not authenticated. Run auth first.")
+        # Temporarily adjust lookback
+        original_lookback = gmail_monitor.config.lookback_days
+        gmail_monitor.config.lookback_days = body.days
+        try:
+            stats = gmail_monitor.sync()
+            return {"synced": True, "stats": stats}
+        finally:
+            gmail_monitor.config.lookback_days = original_lookback
+
+    @app.post("/api/gmail/monitor/start")
+    def gmail_monitor_start(body: GmailConfigRequest):
+        """Start continuous monitoring (background thread)."""
+        if gmail_monitor._running:
+            raise HTTPException(409, "Monitor already running")
+        if not gmail_monitor.client.authenticate():
+            raise HTTPException(409, "Gmail not authenticated")
+
+        gmail_monitor.config.poll_interval_seconds = body.poll_interval_seconds
+        gmail_monitor.config.lookback_days = body.lookback_days
+        gmail_monitor.config.auto_update_tracker = body.auto_update_tracker
+
+        import threading
+        thread = threading.Thread(target=gmail_monitor.start, daemon=True)
+        thread.start()
+        return {"started": True, "config": body.model_dump()}
+
+    @app.post("/api/gmail/monitor/stop")
+    def gmail_monitor_stop():
+        """Stop continuous monitoring."""
+        gmail_monitor.stop()
+        return {"stopped": True}
+
+    @app.get("/api/gmail/recent")
+    def gmail_recent(days: int = 7):
+        """Get recent job-related emails."""
+        if not gmail_monitor.client.authenticate():
+            raise HTTPException(409, "Gmail not authenticated")
+        emails = gmail_monitor.get_recent_job_emails(days=days)
+        return {"emails": [e.to_dict() for e in emails]}
+
+    @app.get("/api/gmail/guide")
+    def gmail_guide():
+        """Get setup guide."""
+        from .gmail_integration import create_gmail_credentials_guide
+        return {"guide": create_gmail_credentials_guide()}
 
     @app.get("/api/intakes")
     def list_intakes():

@@ -1,0 +1,80 @@
+Full-Stack Developer
+Next.js
+TypeScript
+React
+PostgreSQL
+Supabase
+Firebase
+Vercel
+GitHub
+AI-assisted development
+Claude
+Codex
+Copilot
+Cursor
+authentication
+authorization
+RBAC
+JWT
+SSO
+API integration
+REST APIs
+third-party services
+Twilio
+Meta
+email
+SMS
+calling
+security
+permissions
+database performance
+production reliability
+troubleshooting
+safe releases
+CI/CD
+testing
+Vitest
+Testing Library
+provider approval
+technical integration
+CRM
+automation platform
+coaching businesses
+sales calls
+GoHighLevel
+Zapier
+Google Sheets
+Typeform
+Calendly
+workflow automation
+AWS
+Lambda
+S3
+DynamoDB
+IAM
+PySpark
+AWS Glue
+Docker
+Docker devcontainer
+Node.js
+Express
+MongoDB
+Drizzle ORM
+Tailwind CSS
+Langfuse
+guardrails
+AI Gateway
+model routing
+PII tokenization
+audit logging
+anti-CSRF
+Project-management API
+Plane API
+MCP server
+Model Context Protocol
+AI agents
+onboarding tracker
+MDM migration
+data standardization
+insurance data
+healthcare workflows

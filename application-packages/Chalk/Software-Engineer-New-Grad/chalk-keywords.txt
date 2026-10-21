@@ -1,0 +1,42 @@
+# Chalk Software Engineer - New Grad Expanded Keywords
+# Exact terms from job description
+
+Software Engineer - New Grad
+Software Engineer
+New Grad
+C++
+Python
+Rust
+query planning
+query optimization
+compilers
+distributed analytical data processing
+distributed systems
+static analysis
+dynamic analysis
+Python programs
+infrastructure orchestration
+metadata
+data flow
+execution engine
+systems engineering
+computer science fundamentals
+DBMS
+PaaS
+data infrastructure
+query planning and execution engine
+customer needs
+autonomy
+ownership
+pragmatic tradeoffs
+business outcomes
+communication skills
+PaaS-like software
+query planners
+Rust
+Spring 2027
+5 days a week
+on-site
+early employee
+high growth start-up
+co-founders

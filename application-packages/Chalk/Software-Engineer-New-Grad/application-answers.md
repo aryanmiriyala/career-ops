@@ -1,0 +1,7 @@
+Why do you want to work at Chalk?
+
+The real reason is the inference gap you are working on. I have spent the last year at Actual Reality building an AI gateway that handles model routing, guardrails, and latency requirements for production workloads. Before that at AAIS I was moving 20-plus terabytes of insurance data through PySpark and Glue pipelines with strict freshness requirements. Both roles showed me that the tooling for getting fresh, computed data into a model at inference time is way behind where it needs to be. Most companies are stuck with either stale pre-computed features or brittle custom pipelines. Your approach of compiling Python to a Rust engine for train/serve parity hits the exact problem I have been dealing with. The Self-Adaptive Parallelism project I built in grad school was basically me trying to solve a version of this, making runtime scheduling decisions based on live telemetry instead of static config. I want to work on this problem full-time with a team that is serious about the systems side of it.
+
+How did you hear about us?
+
+I saw the Felicis Series A announcement on LinkedIn when it came out in May 2025. The post mentioned you were hiring for the query planning and execution engine, which caught my attention because that is the systems area I want to be in. I have had the careers page bookmarked since then. That is really it, no internal connection, just been watching from the outside.
