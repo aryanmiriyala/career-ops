@@ -1,0 +1,13 @@
+Dear Hiring Team,
+
+I am applying for the Software Engineer, Agent Performance Modeling - New College Grad 2026 position at NVIDIA. I have followed NVIDIA's work defining the AI computing era for years, from CUDA's role in deep learning breakthroughs to the current generation of inference-optimized architectures. This role's charter—combining simulation and agentic engineering to model LLM architectures across GPU, LPU, and heterogeneous systems—directly aligns with my strongest experience: building AI agents that automate engineering workflows and developing performance modeling systems in C++/OpenMP.
+
+At Actual Reality Technologies, I deployed a LiteLLM AI Gateway that routes model calls across multiple AI projects with smart-router tiers, guardrails, Langfuse tracing, and CI gates backed by 44 adversarial test fixtures. I am now building a Model Context Protocol server that exposes project-management data to customer-facing AI tools with scoped access controls. This work has given me daily exposure to LLM inference characteristics—latency, token throughput, routing policies—and the practical constraints of running model-serving infrastructure reliably. At SmartSolve Industries, I deployed role-specific AI agents for internal workflows and used Codex and Claude Code across planning, debugging, and code review while keeping human validation central. These experiences map to this role's need for engineers who can build reliable agentic tooling and understand LLM inference behavior.
+
+On the performance modeling side, my Self-Adaptive Parallelism research project built a C++/OpenMP adaptive runtime that uses per-epoch telemetry and a UCB bandit controller to tune scheduling policy, chunk size, and thread count across Mandelbrot and heat-diffusion benchmarks. I generated benchmark summaries for runtime, speedup, efficiency, and Karp-Flatt metrics, applying a rigorous experimentation and validation methodology. While this work targets CPU parallelism rather than GPU/LPU architectures, the core loop—instrument, measure, model, optimize—is the same discipline your team applies to accelerator inference workloads. My ICSME-published Diff-Grounded PR Generation pipeline further demonstrates my ability to design LLM evaluation frameworks that measure correctness, coverage, and clarity across 1,450 pull requests.
+
+I would welcome the opportunity to discuss how this blend of agentic engineering, LLM inference exposure, and performance modeling methodology can contribute to NVIDIA's work on the next generation of AI systems.
+
+Sincerely,
+
+Aryan Miriyala

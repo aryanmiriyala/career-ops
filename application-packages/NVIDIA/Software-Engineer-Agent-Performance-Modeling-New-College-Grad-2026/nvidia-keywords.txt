@@ -1,0 +1,74 @@
+Software Engineer, Agent Performance Modeling
+New College Grad 2026
+LLM architectures
+LLM inference
+simulation
+profiling
+performance modeling
+roofline analysis
+GPU
+LPU
+heterogeneous systems
+agentic engineering
+agents
+coding agents
+design space exploration
+bottleneck analysis
+hardware architecture
+inference
+runtime
+compiler
+accelerator architecture
+compute bottlenecks
+memory bottlenecks
+communication bottlenecks
+CUDA
+TensorRT
+Triton
+OpenMP
+C++
+Python
+PySpark
+AWS Glue
+AWS Lambda
+AWS S3
+AWS IAM
+DynamoDB
+PostgreSQL
+MySQL
+MongoDB
+LangChain
+RAG
+LLM evaluation
+Model Context Protocol
+MCP
+LiteLLM
+AI Gateway
+smart-router
+guardrails
+Langfuse
+adversarial test fixtures
+GitHub Copilot
+Claude Code
+Codex
+Cursor
+AI-assisted development
+Self-Adaptive Parallelism
+UCB bandit
+scheduling policy
+thread count
+chunk size
+Karp-Flatt
+speedup
+efficiency
+benchmark
+telemetry
+instrumentation
+Diff-Grounded PR Generation
+ICSME
+OpenAI API
+GitHub API
+evidence-grounded
+correctness
+coverage
+clarity
