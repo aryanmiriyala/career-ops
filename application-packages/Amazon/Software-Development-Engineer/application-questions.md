@@ -9,4 +9,4 @@ I have built a C++ runtime system that tunes itself using telemetry and a bandit
 
 ## Question 2: Describe your experience/familiarity coding and designing in C or C++ programing language (Any internship or project work experience is counted)
 
-The main C++ project I have built is a self tuning runtime that uses a bandit controller to adjust scheduling policy chunk size and thread count at runtime based on live telemetry. I tested it on Mandelbrot and heat diffusion workloads and measured speedup efficiency and scheduling overhead. I also used C in systems coursework for memory management pointers and low level data structures. Day to day I work mostly in other languages but I am comfortable reading debugging and extending C and C++ code when the role calls for it.
+My main C++ project is a self tuning runtime with a bandit controller. Tested on Mandelbrot. Used C in coursework for memory and data structures. Comfortable reading and extending C and C++.
