@@ -1,0 +1,48 @@
+Software Engineer II
+Command & Control Center
+CCC
+omnichannel eCommerce
+availability reliability performance
+production environments
+production incidents
+incident triage
+incident mitigation
+root-cause analysis
+production readiness
+Linux
+Unix
+networking
+microservices
+Azure
+Google Cloud Platform
+GCP
+Kubernetes
+observability
+monitoring
+logging
+metrics
+tracing
+alerting
+incident management
+Java
+JavaScript
+Python
+Shell
+SQL
+REST APIs
+API integrations
+automation
+operational tooling
+self-healing
+continuous reliability improvement
+distributed systems
+cloud-native
+SRE
+DevOps
+engineering teams
+service restoration
+onboarding
+documentation
+WCAG
+accessibility
+assistive technologies
