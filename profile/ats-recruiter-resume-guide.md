@@ -59,26 +59,34 @@ There is no fixed bullet-count maximum per role or project. Bullet count should 
 
 `Action verb + what was built/changed + how/technology + scope/domain + impact/result`
 
+Follow **Google's XYZ Formula** ("Accomplished [X] as measured by [Y], by doing [Z]") and **The Pragmatic Engineer / CTCI Standards**:
+- **X (Outcome / Value):** The primary engineering or business result delivered (e.g., centralized model routing, reduced manual triage, standardized schemas, secured access).
+- **Y (Metric / Scale):** The concrete measure of scale, reliability, or coverage (e.g., 20+ TB, 700+ member companies, 110 enterprise users, 41+ regression test suites, 44 security fixtures, 24-hour SLA freshness).
+- **Z (Architecture / Method):** The specific design, protocols, frameworks, and system constraints leveraged (e.g., LiteLLM gateway, Playwright headless runner, Next.js 15, PostgreSQL Drizzle ORM, PySpark ETL, AWS Lambda boto3).
+
 Strong software/data examples:
 
-- `Automated a manual billing workflow with PySpark and AWS Glue, processing 20+ TB of insurance data for 700+ member companies.`
-- `Built a full-stack health AI prototype with React, Vite, Express, MongoDB/Mongoose, and Mistral AI for travel-health guidance.`
-- `Secured an AWS-hosted Lucee/CFML healthcare workflow platform by implementing anti-CSRF tokens, IP-aware audit logging, and protected access-denied flows.`
+- `Engineered automated ETL pipelines using Python, PySpark, and AWS Glue, processing 20+ TB of production insurance transaction data across 700+ member companies for executive billing reporting.`
+- `Deployed an enterprise LiteLLM model gateway centralizing LLM access across staging and production, implementing multi-tier fallback routing, Langfuse observability, and 44 automated red-team security fixtures.`
+- `Hardened AWS-hosted clinical match-run systems by implementing CSRF protection, IP-based audit logging, and input validation, eliminating runtime exceptions for organ transplant coordination.`
+- `Architected a full-stack employee onboarding system with Next.js, TypeScript, PostgreSQL, and Drizzle ORM, implementing SSO authentication and RBAC middleware to streamline cross-department handoffs.`
 
 Checklist for each bullet:
 
-- Starts with a strong, past-tense action verb (e.g., `Architected`, `Deployed`, `Engineered`, `Automated`, `Secured`, `Revamped`).
+- Starts with a strong, past-tense action verb (e.g., `Architected`, `Deployed`, `Engineered`, `Automated`, `Hardened`, `Revamped`).
 - Does not start with `Responsible for`, `Helped`, `Worked on`, `Assisted`, `Promoted to`, `Served as`, or gerunds (`Building`, `Managing`, `Supporting`).
 - States what was built, changed, automated, analyzed, secured, validated, or improved.
-- Names the actual technology used.
+- Names the actual technology used in architectural context, never as a bare laundry list or buzzword salad.
 - Shows scope, user, system, or domain context.
 - Includes an engineering or business impact metric when verified (e.g., 20+ TB, 700+ member companies, 110 internal users, 160+ tables, 41+ test cases, 44 fixtures, 24-hour latency SLA).
 - Never includes vanity developer activity metrics: commit counts (e.g. `across 1,400 commits`), lines of code, or raw PR counts. These indicate activity volume, not technical impact or system reliability.
 - Describes a single coherent technical achievement. Never splice two unrelated projects into one bullet with a semicolon, and never cram 4 disconnected features into a single sentence.
+- Avoids colloquial, informal, or administrative phrasing (e.g., avoid "memory-based HR follow-up", "safer processing", "crash fixes", "job sprawl", or "helping leaders prioritize"). Use precise technical and systems language.
+- Avoids clumsy participial chains (e.g., "for X, adding Y, evaluating Z across W for V"). Use purposeful causal phrasing ("to validate...", "implementing...", "enabling...").
 - Explains impact without exaggeration.
 - Does not read like a job description responsibility.
 - Uses job-description keywords in context when the keyword is truthful.
-- Contextualizes niche or third-party tools. Never use unexplained tool names (e.g., write `project management tickets via Plane API` instead of bare `Plane project/ticket statuses`).
+- Contextualizes niche or third-party tools. Never use unexplained tool names (e.g., write `engineering workflows and issue-tracking APIs via Plane` or `Model Context Protocol tool endpoints`).
 - Is understandable without private ticket IDs, internal route names, private repository knowledge, or unexplained vendor/tool code names.
 - Renders as no more than two visual PDF lines in the canonical resume layout unless a rare high-signal exception is documented.
 - Balances experience depth: limit any single role to at most 3-4 dense bullets so that key past internships (e.g. AAIS 20+ TB data engineering, APKD security workflows) are not cannibalized.
