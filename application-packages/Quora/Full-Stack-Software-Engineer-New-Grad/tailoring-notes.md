@@ -32,6 +32,8 @@ Known stretch/risk strategy: Quora prefers "familiarity with Python, React, Type
 
 Token/source-access strategy: Used evidence-index.md for role/project routing, experience-master.md for exact bullet wording, projects-master.md for project details. No prior application packages consulted.
 
+Actual Reality date presentation: Resume shows "Software Engineer Jul. 2026 - Present" (continuous role start) rather than "Software Engineer Oct. 2026 - Present (Intern: Jul. 2026 -- Sep. 2026)". This avoids unnecessary promotion/intern annotation and presents a clean, truthful continuous tenure as Software Engineer from July 2026, consistent with master-documents/master-resume/resume.tex.
+
 ## F-1 Work Authorization Gate
 
 Result: Pass - proceed with package
