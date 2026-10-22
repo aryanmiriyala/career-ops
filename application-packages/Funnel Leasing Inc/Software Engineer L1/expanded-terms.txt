@@ -1,0 +1,54 @@
+# Expanded role-specific keyword audit for Funnel Leasing Inc Software Engineer L1
+# Exact terms from job description, including variants
+
+Software Engineer L1
+Entry to Mid-Level
+Python
+Django
+JavaScript
+React
+REST APIs
+REST API
+HTTP
+HTML
+CSS
+version control
+Git
+testing
+debugging
+code reviews
+unit tests
+end-to-end tests
+AI-assisted
+GitHub Copilot
+Cursor
+Claude Code
+Bachelor
+Computer Science
+Software Engineering
+SaaS
+proptech
+cloud-based
+cross-functional teams
+communication
+collaboration
+analytical thinking
+problem-solving
+clean code
+maintainable code
+efficient code
+software products
+AI-assisted coding tools
+modern development tools
+software reliability
+software quality
+software performance
+scalability
+reliability
+code reviews
+design discussions
+new technologies
+software engineering best practices
+cross-functional teams
+high-quality software
+travel
