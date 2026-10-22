@@ -232,7 +232,7 @@ SmartSolve work centered on internal software, AI adoption, AI-assisted workflow
 
 ### Source And Verification Notes
 
-- User-provided SmartSolve offer/JD document visually inspected on August 7, 2026. The document lists role title `AI & Computer Science Intern`, direct report to the CEO, Bowling Green, OH with remote flexibility as role requires, part-time 20-39 hours/week, and an internship description built around a four-phase AI integration roadmap.
+- User-provided SmartSolve offer/JD document visually inspected on August 7, 2026. The document lists official role title `AI & Computer Science Intern` (standardized across resume, profile, and application materials as `Artificial Intelligence Engineer Intern`), direct report to the CEO, Bowling Green, OH with remote flexibility as role requires, part-time 20-39 hours/week, and an internship description built around a four-phase AI integration roadmap.
 - The SmartSolve document lists official internship dates as May 4, 2026 to August 7, 2026. Aryan separately stated the internship ended in July 2026, so public-facing master resume/CV materials currently keep the visible end date as `Jul. 2026` unless Aryan asks to use the offer-letter end date.
 - Roadmap language should be used carefully: the document supports the planned scope and responsibilities, but completed-outcome claims should require Aryan confirmation or additional source evidence.
 
