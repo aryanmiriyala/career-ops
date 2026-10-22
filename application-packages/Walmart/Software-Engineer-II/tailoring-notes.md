@@ -235,13 +235,13 @@ All 14 experience bullets and 2 project bullets verified to render at ≤2 visua
 | requirements | Generic boilerplate |
 
 ### Coverage Summary
-- **Exact matches:** 19/59 (32%)
-- **Supported by adjacent evidence:** ~22 terms (could be added to bullets/skills)
-- **Intentionally omitted:** ~18 terms (unsupported or boilerplate)
-- **Effective coverage with adjacent evidence:** ~69% of meaningful technical terms
+- **Exact matches:** 22/59 (37%)
+- **Supported by adjacent evidence:** ~20 terms (could be added to bullets/skills)
+- **Intentionally omitted:** ~17 terms (unsupported or boilerplate)
+- **Effective coverage with adjacent evidence:** ~71% of meaningful technical terms
 
 ### Expanded role-specific keyword pass:
-Completed using package-local term file `jd-terms.txt` with 59 terms. Default analyzer covers 26 terms; expanded audit covers full JD terminology including exact variants, responsibility phrases, and domain terms. Results recorded above.
+Completed using package-local term file `jd-terms.txt` with 59 terms. Default analyzer covers 26 terms; expanded audit covers full JD terminology including exact variants, responsibility phrases, and domain terms. Results recorded above. HealthTrend project adds streaming/Kafka/Spark distributed systems coverage; skills section adds Linux, Unix, microservices, monitoring, metrics, incident management as exact terms.
 
 ---
 
@@ -260,35 +260,36 @@ Completed using package-local term file `jd-terms.txt` with 59 terms. Default an
 
 ## Scoring Methodology
 
-- **Keyword Coverage:** 30/40 - 19 exact matches + 22 adjacent-supported terms out of ~41 meaningful technical terms. Missing Azure/GCP (unsupported) and company-specific CCC terms.
-- **Experience Relevance:** 24/25 - 12 strong experience bullets directly mapping to production operations, monitoring, automation, cloud, incident response. AAIS 20+ TB scale, Actual Reality AI Gateway observability, TachyonMesh Kubernetes/SRE are highly relevant.
+- **Keyword Coverage:** 34/40 - 22 exact matches + 20 adjacent-supported terms out of ~42 meaningful technical terms. HealthTrend adds streaming/Kafka/Spark/distributed systems; skills section adds Linux, Unix, microservices, monitoring, metrics, incident management. Missing Azure/GCP (unsupported) and company-specific CCC terms.
+- **Experience Relevance:** 24/25 - 13 strong experience bullets directly mapping to production operations, monitoring, automation, cloud, incident response. AAIS 20+ TB scale, Actual Reality AI Gateway observability, HealthTrend streaming pipelines are highly relevant.
 - **Impact & Evidence:** 14/15 - All bullets have action verb, specific contribution, technology, scope (20+ TB, 700+ companies, 110 users, 1000+ tables, 160+ jobs), and quantified/qualitative results.
 - **Formatting & ATS Parsing:** 10/10 - One-page PDF, text-extractable, canonical LaTeX source, no tables/graphics/color, standard headings, 102KB (<2.5MB parser target).
 - **Risk & Gap Handling:** 9/10 - Azure/GCP/accessibility gaps documented and omitted; no unsupported claims added; F-1 gate passed (posting silent); exact posted title "Software Engineer II" not in resume (header says "Software Engineer") - minor gap.
 
-**Total: 87/100**
+**Total: 91/100**
 
-**Job Alignment & Evidence Score: 87/100**
+**Job Alignment & Evidence Score: 91/100**
 
 *Internal estimate only; not a predicted ATS score.*
 
 **Score Breakdown:**
-- Keyword Coverage: 30/40 - Strong on core technical terms (Java, Python, Kubernetes, observability, automation, SQL, REST APIs); missing Azure/GCP (unsupported) and company-specific CCC terminology
-- Experience Relevance: 24/25 - Direct production-scale experience with monitoring, automation, cloud, incident detection across 4 relevant internships
-- Impact & Evidence: 14/15 - All 12 experience bullets have metrics/context/results; 2 project bullets with SRE-specific evidence
+- Keyword Coverage: 34/40 - Strong on core technical terms (Java, Python, Kubernetes, observability, automation, SQL, REST APIs, Linux, Unix, microservices, monitoring, metrics, incident management); HealthTrend adds streaming/Kafka/Spark/distributed systems; missing Azure/GCP (unsupported) and company-specific CCC terminology
+- Experience Relevance: 24/25 - Direct production-scale experience with monitoring, automation, cloud, incident detection across 5 relevant internships
+- Impact & Evidence: 14/15 - All 13 experience bullets have metrics/context/results; 2 project bullets with streaming/distributed systems evidence
 - Formatting & ATS Parsing: 10/10 - Perfect canonical compliance, 1 page, 102KB, text-extractable
 - Risk & Gap Handling: 9/10 - Unsupported claims omitted, gaps documented, F-1 gate clear; minor deduction for exact title not in resume text
 
 **Exact Posted Title Matched in Visible Summary/Title/Header Clause:** Waived - Header uses "Software Engineer" (truthful adjacent title) rather than "Software Engineer II" to avoid seniority overclaim. Supported by surrounding evidence.
 
 **Strong matches:**
-- Java, Python, SQL, Shell, JavaScript/TypeScript, Kubernetes, Docker, Linux/Unix
+- Java, Python, SQL, Shell, JavaScript/TypeScript, Kubernetes, Docker, Linux, Unix
 - AWS (Glue, S3, Lambda, IAM, DynamoDB), Prometheus, Grafana, OpenTelemetry, Langfuse
 - Microservices, REST APIs, CI/CD, RBAC, JWT, SSO, PII tokenization
 - Production scale: 20+ TB, 700+ companies, 110 users, 1000+ tables, 160+ jobs, 24-hr latency
-- Observability: monitoring, logging, tracing, alerting, incident detection, automated guardrails
-- Automation: AI Gateway, operational tooling, ETL pipelines, self-service data access
-- SRE-adjacent: Kubernetes, Envoy, load balancing, service discovery, automated failover, recovery time reduction
+- Observability: monitoring, logging, tracing, alerting, incident detection, automated guardrails, metrics, incident management
+- Automation: AI Gateway, operational tooling, ETL pipelines, self-service data access, streaming pipelines
+- Distributed systems: Kafka, Spark, PySpark, HDFS, NiFi, batch + streaming processing
+- SRE-adjacent: Kubernetes, monitoring, metrics, incident management, automated failover, recovery time reduction
 
 **Gaps / intentionally omitted unsupported keywords:**
 - Azure (no production experience)

@@ -16,7 +16,7 @@ Secondary angle: Data engineering and secure access control background (AWS Glue
 
 Adjacent role fit: Applied AI/agentic systems, data engineering, security-adjacent technical roles.
 
-Why this lane: The JD explicitly asks for Python/React full-stack development, AI content generation/moderation, data-driven experimentation at massive scale, and collaboration with data scientists. My Actual Reality work (IRIS evaluation gateway, customer portal 1,476 commits, LiteLLM gateway with 44 red-team fixtures) and AAIS experience (React/Node.js RBAC, 1,000+ SQL tables, AWS Lambda PII pipelines) directly mirror these responsibilities.
+Why this lane: The JD explicitly asks for Python/React full-stack development, AI content generation/moderation, data-driven experimentation at massive scale, and collaboration with data scientists. My Actual Reality work (IRIS evaluation gateway, customer portal production customer portal, LiteLLM gateway with 44 red-team fixtures) and AAIS experience (React/Node.js RBAC, 1,000+ SQL tables, AWS Lambda PII pipelines) directly mirror these responsibilities.
 
 ## Package Plan
 
@@ -28,7 +28,7 @@ Project strategy: Fix-It-Flow (multimodal AI PWA with Next.js/TypeScript/Gemini 
 
 Skills strategy: Group into Languages & Frameworks, AI/Data/Cloud, Security/Testing/Tools. Ensure Python, React, Next.js, TypeScript, SQL, Firebase, AWS (Glue, Lambda, S3, IAM, DynamoDB), LiteLLM, MCP, guardrails, Langfuse, RAG, LLM evaluation, Playwright, Vitest, Jest, RBAC, JWT, SSO, Drizzle ORM are all present.
 
-Known stretch/risk strategy: Quora prefers "familiarity with Python, React, TypeScript and/or SQL" — all covered. "Curiosity about AI and hands-on experience building AI-powered projects" — covered via IRIS gateway, Fix-It-Flow, FalconGraph, SmartSolve agents. "Previous software engineering experience via internship" — 4 internships + current full-time role. "On-call rotation" — not explicitly in resume but implied by IRIS gate runner ownership and customer portal production wrap-up; documented in gap recovery.
+Known stretch/risk strategy: Quora prefers "familiarity with Python, React, TypeScript and/or SQL" -- all covered. "Curiosity about AI and hands-on experience building AI-powered projects" -- covered via IRIS gateway, Fix-It-Flow, FalconGraph, SmartSolve agents. "Previous software engineering experience via internship" -- 4 internships + current full-time role. "On-call rotation" -- not explicitly in resume but implied by IRIS gate runner ownership and customer portal production wrap-up; documented in gap recovery.
 
 Token/source-access strategy: Used evidence-index.md for role/project routing, experience-master.md for exact bullet wording, projects-master.md for project details. No prior application packages consulted.
 
@@ -46,7 +46,7 @@ Internal notes only:
 
 - Future sponsorship follow-up: Track as internal risk. If offer received, confirm H-1B sponsorship willingness and timeline.
 
-- Location / schedule / clearance / degree constraints: Must be available Mon-Fri 9am-3pm Pacific for coordination hours. Aryan is in Eastern Time (Ohio), so 9am-3pm PT = 12pm-6pm ET — feasible. Requires 2025/2026 graduate with B.S./M.S./Ph.D. in CS — Aryan has M.S. CS 2026, GPA 4.00. No clearance requirements mentioned.
+- Location / schedule / clearance / degree constraints: Must be available Mon-Fri 9am-3pm Pacific for coordination hours. Aryan is in Eastern Time (Ohio), so 9am-3pm PT = 12pm-6pm ET -- feasible. Requires 2025/2026 graduate with B.S./M.S./Ph.D. in CS -- Aryan has M.S. CS 2026, GPA 4.00. No clearance requirements mentioned.
 
 - Submitted artifact rule: Do not mention F-1, OPT, STEM OPT, visa status, sponsorship, E-Verify, or Form I-983 in the resume or cover letter unless Aryan explicitly asks.
 
@@ -56,7 +56,7 @@ Referral status: Not started
 
 Referral target / source: Not identified yet
 
-Connection path: Not yet identified — search for BGSU alumni at Quora, Quora Core Product team members on LinkedIn, or engineers with Actual Reality/NOIC connections.
+Connection path: Not yet identified -- search for BGSU alumni at Quora, Quora Core Product team members on LinkedIn, or engineers with Actual Reality/NOIC connections.
 
 Outreach status: Not started
 
@@ -72,7 +72,7 @@ Job-description source audit:
 
 - Full employer posting saved in `job-description.md`: Yes
 - Metadata added without replacing full posting: Yes (metadata block at top)
-- Source limitation, if any: None — full posting text preserved.
+- Source limitation, if any: None -- full posting text preserved.
 
 Default exact-term analyzer result:
 
@@ -89,7 +89,7 @@ Expanded role-specific keyword pass:
 - Missing truthful opportunities: 8 (content moderation, creator experience, data and experimentation, massive scale, on-call rotation, Model Context Protocol, user engagement, user growth)
 - Unsupported / intentionally omitted: 12 (2025 graduate, 2026 graduate, coding competition, coordination hours, designers, full stack applications, Full Stack Software Engineer, New Grad, product managers, Quora mission, remote work, remote-first, software design)
 - Harmless variants: 11 (Model Context Protocol vs MCP, internship vs internships, software engineering experience vs multiple internships, full technology stack vs full-stack, data structures/algorithms/software design covered by CS degree and experience, AI content generation/AI tools/AI-powered projects covered by IRIS/Fix-It-Flow/FalconGraph evidence)
-- Notes: "Full Stack Software Engineer" and "New Grad" are the posted title — included in contact header as "Software Engineer" (truthful adjacent title per AGENTS.md). "2025/2026 graduate" and "Computer Science" are in Education section. "Coordination hours" availability stated in cover letter. "Quora mission" referenced in cover letter. "Remote-first/remote work" not needed in resume. "Designers/product managers/data scientists" are collaboration partners, not personal skills.
+- Notes: "Full Stack Software Engineer" and "New Grad" are the posted title -- included in contact header as "Software Engineer" (truthful adjacent title per AGENTS.md). "2025/2026 graduate" and "Computer Science" are in Education section. "Coordination hours" availability stated in cover letter. "Quora mission" referenced in cover letter. "Remote-first/remote work" not needed in resume. "Designers/product managers/data scientists" are collaboration partners, not personal skills.
 
 Required skills: Python, React, TypeScript, SQL, full-stack development, AI/ML experience, data-driven experimentation, massive scale systems, collaboration with designers/PMs/data scientists, on-call rotation participation.
 
@@ -134,20 +134,20 @@ Important JD Term Search:
   - content moderation → IRIS evaluation gate runner validates LLM outputs for accuracy/safety (adjacent: guardrails, adversarial test fixtures, citation verification)
   - creator experience → Customer portal retainer tracking, workshop tools, notification state isolation for client/admin workflows (adjacent: user-facing feature delivery)
   - data and experimentation → IRIS YAML test suites (41+ cases), A/B evaluation via gate runner, LiteLLM gateway routing comparison (direct-Gemini vs gateway-routed)
-  - massive scale → 20+ TB insurance data (AAIS Data), 1,000+ SQL tables (AAIS Software), 110 users RBAC, 1,476 commits customer portal, 44 red-team fixtures
-  - on-call rotation → Not explicitly documented as formal on-call; IRIS gate runner ownership and customer portal production wrap-up imply operational responsibility. Classified as "Likely built but undocumented" — Aryan confirms participation in production incident response for customer portal.
+  - massive scale → 20+ TB insurance data (AAIS Data), 1,000+ SQL tables (AAIS Software), 110 users RBAC, production customer portal customer portal, 44 red-team fixtures
+  - on-call rotation → Not explicitly documented as formal on-call; IRIS gate runner ownership and customer portal production wrap-up imply operational responsibility. Classified as "Likely built but undocumented" -- Aryan confirms participation in production incident response for customer portal.
   - Model Context Protocol → MCP tools built in customer portal (PORTAL-182), remote MCP server tools with keyed auth for AI agents. Present in resume as "MCP" and "Model Context Protocol (MCP)" in skills.
   - user engagement / user growth → Customer portal features (workshop tools, Gantt timeline, notification system) drive user engagement; not quantified as growth metrics.
-  - AI content generation / AI tools / AI-powered projects → IRIS LLM evaluation, LiteLLM gateway, Fix-It-Flow multimodal PWA, FalconGraph RAG, SmartSolve AI agents — all documented.
+  - AI content generation / AI tools / AI-powered projects → IRIS LLM evaluation, LiteLLM gateway, Fix-It-Flow multimodal PWA, FalconGraph RAG, SmartSolve AI agents -- all documented.
   - designers / product managers / data scientists → Actual Reality: collaborated with data science on IRIS evaluation (LLM-as-a-judge with data science oversight); SmartSolve: worked with ops/executive leaders; AAIS: Product Owner role. Documented in bullets.
-  - full stack applications / full technology stack → Actual Reality (Next.js/Firebase/Node.js/TypeScript full-stack), SmartSolve (Next.js/PostgreSQL/Drizzle), AAIS (React/Node.js/Python/AWS), projects (Next.js/FastAPI/TypeScript) — well covered.
+  - full stack applications / full technology stack → Actual Reality (Next.js/Firebase/Node.js/TypeScript full-stack), SmartSolve (Next.js/PostgreSQL/Drizzle), AAIS (React/Node.js/Python/AWS), projects (Next.js/FastAPI/TypeScript) -- well covered.
   - coordination hours → Not in resume; stated in cover letter.
   - remote-first → Not in resume; not needed.
   - software design / algorithms / data structures → M.S. CS 4.0 GPA, IRIS validation architecture, customer portal architecture, FalconGraph RAG design, Aster Market spec-driven architecture.
 
 - Terms still unsupported: Formal on-call rotation (no explicit on-call schedule ownership documented), quantified user engagement/growth metrics (no specific % or MAU numbers), direct content moderation system ownership (IRIS is evaluation not moderation), direct "creator experience" product ownership (customer portal is client-facing not creator-facing).
 
-- Searches intentionally skipped, if any: None — all important JD terms searched.
+- Searches intentionally skipped, if any: None -- all important JD terms searched.
 
 Supported gaps added to package:
 
@@ -198,17 +198,17 @@ Notes: All important JD terms either covered by evidence, documented as adjacent
 
 ## Experience Emphasized
 
-- Actual Reality Technologies (Software Engineer, promoted from Intern): Primary emphasis — AI gateway infrastructure, LLM evaluation automation, full-stack customer portal (Next.js 15/React 19/TypeScript/Firebase), production scale (1,476 commits), MCP tools, multi-tenant auth, LiteLLM gateway with guardrails/Langfuse/44 red-team fixtures. Directly maps to Quora's Python/React full-stack, AI content generation, moderation adjacency, massive scale, data/experimentation, collaboration with data scientists.
-- SmartSolve Industries (AI & Computer Science Intern): Secondary emphasis — Next.js/PostgreSQL/Drizzle full-stack tracker, AI agent deployment, Docker devcontainers, Codex/Claude Code daily usage. Supports React/TypeScript/SQL/Python, AI tools, internal workflow automation.
-- AAIS Software Engineering Intern: Tertiary emphasis — React/Node.js RBAC/JWT modernization (110 users), Python/JSON 1,000+ SQL tables, AWS Lambda PII tokenization, Product Owner experience. Supports React/Node.js/Python, secure access control, AWS, data pipelines, cross-functional collaboration.
-- AAIS Data Engineering Intern: Included for AWS Glue/PySpark/20+ TB scale evidence supporting "massive scale" and "data and experimentation" — but condensed to 3 bullets per Experience-First Fit Rule.
+- Actual Reality Technologies (Software Engineer, promoted from Intern): Primary emphasis -- AI gateway infrastructure, LLM evaluation automation, full-stack customer portal (Next.js 15/React 19/TypeScript/Firebase), production scale (production customer portal), MCP tools, multi-tenant auth, LiteLLM gateway with guardrails/Langfuse/44 red-team fixtures. Directly maps to Quora's Python/React full-stack, AI content generation, moderation adjacency, massive scale, data/experimentation, collaboration with data scientists.
+- SmartSolve Industries (AI & Computer Science Intern): Secondary emphasis -- Next.js/PostgreSQL/Drizzle full-stack tracker, AI agent deployment, Docker devcontainers, Codex/Claude Code daily usage. Supports React/TypeScript/SQL/Python, AI tools, internal workflow automation.
+- AAIS Software Engineering Intern: Tertiary emphasis -- React/Node.js RBAC/JWT modernization (110 users), Python/JSON 1,000+ SQL tables, AWS Lambda PII tokenization, Product Owner experience. Supports React/Node.js/Python, secure access control, AWS, data pipelines, cross-functional collaboration.
+- AAIS Data Engineering Intern: Included for AWS Glue/PySpark/20+ TB scale evidence supporting "massive scale" and "data and experimentation" -- but condensed to 3 bullets per Experience-First Fit Rule.
 - Alliance for Paired Kidney Donation: Minimal (1 bullet) for AWS/security/healthcare workflow evidence.
 
 ## Projects Emphasized
 
-- Fix-It-Flow (Multimodal AI Repair PWA): Primary — Next.js/TypeScript/PWA, Gemini Vision, Web Speech API, ElevenLabs TTS, AWS DynamoDB. Demonstrates end-to-end AI product with multimodal inputs, voice/vision, serverless persistence — maps to Quora's AI content generation and creator experience.
-- FalconGraph Search (Source-Grounded RAG Search System): Secondary — Python/FastAPI/Next.js, FAISS, Sentence Transformers, OpenAI embeddings. Demonstrates RAG, search, citations, full-stack AI — maps to Quora's knowledge platform and AI-driven features.
-- Aster Market (Spec-Driven E-Commerce Platform): Tertiary — Next.js 15/TypeScript/Prisma/PostgreSQL/Vitest. Demonstrates spec-driven full-stack, relational modeling, API contracts, testing — maps to Quora's quality/performance standards.
+- Fix-It-Flow (Multimodal AI Repair PWA): Primary -- Next.js/TypeScript/PWA, Gemini Vision, Web Speech API, ElevenLabs TTS, AWS DynamoDB. Demonstrates end-to-end AI product with multimodal inputs, voice/vision, serverless persistence -- maps to Quora's AI content generation and creator experience.
+- FalconGraph Search (Source-Grounded RAG Search System): Secondary -- Python/FastAPI/Next.js, FAISS, Sentence Transformers, OpenAI embeddings. Demonstrates RAG, search, citations, full-stack AI -- maps to Quora's knowledge platform and AI-driven features.
+- Aster Market (Spec-Driven E-Commerce Platform): Tertiary -- Next.js 15/TypeScript/Prisma/PostgreSQL/Vitest. Demonstrates spec-driven full-stack, relational modeling, API contracts, testing -- maps to Quora's quality/performance standards.
 
 Project proof emphasized:
 
@@ -231,7 +231,7 @@ All grouped for parser categorization. Exact JD terms (Python, React, TypeScript
 
 Every experience and project bullet must satisfy: action verb + what changed + technology/method + scope/domain + impact/result.
 
-Experience bullet count: 15 (Actual Reality: 5, SmartSolve: 2, AAIS Software: 4, APKD: 1) — meets 11-bullet floor.
+Experience bullet count: 15 (Actual Reality: 5, SmartSolve: 2, AAIS Software: 4, APKD: 1) -- meets 11-bullet floor.
 
 Two-line bullet-wrap check:
 
@@ -244,7 +244,7 @@ Experience bullets checked:
 - Actual Reality bullet 1: Built (action) validation gate runner (what) with Node.js/Playwright/headless Chrome (method) for IRIS glass-research AI system (scope) across 41+ test cases (result). ✓
 - Actual Reality bullet 2: Connected (action) IRIS sandbox to LiteLLM gateway (what) on staging (scope) configuring Gemini models/tenant specs/tests (method/result). ✓
 - Actual Reality bullet 3: Reconstructed (action) 41+ bug-hunt test cases (what) into YAML suites (method) verifying thermodynamic calculations with NIST-JANAF/Stokes' law (scope/result). ✓
-- Actual Reality bullet 4: Revamped/wrapped up (action) customer portal (what) across 1,476 commits (scope) delivering Plane sync, retainer tracking, MCP tools, multi-tenant auth in Next.js 15/Firebase (method/result). ✓
+- Actual Reality bullet 4: Revamped/wrapped up (action) customer portal (what) across production customer portal (scope) delivering Plane sync, retainer tracking, MCP tools, multi-tenant auth in Next.js 15/Firebase (method/result). ✓
 - Actual Reality bullet 5: Deployed (action) LiteLLM AI gateway (what) for policy-controlled routing (scope) with routing tiers, guardrails, Langfuse, Slack alerts, CI/CD gates, 44 fixtures (method/result). ✓
 - SmartSolve bullet 1: Architected (action) full-stack Next.js onboarding tracker (what) with PostgreSQL/Drizzle/SSO/auth (method) replacing memory-based HR follow-up (scope/result). ✓
 - SmartSolve bullet 2: Deployed (action) role-specific AI agents (what) for employee workflows (scope) converting tool audits to scoped projects helping leaders prioritize AI investments (result). ✓
@@ -262,11 +262,11 @@ Project bullets checked:
 
 Weak bullets rewritten:
 
-- None — all bullets start with strong action verbs (Built, Connected, Reconstructed, Revamped, Deployed, Architected, Engineered, Implemented, Automated, Served, Secured).
+- None -- all bullets start with strong action verbs (Built, Connected, Reconstructed, Revamped, Deployed, Architected, Engineered, Implemented, Automated, Served, Secured).
 
 Responsibility-only bullets removed or rewritten:
 
-- None — all bullets include specific contribution, method/technology, scope, and result.
+- None -- all bullets include specific contribution, method/technology, scope, and result.
 
 Bullets over two visual lines tightened:
 
@@ -287,7 +287,7 @@ Human recruiter readability notes:
   - Specific branch names (`iris-sandbox`) omitted
   - Specific PR numbers omitted
   - Specific bug-hunt finding count (79) generalized to "41+ test cases reconstructed from bug-hunt findings"
-- Current/private-role debloat decision: Actual Reality current role kept at 5 high-level bullets covering product surface (IRIS evaluation, AI gateway, customer portal), owned engineering contribution (gate runner, gateway deployment, portal wrap-up), technical method (Playwright, LiteLLM, Next.js, Firebase, MCP), user/customer context (NOIC glass scientists, client/admin workflows), and result (41+ test cases, 1,476 commits, 44 fixtures). Older verified internships (AAIS Software, AAIS Data, SmartSolve, APKD) carry additional depth for public-safe evidence.
+- Current/private-role debloat decision: Actual Reality current role kept at 5 high-level bullets covering product surface (IRIS evaluation, AI gateway, customer portal), owned engineering contribution (gate runner, gateway deployment, portal wrap-up), technical method (Playwright, LiteLLM, Next.js, Firebase, MCP), user/customer context (NOIC glass scientists, client/admin workflows), and result (41+ test cases, production customer portal, 44 fixtures). Older verified internships (AAIS Software, AAIS Data, SmartSolve, APKD) carry additional depth for public-safe evidence.
 
 ## Changes Made
 
@@ -299,11 +299,11 @@ Human recruiter readability notes:
 
 Recommended status: Ready
 
-Submit now or hold: Ready to submit — all gates pass, validator pending.
+Submit now or hold: Ready to submit -- all gates pass, validator pending.
 
 Pre-submit actions: Run application validator, clean build artifacts, verify PDF text extraction, confirm 1-page resume, confirm cover letter artifact exists.
 
-Referral before submit: Recommended — search for Quora engineers or BGSU alumni connections before submission.
+Referral before submit: Recommended -- search for Quora engineers or BGSU alumni connections before submission.
 
 ## Scoring Methodology
 
@@ -311,11 +311,11 @@ Scoring source: Internal rubric per AGENTS.md (keyword coverage 40, experience r
 
 Score breakdown:
 
-- Keyword coverage: 36/40 — 48/79 expanded terms found in resume; 8 missing truthful opportunities (content moderation, creator experience, data and experimentation, massive scale, on-call rotation, Model Context Protocol, user engagement, user growth) partially covered by adjacent evidence; 12 unsupported/omitted appropriately; 11 harmless variants. Strong exact-term coverage for must-have tools (Python, React, TypeScript, SQL, Next.js, Firebase, AWS, LiteLLM, MCP, guardrails, Langfuse, RAG, LLM evaluation, RBAC, JWT, Playwright, Vitest, Jest).
-- Experience relevance: 23/25 — Actual Reality AI gateway + customer portal directly mirrors Quora Core Product responsibilities (AI content generation, moderation adjacency, massive scale, data/experimentation, PM/designer/data scientist collaboration). SmartSolve AI agents + Next.js tracker supports. AAIS React/Node.js RBAC + Lambda PII supports moderation/secure access. Missing: formal on-call rotation, direct creator experience product, direct content moderation system.
-- Impact and evidence: 14/15 — Quantified scale (1,476 commits, 41+ test cases, 44 fixtures, 110 users RBAC, 1,000+ SQL tables, 20+ TB data), strong action+method+result bullets, ICSME-published LLM pipeline, hackathon winner project. Minor gap: no quantified user engagement/growth metrics for Quora-like consumer product.
-- Formatting and ATS parsing: 10/10 — Canonical 1-page layout, 11pt article, letterpaper geometry, glyphtounicode, pdfgentounicode=1, pagestyle empty, linespread 0.92, tightitemize, no tables/graphics/color/hidden text, text-extractable PDF, standard section headings.
-- Risk and gap handling: 9/10 — F-1 gate passed (posting silent on sponsorship), no unsupported claims added, unsupported gaps documented in tailoring notes, coordination hours availability stated in cover letter, remote-first location compatible. Minor risk: on-call rotation not explicitly evidenced, formal sponsorship confirmation needed if offer received.
+- Keyword coverage: 36/40 -- 48/79 expanded terms found in resume; 8 missing truthful opportunities (content moderation, creator experience, data and experimentation, massive scale, on-call rotation, Model Context Protocol, user engagement, user growth) partially covered by adjacent evidence; 12 unsupported/omitted appropriately; 11 harmless variants. Strong exact-term coverage for must-have tools (Python, React, TypeScript, SQL, Next.js, Firebase, AWS, LiteLLM, MCP, guardrails, Langfuse, RAG, LLM evaluation, RBAC, JWT, Playwright, Vitest, Jest).
+- Experience relevance: 23/25 -- Actual Reality AI gateway + customer portal directly mirrors Quora Core Product responsibilities (AI content generation, moderation adjacency, massive scale, data/experimentation, PM/designer/data scientist collaboration). SmartSolve AI agents + Next.js tracker supports. AAIS React/Node.js RBAC + Lambda PII supports moderation/secure access. Missing: formal on-call rotation, direct creator experience product, direct content moderation system.
+- Impact and evidence: 14/15 -- Quantified scale (production customer portal, 41+ test cases, 44 fixtures, 110 users RBAC, 1,000+ SQL tables, 20+ TB data), strong action+method+result bullets, ICSME-published LLM pipeline, hackathon winner project. Minor gap: no quantified user engagement/growth metrics for Quora-like consumer product.
+- Formatting and ATS parsing: 10/10 -- Canonical 1-page layout, 11pt article, letterpaper geometry, glyphtounicode, pdfgentounicode=1, pagestyle empty, linespread 0.92, tightitemize, no tables/graphics/color/hidden text, text-extractable PDF, standard section headings.
+- Risk and gap handling: 9/10 -- F-1 gate passed (posting silent on sponsorship), no unsupported claims added, unsupported gaps documented in tailoring notes, coordination hours availability stated in cover letter, remote-first location compatible. Minor risk: on-call rotation not explicitly evidenced, formal sponsorship confirmation needed if offer received.
 
 ## Alignment Pass
 
@@ -336,7 +336,7 @@ Strong matches:
 - Codex, Claude Code, Drizzle ORM
 - Full-stack architecture (Actual Reality, SmartSolve, AAIS, projects)
 - AI-powered projects (IRIS gateway, Fix-It-Flow, FalconGraph, SmartSolve agents)
-- Massive scale evidence (20+ TB, 1,000+ tables, 110 users, 1,476 commits, 44 fixtures)
+- Massive scale evidence (20+ TB, 1,000+ tables, 110 users, production customer portal, 44 fixtures)
 - Data/experimentation adjacency (IRIS YAML test suites, gate runner A/B evaluation, gateway routing comparison)
 - Collaboration with data scientists/PMs/designers (IRIS data science oversight, SmartSolve ops/executive, AAIS Product Owner)
 
@@ -346,7 +346,7 @@ Gaps / intentionally omitted unsupported keywords:
 - Direct content moderation system ownership (IRIS is evaluation, not moderation)
 - Direct creator experience product ownership (customer portal is B2B client portal)
 - Quantified user engagement/growth metrics (no consumer MAU/DAU numbers)
-- "Full Stack Software Engineer" / "New Grad" exact posted title (used "Software Engineer" in header — truthful adjacent per AGENTS.md)
+- "Full Stack Software Engineer" / "New Grad" exact posted title (used "Software Engineer" in header -- truthful adjacent per AGENTS.md)
 - Coordination hours, remote-first, Quora mission (cover letter only, not resume)
 - 2025/2026 graduate, Computer Science (Education section)
 - Designers, product managers, data scientists (collaboration partners, not personal skills)
@@ -360,7 +360,7 @@ Recommended improvements:
 
 ## Sub-90 Readiness Waiver
 
-Not applicable — score is 92/100.
+Not applicable -- score is 92/100.
 
 ## Verification
 
@@ -382,7 +382,7 @@ Not applicable — score is 92/100.
 - Score consistency gate checked: Pass (36+23+14+10+9 = 92, breakdown matches recorded score)
 - Cover-letter artifact checked: Pass (cover-letter.pdf generated, 1 page, 34 KB)
 - Application-answer human voice gate checked: N/A (no application-questions.md or application-answers.md in this package)
-- Application validator run: Pending
+- Application validator run: Pass (validate_application_package.py passed with zero errors)
 - Token-efficient source access checked: Pass (used evidence-index.md, experience-master.md, projects-master.md, canonical template; no prior packages read)
 
 ## Next Steps

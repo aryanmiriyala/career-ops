@@ -1,0 +1,70 @@
+# Expanded Role-Specific Keywords for NIKE Software Engineer (R-82625)
+# Exact terms from job description for expanded audit
+
+Software Development
+Testing methodologies
+Domain Driven Design
+Scrum
+Agile Practices
+AWS Cloud Integrations
+Kafka
+NiFi
+NIFI
+Oracle Fusion
+middleware integration
+Java
+Python
+Node.js
+NodeJS
+Container Technologies
+Docker
+Kubernetes
+DevOps Practices
+Infrastructure
+CI/CD
+Version Control
+Microservices Architecture
+Microservices Development
+Machine Learning
+Advanced Analytics
+Prediction Models
+Optimization Programs
+Data Driven Decisions
+Scalable Software Solutions
+Technical Design Choices
+Peer Code Reviews
+Cross-functional Teams
+Cross-functional Collaboration
+Consumer Data
+Security
+Reliability
+Performance
+Digital Product Specifications
+Data Integration
+Data Persistence
+Deployment Tools
+Release Engineering
+RESTful Services
+Object-oriented Programming
+High-volume
+Governance
+Risk
+Failover
+Messaging
+NoSQL
+Source Control
+Stakeholders
+Business Requirement
+Product Requirements
+User Stories
+Issue Resolution
+Application Issues
+Testing and Deployment
+Build and Deployment Tools
+API Concepts
+AI-powered Tools
+Generative AI APIs
+Intelligent Automation
+ML Platforms
+Prediction and Optimization Model Development
+ML Problems at Scale
