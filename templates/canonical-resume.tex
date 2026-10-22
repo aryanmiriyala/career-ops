@@ -54,7 +54,8 @@
 {Software Engineer}{Jul. 2026 - Present}
 {Actual Reality Technologies}{Perrysburg, OH}
 \begin{tightitemize}
-  \item Built an automated evaluation pipeline with Node.js and Playwright to validate multi-turn LLM reasoning, tool execution, and citation accuracy across 41+ regression test suites.
+  \item Engineered features for IRIS, a glass-research AI platform built on a LibreChat fork (Node.js, React, MongoDB), integrating an internal LiteLLM gateway with multi-tier routing and Langfuse tracing.
+  \item Built an automated evaluation pipeline with Node.js and Playwright to validate multi-turn IRIS reasoning, tool execution, and citation accuracy across 41+ regression test suites.
   \item Architected a production client portal using Next.js 15, React 19, and Firebase, implementing multi-tenant session isolation, automated ticket triage, and real-time client retainer tracking.
 \end{tightitemize}
 
@@ -74,7 +75,6 @@
   \item Engineered automated ETL pipelines using Python, PySpark, and AWS Glue, processing 20+ TB of production insurance transaction data across 700+ member companies for executive billing reporting.
   \item Led data profiling and schema migration across 160+ tables in MySQL, Oracle, and Impala using Python and SQL, standardizing disparate legacy records into 25 unified master-data domains.
   \item Modernized 160+ legacy Pentaho ETL jobs into serverless AWS Glue workflows and partitioned S3 data lakes, consolidating pipeline complexity and guaranteeing 24-hour SLA data freshness.
-  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
 \end{tightitemize}
 
 \resumeSubheading
@@ -82,7 +82,6 @@
 {American Association of Insurance Services}{Lisle, IL}
 \begin{tightitemize}
   \item Automated schema generation with Python to produce 1,000+ production SQL tables and analytical views across 10+ insurance lines, accelerating industry openIDL data standardization.
-  \item Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality before insurance data standardization.
   \item Implemented role-based access control (RBAC) and JWT authentication in a React/Node.js web application, securing sensitive data access across 110 enterprise users.
   \item Automated serverless data validation and PII tokenization using AWS Lambda and Python (hashlib/boto3), publishing compliant structured datasets to S3 for downstream analytics.
 \end{tightitemize}
@@ -95,9 +94,15 @@
 \end{tightitemize}
 
 \resumesection{Projects}
+\projectHeading{Fix-It-Flow - Multimodal AI Repair Assistant}{Next.js, TypeScript, Gemini Vision, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a multimodal progressive web app (PWA) with Next.js, Web Speech API, Gemini Vision, and ElevenLabs TTS, enabling real-time audio-visual equipment diagnostics backed by AWS DynamoDB.
+\end{tightitemize}
+
+\vspace{-4pt}
 \projectHeading{Diff-Grounded PR Description Generation}{Python, OpenAI API, GitHub API}
 \begin{tightitemize}
-  \item Developed an ICSME-published LLM pipeline turning commits, diffs, and repo metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
+  \item Engineered an LLM summarization pipeline (Python, OpenAI API) accepted at IEEE ICSME, synthesizing code diffs and repository metadata into structured PR descriptions across 1,450 pull requests.
 \end{tightitemize}
 
 \vspace{-4pt}

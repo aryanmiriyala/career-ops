@@ -63,7 +63,7 @@ Full-time Software Engineer (promoted from Intern) at Actual Reality Technologie
 
 ### Tech Stack
 
-Software engineering / Full-Stack, AI Systems & Testing / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Node.js, Playwright, Headless Chrome, Jest, Vitest, Testing Library, ESLint, Tailwind CSS, Plane API, Model Context Protocol (MCP), remote MCP servers, LiteLLM, AI Gateway, Railway, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, Server-Sent Events (SSE), streaming chat APIs, YAML test suites, thermodynamic calculations (NIST-JANAF), Stokes' law calculations, multi-turn dialogue evaluation, authentication/session cookies, session isolation, role provisioning, Gantt/timeline UI, dotenvx, feature flags, smoke testing.
+Software engineering / Full-Stack, AI Systems & Testing / Tech stack: LibreChat, ActualChat (enterprise LibreChat fork), Node.js, Express, React, MongoDB, Redis, WebSocket, TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Playwright, Headless Chrome, Jest, Vitest, Testing Library, ESLint, Tailwind CSS, Plane API, Model Context Protocol (MCP), remote MCP servers, LiteLLM, AI Gateway, Railway, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, Server-Sent Events (SSE), streaming chat APIs, YAML test suites, thermodynamic calculations (NIST-JANAF), Stokes' law calculations, multi-turn dialogue evaluation, authentication/session cookies, session isolation, role provisioning, Gantt/timeline UI, dotenvx, feature flags, smoke testing.
 
 ### Business / Problem Context
 
@@ -140,8 +140,10 @@ To deliver validated fixes to NOIC by late October 2026 while de-risking a propo
 
 ### Reusable Bullet Options
 
+- Engineered features for IRIS, an enterprise glass-research AI platform built on a LibreChat fork (Node.js, React, MongoDB), integrating an internal LiteLLM gateway with multi-tier routing and Langfuse tracing.
+- Built an automated evaluation pipeline with Node.js and Playwright to validate multi-turn IRIS reasoning, tool execution, and citation accuracy across 41+ regression test suites.
 - Built evaluation infrastructure and gateway integration for IRIS, an advanced glass-research AI expert system developed for the Northwest Ohio Innovation Consortium (NOIC), enabling glass scientists and manufacturers to query complex melting chemistry, ASTM standards, and patents with verified citations.
-- Led evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat, configuring pinned Gemini models, tenant specs, and automated configuration tests.
+- Led evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat (LibreChat fork), configuring pinned Gemini models, tenant specs, and automated configuration tests.
 - Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
 - Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
 - Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
