@@ -117,6 +117,12 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Firestore rules testing
 - Make
 - Linux
+- GitHub Actions
+- CI/CD
+- Apache Kafka
+- Apache NiFi
+- Scrum
+- Agile
 
 ## User-Confirmed Additions
 
@@ -272,6 +278,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - RBAC
 - Auth middleware
 - Anti-CSRF tokens
+- CSRF protection
 - Audit logging
 - IP-aware logging
 - Access-denied workflows

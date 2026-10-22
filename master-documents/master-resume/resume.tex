@@ -51,11 +51,12 @@
 
 \resumesection{Experience}
 \resumeSubheading
-{Software Engineer}{Oct. 2026 - Present}
-{Actual Reality Technologies \textnormal{\small(Intern: Jul. 2026 -- Sep. 2026)}}{Perrysburg, OH}
+{Software Engineer}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
 \begin{tightitemize}
-  \item Built an automated validation gate runner with Node.js and headless Chrome (Playwright) to evaluate multi-turn LLM responses, tool calls, and citations across 41+ test cases for the NOIC glass-research AI system.
-  \item Revamped and wrapped up the customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth in Next.js 15 and Firebase.
+  \item Deployed a LiteLLM AI model gateway for policy-controlled model routing, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
+  \item Built an automated validation gate runner with Node.js and headless Chrome (Playwright) evaluating multi-turn LLM responses, tool calls, and citations across 41+ test cases.
+  \item Revamped the customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth in Next.js 15 and Firebase.
 \end{tightitemize}
 
 \resumeSubheading
@@ -64,46 +65,49 @@
 \begin{tightitemize}
   \item Deployed role-specific AI agents for employee-requested workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
   \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
-  \item Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes, reviews, and downstream implementation work.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows; participated in Scrum ceremonies and CI/CD pipeline maintenance.
 \end{tightitemize}
 
 \resumeSubheading
 {Data Engineering Intern}{May 2025 - Aug. 2025}
 {American Association of Insurance Services}{Lisle, IL}
 \begin{tightitemize}
-  \item Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
-  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
-  \item Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl for governed MDM ingestion.
-  \item Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
+  \item Automated a weekly billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for 700+ member companies.
+  \item Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing legacy data into 25 domains using domain-driven design principles.
+  \item Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl while maintaining 24-hour data latency.
 \end{tightitemize}
 
 \resumeSubheading
 {Software Engineering Intern}{May 2023 - May 2024}
 {American Association of Insurance Services}{Lisle, IL}
 \begin{tightitemize}
-  \item Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
-  \item Automated CSV cleaning and deduplication with Python, Pandas, multiprocessing, fuzzy matching, and hashing, improving source quality before insurance data standardization.
-  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific controls for about 110 internal users.
-  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3, supporting safer downstream insurance data processing for SDMA workflows.
+  \item Engineered Python/JSON automation generating 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating data standardization and reporting.
+  \item Implemented RBAC/JWT in a React/Node.js modernization with role-specific controls for 110 internal users; automated AWS Lambda PII tokenization with hashlib/boto3 for secure downstream processing.
 \end{tightitemize}
 
 \resumeSubheading
 {Software Engineering Intern}{May 2022 - Aug. 2022}
 {Alliance for Paired Kidney Donation}{Toledo, OH}
 \begin{tightitemize}
-  \item Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
+  \item Secured AWS-hosted Lucee/CFML match-run workflows with CSRF protection, IP-aware audit logging, protected access-denied routing, and crash fixes for safer transplant operations serving clinical users.
 \end{tightitemize}
 
 \resumesection{Projects}
+\projectHeading{HealthTrend - Healthcare Streaming Pipeline}{Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark}
+\begin{tightitemize}
+  \item Built a Dockerized healthcare data pipeline routing CSV patient records into HDFS, streaming JSON health events through Kafka, and processing both with Spark/PySpark for analytics.
+\end{tightitemize}
+
+\vspace{-4pt}
 \projectHeading{Diff-Grounded PR Description Generation}{Python, OpenAI API, GitHub API}
 \begin{tightitemize}
   \item Developed an ICSME-published LLM pipeline turning commits, diffs, and repo metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
 \end{tightitemize}
 
-\vspace{-4pt}
 \resumesection{Technical Skills}
-\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, Swift, SQL, Java, C++, C, C\#, React, Next.js, Angular, Node.js, Express, REST APIs, Firebase\\
-\textbf{AI, Data \& Cloud:} LiteLLM, AI/model gateways, smart-router tiers, guardrails, Langfuse, Model Context Protocol (MCP), OpenAI API, Gemini API, Mistral AI, LangChain, RAG, LLM evaluation, PostgreSQL, MySQL, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark\\
-\textbf{Security, Testing \& Tools:} Vercel, Vitest, Jest, Playwright, Testing Library, Docker, Git, Linux, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, Codex, Claude Code
+\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, Swift, SQL, Java, C++, C, React, Next.js, Angular, Node.js, Express, REST APIs, Firebase\\
+\textbf{AI, Data \& Cloud:} LiteLLM, AI/model gateways, Model Context Protocol (MCP), guardrails, Langfuse, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, LLM evaluation, PostgreSQL, MySQL, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, Kafka, NiFi, Docker\\
+\textbf{Security, Testing \& DevOps:} Vercel, Vitest, Jest, Playwright, Testing Library, Docker, Git, GitHub Actions, Linux, SSO, JWT, RBAC, Auth0, CSRF protection, audit logging, PII tokenization, Codex, Claude Code, Scrum/Agile\\
+\textbf{Domains:} Insurance data systems, Healthcare workflow software, Consumer data products, Applied AI/ML systems, Systems programming
 
 \end{document}

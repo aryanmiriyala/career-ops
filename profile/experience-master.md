@@ -38,6 +38,15 @@ Roles:
 Location: Perrysburg, OH
 Dates: Jul. 2026 - Present (Promoted to Full-Time Software Engineer in Oct. 2026)
 
+### Resume Presentation Guidance
+
+- **Consolidated Single Entry (Standard for one-page resumes):**
+  - Subheading: `\resumeSubheading{Software Engineer}{Jul. 2026 - Present}{Actual Reality Technologies}{Perrysburg, OH}`
+  - *Rationale:* Aryan joined Actual Reality Technologies in July 2026 as an intern and transitioned directly into the full-time Software Engineer role in October 2026 without any interruption in service. Consolidating into `Software Engineer | Jul. 2026 - Present` saves vertical line space on one-page application resumes, eliminates awkward parenthetical sub-dates like `(Intern: Jul. 2026 -- Sep. 2026)` from breaking the company line or confusing automated ATS date parsers, and accurately reflects continuous software engineering responsibilities. In interviews or detailed profiles, the full trajectory (intern to full-time promotion) can be highlighted as a sign of rapid progression.
+- **Dual-Role Breakdown (For multi-page CVs, LinkedIn, or Handshake):**
+  - Software Engineer (Full-Time): Oct. 2026 - Present
+  - Software Engineering Intern: Jul. 2026 - Sep. 2026
+
 ### Platform-Ready Description
 
 Full-time Software Engineer (promoted from Software Engineering Intern in October 2026) at Actual Reality Technologies, building AI systems infrastructure and production web applications. Current work centers on the IRIS project, an advanced glass-research and materials science AI expert system developed for the Northwest Ohio Innovation Consortium (NOIC) on ActualChat. IRIS serves glass scientists, materials engineers, and industrial researchers across furnace dynamics, glass chemistry, defect analysis, ASTM/ISO testing standards, and patent landscape queries using dual-source RAG (LlamaIndex/LlamaCloud knowledge base and live web search). Engineering contributions for IRIS include architecting an automated validation gate runner that drives the live chat API via headless Chrome (Playwright) to systematically test multi-turn conversations, verify tool calling, parse streaming SSE replies, and validate citation accuracy against 41+ test cases reconstructed from an extensive 79-finding University of Toledo bug-hunt backlog with rigorous thermodynamic and physics equations (NIST-JANAF enthalpies, steam heat content, Stokes' law calculations). Also connected the IRIS sandbox environment to the company's LiteLLM AI Gateway on staging using pinned Gemini model endpoints to evaluate model routing, safety guardrails, and latency. Concurrently revamped, hardened, and wrapped up the company's customer portal (`my.actualreality.ai`) end-to-end as its primary engineer across 1,476 commits, delivering two-way Plane API ticket and intake reconciliation, client retainer tracking, remote Model Context Protocol (MCP) server tools for AI agents, multi-tenant session isolation, per-user notification read states, interactive Gantt timelines, Firestore index and query reliability, and exhaustive smoke test suites.
@@ -135,7 +144,8 @@ To deliver validated fixes to NOIC by late October 2026 while de-risking a propo
 - Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
 - Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
 - Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
-- Deployed a LiteLLM AI Gateway on Railway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+- Deployed a LiteLLM AI model gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
+- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
 
 ### Source And Verification Notes
 
@@ -208,7 +218,7 @@ SmartSolve work centered on internal software, AI adoption, AI-assisted workflow
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
 - Evaluated LLM/API and cloud-service integration paths for internal workflow automation, shaping lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
-- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
+- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data; participated in Scrum ceremonies and CI/CD pipeline maintenance.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
 - Modeled early architecture for AI-enabled internal systems, including a QMS dependency register designed to make quality-document relationships traceable.
 
@@ -478,7 +488,7 @@ AAIS is a P&C insurance advisory and statistical-agent organization that support
 ### Reusable Bullet Options
 
 - Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
-- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources through JDBC with Python, Pandas, and SQL, standardizing inconsistent legacy insurance data into 25 domains.
+- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources through JDBC with Python, Pandas, and SQL, standardizing inconsistent legacy insurance data into 25 domains using domain-driven design principles.
 - Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, improving maintainability for governed MDM ingestion.
 - Delivered reverse-ETL and data-validation workflows with custom AWS IAM roles, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
 

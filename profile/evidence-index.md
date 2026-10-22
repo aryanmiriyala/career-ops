@@ -11,14 +11,14 @@ Use this compact index before opening full profile master files. It is a retriev
 
 ## Current / Recent Experience
 
-### Actual Reality Technologies - Software Engineer (Full-Time) & Software Engineering Intern
+### Actual Reality Technologies - Software Engineer (Jul. 2026 - Present)
 
-Primary use: current full-time software engineering role (promoted October 2026 from intern), IRIS glass-research AI expert system for the Northwest Ohio Innovation Consortium (NOIC), evaluation infrastructure & automated validation gate runner with headless Chrome (Playwright), AI Gateway/model-call routing, LiteLLM proxy configuration, LlamaCloud/LlamaIndex RAG knowledge base integration, customer portal end-to-end revamp and wrap-up (1,476 commits), two-way Plane API ticket reconciliation, client retainer hours tracking, remote Model Context Protocol (MCP) server tools, multi-tenant session isolation, Firestore reliability, automated testing (Jest, Vitest, Playwright), manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable AI Gateway, evaluation runner, model-call routing, safety policy, customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
+Primary use: current software engineering role (joined as intern in July 2026, promoted to full-time Software Engineer in October 2026; standardly listed as `Software Engineer | Jul. 2026 - Present` on one-page resumes to preserve line space and clear ATS chronology), IRIS glass-research AI expert system for the Northwest Ohio Innovation Consortium (NOIC), evaluation infrastructure & automated validation gate runner with headless Chrome (Playwright), AI Gateway/model-call routing, LiteLLM proxy configuration, LlamaCloud/LlamaIndex RAG knowledge base integration, customer portal end-to-end revamp and wrap-up (1,476 commits), two-way Plane API ticket reconciliation, client retainer hours tracking, remote Model Context Protocol (MCP) server tools, multi-tenant session isolation, Firestore reliability, automated testing (Jest, Vitest, Playwright), manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable AI Gateway, evaluation runner, model-call routing, safety policy, customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
 
 Verified keywords:
 
-- TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Vercel, Node.js, Playwright, Headless Chrome, Jest, Server-Sent Events (SSE), Plane API two-way sync, standing-decline cursor reconciliation, remote MCP server, Model Context Protocol (MCP), customer/admin AI tools, keyed access, intake requests, retainer tracking, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
-- LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), LlamaIndex, LlamaCloud, RAG, YAML test suites.
+- TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Vercel, Node.js, Playwright, Headless Chrome, Jest, Vitest, Server-Sent Events (SSE), Plane API two-way sync, standing-decline cursor reconciliation, remote MCP server, Model Context Protocol (MCP), customer/admin AI tools, keyed access, intake requests, retainer tracking, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
+- LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/CD gates, red-team fixtures, model-call routing, routing/safety policy, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), LlamaIndex, LlamaCloud, RAG, YAML test suites, adversarial test fixtures.
 - Authentication/session cookies, session isolation, role provisioning, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, exhaustive smoke test inventory.
 - Augmented intelligence, Industry 4.0/5.0, glass research / material science calculations (NIST-JANAF enthalpies, steam heat content, Stokes' law bubble rising velocities), Northwest Ohio Innovation Consortium (NOIC), glass manufacturing, furnace operations, batch formulation, ASTM/ISO standards (ASTM C169, C1279, C1499, E1300), patent landscape analysis, manufacturing technology, process improvement, data modeling.
 - AI-assisted development toolchain (confirmed by Aryan Oct. 15, 2026): Claude Code, GitHub Copilot, Cursor, Codex; structured context design for agent-assisted delivery workflows; reviewing agent-generated code and test assets against documented requirements.
@@ -35,7 +35,8 @@ Resume-ready evidence:
 - Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
 - Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
 - Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
-- Deployed a LiteLLM AI Gateway on Railway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
+- Deployed a LiteLLM AI model gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
+- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
 
 Source: `profile/experience-master.md`, `ActualChat` (IRIS-61, IRIS-59, IRIS-52-55, IRIS-60), `customer-portal` (1,476 commits, PORTAL-72-202), and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
@@ -45,14 +46,14 @@ Primary use: AI-assisted full-stack internal software, secure workflow design, q
 
 Verified keywords:
 
-- Next.js, TypeScript/JavaScript, PostgreSQL, Drizzle ORM, SSO, authentication middleware, Docker, WSL2, Colima, Codex, Claude Code, LLM/API planning, cloud-service evaluation, API/webhook automation planning, internal documentation.
+- Next.js, TypeScript/JavaScript, PostgreSQL, Drizzle ORM, SSO, authentication middleware, Docker, WSL2, Colima, Codex, Claude Code, LLM/API planning, cloud-service evaluation, API/webhook automation planning, internal documentation, Scrum, Agile, CI/CD.
 - QMS dependency register, HR/new-hire onboarding tracker, AI tool audits, department workflow opportunities, AI-assisted planning/debugging/review, proprietary-code isolation.
 
 Resume-ready evidence:
 
 - Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
-- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
+- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data; participated in Scrum ceremonies and CI/CD pipeline maintenance.
 - Applied Codex and Claude Code across implementation planning, debugging, code review, and self-review while keeping human validation central.
 - Modeled QMS dependency-register relationships to make quality-document dependencies traceable and translate ambiguous operational needs into reviewable implementation plans.
 
@@ -87,7 +88,7 @@ Verified keywords:
 Resume-ready evidence:
 
 - Automated a weekly DBeaver SQL billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting.
-- Architected a 160+ table MDM migration by profiling MySQL, Oracle, Impala, and PostgreSQL sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+- Architected a 160+ table MDM migration by profiling MySQL, Oracle, Impala, and PostgreSQL sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains using domain-driven design principles.
 - Modernized legacy ETL jobs into AWS Glue workflows and partitioned S3 pipelines to improve maintainability for governed MDM ingestion.
 - Delivered reverse-ETL and data-validation workflows with AWS IAM access controls and S3 pipelines, giving users controlled self-service access to validated insurance data while maintaining 24-hour latency.
 
@@ -117,12 +118,12 @@ Primary use: healthcare workflow software, security/reliability, AWS-hosted Luce
 
 Verified keywords:
 
-- AWS-hosted Lucee/CFML, anti-CSRF protection, IP-aware audit logging, access-denied/404 routing, HTML5 date/time inputs, JavaScript/CSS fallbacks, import ordering, MFI upload paths, duplicate-antigen crash handling.
+- AWS-hosted Lucee/CFML, CSRF protection, IP-aware audit logging, access-denied/404 routing, HTML5 date/time inputs, JavaScript/CSS fallbacks, import ordering, MFI upload paths, duplicate-antigen crash handling.
 - Healthcare workflow platform, clinical/transplant-adjacent operations, data-entry reliability.
 
 Resume-ready evidence:
 
-- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
+- Secured AWS-hosted Lucee/CFML match-run workflows with CSRF protection, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
 - Stabilized data-entry and import workflows by modernizing HTML5 inputs, JavaScript/CSS fallbacks, Matchgrid import ordering, MFI upload paths, and duplicate-antigen crash handling.
 
 Source: `profile/experience-master.md`, Alliance for Paired Kidney Donation.
@@ -136,11 +137,11 @@ Use this cache for first-pass project selection before opening `profile/projects
 | Project | Best-fit roles / domains | Verified technologies and keywords | Use when the JD emphasizes |
 | :--- | :--- | :--- | :--- |
 | Travel Health Advisor | Healthcare AI, full-stack, geospatial data, hackathon product | React, Vite, Express, Node.js, MongoDB, Mongoose, REST APIs, D3/TopoJSON, Mistral AI API, PDF generation | Healthcare, AI chatbot, full-stack JavaScript, maps, REST APIs, rapid product delivery |
-| Fix-It-Flow | Multimodal AI product, PWA, sustainability, repair workflow | Next.js 14, TypeScript, PWA, Web Speech API, camera input, Gemini Vision, Llama, ElevenLabs, DynamoDB | AI agents, voice/camera workflows, serverless persistence, product UX, sustainability |
+| Fix-It-Flow | Multimodal AI product, PWA, sustainability, repair workflow | Next.js, TypeScript, PWA, Web Speech API, camera input, Gemini Vision, Llama, ElevenLabs, DynamoDB | AI agents, voice/camera workflows, serverless persistence, product UX, sustainability |
 | RocketGrader / RocketGrades | Education AI, LMS workflow, secure full-stack platform | Angular, TypeScript, Express, Node.js, MongoDB, Auth0, AWS S3, LangChain, Mistral AI, REST APIs | EdTech, role dashboards, file upload/parsing, AI feedback, Auth0, AWS-backed apps |
 | FalconGraph Search | RAG/search, campus knowledge systems, source-grounded answers | C++, OpenMP, Python, FastAPI, Next.js, FAISS, Sentence Transformers, OpenAI embeddings, crawling, PDF/DOCX parsing | RAG, search, embeddings, document ingestion, source citations, graph/context retrieval |
 | Diff-Grounded PR Generation | LLM research, software engineering automation, evaluation | Python, OpenAI API, GitHub API, repository mining, commits, diffs, linked issues, LLM evaluation | LLM tooling, developer productivity, grounded generation, evals, GitHub automation |
-| HealthTrend | Data engineering, healthcare streaming, distributed systems | Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark, JSON, CSV, healthcare IoT data | Kafka, Spark, batch/stream processing, data pipelines, healthcare analytics |
+| HealthTrend | Data engineering, healthcare streaming, distributed systems | Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark, JSON, CSV, healthcare IoT data | Kafka, NiFi, Spark, batch/stream processing, data pipelines, healthcare analytics |
 | Self-Adaptive Parallelism | Systems, performance engineering, parallel computing research | C++, OpenMP, Python, Docker, Make, Linux, UCB bandit optimization, telemetry, benchmarking | C++, systems performance, runtime instrumentation, scheduling, optimization |
 | DreamScape | AI mobile, local-first study tools, audio workflows | React Native, Expo, TypeScript, Gemini API, ElevenLabs API, Expo AV, AsyncStorage, Zustand, Zod | Mobile engineering, AI study tools, local-first persistence, TTS/audio, React Native |
 | MarioRL | Reinforcement learning, deep learning experiments | Python, PyTorch, Stable-Baselines3, PPO, DQN, Gym, TensorBoard, checkpoints | Reinforcement learning, model comparison, experiment tracking, PyTorch |
@@ -179,7 +180,7 @@ Primary use: multimodal AI product, Next.js PWA, voice/camera workflow, Gemini V
 
 Verified keywords:
 
-- Next.js 14, PWA, Web Speech API, camera input, Gemini Vision, Featherless.AI/Llama, ElevenLabs text-to-speech, AWS DynamoDB, typed API routes, stateful workflow, safety warnings, contextual Q&A.
+- Next.js, TypeScript, PWA, Web Speech API, camera input, Gemini Vision, Featherless.AI/Llama, ElevenLabs text-to-speech, AWS DynamoDB, typed API routes, stateful workflow, safety warnings, contextual Q&A.
 
 Resume-ready evidence:
 

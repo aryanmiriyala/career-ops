@@ -28,23 +28,23 @@ Avoid:
 - Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
 - Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
 - Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
-- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
-- Consolidated customer-facing workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
+- Deployed a LiteLLM AI model gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
+- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
 - Architected Aster Market, an Amazon-inspired e-commerce platform using a spec-driven methodology with Next.js 15, TypeScript, Prisma ORM, and PostgreSQL (Neon).
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
-- Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication for secure internal user access.
+- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary code; participated in Scrum ceremonies and CI/CD pipeline maintenance.
 - Contributed to a React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
 - Built a full-stack AI assignment feedback platform with Angular, TypeScript, Express, MongoDB, Auth0, AWS S3, LangChain, and Mistral AI.
 - Built a full-stack health AI prototype with React, Vite, Express, MongoDB/Mongoose, and Mistral AI for travel-health guidance during BGSU Hackathon 2025.
 - Implemented an interactive country-selection map with react-simple-maps, retrieving disease records from an Express/MongoDB API and surfacing risk, vaccine availability, healthcare access, and recovery-rate data.
-- Built Fix-It-Flow for RocketHacks 2026, a Next.js 14/TypeScript PWA that uses camera input, voice commands, Gemini Vision, Featherless.AI/Llama reasoning, ElevenLabs TTS, and DynamoDB to guide appliance repair and recycling decisions.
+- Built Fix-It-Flow for RocketHacks 2026, a Next.js/TypeScript PWA that uses camera input, voice commands, Gemini Vision, Featherless.AI/Llama reasoning, ElevenLabs TTS, and DynamoDB to guide appliance repair and recycling decisions.
 
 ## Data Engineer
 
 - Automated a fully manual SQL billing workflow by developing a production PySpark job and AWS Glue Workflow, processing 20+ TB of golden-table insurance data for 700+ member companies.
-- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains.
+- Architected a 160+ table MDM migration by profiling MySQL/Oracle/Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains using domain-driven design principles.
 - Modernized 160+ legacy Pentaho workflows into AWS Glue ETL pipelines and partitioned S3 data movement for Semarchy MDM, improving maintainability for governed MDM ingestion.
 - Delivered reverse-ETL and validation workflows with custom AWS IAM roles, giving Data Solutions controlled self-service access to validated insurance data while maintaining 24-hour latency.
 - Engineered Python/JSON automation that generated 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
@@ -79,7 +79,7 @@ Avoid:
 ## Security-Conscious Software Engineer
 
 - Implemented SSO, auth middleware, RBAC, and JWT authentication to protect employee and internal user workflows.
-- Secured AWS-hosted Lucee/CFML match-run workflows with anti-CSRF, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
+- Secured AWS-hosted Lucee/CFML match-run workflows with CSRF protection, IP-aware audit logging, protected routing, crash fixes, and blood-tube defaults for safer transplant operations.
 - Automated PII tokenization with hashlib and boto3 before ingesting structured JSON into S3.
 - Built role-specific access paths for about 110 internal users through React, Node.js, RBAC, and JWT authentication.
 

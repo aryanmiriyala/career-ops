@@ -89,9 +89,9 @@ Built Fix-It-Flow for RocketHacks 2026: a Next.js 14 PWA that uses camera input,
 - Modular TypeScript architecture with `features/camera`, `features/voice`, `features/repair`, `server/clients`, `server/services`, and shared typed interfaces.
 - PWA support, Tailwind CSS styling, and environment-driven configuration for Gemini, Featherless.AI, ElevenLabs, and AWS.
 
-### Tech Stack
+### Tech Stack (for resume)
 
-Voice-first sustainability AI / Tech stack: Next.js 14, React 18, TypeScript, Tailwind CSS, Next.js App Router, PWA, Web Speech API, browser camera APIs, Google Gemini Vision, Featherless.AI, Llama 3.1 / Qwen2.5-VL model calls, ElevenLabs text-to-speech, AWS DynamoDB, AWS SDK for JavaScript, AWS S3 / Rekognition client code, REST-style API routes, JSON parsing, session persistence, prompt engineering, multimodal reasoning, npm.
+Voice-first sustainability AI / Tech stack: Next.js, TypeScript, Gemini Vision, AWS DynamoDB
 
 ### Positioning Angles
 
@@ -250,6 +250,10 @@ Data engineering / Tech stack: Apache NiFi, Apache Kafka, Apache Zookeeper, Apac
 
 - Built a Dockerized healthcare data pipeline using Apache NiFi, Kafka, Hadoop HDFS, and Spark to ingest structured patient records and stream IoT health events.
 - Routed CSV patient data into HDFS and JSON health events into Kafka, then processed both sources with Spark/PySpark for validation and downstream analytics.
+
+### Tech Stack (for resume)
+
+Data engineering / Tech stack: Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark
 
 ### MarioRL: Super Mario Reinforcement Learning Agent Comparison
 

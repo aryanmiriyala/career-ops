@@ -87,7 +87,7 @@ Recruiters often scan quickly, so the resume must make relevance visible immedia
 
 - Put the strongest matching experience in the top half of the page.
 - Keep recent technical roles prominent.
-- Keep Actual Reality Technologies visible as the current internship when it helps chronology or target fit. Verified source material supports customer-portal engineering claims around Next.js/TypeScript, Firebase, project-management API integration, auth/session behavior, dashboard status logic, and Vitest-tested workflows; keep private customer/client details public-safe.
+- Present Actual Reality Technologies cleanly as `Software Engineer | Jul. 2026 - Present` on one-page application resumes. Listing this single continuous tenure prevents awkward parenthetical sub-dates like `(Intern: Jul. 2026 -- Sep. 2026)` from cluttering the company subheading, saves vertical line space, and ensures clean, uninterrupted ATS date parsing. Verified source material supports engineering claims across the IRIS validation gate runner (Node.js/Playwright), LiteLLM AI Gateway, and the customer portal (Next.js 15, Firebase, Plane two-way sync, remote MCP tools); keep private client details public-safe.
 - For current/private-role work, use fewer higher-signal bullets that describe the customer/user surface, Aryan's owned engineering contribution, method, and outcome. Do not make the resume read like a list of recent tickets.
 - Use bold sparingly for important technologies and metrics only.
 - Make role alignment obvious from the first two bullets of each relevant job.
