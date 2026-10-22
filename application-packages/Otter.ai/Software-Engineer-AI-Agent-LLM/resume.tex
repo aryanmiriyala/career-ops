@@ -1,0 +1,106 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Software Engineer, AI Agent \& LLM
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineering Intern}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Deployed a LiteLLM AI Gateway with smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI release gates, and 44 red-team fixtures using AI-assisted development (Claude Code, Copilot, Cursor, Codex).
+  \item Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling sandboxed execution for customer/admin AI tools with scoped security and cost controls.
+  \item Hardened production authentication by deriving session-cookie domains from request hosts, stabilizing login transitions, and eliminating redirect flashes for customer-facing AI workflows.
+  \item Consolidated three tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence \& Computer Science Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects using Codex and Claude Code for planning, debugging, and code review with human validation loops.
+  \item Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+  \item Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data.
+  \item Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes and downstream implementation.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered Python/JSON automation generating 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL-aligned standardization and reporting.
+  \item Implemented RBAC and JWT patterns in a React/Node.js modernization, replacing broad employee-wide visibility with role-specific access controls for 110 internal users.
+  \item Automated AWS Lambda validation that tokenized PII with hashlib/boto3 and delivered structured JSON to S3 for safer downstream insurance data processing.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{FalconGraph Search — Source-Grounded RAG System}{Python, FastAPI, Next.js, FAISS, Sentence Transformers, OpenAI Embeddings}
+\begin{tightitemize}
+  \item Built a source-grounded RAG system: crawled resources, processed documents, generated embeddings, retrieved with FAISS, served answers via FastAPI, exposed Next.js interface for knowledge extraction and conversational Q\&A.
+\end{tightitemize}
+
+\vspace{-4pt}
+\projectHeading{Diff-Grounded PR Generation — LLM Evaluation Pipeline}{Python, OpenAI API, GitHub API, LLM Evaluation}
+\begin{tightitemize}
+  \item Developed an ICSME-published LLM pipeline turning commits, diffs, and repo metadata into evidence-grounded PR descriptions, with automated evaluation for correctness, coverage, and clarity across 1,450 PRs.
+\end{tightitemize}
+
+\vspace{-4pt}
+\projectHeading{Fix-It-Flow — Multimodal AI Repair Agent}{Next.js 14, TypeScript, PWA, Gemini Vision, Llama, ElevenLabs, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, and ElevenLabs TTS to diagnose appliance issues with typed API routes, stateful workflows, and DynamoDB persistence.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, SQL, C++, Java, React, Next.js 15, React Native, Angular, Node.js, Express, FastAPI, Firebase, Tailwind CSS\\
+\textbf{AI, Agent \& LLM:} LiteLLM, AI Gateway, MCP, smart-router tiers, guardrails, Langfuse, OpenAI API, Gemini API, Mistral AI, Llama, LangChain, RAG, embeddings, FAISS, vector search, LLM evaluation, correctness, groundedness, red-team fixtures, agent orchestration, sandboxed execution, observability, evaluation datasets, automated graders, regression tests, release gates\\
+\textbf{Cloud, Data \& Infra:} AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, PostgreSQL, MySQL, MongoDB, Docker, Vercel, CI/CD, Git, Linux\\
+\textbf{Security, Testing \& Tools:} SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, Vitest, Testing Library, Claude Code, GitHub Copilot, Cursor, Codex
+
+\end{document}

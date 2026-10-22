@@ -1,0 +1,73 @@
+AI Agent
+AI-agent
+agent
+LLM
+LLM-powered
+AI quality
+quality evaluation
+nondeterministic systems
+evaluation
+conversational knowledge engine
+AI Chat
+knowledge extraction
+annotation
+indexing
+evaluation datasets
+automated graders
+regression tests
+release gates
+traces
+logs
+qualitative examples
+agent infrastructure
+orchestration
+tracing
+debugging
+retries
+sandboxed execution
+observability
+task completion
+correctness
+groundedness
+reliability
+latency
+cost
+production traces
+customer feedback
+usage signals
+coding agents
+agent-assisted development
+AI Agent engineering
+machine learning engineering
+backend engineering
+distributed-systems engineering
+AI-agent products
+LLM-powered products
+diagnose failures
+models
+prompts
+retrieval
+tools
+data pipelines
+backend services
+product workflows
+shared agent infrastructure
+turn production traces
+measurable improvements
+collaborate across
+AI teams
+product teams
+infrastructure teams
+data teams
+security teams
+application teams
+3+ years
+high agency
+strong ownership
+bias toward action
+ambiguous problems
+production launch
+continuous improvement
+coding agents effectively
+rigorously reviewing
+controlling quality
