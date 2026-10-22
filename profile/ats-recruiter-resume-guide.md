@@ -67,17 +67,21 @@ Strong software/data examples:
 
 Checklist for each bullet:
 
-- Starts with a strong action verb.
-- Does not start with `Responsible for`, `Helped`, `Worked on`, or `Assisted`.
+- Starts with a strong, past-tense action verb (e.g., `Architected`, `Deployed`, `Engineered`, `Automated`, `Secured`, `Revamped`).
+- Does not start with `Responsible for`, `Helped`, `Worked on`, `Assisted`, `Promoted to`, `Served as`, or gerunds (`Building`, `Managing`, `Supporting`).
 - States what was built, changed, automated, analyzed, secured, validated, or improved.
 - Names the actual technology used.
 - Shows scope, user, system, or domain context.
-- Includes a metric when verified.
+- Includes an engineering or business impact metric when verified (e.g., 20+ TB, 700+ member companies, 110 internal users, 160+ tables, 41+ test cases, 44 fixtures, 24-hour latency SLA).
+- Never includes vanity developer activity metrics: commit counts (e.g. `across 1,400 commits`), lines of code, or raw PR counts. These indicate activity volume, not technical impact or system reliability.
+- Describes a single coherent technical achievement. Never splice two unrelated projects into one bullet with a semicolon, and never cram 4 disconnected features into a single sentence.
 - Explains impact without exaggeration.
 - Does not read like a job description responsibility.
 - Uses job-description keywords in context when the keyword is truthful.
+- Contextualizes niche or third-party tools. Never use unexplained tool names (e.g., write `project management tickets via Plane API` instead of bare `Plane project/ticket statuses`).
 - Is understandable without private ticket IDs, internal route names, private repository knowledge, or unexplained vendor/tool code names.
 - Renders as no more than two visual PDF lines in the canonical resume layout unless a rare high-signal exception is documented.
+- Balances experience depth: limit any single role to at most 3-4 dense bullets so that key past internships (e.g. AAIS 20+ TB data engineering, APKD security workflows) are not cannibalized.
 
 If a bullet cannot satisfy this checklist, rewrite it before compiling the final resume. If a bullet exceeds two visual lines, tighten it before shrinking layout or cutting stronger evidence. If a metric is unavailable, use a truthful qualitative outcome such as reliability, traceability, security, standardization, reduced manual work, reproducibility, or clearer downstream workflows.
 

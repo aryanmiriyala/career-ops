@@ -96,6 +96,8 @@ FORBIDDEN_RESUME_SOURCE_PATTERNS = [
     (r"\\fancy(?:head|foot)\b", "resume content must not rely on headers or footers"),
     (r"Actual Reality Technologies\s*\\textnormal\{\\small\(Intern", "Actual Reality must be listed cleanly as Software Engineer | Jul. 2026 - Present without parenthetical intern sub-dates"),
     (r"\\resumeSubheading\s*\{[^}]*promoted", "resume subheadings must not include promotion text"),
+    (r"\b\d+[+,]?\s*(?:commits?|lines of code|loc)\b", "vanity activity metrics (commit counts, lines of code) are forbidden in resumes; use system/business impact metrics instead"),
+    (r"\bPlane\s+project/ticket\b", "Plane must be contextualized as an issue tracker or project management tool (e.g. 'project management API via Plane')"),
 ]
 
 REQUIRED_RESUME_SOURCE_PATTERNS = [
@@ -109,7 +111,7 @@ REQUIRED_RESUME_SOURCE_PATTERNS = [
 ]
 
 WEAK_BULLET_OPENERS = re.compile(
-    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?|Promoted(?:\s+to)?)\b",
+    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?|Promoted(?:\s+to)?|Served(?:\s+as)?|Building|Managing|Supporting)\b",
     re.IGNORECASE,
 )
 
