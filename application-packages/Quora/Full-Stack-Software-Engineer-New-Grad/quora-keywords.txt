@@ -1,0 +1,77 @@
+# Quora-specific expanded keyword terms for alignment audit
+# Exact terms from the job description that should appear in the resume
+
+Full Stack Software Engineer
+New Grad
+full stack applications
+Python
+React
+TypeScript
+SQL
+user engagement
+user growth
+AI content generation
+content moderation
+creator experience
+data and experimentation
+massive scale
+full technology stack
+designers
+product managers
+data scientists
+on-call rotation
+coordination hours
+2025 graduate
+2026 graduate
+Computer Science
+data structures
+algorithms
+software design
+software engineering experience
+internship
+coding competition
+Quora mission
+AI tools
+AI-powered projects
+remote-first
+remote work
+Next.js
+Firebase
+PostgreSQL
+Node.js
+AWS
+Docker
+Git
+CI/CD
+testing
+Playwright
+Vitest
+Jest
+RAG
+LLM
+AI Gateway
+LiteLLM
+MCP
+Model Context Protocol
+guardrails
+Langfuse
+Gemini API
+OpenAI API
+Mistral AI
+LangChain
+PySpark
+AWS Glue
+S3
+Lambda
+IAM
+DynamoDB
+RBAC
+JWT
+SSO
+Auth0
+anti-CSRF
+audit logging
+PII tokenization
+Codex
+Claude Code
+Drizzle ORM
