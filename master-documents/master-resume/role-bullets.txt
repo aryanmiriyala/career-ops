@@ -2,7 +2,7 @@ Software Engineering Intern | Actual Reality Technologies | Jul. 2026 -- Present
 - Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
 - Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 
-Artificial Intelligence & Computer Science Intern | SmartSolve Industries | May 2026 -- Jul. 2026
+Artificial Intelligence Engineer Intern | SmartSolve Industries | May 2026 -- Jul. 2026
 - Deployed role-specific AI agents for employee-requested workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
 - Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Modeled an AI-enabled QMS dependency register to make quality-document relationships traceable before process changes, reviews, and downstream implementation work.

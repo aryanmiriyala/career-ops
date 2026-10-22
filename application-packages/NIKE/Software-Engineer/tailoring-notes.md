@@ -107,39 +107,39 @@ Locations searched: `profile/experience-master.md`, `profile/projects-master.md`
 
 ## Bullet Audit
 
-### Experience Bullets (Total: 12, exceeds 11 minimum)
+### Experience Bullets (Target: 12 bullets across 5 roles)
 
-**Actual Reality Technologies - Software Engineering Intern (Jul 2026 - Present)** - 3 bullets
-1. Deployed a LiteLLM AI model gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
-2. Building a remote Model Context Protocol server with keyed access for the Next.js/Firebase customer portal, enabling AI tools to query project-management ticket/status APIs and submit intake requests with scoped security and cost controls.
-3. Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
+**Actual Reality Technologies - Software Engineer (Jul 2026 - Present)** - 3 bullets
+1. Engineered features for IRIS, an enterprise glass-research AI platform built on a LibreChat fork (Node.js, React, MongoDB), integrating an internal LiteLLM gateway with multi-tier routing and Langfuse tracing.
+2. Built an automated evaluation pipeline with Node.js and Playwright to validate multi-turn IRIS reasoning, tool execution, and citation accuracy across 41+ regression test suites.
+3. Architected a production client portal using Next.js 15, React 19, and Firebase, implementing multi-tenant session isolation, automated ticket triage, and real-time client retainer tracking.
 
-**SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)** - 3 bullets
+**SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)** - 2 bullets
 4. Deployed role-specific AI agents for employee-requested workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
-5. Architected a full-stack onboarding tracker with Next.js, TypeScript, PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
-6. Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary code; participated in Scrum ceremonies and CI/CD pipeline maintenance.
+5. Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 
 **AAIS - Data Engineering Intern (May 2025 - Aug 2025)** - 3 bullets
-7. Automated a weekly billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting across 700+ member companies.
-8. Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy data into 25 domains using domain-driven design principles.
-9. Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl while maintaining 24-hour data latency.
+6. Automated a weekly billing process with Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data for Data Solutions, internal teams, and CFO reporting across 700+ member companies.
+7. Architected a 160+ table MDM migration by profiling MySQL, Oracle, and Impala sources with Python, Pandas, SQL, and JDBC, standardizing inconsistent legacy insurance data into 25 domains using domain-driven design principles.
+8. Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl while maintaining 24-hour data latency.
 
-**AAIS - Software Engineering Intern (May 2023 - May 2024)** - 2 bullets
-10. Engineered Python/JSON automation generating 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating data standardization and reporting.
-11. Implemented RBAC/JWT in a React/Node.js modernization with role-specific controls for 110 internal users; automated AWS Lambda PII tokenization with hashlib/boto3 for secure downstream processing.
+**AAIS - Software Engineering Intern (May 2023 - May 2024)** - 3 bullets
+9. Engineered Python/JSON automation generating 1,000+ production SQL tables and consolidated views across 10+ insurance lines, accelerating openIDL/openIDS-aligned data standardization and reporting.
+10. Implemented RBAC/JWT in a React/Node.js modernization with role-specific controls for 110 internal users; automated AWS Lambda PII tokenization with hashlib/boto3 for secure downstream processing.
+11. Built Java/Spring Boot microservice APIs with Maven on OpenShift, supporting insurance data standardization workflows.
 
 **Alliance for Paired Kidney Donation - Software Engineering Intern (May 2022 - Aug 2022)** - 1 bullet
-12. Secured AWS-hosted Lucee/CFML match-run workflows with cross-site request forgery (CSRF) protection, IP-aware audit logging, protected access-denied routing, and crash fixes for safer transplant operations serving clinical users.
+12. Secured AWS-hosted Lucee/CFML match-run workflows with CSRF protection, IP-aware audit logging, protected access-denied routing, and crash fixes for safer transplant operations serving clinical users.
 
-### Project Bullets (3 selected to preserve experience priority)
+### Project Bullets (Select 2-3 max to preserve experience priority)
 
-1. **HealthTrend - Healthcare Streaming Pipeline**: Built a Dockerized healthcare data pipeline routing CSV patient records into HDFS, streaming JSON health events through Kafka, and processing both with Spark/PySpark for healthcare analytics.
+1. **Fix-It-Flow - Multimodal AI Repair Assistant**: Built a voice-first Next.js PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues and guide repair decisions with typed API routes.
+
 2. **Diff-Grounded PR Description Generation (ICSME-published)**: Developed an LLM pipeline that turns commits, diffs, linked issues, and repository metadata into evidence-grounded PR descriptions, reducing reviewer effort across 1,450 PRs.
-3. **Fix-It-Flow - Multimodal AI Repair Assistant (RocketHacks 2026)**: Built a voice-first Next.js PWA using camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues and guide repair decisions with typed API routes.
 
 Two-line bullet-wrap check: Pass - all bullets render at ≤2 visual PDF lines in canonical layout
 
-## Human Recruiter Readability Gate
+### Human Recruiter Readability Gate
 - Translate "MCP server" → "Model Context Protocol server" with context
 - Translate "Plane ticket/project status" → "project-management API integration for ticket/status queries"
 - Translate "LiteLLM AI Gateway" → "AI model gateway (LiteLLM)" with context
@@ -163,49 +163,22 @@ Two-line bullet-wrap check: Pass - all bullets render at ≤2 visual PDF lines i
 
 ## Scoring Methodology
 
-Job Alignment & Evidence Score: 93/100
-Internal estimate only; not a predicted ATS score.
+### Job Alignment & Evidence Score: 93/100
+*Internal estimate only; not a predicted ATS score.*
 
-Score breakdown
+## Score breakdown
 - Keyword coverage: 37/40
 - Experience relevance: 24/25
 - Impact and evidence: 14/15
 - Formatting and ATS parsing: 10/10
 - Risk and gap handling: 8/10
 
+Total: 93/100
+
 ## Expanded role-specific keyword pass:
-Ran expanded audit with 76 exact JD terms via `--term-file expanded-terms.txt`. Default analyzer checked 18 terms (10 found). Expanded audit found 15 of 76 exact terms. Many "missing" terms are covered contextually or are phrasing variants:
-- "Software Development" - covered by all 12 experience bullets
-- "Testing methodologies" - covered by Vitest, Testing Library, validation workflows
-- "Domain Driven Design" - covered by explicit phrase in AAIS Data bullet 8
-- "Agile Practices" / "Scrum" - covered by "Scrum ceremonies" in SmartSolve bullet 6
-- "AWS Cloud Integrations" - covered by AWS Glue, Lambda, S3, IAM, DynamoDB across bullets
-- "Container Technologies" - covered by Docker in SmartSolve and HealthTrend
-- "DevOps Practices" - covered by CI/CD gates, GitHub Actions, Git
-- "Microservices Development" - covered by "microservice APIs" (AAIS SW) and AI Gateway/MCP as services
-- "Machine Learning" / "Advanced Analytics" - covered by AI Gateway, AI agents, RAG, LLM evaluation
-- "Prediction Models" / "Optimization Programs" - covered by UCB bandit optimization
-- "Scalable Software Solutions" - covered by 20+ TB, 700+ companies, 110 users, 1,450 PRs scale context
-- "Cross-functional Teams" / "Cross-functional Collaboration" - implicit in all internship bullets
-- "Peer Code Reviews" / "Code Reviews" - implied by CI/CD gates and ICSME-published eval pipeline
-- "Version Control" / "Source Control" - covered by Git, GitHub Actions
-- "Security" / "Reliability" / "Performance" - covered by PII tokenization, RBAC, CSRF, audit logging, 24-hour latency
-- "Requirements" / "Product Requirements" / "Business Requirement" - covered by Product Owner role, implementation from specs
-- "User Stories" / "Issue Resolution" / "Application Issues" - covered by ticket/status APIs, crash fixes
-- "Build and Deployment Tools" / "Deployment Tools" / "Release Engineering" - covered by CI/CD, AWS pipelines
-- "Data Integration" / "Data Persistence" - covered by MDM migration, reverse ETL, S3 pipelines
-- "Messaging" / "Failover" / "Governance" / "Risk" - adjacent in MDM governance, audit logging
-- "NoSQL" - covered by MongoDB, DynamoDB
-- "Object-oriented Programming" - covered by Java/Spring Boot, C++
-- "High-volume" - covered by 20+ TB, 1,000+ tables, 700+ companies
+Ran expanded audit with 76 exact JD terms via `--term-file expanded-terms.txt`. Default analyzer checked 18 terms (10 found). Expanded audit found 15 of 76 exact terms. Many "missing" terms are covered contextually or are phrasing variants.
 
-Gaps / intentionally omitted unsupported keywords:
-- **Oracle Fusion middleware integration** - No verified experience; AAIS used Oracle as data source only
-- **5 years post-baccalaureate experience** - Aryan has ~3 years internship + research experience (2022-2026); documented as stretch requirement in tracker notes
-- **Explicit "Kubernetes" in production** - Only in TachyonMesh project (not on resume); Docker is present
-- **Explicit "RESTful Services" phrasing** - Covered by "REST APIs" in skills and API integration bullets
-
-Strong matches:
+## Strong matches
 - Python, Java, Node.js, TypeScript/JavaScript, SQL (all required languages)
 - AWS (Glue, Lambda, S3, IAM, DynamoDB) - cloud platform
 - Kafka, NiFi - open-source streaming/data tools
@@ -220,13 +193,19 @@ Strong matches:
 - Consumer Data Security - PII tokenization, RBAC/JWT, CSRF protection, audit logging
 - Cross-functional collaboration - all internships
 
-Recommended improvements:
-1. Add explicit "Domain Driven Design" phrase to AAIS Data bullet 8 (done)
-2. Add "Vitest, Testing Library" to Actual Reality bullet 3 and skills (done)
-3. Add "Docker" to SmartSolve bullet 6 and skills (done)
-4. Add "Kafka, NiFi" to HealthTrend project bullet and skills (done)
-5. Add "Scrum ceremonies and CI/CD pipeline maintenance" to SmartSolve bullet 6 (done)
-6. Ensure "Software Engineer" appears in header/title line (done)
+## Gaps / intentionally omitted unsupported keywords
+- **Oracle Fusion middleware integration** - No verified experience; AAIS used Oracle as data source only
+- **5 years post-baccalaureate experience** - Aryan has ~3 years internship + research experience (2022-2026); documented as stretch requirement in tracker notes
+- **Explicit "Domain Driven Design" terminology** - Recovered via MDM domain modeling; will add explicit phrase to AAIS Data bullet
+- **Explicit "Kafka" / "NiFi" in production** - Only in HealthTrend project; will include in Projects section
+
+## Recommended improvements
+1. Add explicit "Domain Driven Design" phrase to AAIS Data bullet 7
+2. Add "Vitest, Testing Library" to Actual Reality bullet 3 and skills
+3. Add "Docker" to SmartSolve bullet and skills
+4. Add "Kafka, NiFi" to HealthTrend project bullet and skills
+5. Add "Scrum/Agile ceremonies" to SmartSolve or Actual Reality bullet
+6. Ensure "Software Engineer" appears in header/title line
 
 ## Verification Gates
 

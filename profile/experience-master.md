@@ -166,7 +166,7 @@ To deliver validated fixes to NOIC by late October 2026 while de-risking a propo
 
 ## SmartSolve Industries
 
-Role: Artificial Intelligence & Computer Science Intern  
+Role: Artificial Intelligence Engineer Intern  
 Location: Bowling Green, OH  
 Dates: May 2026 - Jul. 2026
 

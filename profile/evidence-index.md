@@ -40,7 +40,7 @@ Resume-ready evidence:
 
 Source: `profile/experience-master.md`, `ActualChat` (IRIS-61, IRIS-59, IRIS-52-55, IRIS-60), `customer-portal` (1,476 commits, PORTAL-72-202), and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
-### SmartSolve Industries - Artificial Intelligence & Computer Science Intern
+### SmartSolve Industries - Artificial Intelligence Engineer Intern
 
 Primary use: AI-assisted full-stack internal software, secure workflow design, quality-management and operations tooling, AI adoption, developer environment reproducibility.
 

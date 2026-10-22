@@ -329,10 +329,10 @@ bullets:
     evidence_refs: ["experience-master.md:41", "ActualChat:IRIS-Phase-1"]
     lane_tags: ["ai-engineering", "rag", "evaluation", "domain-modeling"]
 
-  # SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)
+  # SmartSolve Industries - AI Engineer Intern (May 2026 - Jul 2026)
   - id: "SS-001"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "primary"
@@ -345,7 +345,7 @@ bullets:
 
   - id: "SS-002"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "contributor"
@@ -358,7 +358,7 @@ bullets:
 
   - id: "SS-003"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "contributor"
@@ -371,7 +371,7 @@ bullets:
 
   - id: "SS-004"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "primary"
@@ -384,7 +384,7 @@ bullets:
 
   - id: "SS-005"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "primary"
@@ -397,7 +397,7 @@ bullets:
 
   - id: "SS-006"
     role: "SmartSolve Industries"
-    title: "Artificial Intelligence & Computer Science Intern"
+    title: "Artificial Intelligence Engineer Intern"
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "contributor"

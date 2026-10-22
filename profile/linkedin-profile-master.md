@@ -97,7 +97,7 @@ Source verification note: Full-time promotion October 2026. 1,476 commits author
 
 ### SmartSolve
 
-Title: AI and Computer Science Intern  
+Title: Artificial Intelligence Engineer Intern  
 Company: SmartSolve  
 Dates: May 2026 - Jul. 2026
 Location: Bowling Green, Ohio, United States
