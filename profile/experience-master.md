@@ -32,86 +32,92 @@ Core themes:
 
 ## Actual Reality Technologies
 
-Role: Software Engineering Intern
+Roles:
+- Software Engineer (Full-Time): Oct. 2026 - Present
+- Software Engineering Intern: Jul. 2026 - Sep. 2026
 Location: Perrysburg, OH
-Dates: Jul. 2026 - Present
+Dates: Jul. 2026 - Present (Promoted to Full-Time Software Engineer in Oct. 2026)
 
 ### Platform-Ready Description
 
-Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. AI Gateway work includes a pinned LiteLLM proxy on Railway, smart-router model tiers, guardrail policy, Langfuse traces, Slack alerts, config validators, CI/deploy gates, and red-team fixtures that enable intelligent model routing and policy-controlled LLM serving for multiple AI projects. Customer-portal work spans a Next.js/TypeScript/Firebase application with customer and admin surfaces, Plane-backed project/ticket data, workshop workflows, authentication/session handling, dashboard status logic, health checks, documentation, Vitest/Testing Library coverage, and an in-progress remote MCP server with keyed access so customer/admin AI tools can query ticket status, project status, and intake requests with scoped security and cost controls.
+Full-time Software Engineer (promoted from Software Engineering Intern in October 2026) at Actual Reality Technologies, building AI systems infrastructure and production web applications. Current work centers on the IRIS project, a glass-research AI chatbot built for the Northwest Ohio Innovation Consortium (NOIC) on ActualChat. Engineering contributions for IRIS include architecting an automated validation gate runner that drives the live chat API via headless Chrome (Playwright) to systematically test multi-turn conversations, verify tool calling, parse streaming SSE replies, and validate citation accuracy against 41+ test cases reconstructed from an extensive bug-hunt backlog with rigorous thermodynamic and physics equations (NIST-JANAF enthalpies, steam heat content, Stokes' law calculations). Also connected the IRIS sandbox environment to the company's AI Gateway on staging using pinned Gemini model endpoints. Concurrently revamped, hardened, and wrapped up the company's customer portal (`my.actualreality.ai`) end-to-end as its primary engineer across 1,476 commits, delivering two-way Plane API ticket and intake reconciliation, client retainer tracking, remote Model Context Protocol (MCP) server tools for AI agents, multi-tenant session isolation, per-user notification read states, interactive Gantt timelines, Firestore index and query reliability, and exhaustive smoke test suites.
 
 ### Handshake Description
 
-Software Engineering Intern improving a private Next.js/TypeScript customer portal with Firebase, project-management API integration, authentication/session fixes, dashboard status logic, and Vitest-tested customer/admin workflows.
+Full-time Software Engineer (promoted from Intern) at Actual Reality Technologies, building the validation gate runner and AI Gateway evaluation pipeline for the IRIS glass-research AI chatbot, and revamping the production Next.js/Firebase customer portal end-to-end across 1,476 commits with Plane two-way synchronization, retainer hours tracking, and remote MCP tools.
 
 ### Tech Stack
 
-Software engineering / Customer portal and AI Gateway / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, Plane ticket/project status, remote MCP server, Model Context Protocol, customer/admin AI tools, keyed access, intake requests, scoped security, cost controls, LiteLLM, Railway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, config validators, CI/deploy gates, red-team fixtures, model-call routing, routing/safety policy, model registry, cost/rate controls, fallback chains, observability, decision records, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+Software engineering / Full-Stack, AI Systems & Testing / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Node.js, Playwright, Headless Chrome, Jest, Vitest, Testing Library, ESLint, Tailwind CSS, Plane API, Model Context Protocol (MCP), remote MCP servers, LiteLLM, AI Gateway, Railway, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, Server-Sent Events (SSE), streaming chat APIs, YAML test suites, thermodynamic calculations (NIST-JANAF), Stokes' law calculations, multi-turn dialogue evaluation, authentication/session cookies, session isolation, role provisioning, Gantt/timeline UI, dotenvx, feature flags, smoke testing.
 
 ### Business / Problem Context
 
-Actual Reality Technologies works in augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development for manufacturing and operational contexts. Aryan's current work spans AI Gateway routing/safety infrastructure and the company customer portal, a private TypeScript/Next.js application that exposes customer/admin workflows and project-management data. Submitted-facing bullets should translate internal or vendor-specific details into AI Gateway, model-call routing, safety policy, customer-portal, project-data, workflow, authentication, dashboard, and API-integration language unless the exact vendor/tool is a job-description keyword.
+Actual Reality Technologies builds augmented intelligence, AI systems, predictive analytics, and enterprise platforms for manufacturing, material science, and operational clients. Aryan's work spans two major initiatives: the IRIS glass-research AI assistant for the Northwest Ohio Innovation Consortium (NOIC), and the core Actual Reality customer portal (`my.actualreality.ai`). IRIS required a rigorous, reproducible evaluation gate to benchmark model accuracy, citations, tool calls, and calculations across 79 historical bug-hunt findings before production promotion. The customer portal required a complete end-to-end overhaul to support reliable client-to-engineering project management, retainer tracking, AI tool connectivity via MCP, and rock-solid multi-tenant authentication.
 
 ### Problem / Company Impact Context
 
-- Built AI Gateway routing and safety infrastructure around a pinned LiteLLM proxy on Railway, enabling intelligent model routing and policy-controlled LLM serving for multiple AI projects with smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and red-team fixtures.
-- Building a remote MCP server with keyed access for the customer portal so customer/admin AI tools can query Plane ticket/project status and submit intake requests with scoped security and cost controls.
-- Improved a private customer portal used for customer/admin workflows at `my.actualreality.ai`.
-- Worked across Next.js/TypeScript UI routes, authentication/session behavior, project-management data integration, dashboard status logic, health checks, documentation, and automated tests.
-- Consolidated separate Capture, Define, and Whiteboard tools into one tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
-- Improved production auth behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login navigation so users do not see a login-page flash or stranded spinner.
-- Improved customer-portal project-data reliability by paginating work-item state counts, forcing refreshes through route and gateway cache layers, preventing older overlapping reads from overwriting newer data, and classifying project states from counts.
-- Added or updated Vitest/Testing Library coverage, architecture tests, route tests, and documentation around project phases, Plane integration, auth/session behavior, and team-capacity planning.
+- Promoted to full-time Software Engineer in October 2026 following successful internship delivery across AI Gateway and customer portal initiatives; immediately took ownership of the IRIS project evaluation and gateway promotion track.
+- Architected and built the IRIS validation gate runner (IRIS-61 / PR #85), an automated Node.js CLI driving headless Chrome (Playwright) to validate the real chat API against sandbox endpoints with host allowlisting, SSE parsing, citation extraction, tool-call tracking, timeout/abort handling, and opt-in concurrency.
+- Connected the IRIS sandbox environment to the AI Gateway staging infrastructure (IRIS-59 / PR #83) with dedicated tenant configuration in `actualchat.yaml`, binding the gateway agent to pinned Gemini models (`gemini-3.1-pro-preview`).
+- Systematically designed and rebuilt a 41-case test set from 79 bug-hunt findings (IRIS-52, IRIS-53, IRIS-54, IRIS-55, IRIS-60), mathematically verifying complex glass chemistry and physical calculations using NIST-JANAF reaction enthalpies, steam enthalpy changes (500°C -> 1450°C), batch reaction energetics, and Stokes' law bubble rising velocities.
+- Completely revamped and wrapped up the customer portal (`my.actualreality.ai`) end-to-end across 1,476 authored commits, turning a fragile prototype into a hardened production platform.
+- Engineered two-way support ticket and intake reconciliation between the customer portal and Plane (PORTAL-177, PORTAL-160, PORTAL-161, PORTAL-162, PORTAL-194), delivering Plane decisions, decline explanations, standing-decline cursors with retry logic, and 10-minute periodic sync.
+- Built client retainer management and hours tracking (PORTAL-197, PORTAL-200), allowing administrators to configure monthly retainers in Company Settings and automatically aggregating worked hours across all linked projects.
+- Developed remote Model Context Protocol (MCP) server tools (PORTAL-182) that allow customer and admin AI tools to query team member profiles, team rosters, and Plane project/ticket statuses with keyed access and cost controls.
+- Hardened multi-tenant session isolation (PORTAL-198, PORTAL-201) to prevent older staff sessions from overriding client identities, enabled staff to run internal clients without customer logins, and removed magic links in favor of secure password authentication (PORTAL-118).
+- Fixed notification state leaks (PORTAL-199) by decoupling read states so one user marking a notification read does not clear it for the entire client organization.
+- Stabilized the Firestore data layer by fixing `useCollection` query constraint keying (PORTAL-122), exporting composite indexes to version control (PORTAL-123), and adding bounded backoff re-subscription for failed client reads (PORTAL-121, PORTAL-141).
+- Added an interactive Gantt / Timeline layout to project boards (PORTAL-175) and consolidated fragmented workflow tools into a unified tabbed Workshop route (PORTAL-72).
+- Authored an exhaustive smoke test inventory covering all customer and admin surfaces (PORTAL-145, PORTAL-151, PORTAL-202).
+- Deployed a pinned LiteLLM AI Gateway on Railway for intelligent model routing, smart-router tiers, guardrail policies, Langfuse tracing, Slack alerts, CI/deploy gates, and 44 red-team fixtures.
 
 ### Work Performed
 
-- Improving the private `Actual-Reality/customer-portal` repository, described internally as the customer portal hosted at `my.actualreality.ai`.
-- Built AI Gateway infrastructure for model-call routing and policy enforcement, including LiteLLM proxy configuration, smart-router tiers, guardrail policy, Langfuse tracing, Slack block alerts, config validators, CI/deploy gates, and red-team fixtures.
-- Authored 68 commits under Aryan's GitHub identities from July 29 to August 6, 2026, across merged and open customer-portal pull requests.
-- Authored merged PRs for Workshop route consolidation, production session-cookie behavior, deferred team-capacity planning, post-login UX, forced Plane refresh behavior, and four-state project status reporting.
-- Open PR work includes dashboard project-status derivation from work-item counts, Plane-membership remediation links, and admin health-feed coverage for revoked write membership.
-- Current ticket brief includes urgent security/auth work around removing magic-link sign-in, making role changes explicit instead of side-effect driven, fixing client invite domains, surfacing client-side Firestore read errors, repairing Firestore query constraint dependency keys, reconciling Firebase Auth users against Firestore `users` docs, restoring Firestore index/tooling reproducibility, and completing end-to-end customer visibility validation.
-- Worked mainly in `src/gateways/plane.gateway.ts`, `src/services/plane-access.service.ts`, `src/components/auth/login-form.tsx`, `src/lib/plane-progress.ts`, project/dashboard surfaces, Workshop routes/components, auth/session routes, tests, and feature documentation.
+- Promoted to Software Engineer (Full-Time) in October 2026.
+- Primary engineer and author of 1,476 commits in `Actual-Reality/customer-portal`, driving the application from early development through complete end-to-end wrap-up and production deployment.
+- Author of PR #85 (IRIS-61: Build validation gate runner) in `Actual-Reality/ActualChat`, building the headless Chrome testing harness in `config/iris-gate/` with Jest test suites, SSE event stream decoding, and answer/citation/tool-call extraction.
+- Author of PR #83 (IRIS-59: Connect the IRIS sandbox to gateway staging) in `Actual-Reality/ActualChat`, implementing tenant configuration specs, Gemini model binding, and test coverage.
+- Authored PR #91 (IRIS-53) and PR #92 (IRIS-54) in `Actual-Reality/ActualChat`, constructing exact and rebuilt YAML test cases for student bug-hunt findings with pass/fail evaluation criteria.
+- Authored tickets IRIS-55 and IRIS-60, conducting technical investigations into glass batch calculation formulas, reaction enthalpies, and multi-turn challenge conversation recovery.
+- Completed customer portal tickets PORTAL-72 through PORTAL-202 spanning Plane two-way triage sync, retainer hours tracking, remote MCP tools, notification read-state isolation, session cookie domain logic, Firestore index and query constraint fixes, and exhaustive smoke test suites.
 
 ### Positioning Angles
 
-- Current software engineering internship
-- Customer portal engineering
-- AI Gateway and model-routing infrastructure
-- Full-stack TypeScript/Next.js application development
-- Authentication/session reliability
-- Security/auth hardening and account lifecycle correctness
-- Plane API/integration reliability
-- Dashboard and project-state semantics
-- Firestore/Firebase data consistency and read-failure visibility
-- End-to-end customer workflow validation
-- Automated testing and architecture guardrails
-- Cost-aware and observable AI integration architecture
-- Augmented intelligence and applied AI-adjacent product work
-- Industry 4.0/5.0 and manufacturing technology
-- Data modeling and predictive analytics context
-- Cloud consulting and app-development context
-- Early-career engineering in a small product/consulting organization
+- Full-time Software Engineer promotion
+- AI Systems & LLM evaluation infrastructure
+- Validation gate runner & headless browser automation
+- End-to-end customer portal architecture and delivery
+- Model Context Protocol (MCP) server development
+- Full-stack TypeScript, Next.js 15, and React 19 engineering
+- Two-way API synchronization and cursor-based reconciliation
+- Multi-tenant authentication, session isolation, and RBAC
+- Enterprise client retainer management and hours tracking
+- Firestore data modeling, query optimization, and security rules
+- Observable AI Gateway routing and safety policy
+- Test automation (Jest, Vitest, Playwright, Testing Library)
+- Domain modeling in material science and glass research
 
 ### Reusable Bullet Options
 
-- Building a remote MCP server with keyed access for Actual Reality's Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
-- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
-- Consolidated customer workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
-- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
-- Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
-- Investigating customer-portal security and reliability issues across account-creation flows, role-change side effects, client invite domains, Firestore read-error handling, query resubscription correctness, and Firebase Auth/user-document reconciliation.
-- Added tests and documentation across Vitest route/component suites, architecture guardrails, project-management API integration, dashboard status decisions, auth/session behavior, and deferred team-capacity planning.
+- Promoted to full-time Software Engineer to lead evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat.
+- Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
+- Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
+- Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
+- Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase.
+- Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic.
+- Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
+- Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
+- Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
+- Deployed a LiteLLM AI Gateway on Railway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
 
 ### Source And Verification Notes
 
-- Confirmed by Aryan: role title `Software Engineering Intern`, company `Actual Reality Technologies`, start date `July 2026`.
-- Confirmed by Aryan: Actual Reality Technologies location should be listed as `Perrysburg, OH`.
-- Confirmed by Aryan on August 25, 2026: AI Gateway work has built a pinned LiteLLM proxy on Railway with routing and safety policy, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, config validators, 134 passing tests, and 44 red-team fixtures.
-- Source document: `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, provided by Aryan for understanding work completed so far, not as a submitted artifact.
-- Public company context found through LinkedIn/web search: northwest Ohio company focused on augmented intelligence, Industry 4.0/5.0, data modeling, predictive analytics, process improvement, cloud consulting, and app development.
-- GitHub source status: authenticated `gh` access inspected `Actual-Reality/customer-portal` on August 7, 2026. Evidence includes private repo metadata, package.json, authored commit history, PR list, file-level stats, and branch diffs. Keep customer/client details public-safe when drafting submitted artifacts.
-- Ticket brief source: user-provided Customer Portal ticket brief snapshot dated August 7, 2026, repo at `87f79a9`, covering Aryan-created or Aryan-assigned Plane tickets across Todo, In review, In progress, Cancelled, and conflict states.
+- Confirmed by Aryan: promoted to full-time Software Engineer at Actual Reality Technologies in October 2026; prior role was Software Engineering Intern (July 2026 - September 2026). Location: Perrysburg, OH.
+- Repositories inspected in `/Users/aryanmiriyala/Desktop/Actual-Reality`: `ActualChat` (branches `iris-sandbox`, `IRIS-53...`, `IRIS-54...`, `IRIS-55...`, `IRIS-60...`), `customer-portal` (1,476 commits by Aryan Miriyala), `iris-gate`, and `iris-gateway`.
+- Key ActualChat PRs authored by Aryan: PR #85 (IRIS-61: Build validation gate runner), PR #83 (IRIS-59: Connect the IRIS sandbox to gateway staging), PR #91 (IRIS-53), PR #92 (IRIS-54).
+- Key Customer Portal PRs/commits authored by Aryan: PORTAL-72 through PORTAL-202, including PORTAL-177 (Plane triage sync), PORTAL-182 (MCP tools), PORTAL-197 / PORTAL-200 (retainer hours tracking), PORTAL-198 / PORTAL-201 (session isolation & internal clients), PORTAL-199 (notification read state), PORTAL-121 / 122 / 123 / 141 (Firestore reliability), PORTAL-145 / 151 (smoke test inventory).
+- IRIS project intent and planning documents inspected: `IRIS Phase 1 Plan (draft, 2026-10-06).md`, `IRIS Phase 1 Wrap-up × AI Gateway_ Intent.pdf`, `IRIS-52 notes.md`, `IRIS-53-pr-body.md`, `IRIS-54-pr-body.md`, `IRIS-55-notes.md`, `IRIS-60-notes.md`.
+- AI Gateway field guide inspected: `profile/source-materials/actual-reality/ai-gateway-field-guide.docx` (pinned LiteLLM proxy on Railway, smart-router tiers, guardrails, Langfuse tracing, 44 red-team fixtures).
 
 ## SmartSolve Industries
 

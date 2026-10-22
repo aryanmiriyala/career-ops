@@ -69,26 +69,31 @@ Copy each role into LinkedIn in this order:
 
 ### Actual Reality Technologies
 
-Title: Software Engineering Intern
+Title: Software Engineer (Full-Time: Oct. 2026 - Present | Software Engineering Intern: Jul. 2026 - Sep. 2026)
 Company: Actual Reality Technologies
 Dates: Jul. 2026 - Present
 Location: Perrysburg, Ohio, United States
 
 Description:
 
-Working as a Software Engineering Intern at Actual Reality Technologies, building AI Gateway routing and safety infrastructure and improving the private customer portal hosted at `my.actualreality.ai`. My work spans a LiteLLM-based gateway that enables intelligent model routing and policy-controlled LLM serving for multiple AI projects, smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, red-team fixtures, and a Next.js/TypeScript/Firebase customer portal with customer/admin surfaces, Plane-backed project/ticket data, authentication/session handling, dashboard status logic, health checks, documentation, Vitest/Testing Library coverage, and an in-progress remote MCP server with keyed customer/admin AI access.
+Full-time Software Engineer (promoted from Software Engineering Intern in October 2026) at Actual Reality Technologies, building AI systems infrastructure and production full-stack platforms. Currently lead the evaluation and gateway integration track for the IRIS glass-research AI chatbot built on ActualChat for the Northwest Ohio Innovation Consortium (NOIC). Built an automated validation gate runner driving headless Chrome (Playwright) to validate the live chat API against sandbox endpoints, evaluating multi-turn dialogues, tool calling, Server-Sent Events (SSE) streaming responses, and citations across 41+ test cases reconstructed from an extensive bug-hunt backlog with rigorous thermodynamic and chemical calculations (NIST-JANAF enthalpies, steam heat content, Stokes' law bubble rising velocities). Connected the IRIS sandbox environment to our LiteLLM AI Gateway on staging using pinned Gemini model endpoints. Concurrently revamped, hardened, and wrapped up the company's production customer portal (`my.actualreality.ai`) end-to-end as its primary engineer across 1,476 commits, delivering two-way Plane API ticket reconciliation, client retainer hours tracking, remote Model Context Protocol (MCP) server tools for AI agents, multi-tenant session isolation, per-user notification read states, interactive Gantt timelines, Firestore index and query reliability, and exhaustive smoke test suites.
 
-Software engineering / AI Gateway and customer portal / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore rules/testing, Vercel, Plane API/integration, LiteLLM, Railway, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, red-team fixtures, Vitest, Testing Library, ESLint, Tailwind CSS, dotenvx, Next.js App Router, authentication/session cookies, dashboard/project-status logic, feature flags, documentation.
+Software engineering / Full-Stack & AI Systems / Tech stack: TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firestore rules/indexes, Node.js, Playwright, Headless Chrome, Jest, Vitest, Testing Library, Plane API, Model Context Protocol (MCP), LiteLLM, AI Gateway, Railway, Gemini API (`gemini-3.1-pro-preview`), smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI/deploy gates, Server-Sent Events (SSE), Tailwind CSS, dotenvx, feature flags, smoke testing.
 
 Highlights:
 
-- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and red-team fixtures.
-- Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
-- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
-- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and magic-link login transitions.
-- Improved Plane-backed project reliability by paginating work-item counts, forcing refreshes through cache layers, preventing stale reads, and deriving project states from work-item counts instead of rounded progress.
+- Promoted to full-time Software Engineer in October 2026 to lead evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat.
+- Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
+- Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
+- Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
+- Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase.
+- Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic.
+- Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
+- Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
+- Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
+- Deployed a LiteLLM AI Gateway on Railway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
 
-Source verification note: authenticated GitHub access inspected `Actual-Reality/customer-portal` on August 7, 2026. AI Gateway field guide provided by Aryan on August 25, 2026. Keep customer/client and internal gateway details public-safe when drafting LinkedIn or submitted artifacts.
+Source verification note: Full-time promotion October 2026. 1,476 commits authored by Aryan Miriyala in `Actual-Reality/customer-portal`. PRs #83, #85 in `Actual-Reality/ActualChat`. Tickets IRIS-52-55, IRIS-59, IRIS-60, IRIS-61, and PORTAL-72 through PORTAL-202. Keep customer/client and internal gateway details public-safe when drafting LinkedIn or submitted artifacts.
 
 ### SmartSolve
 
@@ -249,20 +254,37 @@ Highlights:
 
 Recommended top projects for LinkedIn Featured / Projects:
 
-1. Diff-Grounded Pull Request Description Generation with Structured Evidence using Large Language Models
-2. DreamScape: AI-Powered Sleep Learning Companion
-3. Fix-It-Flow - RocketHacks 2026
-4. FalconGraph Search: AI-Powered Campus Knowledge Search
-5. RocketGrader: Intelligent Assignment Feedback Platform
-6. HealthTrend: Healthcare Big Data Streaming Pipeline
-7. Travel Health Advisor - BGSU Hackathon 2025
-8. Self-Adaptive Parallelism via OpenMP Runtime Coordination
+1. DiskScope: Native macOS Disk Space Analyzer & Grounded AI Explainer
+2. Diff-Grounded Pull Request Description Generation with Structured Evidence using Large Language Models
+3. DreamScape: AI-Powered Sleep Learning Companion
+4. Fix-It-Flow - RocketHacks 2026
+5. FalconGraph Search: AI-Powered Campus Knowledge Search
+6. RocketGrader: Intelligent Assignment Feedback Platform
+7. HealthTrend: Healthcare Big Data Streaming Pipeline
+8. Aster Market: Spec-Driven E-Commerce Platform Prototype
+9. Travel Health Advisor - BGSU Hackathon 2025
+10. Self-Adaptive Parallelism via OpenMP Runtime Coordination
 
 Copy each project into LinkedIn in this order:
 
 1. `Description`: paste the paragraph first.
 2. `Tech stack`: paste the one-line stack directly after the paragraph if useful.
 3. `Highlights`: use only the strongest 1-3 bullets when the project needs more detail.
+
+### DiskScope: Native macOS Disk Space Analyzer & Grounded AI Explainer
+
+Description:
+
+Built DiskScope, an open-source native macOS CLI tool in Swift 6 with zero external dependencies (builds without Xcode via `swift build`), replacing ambiguous "System Data" metrics with verified, physical block-level disk breakdowns. Implemented a single-pass filesystem scanner using POSIX `getattrlistbulk` with `fstatat` fallback to measure actual physical block allocations (`st_blocks * 512`) on the volume rather than misleading logical file sizes. Designed strict filesystem invariants: deduplicating hard links, skipping symlinks, capturing unreadable paths explicitly, and preventing ancestor double-counting via `ownFileCount`. Engineered a safety risk taxonomy preventing user data from being marked for deletion, and architected a grounded AI query model where the Swift type system structurally guarantees that language models cannot hallucinate file sizes, paths, or deletion targets.
+
+Systems / Native macOS / Tech stack: Swift 6, macOS 14+, POSIX filesystem APIs, `getattrlistbulk`, `fstatat`, `st_blocks`, CryptoKit, Keychain Services, Swift Concurrency, zero external dependencies, GitHub Actions CI, unit testing.
+
+Highlights:
+
+- Built an open-source native macOS CLI tool in Swift 6 with zero dependencies, measuring physical block allocation (`st_blocks * 512`) via POSIX `getattrlistbulk` and `fstatat`.
+- Designed a safety-first categorization engine with explicit risk tiers, preventing user data (Messages history, app containers) from being offered for automated deletion.
+- Architected a grounded AI query model where the Swift type system structurally prevents language models from generating sizes, paths, or deletion targets.
+- Authored a 72-test suite validating physical block calculations against `du`, symlink traversal guards, and model grounding invariants.
 
 ### Diff-Grounded Pull Request Description Generation with Structured Evidence using Large Language Models
 

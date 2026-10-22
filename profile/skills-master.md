@@ -9,6 +9,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Java
 - JavaScript
 - TypeScript
+- Swift
 - Lucee / CFML
 - ColdFusion
 - C++
@@ -74,6 +75,23 @@ This document records all known technologies and skill areas. Use it to tailor t
 - @react-pdf/renderer
 - Lucee / CFML backend workflows
 - ColdFusion form workflows
+
+## Systems and macOS Programming
+
+- Swift 6
+- macOS system programming
+- POSIX filesystem APIs
+- `st_blocks` physical block allocation
+- `getattrlistbulk`
+- `fstatat`
+- CryptoKit
+- Keychain Services
+- Swift Concurrency
+- Single-pass filesystem traversal
+- Hard-link deduplication
+- Symlink loop protection
+- Full Disk Access authorization
+- Package.swift manifest configuration
 
 ## Cloud and DevOps
 
@@ -198,10 +216,19 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Guardrails
 - Langfuse tracing
 - Slack block alerts
+- Grounded AI query architecture
+- Structural type system guardrails against LLM hallucination
+- Validation gate runners
+- Headless browser evaluation pipelines
+- Multi-turn conversation evaluation
+- Server-Sent Events (SSE) parsing
 
 ## Testing and Quality
 
+- Jest
 - Vitest
+- Playwright
+- Headless Chrome automation
 - Testing Library
 - React Testing Library
 - ESLint
@@ -214,13 +241,18 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Auth/session test coverage
 - Cache and stale-read test coverage
 - Dashboard/project-status test coverage
+- Smoke test inventory design
+- Multi-run statistical evaluation (N-run pass/fail gates)
 
 ## Product Integrations and Workflow Systems
 
-- Project-management API integration
-- Project/work-item integration
-- Remote MCP server
-- Model Context Protocol
+- Plane API two-way synchronization
+- Support ticket and intake reconciliation
+- Standing-decline cursor tracking
+- Mandatory decline explanations
+- Retainer hours configuration & aggregation
+- Remote MCP server development
+- Model Context Protocol (MCP)
 - Customer/admin AI tools
 - Project-data dashboards
 - Customer portals
@@ -231,6 +263,7 @@ This document records all known technologies and skill areas. Use it to tailor t
 - Password login flows
 - Workshop route consolidation
 - Tabbed product workflows
+- Notification read-state isolation
 
 ## Security and Compliance
 

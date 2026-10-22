@@ -405,7 +405,7 @@ Built a Next.js/TypeScript execution-planning prototype with project intake, gen
 - npm workspace structure separating the web application from future shared packages.
 - Product and architecture documentation covering users, success signals, boundaries, security requirements, and scaling phases.
 
-#### Planned Architecture — Do Not Present as Implemented
+#### Planned Architecture -- Do Not Present as Implemented
 
 - OpenAI Responses API with structured outputs for requirement parsing and project decomposition.
 - PostgreSQL, Drizzle ORM, and pgvector for relational workflow data and retrieval.
@@ -505,7 +505,7 @@ Built a responsive Next.js/TypeScript campus-matchmaking prototype with Tailwind
 - Supabase email/password authentication, confirmation redirect, session persistence, and automatic token refresh.
 - Loading, success, and error states plus post-login navigation.
 
-#### Roadmap — Do Not Present as Implemented
+#### Roadmap -- Do Not Present as Implemented
 
 - Matchmaking algorithms, interest vectors, availability matching, realtime chat, blind-spark reveals, prompt roulette, AI-generated icebreakers, and automated moderation.
 
@@ -739,3 +739,80 @@ Built a Golang microservice architecture deployed on Kubernetes, utilizing Envoy
 
 - Built a cloud-native traffic routing system by deploying a containerized Golang backend on Kubernetes and configuring an Envoy proxy to manage load balancing and service-to-service networking.
 - Instrumented the cluster's observability stack with Prometheus and Grafana, scraping proxy metrics to profile request latency, debug routing bottlenecks, and optimize throughput under heavy concurrent load.
+
+## DiskScope - Native macOS Disk Space Analyzer & Grounded AI Explainer
+
+Primary use: systems programming, macOS/Swift native development, filesystem architecture, POSIX APIs, low-level optimization, grounded AI systems, test-driven verification.
+
+### Platform-Ready Description
+
+Architected and developed DiskScope, an open-source native macOS CLI tool in Swift 6 with zero external dependencies (builds without Xcode via `swift build`), designed to demystify macOS disk consumption and replace ambiguous "System Data" metrics with verified, block-level explanations. Implemented a high-performance, single-pass filesystem scanner using POSIX `getattrlistbulk` with an `fstatat` fallback to measure actual physical block allocations (`st_blocks * 512`) on the volume rather than misleading logical file sizes. Designed strict filesystem traversal invariants: deduplicating hard links, recording symlinks without traversing them to eliminate infinite recursion, explicitly recording unreadable directories (`EACCES`) rather than falsely reporting 0 bytes, and isolating subtree totals via `ownFileCount` to eliminate ancestor double-counting. Built a disk categorization taxonomy with an explicit risk model (informational, safe, moderate, destructive) that prevents user data (such as Messages conversation history or app containers) from being marked for deletion. Designed a grounded AI query architecture where the Swift type system structurally guarantees that language models cannot hallucinate numbers, paths, or deletion targets (`QueryAnswer` has no size field, and all paths and sizes are resolved against verified physical disk blocks). Backed by a 72-test suite validating block arithmetic against `du`, symlink safety, permission handling, and model grounding invariants.
+
+### Handshake Description
+
+Built DiskScope, an open-source Swift 6 native macOS CLI tool with zero dependencies, measuring physical disk space (`st_blocks`) via POSIX APIs (`getattrlistbulk`/`fstatat`), categorizing disk usage with safety-first risk models, and implementing a grounded AI query system where language models are structurally prevented by the type system from hallucinating sizes or deletion targets.
+
+### Features
+
+- **Physical Block Accounting:** Measures actual allocated volume space (`st_blocks * 512`) using POSIX `getattrlistbulk` with `fstatat` fallback, accurately accounting for sparse files and filesystem cluster boundaries.
+- **Traversal Correctness:** Single-pass enumeration, single-counting of hard links, strict avoidance of symbolic link traversal, and explicit recording of unreadable paths with POSIX error codes.
+- **Ancestor Double-Counting Prevention:** Directory records carry subtree totals while tracking `ownFileCount` so summing across directories never inflates file or byte counts.
+- **Category Taxonomy & Safety Model:** Classifies disk usage into meaningful buckets (App container data, Application support, Messages conversation history, App caches), mapping each to explicit risk tiers (informational, safe, moderate, destructive) so user data is never offered for deletion.
+- **Grounded AI Explanations:** Type-safe model integration where LLMs can label, rank, and explain, but cannot supply figures, paths, or deletion targets.
+- **Dependency-Free Architecture:** Swift 6 native package that compiles cleanly with zero external dependencies and without requiring Xcode.
+- **Comprehensive Test Suite:** 72 unit tests verifying physical sizing against `du`, symlink guards, permission errors, deletion safety rules, and model grounding guarantees.
+
+### Tech Stack
+
+Systems programming / Native macOS & Grounded AI / Tech stack: Swift 6, macOS 14+, POSIX filesystem APIs, `getattrlistbulk`, `fstatat`, `st_blocks`, CryptoKit, Keychain Services, Swift Concurrency, zero external dependencies, GitHub Actions CI, unit testing.
+
+### Positioning Angles
+
+- **Systems & Low-Level Engineering:** Demonstrates deep understanding of OS filesystems, POSIX system calls, physical block allocation, and memory-efficient traversal.
+- **Native macOS & Swift Development:** Demonstrates modern Swift 6 development without relying on heavy external dependencies or IDE frameworks.
+- **Grounded AI Architecture:** Strong proof of building mission-critical AI applications with strict structural guardrails that mathematically eliminate hallucinations.
+- **Engineering Rigor & Verification:** 72 unit tests validating edge cases, boundary conditions, and real-world `du` parity.
+
+### Reusable Bullet Options
+
+- Built DiskScope, an open-source native macOS CLI tool in Swift 6 with zero dependencies, replacing ambiguous "System Data" metrics with verified, physical block-level disk breakdowns.
+- Implemented a single-pass filesystem scanner using POSIX `getattrlistbulk` and `fstatat`, measuring physical block allocations (`st_blocks * 512`), deduplicating hard links, and preventing ancestor double-counting.
+- Designed a safety-first disk taxonomy with explicit risk tiers, ensuring user data (such as Messages history and app containers) is never exposed to automated deletion.
+- Architected a grounded AI query interface where the Swift type system structurally prevents language models from generating numbers, paths, or deletion targets, ensuring 100% verified metrics.
+- Authored a comprehensive 72-test suite validating physical block calculations against `du`, symlink traversal guards, permission error reporting, and model grounding invariants.
+
+## Aster Market - Spec-Driven E-Commerce Platform Prototype
+
+Primary use: full-stack web engineering, spec-driven development, distributed commerce architecture, relational modeling, API design.
+
+### Platform-Ready Description
+
+Engineered Aster Market, an Amazon-inspired commerce platform prototype developed using a spec-driven, research-first architecture. Structured the development lifecycle around living specifications, traceability matrices, and thin vertical slices before scaffolding. Built the full-stack architecture with Next.js 15, TypeScript, Tailwind CSS, PostgreSQL (Neon), Prisma ORM, and Vitest. Defined typed use-case boundaries, minimal HTTP contracts, database schema with critical transactional integrity, and automated unit/integration test suites to validate core customer shopping journeys.
+
+### Handshake Description
+
+Built Aster Market, an Amazon-inspired commerce platform prototype with Next.js 15, TypeScript, PostgreSQL (Neon), Prisma, and Vitest, using a spec-driven architecture with complete traceability from business requirements to typed API contracts and database transactions.
+
+### Features
+
+- **Spec-Driven Architecture:** Complete traceability linking product outcomes, living functional requirements, use cases, API contracts, and automated test evidence.
+- **Full-Stack Commerce Engine:** Built with Next.js 15 App Router, TypeScript, Tailwind CSS, Prisma ORM, and Neon PostgreSQL.
+- **Typed API Contracts:** Strict typed use-case boundaries and HTTP contracts for product catalogs, cart management, and order placement.
+- **Database Modeling:** Relational database design in Prisma covering core commerce entities, composite indexes, foreign key constraints, and transactional consistency.
+- **Test Strategy:** Unit and integration testing with Vitest verifying core shopping journeys, stock validation, and checkout invariants.
+
+### Tech Stack
+
+Full-stack commerce / Tech stack: Next.js 15, React 19, TypeScript, PostgreSQL, Neon, Prisma ORM, Tailwind CSS, Vitest, Node.js, spec-driven development, API design.
+
+### Positioning Angles
+
+- **Full-Stack Engineering:** Clean Next.js, TypeScript, and relational database architecture.
+- **System Architecture & Design:** Spec-driven methodology with thorough documentation of invariants, abuse cases, and service access.
+- **Data Modeling & Integrity:** Relational schema design with ACID transactional guarantees in Prisma and PostgreSQL.
+
+### Reusable Bullet Options
+
+- Architected Aster Market, an Amazon-inspired e-commerce platform using a spec-driven methodology with Next.js 15, TypeScript, Prisma ORM, and PostgreSQL (Neon).
+- Defined typed use-case boundaries, minimal HTTP API contracts, and relational database schemas with transactional consistency across shopping journeys.
+- Developed automated test suites in Vitest validating cart operations, inventory constraints, and checkout workflows.

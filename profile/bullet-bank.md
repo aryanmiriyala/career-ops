@@ -23,11 +23,16 @@ Avoid:
 
 ## Software Engineer / Full-Stack Engineer
 
+- Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase.
+- Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic.
+- Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
+- Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
+- Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
 - Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
-- Building a remote MCP server with keyed access for Actual Reality's Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
 - Consolidated customer-facing workflow tools into a tabbed portal experience with feature gating, legacy redirects, accessibility guardrails, navigation-history handling, and route/component tests.
 - Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing password and secure account-link login transitions to avoid redirect flashes and stuck spinners.
 - Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts instead of rounded progress.
+- Architected Aster Market, an Amazon-inspired e-commerce platform using a spec-driven methodology with Next.js 15, TypeScript, Prisma ORM, and PostgreSQL (Neon).
 - Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
 - Contributed to a full-stack React/Node.js modernization by implementing RBAC and JWT authentication for secure internal user access.
 - Contributed to a React/Node.js modernization by implementing RBAC and JWT authentication patterns to replace broad employee-wide data access with role-specific controls for about 110 users.
@@ -46,6 +51,10 @@ Avoid:
 
 ## AI Engineer / AI Product Engineer
 
+- Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
+- Connected the IRIS glass-research AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
+- Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
+- Architected a grounded AI query interface in Swift where the type system structurally prevents language models from generating numbers, paths, or deletion targets, ensuring 100% verified metrics.
 - Building customer-portal and AI Gateway infrastructure in an augmented-intelligence environment, improving client project visibility, model-serving governance, and process-improvement workflows.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
 - Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
@@ -91,8 +100,12 @@ Use these mainly for LinkedIn, cover letters, education/cybersecurity roles, or 
 - Improved internal transplant logistics by adding center-level blood-tube defaults, logistics-sheet population, Matchgrid upload ordering, MFI file-location fixes, and duplicate-antigen MFI crash handling.
 - Replaced legacy Pentaho jobs with AWS Glue Workflows and partitioned S3 pipelines for modern MDM ingestion.
 
-## Systems / Research
+## Systems / macOS / Research
 
+- Built DiskScope, an open-source native macOS CLI tool in Swift 6 with zero dependencies, replacing ambiguous "System Data" metrics with verified, physical block-level disk breakdowns.
+- Implemented a single-pass filesystem scanner using POSIX `getattrlistbulk` and `fstatat`, measuring physical block allocations (`st_blocks * 512`), deduplicating hard links, and preventing ancestor double-counting.
+- Designed a safety-first disk taxonomy with explicit risk tiers, ensuring user data (such as Messages history and app containers) is never exposed to automated deletion.
+- Authored a comprehensive 72-test suite in Swift validating physical block calculations against `du`, symlink traversal guards, permission error reporting, and model grounding invariants.
 - Built a C++/OpenMP adaptive runtime research system that used per-epoch telemetry and a UCB controller to tune scheduling policy, chunk size, and thread count.
 - Benchmarked adaptive scheduling against serial and fixed-policy baselines across Mandelbrot, heat diffusion, and reduction workloads.
 - Built a reinforcement learning project comparing PPO and DQN agents on Super Mario Bros using PyTorch, Stable-Baselines3, Gym, and TensorBoard.

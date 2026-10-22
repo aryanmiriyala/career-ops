@@ -11,27 +11,32 @@ Use this compact index before opening full profile master files. It is a retriev
 
 ## Current / Recent Experience
 
-### Actual Reality Technologies - Software Engineering Intern
+### Actual Reality Technologies - Software Engineer (Full-Time) & Software Engineering Intern
 
-Primary use: current software engineering internship, AI Gateway/model-call routing, LiteLLM proxy configuration, guardrails, Langfuse tracing, Slack alerting, CI/deploy gates, customer/admin portal work, TypeScript/Next.js/Firebase, auth/session reliability, project-management API integration, dashboard/project-state logic, testing, documentation, manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable AI Gateway, model-call routing, safety policy, customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
+Primary use: current full-time software engineering role (promoted October 2026 from intern), IRIS glass-research AI chatbot evaluation infrastructure, automated validation gate runner with headless Chrome, AI Gateway/model-call routing, LiteLLM proxy configuration, customer portal end-to-end revamp and wrap-up (1,476 commits), two-way Plane API ticket reconciliation, client retainer hours tracking, remote Model Context Protocol (MCP) server tools, multi-tenant session isolation, Firestore reliability, automated testing (Jest, Vitest, Playwright), manufacturing/augmented-intelligence context. In submitted artifacts, translate private/tool-specific wording into recruiter-readable AI Gateway, evaluation runner, model-call routing, safety policy, customer-portal, project-data, workflow, dashboard, authentication, and API-integration language unless the exact tool is a JD keyword.
 
 Verified keywords:
 
-- TypeScript, Next.js 15, React 19, Firebase, Firebase Admin, Firestore, Vercel, project-management API integration, Plane ticket/project status, remote MCP server, Model Context Protocol, customer/admin AI tools, keyed access, intake requests, scoped security, cost controls, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
-- LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy.
-- Authentication/session cookies, production login behavior, password and secure account-link navigation, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, documentation.
-- Augmented intelligence, Industry 4.0/5.0, manufacturing technology, process improvement, data modeling, predictive analytics, cloud consulting, app development.
+- TypeScript, Next.js 15, React 19, Firebase, Firebase Auth, Firebase Admin, Firestore rules/indexes, Vercel, Node.js, Playwright, Headless Chrome, Jest, Server-Sent Events (SSE), Plane API two-way sync, standing-decline cursor reconciliation, remote MCP server, Model Context Protocol (MCP), customer/admin AI tools, keyed access, intake requests, retainer tracking, Vitest, Testing Library, ESLint, Tailwind CSS, Next.js App Router.
+- LiteLLM, AI Gateway, intelligent model routing, smart-router tiers, guardrails, Langfuse tracing, Slack block alerts, CI gates, red-team fixtures, model-call routing, routing/safety policy, Gemini API (`gemini-3.1-pro-preview`, `gemini-3.5-flash`), YAML test suites.
+- Authentication/session cookies, session isolation, role provisioning, customer/admin workflows, dashboard status logic, project state derivation, cache refreshes, pagination, stale-read protection, route/component tests, exhaustive smoke test inventory.
+- Augmented intelligence, Industry 4.0/5.0, glass research / material science calculations (NIST-JANAF enthalpies, steam heat content, Stokes' law bubble rising velocities), manufacturing technology, process improvement, data modeling.
 - AI-assisted development toolchain (confirmed by Aryan Oct. 15, 2026): Claude Code, GitHub Copilot, Cursor, Codex; structured context design for agent-assisted delivery workflows; reviewing agent-generated code and test assets against documented requirements.
 
 Resume-ready evidence:
 
-- Deployed a LiteLLM AI Gateway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
-- Building a remote MCP server with keyed access for the Next.js/Firebase customer portal, enabling customer/admin AI tools to query Plane ticket/project status and submit intake requests with scoped security and cost controls.
-- Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA/tab-history guardrails, and route/component tests.
-- Hardened production authentication behavior by deriving session-cookie domains from request hosts and stabilizing login transitions to avoid redirect flashes and stuck spinners.
-- Improved customer-portal project-data reliability by paginating work-item counts, forcing refreshes through route/gateway cache layers, preventing stale overlapping reads, and deriving project states from work-item counts.
+- Promoted to full-time Software Engineer in October 2026 to lead evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat.
+- Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
+- Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
+- Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
+- Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase.
+- Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic.
+- Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
+- Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
+- Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication.
+- Deployed a LiteLLM AI Gateway on Railway for policy-controlled model routing across multiple AI projects, adding smart-router tiers, guardrails, Langfuse traces, Slack alerts, CI gates, and 44 red-team fixtures.
 
-Source: `profile/experience-master.md` and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
+Source: `profile/experience-master.md`, `ActualChat` (IRIS-61, IRIS-59, IRIS-52-55, IRIS-60), `customer-portal` (1,476 commits, PORTAL-72-202), and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
 ### SmartSolve Industries - Artificial Intelligence & Computer Science Intern
 
@@ -145,6 +150,8 @@ Use this cache for first-pass project selection before opening `profile/projects
 | PDFsplitter | Developer tooling, CLI, file processing | JavaScript, Node.js, CommonJS, pdf-lib, filesystem APIs, CLI validation, npm binary | Node.js tooling, command-line utilities, defensive validation, document processing |
 | Yoda | Mobile navigation, maps, hackathon delivery | Flutter, Dart, google_maps_flutter, Google Maps SDK, map markers, route preview | Flutter, mobile UI, maps/location, campus navigation, hackathon recognition |
 | TachyonMesh | Backend infrastructure, traffic routing, SRE | Golang, Kubernetes, Docker, Envoy, Prometheus, Grafana, OpenTelemetry | Go microservices, k8s, Envoy, observability, load balancing, proxy configuration |
+| DiskScope | Systems programming, macOS/Swift native, low-level optimization, grounded AI | Swift 6, macOS 14+, POSIX APIs, getattrlistbulk, fstatat, st_blocks, CryptoKit, Keychain | Systems programming, Swift CLI, POSIX filesystem, grounded AI query, zero dependencies |
+| Aster Market | Full-stack e-commerce, spec-driven architecture, relational data modeling | Next.js 15, TypeScript, PostgreSQL (Neon), Prisma ORM, Vitest, Tailwind CSS | Spec-driven engineering, e-commerce workflow, Prisma schema design, typed API contracts |
 | Career Ops | Workflow automation, ATS ingestion, document generation | Python 3, HTTP/JSON/CSV, Greenhouse, Lever, Ashby, SmartRecruiters APIs, Markdown, LaTeX, validation | Automation, API integrations, data pipelines, workflow systems, document generation |
 | Automated GitHub Profile README | CI automation, generated documentation, API metadata | JavaScript, Node.js, GitHub REST API, GitHub Actions, YAML, JSON, Markdown generation | GitHub Actions, API automation, generated docs, scheduled workflows |
 
@@ -251,6 +258,43 @@ Resume-ready evidence:
 
 Source: `profile/projects-master.md`, Self-Adaptive Parallelism.
 
+### DiskScope - Native macOS Disk Space Analyzer & Grounded AI Explainer
+
+Primary use: systems programming, macOS/Swift native development, filesystem architecture, POSIX APIs, low-level optimization, grounded AI systems, test-driven verification.
+
+Verified keywords:
+
+- Swift 6, macOS 14+, POSIX filesystem APIs, `getattrlistbulk`, `fstatat`, `st_blocks`, CryptoKit, Keychain Services, Swift Concurrency, zero external dependencies, GitHub Actions CI, unit testing.
+- Physical block allocation, single-pass enumeration, hard-link deduplication, symlink traversal guards, permission error reporting (`EACCES`), ancestor double-counting prevention (`ownFileCount`).
+- Category taxonomy (App containers, Application support, Messages history, App caches), safety risk model (informational, safe, moderate, destructive), grounded AI query interface.
+
+Resume-ready evidence:
+
+- Built DiskScope, an open-source native macOS CLI tool in Swift 6 with zero dependencies, replacing ambiguous "System Data" metrics with verified, physical block-level disk breakdowns.
+- Implemented a single-pass filesystem scanner using POSIX `getattrlistbulk` and `fstatat`, measuring physical block allocations (`st_blocks * 512`), deduplicating hard links, and preventing ancestor double-counting.
+- Designed a safety-first disk taxonomy with explicit risk tiers, ensuring user data (such as Messages history and app containers) is never exposed to automated deletion.
+- Architected a grounded AI query interface where the Swift type system structurally prevents language models from generating numbers, paths, or deletion targets, ensuring 100% verified metrics.
+- Authored a comprehensive 72-test suite validating physical block calculations against `du`, symlink traversal guards, permission error reporting, and model grounding invariants.
+
+Source: `profile/projects-master.md`, `github.com/aryanmiriyala/DiskScope`.
+
+### Aster Market - Spec-Driven E-Commerce Platform Prototype
+
+Primary use: full-stack web engineering, spec-driven development, distributed commerce architecture, relational modeling, API design.
+
+Verified keywords:
+
+- Next.js 15, React 19, TypeScript, PostgreSQL, Neon, Prisma ORM, Tailwind CSS, Vitest, Node.js, spec-driven development, API design.
+- Traceability matrix, living specifications, typed use-case boundaries, minimal HTTP contracts, ACID transactional integrity, shopping cart, checkout invariants.
+
+Resume-ready evidence:
+
+- Architected Aster Market, an Amazon-inspired e-commerce platform using a spec-driven methodology with Next.js 15, TypeScript, Prisma ORM, and PostgreSQL (Neon).
+- Defined typed use-case boundaries, minimal HTTP API contracts, and relational database schemas with transactional consistency across shopping journeys.
+- Developed automated test suites in Vitest validating cart operations, inventory constraints, and checkout workflows.
+
+Source: `profile/projects-master.md`, `github.com/aryanmiriyala/8x-coding-challenge`.
+
 ## Common Unsupported Or Narrow Claims
 
 Do not claim these unless Aryan provides new source material or targeted repo inspection verifies them:
@@ -262,9 +306,10 @@ Do not claim these unless Aryan provides new source material or targeted repo in
 
 ## Lane Routing
 
-- Full-stack/software: Actual Reality, SmartSolve, AAIS Software, APKD, RocketGrader, Fix-It-Flow, Travel Health Advisor.
+- Full-stack/software: Actual Reality (Customer Portal & IRIS), SmartSolve, Aster Market, AAIS Software, APKD, RocketGrader, Fix-It-Flow, Travel Health Advisor.
+- Systems/low-level/macOS: DiskScope, Self-Adaptive Parallelism, TachyonMesh.
 - Data/cloud engineering: AAIS Data, AAIS Software, HealthTrend, Self-Adaptive Parallelism when systems/performance is relevant.
-- Applied AI/agentic systems: SmartSolve, FalconGraph, Diff-Grounded PR Generation, Fix-It-Flow, RocketGrader, Travel Health Advisor.
+- Applied AI/agentic systems: Actual Reality (IRIS evaluation & MCP), SmartSolve, DiskScope (grounded AI), FalconGraph, Diff-Grounded PR Generation, Fix-It-Flow, RocketGrader, Travel Health Advisor.
 - Security/IT/support-adjacent: APKD, BGSU GRA, Actual Reality auth/session work, AAIS PII/RBAC/Lambda validation.
-- Analyst/business/product operations: AAIS billing/data profiling/MDM, SmartSolve QMS and workflow planning, Actual Reality dashboard/project-state work, RocketGrader education workflows.
+- Analyst/business/product operations: AAIS billing/data profiling/MDM, SmartSolve QMS and workflow planning, Actual Reality customer portal retainer/project-state work, RocketGrader education workflows.
 - Healthcare/insurance/education workflow technology: APKD, AAIS, Travel Health Advisor, HealthTrend, RocketGrader, BGSU GRA.

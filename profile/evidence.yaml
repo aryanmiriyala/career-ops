@@ -11,6 +11,9 @@ allowlist_skills: &allowlist_skills
   - JavaScript
   - SQL
   - Java
+  - Swift
+  - Swift 6
+  - POSIX APIs
   - C++
   - C
   - C#
@@ -43,6 +46,9 @@ allowlist_skills: &allowlist_skills
   - PySpark
   - Vercel
   - Vitest
+  - Jest
+  - Playwright
+  - headless Chrome
   - Testing Library
   - Docker
   - Git
@@ -57,8 +63,11 @@ allowlist_skills: &allowlist_skills
   - Codex
   - Claude Code
   - Drizzle ORM
+  - Prisma
+  - Prisma ORM
   - Plane API
   - Model Context Protocol
+  - Model Context Protocol (MCP)
   - AWS Glue Workflows
   - Semarchy MDM
   - Pandas
@@ -202,6 +211,110 @@ bullets:
     line_count: 2
     evidence_refs: ["experience-master.md:102"]
     lane_tags: ["full-stack", "data-reliability", "caching"]
+
+  - id: "ART-006"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases."
+    metrics: {"test_cases": 41, "concurrency": "opt-in"}
+    tech_tags: ["Node.js", "Playwright", "Headless Chrome", "Jest", "SSE", "testing", "evaluation"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "ActualChat:IRIS-61"]
+    lane_tags: ["ai-engineering", "testing", "evaluation", "full-stack"]
+
+  - id: "ART-007"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests."
+    metrics: {}
+    tech_tags: ["LiteLLM", "AI Gateway", "Gemini API", "YAML", "Jest", "routing"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "ActualChat:IRIS-59"]
+    lane_tags: ["ai-infrastructure", "model-routing", "cloud"]
+
+  - id: "ART-008"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities."
+    metrics: {"test_cases": 41, "findings_covered": 79}
+    tech_tags: ["YAML", "thermodynamics", "NIST-JANAF", "Stokes' law", "evaluation"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "ActualChat:IRIS-52-55"]
+    lane_tags: ["ai-engineering", "evaluation", "domain-modeling"]
+
+  - id: "ART-009"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase."
+    metrics: {"authored_commits": 1476}
+    tech_tags: ["Next.js 15", "TypeScript", "React 19", "Firebase", "Firestore", "Plane API", "MCP"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "customer-portal"]
+    lane_tags: ["full-stack", "software-engineering", "architecture"]
+
+  - id: "ART-010"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic."
+    metrics: {}
+    tech_tags: ["TypeScript", "Plane API", "API integration", "cursor reconciliation", "sync"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "customer-portal:PORTAL-177"]
+    lane_tags: ["backend", "api-integration", "full-stack"]
+
+  - id: "ART-011"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators."
+    metrics: {}
+    tech_tags: ["TypeScript", "Next.js", "Firebase", "Firestore", "billing", "retainer"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "customer-portal:PORTAL-197-200"]
+    lane_tags: ["full-stack", "dashboard", "business-logic"]
+
+  - id: "ART-012"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls."
+    metrics: {}
+    tech_tags: ["Model Context Protocol", "MCP", "AI tools", "TypeScript", "security", "rate-limiting"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "customer-portal:PORTAL-182"]
+    lane_tags: ["ai-infrastructure", "mcp", "security", "api-integration"]
+
+  - id: "ART-013"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Hardened multi-tenant session isolation and role provisioning, preventing older staff sessions from overriding client logins and eliminating magic links for secure password authentication."
+    metrics: {}
+    tech_tags: ["Firebase Auth", "session management", "cookies", "security", "RBAC"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:39", "customer-portal:PORTAL-198-201"]
+    lane_tags: ["security", "auth", "backend"]
 
   # SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)
   - id: "SS-001"
@@ -638,3 +751,55 @@ bullets:
     line_count: 2
     evidence_refs: ["projects-master.md:235", "evidence-index.md:235"]
     lane_tags: ["data-engineering", "data-quality", "healthcare", "streaming"]
+
+  - id: "PROJ-DISKSCOPE-001"
+    role: "Projects"
+    title: "DiskScope"
+    dates: "2026"
+    location: "macOS Systems Tool"
+    ownership: "primary"
+    text: "Built DiskScope, an open-source native macOS CLI tool in Swift 6 with zero dependencies, replacing ambiguous 'System Data' metrics with verified, physical block-level disk breakdowns."
+    metrics: {"test_count": 72, "external_dependencies": 0}
+    tech_tags: ["Swift 6", "macOS", "POSIX APIs", "getattrlistbulk", "fstatat", "CryptoKit", "CLI"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:DiskScope", "github.com/aryanmiriyala/DiskScope"]
+    lane_tags: ["systems", "macos", "swift", "cli", "open-source"]
+
+  - id: "PROJ-DISKSCOPE-002"
+    role: "Projects"
+    title: "DiskScope"
+    dates: "2026"
+    location: "macOS Systems Tool"
+    ownership: "primary"
+    text: "Architected a grounded AI query interface in Swift where the type system structurally prevents language models from generating numbers, paths, or deletion targets, ensuring 100% verified metrics."
+    metrics: {}
+    tech_tags: ["Swift 6", "Grounded AI", "Type Safety", "AI Systems", "LLM Evaluation"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:DiskScope", "github.com/aryanmiriyala/DiskScope"]
+    lane_tags: ["systems", "ai-engineering", "grounded-ai", "swift"]
+
+  - id: "PROJ-DISKSCOPE-003"
+    role: "Projects"
+    title: "DiskScope"
+    dates: "2026"
+    location: "macOS Systems Tool"
+    ownership: "primary"
+    text: "Implemented a single-pass filesystem scanner using POSIX getattrlistbulk and fstatat, measuring physical block allocations (st_blocks * 512), deduplicating hard links, and preventing ancestor double-counting."
+    metrics: {}
+    tech_tags: ["POSIX APIs", "Swift 6", "getattrlistbulk", "st_blocks", "filesystem", "concurrency"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:DiskScope", "github.com/aryanmiriyala/DiskScope"]
+    lane_tags: ["systems", "performance", "macos", "filesystem"]
+
+  - id: "PROJ-ASTER-001"
+    role: "Projects"
+    title: "Aster Market"
+    dates: "2026"
+    location: "E-Commerce Platform"
+    ownership: "primary"
+    text: "Architected Aster Market, an Amazon-inspired e-commerce platform using a spec-driven methodology with Next.js 15, TypeScript, Prisma ORM, and PostgreSQL (Neon)."
+    metrics: {}
+    tech_tags: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Neon", "Vitest", "Tailwind CSS"]
+    line_count: 2
+    evidence_refs: ["projects-master.md:Aster Market", "github.com/aryanmiriyala/8x-coding-challenge"]
+    lane_tags: ["full-stack", "ecommerce", "database", "spec-driven"]
