@@ -51,6 +51,7 @@ Avoid:
 
 ## AI Engineer / AI Product Engineer
 
+- Built evaluation infrastructure and gateway integration for IRIS, an advanced glass-research AI expert system developed for the Northwest Ohio Innovation Consortium (NOIC), enabling glass scientists and manufacturers to query complex melting chemistry, ASTM standards, and patents with verified citations.
 - Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
 - Connected the IRIS glass-research AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
 - Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.

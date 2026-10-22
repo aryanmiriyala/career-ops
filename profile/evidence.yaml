@@ -316,6 +316,19 @@ bullets:
     evidence_refs: ["experience-master.md:39", "customer-portal:PORTAL-198-201"]
     lane_tags: ["security", "auth", "backend"]
 
+  - id: "ART-014"
+    role: "Actual Reality Technologies"
+    title: "Software Engineer"
+    dates: "Oct 2026 - Present"
+    location: "Perrysburg, OH"
+    ownership: "primary"
+    text: "Built evaluation infrastructure and gateway integration for IRIS, a glass-research AI expert system for the Northwest Ohio Innovation Consortium, validating RAG queries across melting, ASTM standards, and patents."
+    metrics: {"findings_evaluated": 79, "cases_rebuilt": 41}
+    tech_tags: ["ActualChat", "LlamaIndex", "RAG", "Playwright", "LiteLLM", "Glass Science", "NOIC"]
+    line_count: 2
+    evidence_refs: ["experience-master.md:41", "ActualChat:IRIS-Phase-1"]
+    lane_tags: ["ai-engineering", "rag", "evaluation", "domain-modeling"]
+
   # SmartSolve Industries - AI & CS Intern (May 2026 - Jul 2026)
   - id: "SS-001"
     role: "SmartSolve Industries"

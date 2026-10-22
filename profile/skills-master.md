@@ -360,6 +360,13 @@ Use this section for LinkedIn, cover letters, cybersecurity-adjacent roles, teac
 
 ## Domain Knowledge
 
+- Glass manufacturing and materials science research systems
+- Northwest Ohio Innovation Consortium (NOIC) glass research platform
+- Glass melting, refining, batch formulation, and furnace dynamics
+- Glass defect troubleshooting (stones, cords, seeds, blisters)
+- ASTM/ISO glass testing standards (ASTM C169, C1279, C1499, E1300)
+- Patent landscape analysis and technical literature synthesis
+- Thermodynamic batch calculations (NIST-JANAF, Stokes' law)
 - Insurance data platforms
 - P&C insurance data standards
 - Statistical reporting
