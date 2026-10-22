@@ -143,6 +143,11 @@ FORBIDDEN_SUBMITTED_ARTIFACT_PATTERNS = [
     (r"\bsponsorship\b", "submitted artifacts must not mention sponsorship needs"),
     (r"\bE-Verify\b", "submitted artifacts must not mention E-Verify"),
     (r"\bForm\s+I-983\b", "submitted artifacts must not mention Form I-983"),
+    (r"\bignore\s+(?:all\s+)?(?:previous|above|prior)\s+instructions\b", "prompt injection artifact leakage"),
+    (r"\bdisregard\s+(?:all\s+)?(?:previous|above|prior)\b", "prompt injection artifact leakage"),
+    (r"\bsystem\s+override\b", "prompt injection artifact leakage"),
+    (r"\byou\s+are\s+now\s+in\s+developer\s+mode\b", "prompt injection artifact leakage"),
+    (r"\boutput\s+the\s+(?:system|developer)\s+prompt\b", "prompt injection artifact leakage"),
 ]
 
 APPLICATION_ANSWER_FORBIDDEN_PHRASES = [
