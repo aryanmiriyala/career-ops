@@ -94,6 +94,8 @@ FORBIDDEN_RESUME_SOURCE_PATTERNS = [
     (r"\\usepackage(?:\[[^\]]*\])?\{fancyhdr\}", "resume content must not rely on headers or footers"),
     (r"\\pagestyle\{fancy\}", "resume content must not rely on headers or footers"),
     (r"\\fancy(?:head|foot)\b", "resume content must not rely on headers or footers"),
+    (r"Actual Reality Technologies\s*\\textnormal\{\\small\(Intern", "Actual Reality must be listed cleanly as Software Engineer | Jul. 2026 - Present without parenthetical intern sub-dates"),
+    (r"\\resumeSubheading\s*\{[^}]*promoted", "resume subheadings must not include promotion text"),
 ]
 
 REQUIRED_RESUME_SOURCE_PATTERNS = [
@@ -107,7 +109,7 @@ REQUIRED_RESUME_SOURCE_PATTERNS = [
 ]
 
 WEAK_BULLET_OPENERS = re.compile(
-    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?)\b",
+    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?|Promoted(?:\s+to)?)\b",
     re.IGNORECASE,
 )
 

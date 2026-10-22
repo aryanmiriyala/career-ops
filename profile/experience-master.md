@@ -32,20 +32,26 @@ Core themes:
 
 ## Actual Reality Technologies
 
-Roles:
-- Software Engineer (Full-Time): Oct. 2026 - Present
-- Software Engineering Intern: Jul. 2026 - Sep. 2026
+Title: Software Engineer
+Dates: Jul. 2026 - Present
 Location: Perrysburg, OH
-Dates: Jul. 2026 - Present (Promoted to Full-Time Software Engineer in Oct. 2026)
 
-### Resume Presentation Guidance
+### Resume Strategy & Presentation Rule
 
-- **Consolidated Single Entry (Standard for one-page resumes):**
-  - Subheading: `\resumeSubheading{Software Engineer}{Jul. 2026 - Present}{Actual Reality Technologies}{Perrysburg, OH}`
-  - *Rationale:* Aryan joined Actual Reality Technologies in July 2026 as an intern and transitioned directly into the full-time Software Engineer role in October 2026 without any interruption in service. Consolidating into `Software Engineer | Jul. 2026 - Present` saves vertical line space on one-page application resumes, eliminates awkward parenthetical sub-dates like `(Intern: Jul. 2026 -- Sep. 2026)` from breaking the company line or confusing automated ATS date parsers, and accurately reflects continuous software engineering responsibilities. In interviews or detailed profiles, the full trajectory (intern to full-time promotion) can be highlighted as a sign of rapid progression.
-- **Dual-Role Breakdown (For multi-page CVs, LinkedIn, or Handshake):**
-  - Software Engineer (Full-Time): Oct. 2026 - Present
-  - Software Engineering Intern: Jul. 2026 - Sep. 2026
+- **Resume Subheading (Mandatory for all application resumes):**
+  ```latex
+  \resumeSubheading
+  {Software Engineer}{Jul. 2026 - Present}
+  {Actual Reality Technologies}{Perrysburg, OH}
+  ```
+- **Strategic Intent:**
+  - Aryan has been performing continuous software engineering work at Actual Reality since July 2026, delivering 1,476 commits on the customer portal, building the IRIS Playwright validation harness, deploying remote MCP tools, and integrating the LiteLLM AI Gateway.
+  - Never include "promoted", "intern", or parenthetical date splits like `(Intern: Jul. 2026 -- Sep. 2026)` in the resume header or experience subheading.
+  - Splitting the tenure or calling out the internal promotion in the resume header fractures Aryan's four-month tenure into a 1-month full-time line, breaks the strategic intent of the resume, introduces unnecessary administrative distraction, and risks confusion in automated ATS date parsers.
+  - Showing `Software Engineer | Jul. 2026 - Present` presents an uninterrupted, truthful, and high-impact narrative.
+  - The internal transition from intern to full-time in October 2026 is strictly conversational background for interviews to demonstrate speed of delivery and impact, not resume header content.
+- **Internal Verification History:**
+  - Transitioned from Software Engineering Intern (Jul. 2026 - Sep. 2026) to full-time Software Engineer in October 2026. Location: Perrysburg, OH. Continuous employment with no break in service.
 
 ### Platform-Ready Description
 
@@ -135,7 +141,7 @@ To deliver validated fixes to NOIC by late October 2026 while de-risking a propo
 ### Reusable Bullet Options
 
 - Built evaluation infrastructure and gateway integration for IRIS, an advanced glass-research AI expert system developed for the Northwest Ohio Innovation Consortium (NOIC), enabling glass scientists and manufacturers to query complex melting chemistry, ASTM standards, and patents with verified citations.
-- Promoted to full-time Software Engineer to lead evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat.
+- Led evaluation infrastructure and gateway integration for the IRIS glass-research AI chatbot on ActualChat, configuring pinned Gemini models, tenant specs, and automated configuration tests.
 - Built an automated validation gate runner with Node.js, Playwright, and headless Chrome, executing multi-turn evaluations against live chat APIs and extracting answers, tool calls, and citations across 41+ bug-hunt test cases.
 - Connected the IRIS AI chatbot sandbox to an internal LiteLLM AI Gateway on staging, configuring pinned Gemini models, tenant specs, and automated configuration tests.
 - Reconstructed 41+ bug-hunt test cases into structured YAML suites, verifying complex chemical and thermodynamic calculations using NIST-JANAF reaction enthalpies, steam heat content, and Stokes' law bubble rising velocities.
