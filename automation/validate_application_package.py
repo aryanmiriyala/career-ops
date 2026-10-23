@@ -98,6 +98,9 @@ FORBIDDEN_RESUME_SOURCE_PATTERNS = [
     (r"\\resumeSubheading\s*\{[^}]*promoted", "resume subheadings must not include promotion text"),
     (r"\b\d+[+,]?\s*(?:commits?|lines of code|loc)\b", "vanity activity metrics (commit counts, lines of code) are forbidden in resumes; use system/business impact metrics instead"),
     (r"\bPlane\s+project/ticket\b", "Plane must be contextualized as an issue tracker or project management tool (e.g. 'project management API via Plane')"),
+    (r"\bparticipated\s+in\s+Scrum\b", "conversational idioms like 'participated in Scrum' are forbidden in resumes; describe engineering contributions instead"),
+    (r"\bmemory-based\s+(?:HR\s+)?follow-up\b", "conversational idioms like 'memory-based HR follow-up' are forbidden in resumes; state the engineering problem and outcome directly"),
+    (r"\bjob\s+sprawl\b", "conversational idioms like 'job sprawl' are forbidden in resumes; describe pipeline consolidation or maintenance reduction directly"),
 ]
 
 REQUIRED_RESUME_SOURCE_PATTERNS = [
@@ -111,7 +114,7 @@ REQUIRED_RESUME_SOURCE_PATTERNS = [
 ]
 
 WEAK_BULLET_OPENERS = re.compile(
-    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?|Promoted(?:\s+to)?|Served(?:\s+as)?|Building|Managing|Supporting)\b",
+    r"\\item\s+(?:Responsible for|Helped(?:\s+with)?|Worked(?:\s+on)?|Assisted(?:\s+with)?|Promoted(?:\s+to)?|Served(?:\s+as)?|Building|Managing|Supporting|Engineered\s+features\s+for)\b",
     re.IGNORECASE,
 )
 
