@@ -1,22 +1,25 @@
-Aryan Miriyala
-+1 419-315-0444 | aryanmiriyala@gmail.com | linkedin.com/in/aryan-miriyala | github.com/aryanmiriyala
+# Cover Letter - Quora Full Stack Software Engineer, New Grad
 
-October 22, 2026
+Aryan Miriyala  
++1 419-315-0444 | aryanmiriyala@gmail.com  
+linkedin.com/in/aryan-miriyala | github.com/aryanmiriyala  
 
-Quora Hiring Team
-Quora, Inc.
+October 22, 2026  
+
+Hiring Team  
+Quora  
 
 Dear Hiring Team,
 
-I am applying for the Full Stack Software Engineer, New Grad position at Quora. Quora's mission to grow the world's collective intelligence resonates with me because I have spent the last two years building AI systems that help domain experts access verified knowledge efficiently. My strongest matching experience is building the evaluation infrastructure and AI Gateway integration for IRIS, a glass-research AI expert system serving the Northwest Ohio Innovation Consortium, where I connected a live chat product to a LiteLLM gateway, configured guardrails, and built an automated validation gate runner that executes multi-turn evaluations against production APIs.
+I am applying for the Full Stack Software Engineer, New Grad position at Quora. I have been a regular Quora user for years, relying on the platform for technical learning and career insights, and I have followed Poe's approach to making frontier AI models collaboratively useful. The mission to grow the world's collective intelligence resonates with my work building AI systems that make specialized knowledge accessible and verifiable.
 
-In my current role at Actual Reality Technologies, I architected the production customer portal using Next.js 15, React 19, TypeScript, and Firebase, delivering multi-tenant session isolation, client retainer tracking, automated ticket synchronization, and remote Model Context Protocol tools for AI agents. I also deployed a LiteLLM AI model gateway with intelligent routing tiers, guardrails, Langfuse tracing, and 44 adversarial test fixtures. This work maps directly to Quora's need for full-stack engineers who can develop features at massive scale using Python and React while leveraging AI to generate engaging content and ensure quality through effective moderation.
+At Actual Reality Technologies, I serve as the primary engineer on IRIS, a glass-research AI platform serving the Northwest Ohio Innovation Consortium. I built the evaluation infrastructure that validates multi-turn AI reasoning across 41+ regression test suites using Node.js and Playwright, and I integrated a LiteLLM AI gateway with multi-tier routing, guardrails, and Langfuse tracing for production AI content generation. This work maps directly to Quora's needs around AI content generation, quality assurance through experimentation, and reliable delivery at scale.
 
-During my Software Engineering Internship at the American Association of Insurance Services, I implemented RBAC and JWT patterns in a full-stack React/Node.js modernization that replaced broad employee-wide access with role-specific controls for 110 internal users. I also engineered Python automation generating 1,000+ production SQL tables and built AWS Lambda pipelines that tokenized PII and delivered structured data to S3. This experience with secure access control, data pipelines, and production-scale systems aligns with Quora's focus on healthy moderation and creator experience at millions-of-users scale.
+Earlier, as a Data Engineering Intern at AAIS, I engineered automated ETL pipelines using Python, PySpark, and AWS Glue that processed 20+ TB of production insurance data across 700+ member companies. I led data profiling and schema migration across 160+ tables, modernized 160+ legacy Pentaho jobs into serverless AWS Glue workflows, and delivered reverse-ETL workflows with custom IAM roles for controlled self-service access while maintaining 24-hour data freshness. This experience with massive-scale data pipelines, experimentation-driven migration, and cross-functional collaboration aligns with Quora's focus on data-guided product iteration.
 
-I would also bring hands-on experience building AI-powered products from my projects. Fix-It-Flow is a multimodal Next.js PWA that uses camera input, speech transcription, Gemini Vision, and ElevenLabs TTS to diagnose appliance issues -- demonstrating end-to-end AI product development with voice and vision modalities. FalconGraph Search is a source-grounded RAG system combining FastAPI, Next.js, FAISS, and OpenAI embeddings to serve cited answers from crawled documents. Both projects reflect the kind of AI-driven feature work Quora's Core Product team ships daily.
+I have also built full-stack applications across the Python/React/TypeScript/SQL stack you use: a Next.js 15/React 19/TypeScript/Firebase customer portal with multi-tenant isolation at Actual Reality, a Next.js/TypeScript/PostgreSQL/Drizzle onboarding system with SSO/RBAC at SmartSolve, and a React/Node.js application with JWT authentication at AAIS. My projects include Fix-It-Flow (a Next.js/TypeScript multimodal AI PWA with Gemini Vision and DynamoDB) and an ICSME-published LLM evaluation pipeline for PR description generation across 1,450 pull requests.
 
-I am available for Quora's coordination hours (9am - 3pm Pacific) and would welcome the opportunity to discuss how my background in full-stack development, AI gateway infrastructure, and production-scale feature delivery can contribute to Quora's mission.
+I would welcome the opportunity to discuss how this experience can contribute to the Quora Core Product team's work on growth, moderation, and creator experience.
 
 Sincerely,
 
