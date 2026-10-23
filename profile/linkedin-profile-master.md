@@ -111,7 +111,7 @@ AI / Full-stack / Tech stack: Next.js, TypeScript / JavaScript, PostgreSQL, Driz
 Highlights:
 
 - Modeled early architecture for AI-oriented internal projects, including a QMS dependency register designed to make quality-document relationships traceable.
-- Built a full-stack onboarding tracker using Next.js, PostgreSQL, Drizzle ORM, SSO, and authentication middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+- Built a full-stack onboarding tracker using Next.js, PostgreSQL, Drizzle ORM, SSO, and authentication middleware, streamlining new-hire handoff tracking and automated role provisioning across departments.
 - Created a cross-platform Docker devcontainer setup for WSL2 and Colima to make development environments easier to reproduce and reduce setup friction.
 - Using AI-assisted engineering workflows with tools such as Codex and Claude Code for planning, implementation, debugging, and code review support.
 

@@ -223,10 +223,10 @@ SmartSolve work centered on internal software, AI adoption, AI-assisted workflow
 
 ### Reusable Bullet Options
 
-- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
+- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, streamlining new-hire handoff tracking and automated role provisioning across departments.
 - Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
 - Evaluated LLM/API and cloud-service integration paths for internal workflow automation, shaping lightweight proprietary tool concepts, API integrations, webhook automations, internal documentation, and applied business-problem training material.
-- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data; participated in Scrum ceremonies and CI/CD pipeline maintenance.
+- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data, standardizing local AI toolchains across team workstations.
 - Applied AI-first engineering workflows with Codex and Claude Code to accelerate feature development, implementation planning, and code review.
 - Modeled early architecture for AI-enabled internal systems, including a QMS dependency register designed to make quality-document relationships traceable.
 
@@ -461,7 +461,7 @@ AAIS is a P&C insurance advisory and statistical-agent organization that support
 - Replaced a fully manual SQL billing workflow with a production PySpark and AWS Glue Workflow, removing manual execution from recurring charge calculations.
 - Processed 20+ TB of production golden-table data from sources including MySQL, Impala, Oracle, PostgreSQL, and related enterprise systems.
 - Supported billing calculations for 700+ member companies.
-- Contributed to MDM migration work intended to reduce legacy Pentaho job sprawl, standardize data domains, and move toward more maintainable cloud-native ETL patterns.
+- Contributed to MDM migration work intended to consolidate legacy Pentaho pipelines, standardize data domains, and move toward more maintainable cloud-native ETL patterns.
 - Built custom IAM roles so users and workflows had appropriate AWS data access instead of broad or mismatched permissions.
 - Helped move insurance data workflows toward more standardized, validated, and self-service-ready data availability.
 

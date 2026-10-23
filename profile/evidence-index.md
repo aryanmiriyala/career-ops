@@ -52,8 +52,8 @@ Verified keywords:
 Resume-ready evidence:
 
 - Deployed role-specific AI agents for employee workflows and converted tool audits into scoped projects, helping operations and executive leaders prioritize internal AI investments.
-- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking.
-- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data; participated in Scrum ceremonies and CI/CD pipeline maintenance.
+- Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, streamlining new-hire handoff tracking and automated role provisioning across departments.
+- Built a cross-platform Docker devcontainer for WSL2 and Colima, isolating AI-assisted development workflows to safeguard proprietary source code and company data, standardizing local AI toolchains across team workstations.
 - Applied Codex and Claude Code across implementation planning, debugging, code review, and self-review while keeping human validation central.
 - Modeled QMS dependency-register relationships to make quality-document dependencies traceable and translate ambiguous operational needs into reviewable implementation plans.
 
@@ -143,6 +143,7 @@ Use this cache for first-pass project selection before opening `profile/projects
 | Diff-Grounded PR Generation | LLM research, software engineering automation, evaluation | Python, OpenAI API, GitHub API, repository mining, commits, diffs, linked issues, LLM evaluation | LLM tooling, developer productivity, grounded generation, evals, GitHub automation |
 | HealthTrend | Data engineering, healthcare streaming, distributed systems | Docker, Apache NiFi, Kafka, HDFS, Spark, PySpark, JSON, CSV, healthcare IoT data | Kafka, NiFi, Spark, batch/stream processing, data pipelines, healthcare analytics |
 | Self-Adaptive Parallelism | Systems, performance engineering, parallel computing research | C++, OpenMP, Python, Docker, Make, Linux, UCB bandit optimization, telemetry, benchmarking | C++, systems performance, runtime instrumentation, scheduling, optimization |
+| TachyonMesh | Cloud-native traffic routing, observability, microservices | Go, Kubernetes, Docker, Envoy Proxy, Prometheus, Grafana, OpenTelemetry | Go, Kubernetes, Envoy, proxy, load balancing, metrics, latency profiling |
 | DreamScape | AI mobile, local-first study tools, audio workflows | React Native, Expo, TypeScript, Gemini API, ElevenLabs API, Expo AV, AsyncStorage, Zustand, Zod | Mobile engineering, AI study tools, local-first persistence, TTS/audio, React Native |
 | MarioRL | Reinforcement learning, deep learning experiments | Python, PyTorch, Stable-Baselines3, PPO, DQN, Gym, TensorBoard, checkpoints | Reinforcement learning, model comparison, experiment tracking, PyTorch |
 | RAG App Review Analysis | RAG/NLP research, app review mining, software analytics | Python, Sentence Transformers, ChromaDB, embeddings, vector search, NLP, sentiment analysis, scikit-learn | NLP, review mining, semantic retrieval, software maintenance analytics |
@@ -187,9 +188,9 @@ Resume-ready evidence:
 - Built a voice-first Next.js PWA that uses camera input, speech transcription, Gemini Vision, LLM reasoning, ElevenLabs TTS, and AWS DynamoDB to diagnose appliance issues and guide repair decisions.
 - Implemented typed API routes and AWS-backed persistence for structured findings, safety warnings, contextual Q&A, and step-by-step repair workflows.
 
-Source: `profile/projects-master.md`, Fix-It-Flow.
+Source: `profile/projects-master.md`, Fix-It-Flow, `github.com/aryanmiriyala/rockethacks-2026`.
 
-### RocketGrader - AI Assignment Feedback Platform
+### RocketGrader / RocketGrades - AI Assignment Feedback Platform
 
 Primary use: full-stack education AI, REST APIs, Angular/TypeScript, Express, MongoDB/Mongoose, Auth0, AWS S3, LangChain, Mistral AI, class/assignment/submission workflows.
 
@@ -201,7 +202,7 @@ Resume-ready evidence:
 
 - Built a full-stack AI assignment-feedback platform with Angular, Express REST APIs, MongoDB/Mongoose, Auth0, AWS S3, LangChain, and Mistral AI for classes, assignments, submissions, files, chat, and role dashboards.
 
-Source: `profile/projects-master.md`, RocketGrader.
+Source: `profile/projects-master.md`, RocketGrader / RocketGrades, `github.com/aryanmiriyala/rockethacks25`.
 
 ### FalconGraph Search
 
@@ -215,7 +216,7 @@ Resume-ready evidence:
 
 - Built a source-grounded RAG search system that crawled campus resources, processed documents, generated embeddings, retrieved with FAISS, served answers through FastAPI, and exposed a Next.js interface.
 
-Source: `profile/projects-master.md`, FalconGraph Search.
+Source: `profile/projects-master.md`, FalconGraph Search, `github.com/aryanmiriyala/BGSUHackathon`.
 
 ### Diff-Grounded PR Generation
 
@@ -243,7 +244,7 @@ Resume-ready evidence:
 
 - Built a Dockerized healthcare data pipeline that routes CSV patient records into HDFS, streams JSON health events through Kafka, and processes both sources with Spark/PySpark.
 
-Source: `profile/projects-master.md`, HealthTrend.
+Source: `profile/projects-master.md`, HealthTrend, `github.com/aryanmiriyala/healthtrend-hadoop-kafka-poc`.
 
 ### Self-Adaptive Parallelism / Runtime Coordination
 
@@ -258,7 +259,22 @@ Resume-ready evidence:
 - Built a C++/OpenMP adaptive runtime research system that used per-epoch telemetry and a UCB controller to tune scheduling policy, chunk size, and thread count.
 - Generated benchmark summaries and plots for runtime, speedup, efficiency, Karp-Flatt behavior, and scheduler decisions.
 
-Source: `profile/projects-master.md`, Self-Adaptive Parallelism.
+Source: `profile/projects-master.md`, Self-Adaptive Parallelism, `github.com/aryanmiriyala/Self-Adaptive-Parallelism-OpenMP`.
+
+### TachyonMesh - Cloud-Native Traffic & Observability Proxy
+
+Primary use: backend infrastructure, traffic routing, systems engineering, performance profiling, Kubernetes deployments.
+
+Verified keywords:
+
+- Go, Kubernetes, Docker, Envoy Proxy, Prometheus, Grafana, OpenTelemetry, microservices, load balancing, traffic routing, latency profiling.
+
+Resume-ready evidence:
+
+- Built a cloud-native traffic routing system by deploying a containerized Go backend on Kubernetes and configuring an Envoy proxy to manage load balancing and service-to-service networking.
+- Instrumented the cluster observability stack with Prometheus and Grafana, scraping proxy metrics to profile request latency and optimize throughput under concurrent load.
+
+Source: `profile/projects-master.md`, TachyonMesh, `github.com/aryanmiriyala/TachyonMesh`.
 
 ### DiskScope - Native macOS Disk Space Analyzer & Grounded AI Explainer
 

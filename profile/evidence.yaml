@@ -336,7 +336,7 @@ bullets:
     dates: "May 2026 - Jul 2026"
     location: "Bowling Green, OH"
     ownership: "primary"
-    text: "Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, replacing memory-based HR follow-up with secure new-hire handoff tracking."
+    text: "Architected a full-stack Next.js onboarding tracker with PostgreSQL, Drizzle ORM, SSO, and auth middleware, streamlining new-hire handoff tracking and automated role provisioning across departments."
     metrics: {}
     tech_tags: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle ORM", "SSO", "auth middleware"]
     line_count: 2
@@ -481,7 +481,7 @@ bullets:
     dates: "May 2025 - Aug 2025"
     location: "Lisle, IL"
     ownership: "primary"
-    text: "Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, reducing job sprawl for governed MDM ingestion."
+    text: "Modernized 160+ legacy Pentaho jobs into AWS Glue ETL workflows and partitioned S3 pipelines for Semarchy MDM, consolidating pipeline complexity and guaranteeing 24-hour SLA data freshness for governed MDM ingestion."
     metrics: {"jobs_modernized": 160, "target_platform": "Semarchy MDM"}
     tech_tags: ["AWS Glue", "S3", "Pentaho", "Semarchy MDM", "ETL", "partitioned pipelines"]
     line_count: 2

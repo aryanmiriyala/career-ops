@@ -225,6 +225,7 @@ RAG / Search / Tech stack: C++, OpenMP, Python, FastAPI, FAISS, Sentence Transfo
 ### HealthTrend: Healthcare Big Data Streaming Pipeline
 
 Primary positioning: distributed data systems, healthcare IoT, streaming and batch ingestion
+Source: https://github.com/aryanmiriyala/healthtrend-hadoop-kafka-poc
 
 #### Platform-Ready Description
 
@@ -349,6 +350,7 @@ Full-stack AI education / Tech stack: Angular 19, TypeScript, Auth0, Node.js, Ex
 ### Self-Adaptive Parallelism via OpenMP Runtime Coordination
 
 Primary positioning: systems research, parallel computing, adaptive scheduling, performance benchmarking
+Source: https://github.com/aryanmiriyala/Self-Adaptive-Parallelism-OpenMP
 
 #### Platform-Ready Description
 
@@ -720,6 +722,7 @@ Keep these repositories in the inventory so future work can be recognized, but d
 ## TachyonMesh - Cloud-Native Traffic & Observability Proxy
 
 Primary use: backend infrastructure, traffic routing, systems engineering, performance profiling, Kubernetes deployments.
+Source: https://github.com/aryanmiriyala/TachyonMesh
 
 #### Tech Stack
 
