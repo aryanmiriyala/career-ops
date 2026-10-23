@@ -38,7 +38,7 @@ Resume-ready evidence:
 - Deployed a LiteLLM AI model gateway for policy-controlled model routing across multiple AI projects, adding intelligent routing tiers, guardrails, Langfuse tracing, Slack alerts, CI/CD gates, and 44 adversarial test fixtures.
 - Consolidated Capture, Define, and Whiteboard tools into a tabbed Workshop route with feature gating, legacy redirects, ARIA guardrails, and route/component tests using Vitest and Testing Library.
 
-Source: `profile/experience-master.md`, `ActualChat` (IRIS-61, IRIS-59, IRIS-52-55, IRIS-60), `customer-portal` (1,476 commits, PORTAL-72-202), and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
+Source: `profile/experience-master.md`, `ActualChat` (IRIS-61, IRIS-59, IRIS-52-55, IRIS-60), `customer-portal` (PORTAL-72-202), and `profile/source-materials/actual-reality/ai-gateway-field-guide.docx`, Actual Reality Technologies.
 
 ### SmartSolve Industries - Artificial Intelligence Engineer Intern
 

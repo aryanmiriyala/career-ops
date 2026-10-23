@@ -257,8 +257,8 @@ bullets:
     dates: "Oct 2026 - Present"
     location: "Perrysburg, OH"
     ownership: "primary"
-    text: "Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase."
-    metrics: {"authored_commits": 1476}
+    text: "Architected a production client portal using Next.js 15, React 19, and Firebase, implementing multi-tenant session isolation, automated ticket triage, and real-time client retainer tracking."
+    metrics: {}
     tech_tags: ["Next.js 15", "TypeScript", "React 19", "Firebase", "Firestore", "Plane API", "MCP"]
     line_count: 2
     evidence_refs: ["experience-master.md:39", "customer-portal"]

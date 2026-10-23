@@ -23,7 +23,7 @@ Avoid:
 
 ## Software Engineer / Full-Stack Engineer
 
-- Revamped and wrapped up the company customer portal end-to-end across 1,476 commits, delivering two-way Plane ticket sync, retainer tracking, remote MCP tools, and multi-tenant auth isolation in Next.js 15, TypeScript, and Firebase.
+- Architected a production client portal using Next.js 15, React 19, and Firebase, implementing multi-tenant session isolation, automated ticket triage, and real-time client retainer tracking.
 - Built two-way Plane API synchronization for support tickets and intake, delivering triage decisions, mandatory decline explanations, and standing-decline cursors with retry logic.
 - Implemented client retainer tracking in Company Settings, aggregating worked hours across all linked projects to provide transparent retainer utilization for clients and administrators.
 - Developed remote Model Context Protocol (MCP) tools with keyed authentication, allowing AI agents to securely query team member profiles, team rosters, and Plane project/ticket statuses under cost and rate controls.
