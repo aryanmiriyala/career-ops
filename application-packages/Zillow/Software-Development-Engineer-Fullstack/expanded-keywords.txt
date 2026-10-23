@@ -1,0 +1,80 @@
+Software Development Engineer
+Full Stack
+Fullstack
+Specialist II
+Bachelor's degree
+Computer Science
+5+ years
+professional experience
+web applications
+web services
+JavaScript
+TypeScript
+React
+Next.js
+front-end
+frontend
+user interfaces
+back-end
+backend
+server-side
+APIs
+REST
+Node.js
+Express
+Python
+Java
+Spring Boot
+software development lifecycle
+SDLC
+design
+implementation
+testing
+deployment
+production support
+code reviews
+automated tests
+CI/CD
+monitor
+troubleshoot
+optimize
+logs
+metrics
+alerts
+reliability
+performance
+observability
+technical design
+documentation
+implementation plans
+trade-off analysis
+system design
+mentor
+pairing
+knowledge sharing
+feedback
+inclusive engineering
+Gen AI
+Generative AI
+NLP
+natural language processing
+computer vision
+LangChain
+LlamaIndex
+LLM APIs
+LLM
+large language model
+AI applications
+AI capabilities
+AWS
+cloud
+scalable
+production
+collaborative
+cross-functional
+product
+design
+data
+iterative
+engineering standards
+best practices
