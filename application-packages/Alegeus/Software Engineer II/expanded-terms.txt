@@ -1,0 +1,45 @@
+C#
+RESTful Services
+RESTful services
+MS SQL Server
+T-SQL
+SQL Server
+Pub/Sub
+.NET Core
+Object-Oriented design
+Object-Oriented
+T-SQL expertise
+SQL Server tuning
+Agile
+Agile teams
+.NET 8+
+LINQ
+Dapper
+Database performance optimization
+Finance transaction processing
+Software Engineer II
+Spring Boot
+Microservice APIs
+Microservices
+AWS Glue
+AWS Lambda
+AWS S3
+AWS IAM
+AWS DynamoDB
+PySpark
+20+ TB
+700+ member companies
+1000+ tables
+160+ tables
+24-hour SLA
+RBAC
+JWT
+SSO
+Auth0
+CI/CD
+Production on-call
+Secure coding
+Scalable
+User stories
+Business requirements
+Product Owner
