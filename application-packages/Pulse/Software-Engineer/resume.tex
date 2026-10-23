@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[letterpaper,left=0.22in,right=0.22in,top=0.10in,bottom=0.10in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\linespread{0.92}
+\pdfgentounicode=1
+
+\newcommand{\resumesection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape #1}\par\vspace{2pt}%
+  \hrule height 0.4pt\vspace{2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{leftmargin=0.20in,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\raisebox{0.15ex}{\small\textbullet}},after=\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Aryan Miriyala}}\\[2pt]
+  \small
+  +1 419-315-0444 $|$ \href{mailto:aryanmiriyala@gmail.com}{aryanmiriyala@gmail.com} $|$ \href{https://www.linkedin.com/in/aryan-miriyala-7788a21b6/}{linkedin.com/in/aryan-miriyala}\\
+  \href{https://github.com/aryanmiriyala}{github.com/aryanmiriyala} $|$ Software Engineer
+\end{center}\vspace{-6pt}
+
+\resumesection{Education}
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{M.S. in Computer Science, GPA: 4.00/4.00}{Aug. 2024 - Aug. 2026}
+
+\resumeSubheading
+{Bowling Green State University}{Bowling Green, OH}
+{B.S. in Computer Science, GPA: 4.00/4.00}{Jan. 2021 - Apr. 2024}
+
+\resumesection{Experience}
+\resumeSubheading
+{Software Engineer}{Jul. 2026 - Present}
+{Actual Reality Technologies}{Perrysburg, OH}
+\begin{tightitemize}
+  \item Integrated an internal LiteLLM AI gateway into IRIS (LibreChat fork with Node.js, React, MongoDB, Redis), enforcing multi-tier model routing, guardrails, and Langfuse tracing across production AI traffic.
+  \item Built an automated evaluation pipeline with Node.js and Playwright to validate multi-turn IRIS reasoning, tool execution, and citation accuracy across 41+ regression test suites.
+  \item Architected a production customer portal using Next.js 15, React 19, and Firebase, implementing multi-tenant session isolation, automated Plane API ticket reconciliation, and real-time client retainer tracking.
+\end{tightitemize}
+
+\resumeSubheading
+{Artificial Intelligence Engineer Intern}{May 2026 - Jul. 2026}
+{SmartSolve Industries}{Bowling Green, OH}
+\begin{tightitemize}
+  \item Architected a full-stack onboarding system with Next.js, TypeScript, PostgreSQL, and Drizzle ORM, implementing SSO authentication and RBAC middleware to streamline cross-department handoffs.
+  \item Engineered domain-specific AI automation agents for enterprise workflows, benchmarking tooling viability and delivering production implementation roadmaps.
+  \item Built containerized developer environments with Docker for WSL2 and macOS, standardizing local AI toolchains and isolating proprietary code during AI-assisted development.
+\end{tightitemize}
+
+\resumeSubheading
+{Data Engineering Intern}{May 2025 - Aug. 2025}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Engineered automated ETL pipelines using Python, PySpark, and AWS Glue, processing 20+ TB of production insurance data across 700+ member companies for executive billing reporting.
+  \item Led data profiling and schema migration across 160+ tables in MySQL, Oracle, and Impala using Python and SQL, standardizing legacy records into 25 unified master-data domains.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2023 - May 2024}
+{American Association of Insurance Services}{Lisle, IL}
+\begin{tightitemize}
+  \item Automated schema generation with Python to produce 1,000+ production SQL tables and analytical views across 10+ insurance lines, accelerating industry openIDL data standardization.
+  \item Implemented RBAC and JWT authentication in a React/Node.js web application, securing sensitive data access across 110 enterprise users.
+\end{tightitemize}
+
+\resumeSubheading
+{Software Engineering Intern}{May 2022 - Aug. 2022}
+{Alliance for Paired Kidney Donation}{Toledo, OH}
+\begin{tightitemize}
+  \item Hardened AWS-hosted clinical match-run systems by implementing CSRF protection, IP-based audit logging, and input validation, eliminating runtime exceptions for organ transplant coordination.
+\end{tightitemize}
+
+\resumesection{Projects}
+\projectHeading{FalconGraph Search - RAG Document Intelligence}{Python, FastAPI, Next.js, FAISS, Sentence Transformers}
+\begin{tightitemize}
+  \item Built a source-grounded RAG search engine that crawled campus resources, processed PDF/DOCX/HTML documents, generated embeddings, retrieved with FAISS, and served cited answers via FastAPI and a Next.js interface.
+  \item Implemented multithreaded C++/OpenMP web crawling, checkpointed document cleaning pipelines, and semantic ranking for source-grounded answer generation.
+\end{tightitemize}
+
+\vspace{-4pt}
+\projectHeading{Fix-It-Flow - Multimodal AI Repair Assistant}{Next.js, TypeScript, Gemini Vision, AWS DynamoDB}
+\begin{tightitemize}
+  \item Built a voice-first Next.js PWA using camera input, Web Speech API, Gemini Vision, and ElevenLabs TTS to diagnose appliance issues and guide hands-free repair workflows backed by AWS DynamoDB.
+  \item Designed typed API routes for inspection sessions, device identification, and repair-step generation with structured findings, confidence scores, and safety warnings.
+\end{tightitemize}
+
+\resumesection{Technical Skills}
+\textbf{Languages \& Frameworks:} Python, TypeScript/JavaScript, SQL, Java, C++, C, React, Next.js, Angular, Node.js, Express, FastAPI, REST APIs, Firebase\\
+\textbf{AI, Data \& Cloud:} LiteLLM, AI/model gateways, Model Context Protocol (MCP), guardrails, Langfuse, OpenAI API, Gemini API, Mistral AI, LangChain, RAG, LLM evaluation, PostgreSQL, MySQL, MongoDB, AWS Glue, S3, Lambda, IAM, DynamoDB, PySpark, Redis\\
+\textbf{Security, Testing \& Tools:} Vercel, Vitest, Jest, Playwright, Testing Library, Docker, Git, Linux, SSO, JWT, RBAC, Auth0, anti-CSRF, audit logging, PII tokenization, Codex, Claude Code
+
+\end{document}

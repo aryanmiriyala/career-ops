@@ -1,0 +1,65 @@
+Software Engineer
+Python
+TypeScript
+SQL
+FastAPI
+Postgres
+PostgreSQL
+Redis
+React
+AWS
+Backend services
+Secure APIs
+Front end features
+Extraction pipeline
+Accuracy
+Latency
+Reliability
+Tests
+Deployments
+Production health
+Production monitoring
+Document understanding
+Document extraction
+Layout understanding
+Component detection
+OCR
+Reading-order algorithms
+Table structure recognition
+Table parsing
+Vision-language models
+VLM
+Charts
+Tables
+Figures
+Computer vision
+NLP
+Data infrastructure
+Multi-stage architecture
+Startup experience
+On-site
+San Francisco
+Bias to ship
+Clear communication
+Next.js
+Node.js
+Firebase
+Docker
+Playwright
+Langfuse
+MCP
+Model Context Protocol
+LiteLLM
+AI Gateway
+Guardrails
+RAG
+LLM evaluation
+PySpark
+Drizzle ORM
+SSO
+RBAC
+JWT
+Auth0
+Anti-CSRF
+Audit logging
+PII tokenization
