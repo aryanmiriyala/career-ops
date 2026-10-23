@@ -1,0 +1,42 @@
+# Junior AI Engineer - Fireflies.ai
+
+**Company:** Fireflies.ai
+**Role:** Junior AI Engineer
+**Posted:** 2 days ago (approximately 2026-10-20)
+**Apply by:** November 19, 2026 at 11:59 PM
+**Location:** Remote, based in United States (Work from home)
+**Job Type:** Full-time
+**Salary:** $80–90K/yr
+**Work Authorization:** US work authorization required, Open to candidates with OPT
+
+## Job Description
+
+We are looking for a driven and curious Junior AI Engineer to join our technology team. In this role, you will help design, build, and integrate artificial intelligence features, machine learning pipelines, and LLM-powered applications into our core products and internal workflows. If you have a solid foundation in Python, a passion for AI/ML development, and are looking for a place where you can ship real-world AI features while securing your post-graduation work authorization, we want to hear from you!
+
+### Key Responsibilities
+
+**AI & LLM Integration:** Build and maintain applications powered by Large Language Models (LLMs), vector databases, and modern AI APIs (e.g., OpenAI, Anthropic, or open-source models).
+
+**Model Pipeline Development:** Assist in developing, fine-tuning, and evaluating machine learning or NLP models for internal automation and product features.
+
+**Data Engineering & Preprocessing:** Clean, structure, and manage datasets required for model training, prompt engineering, and retrieval-augmented generation (RAG) pipelines.
+
+**Collaboration & Testing:** Partner with backend and product teams to integrate AI services into scalable web applications, run performance tests, and monitor output accuracy.
+
+**Research & Prototyping:** Stay up to date with the latest advancements in AI/ML tooling and rapidly prototype proof-of-concept solutions for business challenges.
+
+### What We Are Looking For
+
+**Education:** Bachelor's or Master's degree in Computer Science, Artificial Intelligence, Data Science, Machine Learning, or a related technical field.
+
+**Work Authorization:** Currently on F-1 OPT or on a STEM OPT extension with valid EAD Card.
+
+### Technical Skillset
+
+- Strong programming skills in Python.
+- Familiarity with AI/ML frameworks (e.g., PyTorch, TensorFlow, LangChain, LlamaIndex) and vector databases (e.g., Pinecone, Chroma, Supabase pgvector).
+- Understanding of RESTful APIs, Git version control, and basic backend integration.
+
+### Soft Skills
+
+Strong analytical mindset, a high comfort level with experimentation and debugging, and excellent communication skills.
